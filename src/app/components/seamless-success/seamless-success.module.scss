@@ -1,0 +1,161 @@
+.layout {
+  margin: 100px 60px 0 60px;
+  height: 924px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.textLayout {
+  display: flex;
+  width: 536px;
+  text-align: center;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.ellipse {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ellipseMd {
+  opacity: 0.3;
+}
+
+.cardLayout {
+  position: absolute;
+  border-radius: 22px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 331px;
+  height: 207px;
+}
+
+.cardIcon {
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--white-0);
+}
+
+.expandPos {
+  bottom: 130px;
+  right: 250px;
+}
+
+.integratePos {
+  top: 20px;
+  right: 290px;
+}
+
+.customerPos {
+  top: 50px;
+  left: 290px;
+}
+
+.userPos {
+  bottom: 130px;
+  left: 250px;
+}
+
+.bgBlack10 {
+  background-color: var(--black-10);
+}
+
+.bgYellow {
+  background-color: var(--yellow);
+}
+
+.bgWhite {
+  background-color: var(--white-0);
+}
+
+@media (max-width: 1420px) {
+  .expandPos {
+    bottom: 130px;
+    right: 0;
+  }
+
+  .integratePos {
+    top: 20px;
+    right: 10px;
+  }
+
+  .customerPos {
+    top: 50px;
+    left: 10px;
+  }
+
+  .userPos {
+    bottom: 130px;
+    left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .layout {
+    margin: 100px 0 0 0;
+
+    svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    .cardIcon {
+      width: 34px;
+      height: 34px;
+      flex-shrink: 0;
+    }
+  }
+
+  .cardLayout {
+    width: 307px;
+    height: 118px;
+    gap: 12px;
+    padding: 8px;
+  }
+
+  .textLayout {
+    width: 100%;
+    padding: 0 16px;
+  }
+
+  .text {
+    font-weight: 300;
+  }
+
+  .expandPos {
+    bottom: 20px;
+    right: 16px;
+  }
+
+  .integratePos {
+    top: 150px;
+    right: 16px;
+  }
+
+  .customerPos {
+    top: 0;
+    left: 16px;
+  }
+
+  .userPos {
+    bottom: 170px;
+    left: 16px;
+  }
+}

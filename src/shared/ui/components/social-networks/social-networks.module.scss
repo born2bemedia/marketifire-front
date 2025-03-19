@@ -1,0 +1,19 @@
+.socialNetworks {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  gap: 8px;
+  border-radius: 100px;
+  background-color: var(--yellow);
+  width: max-content;
+
+  li {
+    height: max-content;
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

@@ -32,6 +32,10 @@ const eslintConfig = [
       ],
       'simple-import-sort/exports': 'error',
       '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
+      '@typescript-eslint/consistent-type-imports': [
+        'error',
+        { prefer: 'type-imports' },
+      ],
     },
   },
 ];
