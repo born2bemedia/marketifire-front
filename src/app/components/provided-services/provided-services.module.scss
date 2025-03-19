@@ -1,0 +1,133 @@
+.layout {
+  padding: 92px 60px 0 60px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.cardLayout {
+  padding: 32px;
+  width: 427px;
+  height: 509px;
+  border-radius: 22px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.balloonGutImg {
+  position: absolute;
+  right: 0;
+}
+
+.balloonStarImg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.title {
+  font-size: 24px;
+}
+
+.yellowBg {
+  background-color: var(--yellow);
+}
+
+.whiteBg {
+  background-color: var(--white-0);
+}
+
+.black10Bg {
+  background-color: var(--black-10);
+}
+
+.graphics {
+  margin-top: 10px;
+  position: relative;
+}
+
+.firstGraphic {
+  z-index: 2;
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.secondGraphic {
+  z-index: 1;
+  position: absolute;
+  top: 190px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.thirdGraphic {
+  z-index: 0;
+  position: absolute;
+  top: 260px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.circle {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.circleLineSm, .circleLineMd {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+    padding: 40px 16px 0 16px;
+  }
+
+  .cardLayout {
+    padding: 20px;
+    width: 100%;
+    height: 189px;
+  }
+
+  .balloonGutImg {
+    right: -70px;
+    top: -180px;
+  }
+
+  .balloonStarImg {
+    left: 0;
+    bottom: -200px;
+  }
+
+  .graphics {
+    margin-top: 0;
+  }
+
+  .circle {
+    width: 189px;
+    height: 189px;
+    bottom: -80px;
+    right: -20px;
+  }
+
+  .circleLineMd {
+    width: 205px;
+    height: 205px;
+    bottom: -60px;
+    right: -4px;
+  }
+
+  .circleLineSm {
+    width: 185px;
+    height: 185px;
+    bottom: -60px;
+    right: 0;
+  }
+}

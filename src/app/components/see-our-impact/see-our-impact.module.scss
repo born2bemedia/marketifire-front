@@ -1,0 +1,91 @@
+.layout {
+  margin: 100px 60px 0 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contentLayout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.titleLayout {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 565px;
+}
+
+.caseStudiesNavDesktop {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 198px;
+}
+
+.caseStudiesNavMobile {
+  display: none;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.cardLayout {
+  padding: 20px;
+  border-radius: 22px;
+  border: 4px solid var(--white-10);
+  background: var(--white-0);
+
+  .text {
+    margin: 8px 0 20px 0;
+  }
+
+  .imgBorder {
+    border-radius: 22px;
+  }
+}
+
+@media (max-width: 1270px) {
+  .layout {
+    flex-direction: column;
+    gap: 40px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .caseStudiesNavMobile {
+    display: flex;
+  }
+
+  .caseStudiesNavDesktop {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 768px) {
+  .layout {
+    margin: 100px 16px 0 16px;
+  }
+
+  .cardLayout {
+    padding: 12px;
+  }
+
+  .text {
+    font-weight: 300;
+  }
+
+  .titleLayout {
+    width: 100%;
+  }
+}

@@ -1,6 +1,9 @@
 import type { Metadata } from 'next';
 import { Outfit } from 'next/font/google';
 
+import { Footer } from '@/shared/ui/components/footer';
+import { Header } from '@/shared/ui/components/header';
+
 import './globals.css';
 import './reset.css';
 import 'modern-normalize/modern-normalize.css';
@@ -24,7 +27,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={outfitFont.variable}>{children}</body>
+      <body className={outfitFont.variable}>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

@@ -1,0 +1,18 @@
+.layout {
+  padding-top: 126px;
+  width: 668px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 19px;
+}
+
+@media (max-width: 768px) {
+  .layout {
+    width: 100%;
+    padding: 40px 16px 0 16px;
+  }
+}

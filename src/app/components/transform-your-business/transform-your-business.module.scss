@@ -1,0 +1,97 @@
+.layout {
+  margin: 100px 60px 0 60px;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  overflow-y: auto;
+}
+
+.contentLayout {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.annotation {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+
+.requestNavDesktop {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.requestNavMobile {
+  display: none;
+  margin-top: 40px;
+  flex-direction: column;
+  gap: 12px;
+
+  button {
+    width: 100%;
+  }
+}
+
+.card {
+  border-radius: 22px;
+  padding: 39px;
+  border: 1px solid var(--white-10);
+  background-color: var(--white-0);
+  width: 606px;
+  height: 344px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.iconLayout {
+  margin-left: auto;
+}
+
+@media (max-width: 1060px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .contentLayout {
+    width: 100%;
+
+    p {
+      font-weight: 300;
+    }
+
+    .requestNavDesktop {
+      display: none;
+      visibility: hidden;
+    }
+  }
+
+  .requestNavMobile {
+    display: flex;
+  }
+
+  .annotation {
+    margin-bottom: 40px;
+  }
+
+  .card {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .layout {
+    margin: 100px 16px 0 16px;
+  }
+}

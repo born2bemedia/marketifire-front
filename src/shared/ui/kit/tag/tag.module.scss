@@ -1,0 +1,21 @@
+.layout {
+  border-radius: 100px;
+  padding: 6px 18px;
+  color: var(--black-100);
+  width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.yellow {
+  background-color: var(--yellow);
+}
+
+.white {
+  background-color: var(--white-0);
+}
+
+.white10 {
+  background-color: var(--white-10);
+}
