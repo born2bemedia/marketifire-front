@@ -28,7 +28,9 @@ export function TextField({
 
   return (
     <label className={st.layout}>
-      <Text color="black">{label}</Text>
+      <Text color="black" className={st.label}>
+        {label}
+      </Text>
       <input className={inputClasses} {...args} />
       {hint && (
         <Text color="black" className={st.hint}>

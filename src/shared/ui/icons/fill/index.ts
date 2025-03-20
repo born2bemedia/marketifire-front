@@ -1,3 +1,5 @@
+export * from './arrow-left';
+export * from './arrow-right';
 export * from './asterisk';
 export * from './caret-right';
 export * from './facebook';

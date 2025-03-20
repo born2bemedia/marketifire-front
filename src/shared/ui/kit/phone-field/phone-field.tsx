@@ -36,7 +36,7 @@ export function PhoneField({
         {...args}
       />
       {hint && (
-        <Text color="black" className={st.hint}>
+        <Text color="black" weight={300} className={st.hint}>
           {hint}
         </Text>
       )}
