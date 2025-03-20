@@ -16,7 +16,7 @@ export function Content() {
       <div className={st.annotation}>
         <Tag color="yellow">
           <Asterisk />
-          <Text>Text</Text>
+          <Text>Unleash Your Brand’s Potential</Text>
         </Tag>
         <Title level={2}>
           Transform Your Business with Marketfire’s Expertise
