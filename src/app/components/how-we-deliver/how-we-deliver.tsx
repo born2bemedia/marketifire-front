@@ -66,7 +66,12 @@ function Card({
   number: number;
 }) {
   return (
-    <article className={st.cardLayout}>
+    <article
+      className={st.cardLayout}
+      style={{
+        top: `calc(10px + ${(number - 1) * 120}px)`,
+      }}
+    >
       <div className={st.cardNumber}>0{number}</div>
       <section className={st.cardInfo}>
         <Title level={3}>{title}</Title>
