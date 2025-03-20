@@ -28,6 +28,7 @@ export function WhyBusinessesTrust() {
       annotation="We may be a young agency but we bring industry expertise, innovative solutions, and results-driven strategies that businesses trust."
       footerText="Your Growth, Our Priority. Let’s Make It Happen!"
       cards={cards}
+      tagText="Results You Can Rely On"
     />
   );
 }
