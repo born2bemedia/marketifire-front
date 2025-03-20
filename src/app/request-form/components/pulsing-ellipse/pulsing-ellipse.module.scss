@@ -1,0 +1,30 @@
+.ellipse {
+  position: absolute;
+  top: -330px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+.ellipseBig {
+  position: absolute;
+  top: -530px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
+  opacity: 0.3;
+}
+
+@media (max-width: 768px) {
+  .ellipse {
+    top: -150px;
+    width: 256px;
+    height: 256px;
+  }
+
+  .ellipseBig {
+    top: -350px;
+    width: 556px;
+    height: 556px;
+  }
+}

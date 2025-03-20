@@ -1,0 +1,19 @@
+.text {
+  padding-top: 60px;
+  padding-bottom: 42px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 688px;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .text {
+    width: 100%;
+    padding: 60px 16px 42px 16px;
+  }
+}
