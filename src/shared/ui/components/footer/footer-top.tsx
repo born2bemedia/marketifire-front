@@ -49,8 +49,16 @@ export function FooterTop() {
       <section className={st.logoLayout}>
         <Text>[BRAND] LOGO</Text>
         <address className={st.addressLayout}>
-          <Text weight={300}>Office addresses:</Text>
-          <Text weight={300}>Registered addresses:</Text>
+          <Text color="black60" weight={300}>
+            Office address: Galvaniho 7/D, 821 04 Bratislava, Slovakia
+          </Text>
+          <Text color="black60" weight={300}>
+            Registered address: Biskupa Kondého Street 5138/30, 929 01 Dunajská
+            Streda, Slovakia
+          </Text>
+          <Text color="black60" weight={300}>
+            Registered number: 53623878
+          </Text>
         </address>
       </section>
       <section className={st.navigationLayout}>
