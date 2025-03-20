@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import Image from 'next/image';
 
 import { Controller, useForm, zodResolver } from '@/shared/lib/forms';
 import { useCountryCode } from '@/shared/lib/hooks';
@@ -16,12 +16,7 @@ import st from './personal-data-form.module.scss';
 
 export function PersonalDataForm() {
   const countryCode = useCountryCode();
-  const [hydratedCountry, setHydratedCountry] = useState('us');
   const { setData } = useRequestFormStore();
-
-  useEffect(() => {
-    setHydratedCountry(countryCode);
-  }, [countryCode]);
 
   const {
     handleSubmit,
@@ -46,8 +41,14 @@ export function PersonalDataForm() {
 
   return (
     <form onSubmit={onSubmit}>
-      <section>
+      <section className={st.header}>
         <Title level={3}>Personal Data</Title>
+        <Image
+          src="/request-form/level-indicator-1.svg"
+          alt="level-indicator"
+          width={34}
+          height={34}
+        />
       </section>
       <section className={st.formLayout}>
         <section className={st.row}>
@@ -83,7 +84,7 @@ export function PersonalDataForm() {
             render={({ field, fieldState: { error } }) => (
               <PhoneField
                 {...field}
-                country={hydratedCountry}
+                country={countryCode}
                 label="Phone number"
                 hint={error?.message}
               />
@@ -118,7 +119,7 @@ export function PersonalDataForm() {
         </section>
       </section>
       <section className={st.btns}>
-        <Button variant="white" className={st.btn}>
+        <Button variant="white" className={st.btn} disabled>
           <ArrowLeft />
           Back
         </Button>
