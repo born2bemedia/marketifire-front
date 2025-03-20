@@ -33,8 +33,8 @@ const cards = [
 export function ImpactCards() {
   return (
     <section className={st.cards}>
-      {cards.map(card => (
-        <Card key={card.title} {...card} />
+      {cards.map((card, index) => (
+        <Card key={card.title} {...card} index={index} />
       ))}
     </section>
   );
@@ -44,13 +44,20 @@ function Card({
   title,
   desc,
   imgPath,
+  index,
 }: {
   title: string;
   desc: string;
   imgPath: string;
+  index: number;
 }) {
   return (
-    <article className={st.cardLayout}>
+    <article
+      className={st.cardLayout}
+      style={{
+        top: `calc(10px + ${index * 50}px)`,
+      }}
+    >
       <Title level={3}>{title}</Title>
       <Text color="black60" size="2xl" className={st.text}>
         {desc}
