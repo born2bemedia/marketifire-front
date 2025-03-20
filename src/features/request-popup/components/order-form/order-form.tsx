@@ -36,7 +36,6 @@ export function OrderForm({
     reValidateMode: 'onChange',
     mode: 'onChange',
     defaultValues: {
-      product: productValue,
       email: '',
       firstName: '',
       lastName: '',
@@ -47,11 +46,14 @@ export function OrderForm({
   });
 
   const onSubmit = handleSubmit(async (data: OrderFormSchema) => {
-    console.log(data);
+    const orderData = {
+      ...data,
+      product: productValue,
+    };
     try {
       const response = await fetch('/api/product-request', {
         method: 'POST',
-        body: JSON.stringify(data),
+        body: JSON.stringify(orderData),
       });
       if (!response.ok) {
         throw new Error('Failed to send form');
@@ -70,7 +72,6 @@ export function OrderForm({
 
   return (
     <form onSubmit={onSubmit} className={st.formLayout}>
-      <input type="hidden" name="product" value={productValue} />
       <div className={`${st.inputWrap} ${errors.firstName ? st.error : ''}`}>
         <Controller
           name="firstName"

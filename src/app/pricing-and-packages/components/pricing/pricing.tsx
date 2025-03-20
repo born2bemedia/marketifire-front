@@ -74,7 +74,11 @@ export default function Pricing({
                 {item.type === 'order' ? 'From ' : ''}€{item.price}
               </div>
               {item.type === 'buy' ? (
-                <Button size="md" variant="black">
+                <Button
+                  size="md"
+                  variant="black"
+                  onClick={() => handleOpenModal('service', item.title)}
+                >
                   Buy
                 </Button>
               ) : (

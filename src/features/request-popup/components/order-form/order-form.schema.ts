@@ -2,7 +2,6 @@ import { z } from '@/shared/lib/forms';
 import { isPhoneValid } from '@/shared/ui/kit/phone-field';
 
 export const orderFormSchema = z.object({
-  product: z.string(),
   firstName: z.string().nonempty('First name is required'),
   lastName: z.string().nonempty('Last name is required'),
   phone: z
