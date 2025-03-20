@@ -1,9 +1,11 @@
 import type { Metadata } from 'next';
 import { Outfit } from 'next/font/google';
+import Script from 'next/script';
 import { GoogleAnalytics } from '@next/third-parties/google';
 
 import { Footer } from '@/shared/ui/components/footer';
 import { Header } from '@/shared/ui/components/header';
+import { Preloader } from '@/shared/ui/components/preloader';
 
 import './globals.css';
 import './reset.css';
@@ -28,9 +30,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <title>Marketfire</title>
+        <Script src="/scripts/translation.js" strategy="beforeInteractive" />
+        {process.env.GOOGLE_TRANSLATION_CONFIG && (
+          <Script
+            src="//translate.google.com/translate_a/element.js?cb=TranslateInit"
+            strategy="afterInteractive"
+          />
+        )}
+      </head>
       <body className={outfitFont.variable}>
-      <GoogleAnalytics gaId="G-0NR0307GP5" /> 
+        <GoogleAnalytics gaId="G-0NR0307GP5" />
         <Header />
+        <Preloader />
         {children}
         <Footer />
       </body>

@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
 
 import { Text } from '@/shared/ui/kit/text';
@@ -47,7 +48,9 @@ export function FooterTop() {
   return (
     <section className={st.footerTopLayout}>
       <section className={st.logoLayout}>
-        <Text>[BRAND] LOGO</Text>
+        <Link href="/">
+          <Image src="/full-logo.svg" alt="full-logo" width={155} height={28} />
+        </Link>
         <address className={st.addressLayout}>
           <Text color="black60" weight={300}>
             Office address: Galvaniho 7/D, 821 04 Bratislava, Slovakia
