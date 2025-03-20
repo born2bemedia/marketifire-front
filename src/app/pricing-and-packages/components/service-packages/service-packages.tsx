@@ -19,11 +19,12 @@ export function ServicePackages({
     whatIncluded: string[];
   }[];
 }) {
-  const { setIsOpen, setType } = useModalStore();
+  const { setIsOpen, setType, setProduct } = useModalStore();
 
-  const handleOpenModal = (type: 'service' | 'package') => {
+  const handleOpenModal = (type: 'service' | 'package', product: string) => {
     setIsOpen(true);
     setType(type);
+    setProduct(product);
   };
   return (
     <section className={st.layout}>
@@ -56,7 +57,7 @@ export function ServicePackages({
                 <Button
                   size="md"
                   variant="black"
-                  onClick={() => handleOpenModal('package')}
+                  onClick={() => handleOpenModal('package', item.title)}
                 >
                   Order now
                 </Button>
