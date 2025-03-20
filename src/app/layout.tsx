@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Outfit } from 'next/font/google';
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 import { Footer } from '@/shared/ui/components/footer';
 import { Header } from '@/shared/ui/components/header';
@@ -28,6 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={outfitFont.variable}>
+      <GoogleAnalytics gaId="G-0NR0307GP5" /> 
         <Header />
         {children}
         <Footer />
