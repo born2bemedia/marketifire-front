@@ -15,7 +15,7 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
-  width: 340px;
+  width: 350px;
 }
 
 .listLayout {
@@ -60,7 +60,12 @@
 @media (max-width: 1024px) {
   .footerTopLayout {
     justify-content: flex-start;
+    flex-direction: column;
     gap: 64px;
+  }
+
+  .addressLayout {
+    width: 100%;
   }
 
   .list {
@@ -71,11 +76,6 @@
 @media (max-width: 768px) {
   .footerTopLayout {
     padding: 40px 16px;
-    flex-direction: column;
-  }
-
-  .addressLayout {
-    width: 100%;
   }
 
   .navigationLayout {
