@@ -18,6 +18,7 @@ export function InsightsAndExecution() {
       annotation="Marketfire creates scalable marketing solutions that help businesses generate leads, nurture customers, and drive higher lifetime value."
       footerText="Your Growth Starts Now – Let’s Build a Plan That Works!"
       cards={stats}
+      tagText="Driving Growth Through Data"
     />
   );
 }

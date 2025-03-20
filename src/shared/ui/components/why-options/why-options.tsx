@@ -15,18 +15,20 @@ export function WhyOptions({
   annotation,
   title,
   footerText,
+  tagText,
 }: {
   title: string;
   annotation: string;
   footerText: string;
   cards: { title: string; desc: string }[];
+  tagText?: string;
 }) {
   return (
     <section className={st.layout}>
       <section className={st.titleLayout}>
         <Tag color="yellow">
           <Asterisk />
-          <Text>Text</Text>
+          <Text>{tagText}</Text>
         </Tag>
         <Title level={2}>{title}</Title>
         <Text className={st.text}>{annotation}</Text>

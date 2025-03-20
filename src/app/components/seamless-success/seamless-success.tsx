@@ -32,7 +32,7 @@ export function SeamlessSuccess() {
       <div className={st.textLayout}>
         <Tag color="yellow">
           <Asterisk />
-          <Text>Text</Text>
+          <Text>Bringing Strategy & Execution Together</Text>
         </Tag>
         <Title level={2}>
           We Align Business & Marketing for Seamless Success
