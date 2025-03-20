@@ -77,7 +77,7 @@ export function OurServiceOfferings() {
       <section className={st.top}>
         <Tag className={st.tag}>
           <Asterisk />
-          <Text>Text</Text>
+          <Text>Tailored Solutions for Every Need</Text>
         </Tag>
         <Title level={2}>Our Comprehensive Service Offerings</Title>
         <Text className={st.text}>

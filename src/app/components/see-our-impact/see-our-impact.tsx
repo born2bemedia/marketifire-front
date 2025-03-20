@@ -18,7 +18,7 @@ export function SeeOurImpact() {
         <div className={st.titleLayout}>
           <Tag color="yellow">
             <Asterisk />
-            <Text>Text</Text>
+            <Text>Proven Success in Action</Text>
           </Tag>
           <Title level={2}>
             See Our Impact – Explore Client Success Stories

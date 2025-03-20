@@ -35,7 +35,7 @@ export function HowWeDeliver() {
       <section className={st.content}>
         <Tag color="white">
           <Asterisk />
-          <Text>Text</Text>
+          <Text>Our Approach to Measurable Success</Text>
         </Tag>
         <Title level={2}>Explore How We Deliver Results</Title>
       </section>
