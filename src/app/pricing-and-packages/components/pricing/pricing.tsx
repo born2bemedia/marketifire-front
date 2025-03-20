@@ -1,3 +1,4 @@
+import { Asterisk } from '@/shared/ui/icons/fill';
 import { Button } from '@/shared/ui/kit/button';
 import { Tag } from '@/shared/ui/kit/tag/tag';
 import { Text } from '@/shared/ui/kit/text';
@@ -32,8 +33,11 @@ export default function Pricing({
     >
       <div className={st.col1}>
         <div>
-          <Tag color="yellow">{categoryLabel}</Tag>
-          <Title>{categoryTitle}</Title>
+          <Tag color={index === '06' ? 'white' : 'yellow'}>
+            <Asterisk />
+            <Text>{categoryLabel}</Text>
+          </Tag>
+          <Title level={2}>{categoryTitle}</Title>
           <Text>{categoryDescription}</Text>
         </div>
         <img src={`/pricing/${index}.svg`} alt={categoryTitle} />
@@ -46,6 +50,7 @@ export default function Pricing({
             style={{
               top: `calc(50px + ${index * 50}px)`,
               background: cardBackground,
+              borderColor: cardBackground,
             }}
           >
             <div className={st.top}>

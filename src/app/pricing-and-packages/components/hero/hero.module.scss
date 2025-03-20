@@ -15,6 +15,9 @@
     width: 688px;
     position: relative;
     z-index: 1;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
   }
   h1 {
     position: relative;

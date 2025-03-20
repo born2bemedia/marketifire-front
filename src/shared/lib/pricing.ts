@@ -346,3 +346,73 @@ export const strategicGrowth = [
     type: 'buy',
   },
 ];
+
+// Packages
+export const packages = [
+  {
+    id: '01',
+    title: 'Ignite Your Brand',
+    price: '€1,800',
+    description:
+      'Perfect for startups, solopreneurs, or those new to the market, this package focuses on building visibility, engaging your audience, and laying the foundation for future success. A great way to kick-start your marketing with targeted strategies that get results quickly.',
+    whatIncluded: [
+      `<b>Market Research & Competitive Analysis</b> Understand your market landscape and competitors to inform decisions.`,
+      `<b>Brand Positioning & Messaging</b> Craft your unique value proposition and refine your brand’s voice.`,
+      `<b>SEO & Search Visibility Growth</b> Boost your website’s organic search ranking and visibility.`,
+      `<b>Social Media & Community Growth</b> Build an active and engaged audience across social platforms.`,
+      `<b>Content Strategy</b> Develop engaging content that aligns with your brand and audience.`,
+    ],
+  },
+  {
+    id: '02',
+    title: 'Accelerate Growth',
+    price: '€2,500',
+    description:
+      'Ideal for small-to-medium projects looking to expand their reach, increase conversions, and build lasting relationships with their target audience. This package focuses on optimization and performance, ensuring that your growth is measurable and sustainable.',
+    whatIncluded: [
+      `<b>Package 'Ignite Your Brand'</b>`,
+      `<b>SEO & Search Visibility Growth</b> Enhance your rankings and attract high-quality organic traffic.`,
+      `<b>PPC & Paid Advertising Campaigns</b> Implement targeted ads that drive traffic and increase conversions.`,
+      `<b>Content Creation & Storytelling</b> Craft compelling content that connects with your audience on a deeper level.`,
+      `<b>Customer Acquisition & Retention Plans</b> Build systems to attract and retain loyal customers.`,
+      `<b>Email & CRM Optimization</b> Improve customer relationships and email marketing strategies.`,
+      `<b>Conversion Rate Optimization (CRO)</b> Maximize your website’s ability to convert visitors into paying customers.`,
+    ],
+  },
+  {
+    id: '03',
+    title: 'Scale & Optimize',
+    price: '€3,500',
+    description:
+      'For projects ready to scale, this package includes advanced growth strategies and optimization to ensure that every part of your business is working toward accelerating your success. Perfect for those who need to optimize their entire ecosystem for more revenue and deeper engagement.',
+    whatIncluded: [
+      `<b>Package 'Accelerate Growth'</b>`,
+      `<b>PPC & Paid Advertising Campaigns</b> Drive high-quality traffic with strategic advertising.`,
+      `<b>Market Entry & Expansion Strategies</b> Break into new markets with tailored plans for expansion.`,
+      `<b>Lead Building & Audience Retention Strategies</b> Develop effective lead generation and retention systems.`,
+      `<b>CRM & Customer Journey Optimization</b> Streamline the customer experience from first contact to long-term loyalty.`,
+      `<b>Business Process Automation</b> Save time and resources by automating key business functions.`,
+      `<b>Performance Analytics & Reporting</b> Track results and continuously optimize strategies.`,
+      `<b>Revenue Model & Pricing Strategy Optimization</b> Maximize profitability through pricing and value proposition strategies.`,
+      `<b>Sales Funnel Optimization</b> Refine your sales process to increase conversions and customer lifetime value.`,
+    ],
+  },
+  {
+    id: '04',
+    title: 'Ultimate Success Blueprint',
+    price: '€5,000',
+    description:
+      'For brands aiming for maximum growth and long-term scalability, this all-encompassing package combines full-service consulting, advanced automation, and performance marketing to ensure continuous success. Ideal for projects that want to dominate their market and build a strong, sustainable brand.',
+    whatIncluded: [
+      `<b>Package 'Scale & Optimize'</b>`,
+      `<b>Full Branding Strategy (Positioning & Messaging)</b> Create a distinct and memorable brand identity.`,
+      `<b>Product Launch Strategy & Market Research</b> Plan and execute successful product launches that captivate your market.`,
+      `<b>SEO & Search Visibility Growth</b> Secure top rankings and increase organic traffic.`,
+      `<b>PPC & Paid Advertising Campaigns</b> Achieve targeted ad success with expertly managed paid campaigns.`,
+      `<b>Content & Social Media Strategy</b> Build a consistent, high-impact content strategy across platforms.`,
+      `<b>Business Expansion & Revenue Model Optimization</b> Scale your business through optimized revenue streams.`,
+      `<b>AI & Marketing Automation</b> Utilize cutting-edge automation to streamline your marketing and operations.`,
+      `<b>Lead Nurturing & Performance Analytics</b> Implement data-driven strategies for continuous growth and optimization.`,
+    ],
+  },
+];
