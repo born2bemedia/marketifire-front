@@ -28,11 +28,12 @@ export default function Pricing({
   sectionBackground: string;
   cardBackground: string;
 }) {
-  const { setIsOpen, setType } = useModalStore();
+  const { setIsOpen, setType, setProduct } = useModalStore();
 
-  const handleOpenModal = (type: 'service' | 'package') => {
+  const handleOpenModal = (type: 'service' | 'package', product: string) => {
     setIsOpen(true);
     setType(type);
+    setProduct(product);
   };
 
   return (
@@ -80,7 +81,7 @@ export default function Pricing({
                 <Button
                   size="md"
                   variant="black"
-                  onClick={() => handleOpenModal('service')}
+                  onClick={() => handleOpenModal('service', item.title)}
                 >
                   Order
                 </Button>
