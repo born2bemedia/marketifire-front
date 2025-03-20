@@ -11,7 +11,7 @@ import 'modern-normalize/modern-normalize.css';
 const outfitFont = Outfit({
   variable: '--font-outfit',
   subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700'],
+  weight: ['200', '300', '400', '500', '600', '700'],
   display: 'swap',
 });
 
