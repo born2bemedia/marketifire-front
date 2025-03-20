@@ -1,3 +1,5 @@
+import { Modal } from '@/features/request-popup/components/modal/modal';
+
 import {
   automationDigitalTransformation,
   businessConsulting,
@@ -73,6 +75,7 @@ export default function PricingAndPackages() {
       />
       <ServicePackages packages={packages} />
       <DownloadPrice />
+      <Modal />
     </main>
   );
 }

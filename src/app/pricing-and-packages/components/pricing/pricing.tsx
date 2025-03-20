@@ -1,3 +1,7 @@
+'use client';
+
+import { useModalStore } from '@/features/request-popup/services/modal.store';
+
 import { Asterisk } from '@/shared/ui/icons/fill';
 import { Button } from '@/shared/ui/kit/button';
 import { Tag } from '@/shared/ui/kit/tag/tag';
@@ -24,6 +28,13 @@ export default function Pricing({
   sectionBackground: string;
   cardBackground: string;
 }) {
+  const { setIsOpen, setType } = useModalStore();
+
+  const handleOpenModal = (type: 'service' | 'package') => {
+    setIsOpen(true);
+    setType(type);
+  };
+
   return (
     <div
       className={st.layout}
@@ -66,7 +77,11 @@ export default function Pricing({
                   Buy
                 </Button>
               ) : (
-                <Button size="md" variant="black">
+                <Button
+                  size="md"
+                  variant="black"
+                  onClick={() => handleOpenModal('service')}
+                >
                   Order
                 </Button>
               )}
