@@ -2,7 +2,7 @@
 
 import { Switcher } from '@/features/lang-switcher/components/switcher';
 
-import { Germany, Italy, Slovakia } from '@/shared/ui/icons/countries';
+import { English, Germany, Italy, Slovakia } from '@/shared/ui/icons/countries';
 
 import { useLanguageSwitcher } from '../../lib';
 
@@ -17,6 +17,18 @@ export function LangSwitcher() {
   return (
     <Switcher
       options={[
+        {
+          label: (
+            <span
+              className="notranslate"
+              style={{ display: 'flex', alignItems: 'center', gap: '10px' }}
+            >
+              <English />
+              EN
+            </span>
+          ),
+          value: 'en',
+        },
         {
           label: (
             <span
