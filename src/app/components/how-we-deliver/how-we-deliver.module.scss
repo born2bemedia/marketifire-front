@@ -34,6 +34,16 @@
   align-items: center;
   border: 4px solid var(--white-10);
   background-color: var(--white-0);
+  position: sticky;
+  &:nth-child(even) {
+    transform: rotate(-2.079deg);
+  }
+  &:nth-child(odd) {
+    transform: rotate(2.079deg);
+  }
+  &:first-child {
+    transform: rotate(0deg);
+  }
 }
 
 .cardNumber {
@@ -68,7 +78,8 @@
   }
 
   .contactsBtn {
-    a, button {
+    a,
+    button {
       width: 100%;
     }
   }

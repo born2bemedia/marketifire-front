@@ -70,7 +70,9 @@ function Card({
   const Icon = stepIcons[number];
 
   return (
-    <section className={st.cardContainer}>
+    <section className={st.cardContainer} style={{
+      top: `calc(10px ${number * 50}px)`
+    }}>
       <article className={st.card}>
         <div>
           <Title level={2}>{title}</Title>
