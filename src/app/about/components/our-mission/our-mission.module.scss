@@ -1,0 +1,55 @@
+.layout {
+  padding: 0 60px 50px 60px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  .ourMission {
+    display: flex;
+    gap: 20px;
+    .col1 {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: var(--White-0, #fff);
+        text-align: center;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        border-radius: 22px;
+        background: var(--Black-100, #3b3b35);
+        padding: 34px 30px;
+      }
+      img {
+        border-radius: 22px;
+      }
+    }
+    .col2 {
+      img {
+        border-radius: 22px;
+      }
+    }
+    .col3 {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        &:first-child {
+        }
+        img {
+          border-radius: 22px;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
