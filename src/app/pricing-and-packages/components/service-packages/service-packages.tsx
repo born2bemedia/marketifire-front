@@ -1,4 +1,6 @@
 'use client';
+import { useModalStore } from '@/features/request-popup/services/modal.store';
+
 import { Button } from '@/shared/ui/kit/button';
 import { Text } from '@/shared/ui/kit/text';
 import { Title } from '@/shared/ui/kit/title';
@@ -17,6 +19,12 @@ export function ServicePackages({
     whatIncluded: string[];
   }[];
 }) {
+  const { setIsOpen, setType } = useModalStore();
+
+  const handleOpenModal = (type: 'service' | 'package') => {
+    setIsOpen(true);
+    setType(type);
+  };
   return (
     <section className={st.layout}>
       <section className={st.content}>
@@ -45,7 +53,11 @@ export function ServicePackages({
               </div>
               <div className={st.price}>
                 <Title level={2}>From {item.price}</Title>
-                <Button size="md" variant="black">
+                <Button
+                  size="md"
+                  variant="black"
+                  onClick={() => handleOpenModal('package')}
+                >
                   Order now
                 </Button>
               </div>
