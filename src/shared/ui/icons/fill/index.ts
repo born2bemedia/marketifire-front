@@ -1,4 +1,5 @@
 export * from './asterisk';
+export * from './caret-down';
 export * from './caret-right';
 export * from './facebook';
 export * from './instagram';
