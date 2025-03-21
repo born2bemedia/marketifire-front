@@ -5,11 +5,13 @@ import { Controller, useForm, zodResolver } from '@/shared/lib/forms';
 //import { useCountryCode } from '@/shared/lib/hooks';
 import { Button } from '@/shared/ui/kit/button';
 import { PhoneField } from '@/shared/ui/kit/phone-field';
+import { TextArea } from '@/shared/ui/kit/text-area';
 import { TextField } from '@/shared/ui/kit/text-field';
 
 import { useModalStore } from '../../services/modal.store';
 import st from './order-form.module.scss';
 import { type OrderFormSchema, orderFormSchema } from './order-form.schema';
+
 
 export function OrderForm({
   setThanksPopupOpen,
@@ -147,7 +149,7 @@ export function OrderForm({
           name="message"
           control={control}
           render={({ field, fieldState: { error } }) => (
-            <TextField
+            <TextArea
               placeholder="Please write your thoughts..."
               label="Message"
               hint={error?.message}
