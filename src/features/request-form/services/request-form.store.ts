@@ -22,7 +22,7 @@ export const useRequestFormStore = create<RequestState>(set => ({
   email: '',
   fullName: '',
   phone: '',
-  step: 2,
+  step: 1,
   website: '',
   services: [],
   budget: '',
