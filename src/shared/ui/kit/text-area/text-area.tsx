@@ -4,22 +4,24 @@ import type { InputHTMLAttributes } from 'react';
 
 import { cn } from '@/shared/lib/styles';
 import { Text } from '@/shared/ui/kit/text';
+import { st } from '@/shared/ui/kit/text-field';
 
-import st from './text-field.module.scss';
+import textareaSt from './text-area.module.scss';
 
-export function TextField({
+export function TextArea({
   className,
   label,
   hint,
   intent = 'primary',
   ...args
-}: InputHTMLAttributes<HTMLInputElement> & {
+}: InputHTMLAttributes<HTMLTextAreaElement> & {
   label?: string;
   hint?: string;
   intent?: 'primary' | 'danger';
 }) {
-  const inputClasses = cn(
+  const textareaClasses = cn(
     st.textField,
+    textareaSt.textArea,
     {
       [st.dangerIntent]: intent === 'danger',
     },
@@ -28,12 +30,10 @@ export function TextField({
 
   return (
     <label className={st.layout}>
-      <Text color="black" className={st.label}>
-        {label}
-      </Text>
-      <input className={inputClasses} {...args} />
+      <Text color="black">{label}</Text>
+      <textarea className={textareaClasses} {...args} />
       {hint && (
-        <Text color="black" className={st.hint}>
+        <Text color="black60" className={st.hint}>
           {hint}
         </Text>
       )}

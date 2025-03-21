@@ -20,9 +20,6 @@ export function PulsingFrame({
           repeat: Infinity,
           ease: 'easeInOut',
         }}
-        style={{
-          overflow: 'hidden',
-        }}
       >
         {layerOne}
       </motion.div>

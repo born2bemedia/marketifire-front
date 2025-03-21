@@ -3,5 +3,15 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  height: 100vh;
+}
+
+.formLayout {
+  width: 60%;
+  margin: 0 auto 80px auto;
+}
+
+@media (max-width: 768px) {
+  .formLayout {
+    width: 100%;
+  }
 }

@@ -2,6 +2,11 @@
   border-radius: 100px;
   line-height: normal;
   transition: all 300ms ease-in-out;
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
 }
 
 .yellowBtn {
@@ -45,4 +50,8 @@
 
 .sizeMd {
   padding: 12px 18px;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
