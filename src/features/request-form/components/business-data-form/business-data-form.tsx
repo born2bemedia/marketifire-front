@@ -49,7 +49,7 @@ const contactMethod = ['Email', 'Phone', 'Video Call'];
 
 export function BusinessDataForm() {
   const [dialogOpen, setDialogOpen] = useState(false);
-  const { step, fullName, email, phone, website, companyName, setData } =
+  const { fullName, email, phone, website, companyName, setData } =
     useRequestFormStore();
 
   const {
