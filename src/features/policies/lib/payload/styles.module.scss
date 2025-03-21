@@ -1,0 +1,15 @@
+.section {
+  border-radius: 22px;
+  background: var(--white-0);
+  padding: 60px 100px;
+}
+
+.tag {
+  margin-bottom: 22px;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 30px 16px;
+  }
+}
