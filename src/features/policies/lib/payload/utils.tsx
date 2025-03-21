@@ -136,7 +136,6 @@ function parseChildren(children?: Node[], listStyle = {}) {
 export function groupElementsByH2(elements: ReactNode[]) {
   const sections: ReactNode[] = [];
   let currentSection: ReactNode[] = [];
-
   let sectionIndex = 0;
 
   elements.forEach(element => {
@@ -151,11 +150,12 @@ export function groupElementsByH2(elements: ReactNode[]) {
             {currentSection}
           </section>,
         );
-        currentSection = [];
         sectionIndex++;
       }
+      currentSection = [element];
+    } else {
+      currentSection.push(element);
     }
-    currentSection.push(element);
   });
 
   if (currentSection.length > 0) {
