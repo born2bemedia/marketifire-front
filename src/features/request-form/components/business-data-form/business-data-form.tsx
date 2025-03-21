@@ -1,10 +1,19 @@
 'use client';
 
+import { useState } from 'react';
 import Image from 'next/image';
 
+import { ThankYouDialog } from '@/features/request-form/components/thank-you-dialog';
+import { useRequestFormStore } from '@/features/request-form/services';
+import { sendRequest } from '@/features/request-form/services/send-request.action';
+
 import { Controller, useForm, zodResolver } from '@/shared/lib/forms';
+import { Dropdzone } from '@/shared/ui/components/dropzone';
+import { ArrowLeft, ArrowRight } from '@/shared/ui/icons/fill';
+import { Button } from '@/shared/ui/kit/button';
 import { Checkbox } from '@/shared/ui/kit/checkbox';
 import { Text } from '@/shared/ui/kit/text';
+import { TextArea } from '@/shared/ui/kit/text-area';
 import { TextField } from '@/shared/ui/kit/text-field';
 import { Title } from '@/shared/ui/kit/title';
 
@@ -29,7 +38,20 @@ const budgets = [
   '€20,000+',
 ];
 
+const startDate = [
+  'Within 1 Month',
+  '1-3 Months',
+  '3-6 Months',
+  'Flexible Timeline',
+];
+
+const contactMethod = ['Email', 'Phone', 'Video Call'];
+
 export function BusinessDataForm() {
+  const [dialogOpen, setDialogOpen] = useState(false);
+  const { step, fullName, email, phone, website, companyName, setData } =
+    useRequestFormStore();
+
   const {
     handleSubmit,
     control,
@@ -49,8 +71,25 @@ export function BusinessDataForm() {
     },
   });
 
+  const onSubmit = handleSubmit(async (data: BusinessDataSchema) => {
+    try {
+      await sendRequest({
+        ...data,
+        fullName,
+        phone,
+        website,
+        companyName,
+        email,
+      });
+
+      setDialogOpen(true);
+    } catch (err) {
+      console.log(err);
+    }
+  });
+
   return (
-    <form>
+    <form onSubmit={onSubmit}>
       <section className={st.header}>
         <Title level={3}>Personal Data</Title>
         <Image
@@ -128,7 +167,107 @@ export function BusinessDataForm() {
             )}
           />
         </section>
+        <Controller
+          name="goals"
+          control={control}
+          render={({ field, fieldState: { error } }) => (
+            <TextArea
+              {...field}
+              label="Your Goals & Challenges"
+              placeholder="What are your key objectives and current pain points?"
+              hint={error?.message}
+            />
+          )}
+        />
+        <Controller
+          name="targetAudience"
+          control={control}
+          render={({ field, fieldState: { error } }) => (
+            <TextArea
+              {...field}
+              label="Who Is Your Target Audience?"
+              placeholder="What are your key objectives and current pain points? Age, Gender, Location, Interests"
+              hint={error?.message}
+            />
+          )}
+        />
+        <Controller
+          name="startDate"
+          control={control}
+          render={({ field, fieldState: { error } }) => (
+            <section>
+              <div className={st.titleService}>
+                <Text>Your Budget Range. Select your investment range:</Text>
+                {error?.message ? <Text>* {error?.message}</Text> : null}
+              </div>
+              <div className={st.grid}>
+                {startDate.map(date => (
+                  <Service
+                    key={date}
+                    title={date}
+                    checked={field.value === date}
+                    onChecked={checked =>
+                      field.onChange(checked ? date : field.value)
+                    }
+                  />
+                ))}
+              </div>
+            </section>
+          )}
+        />
+        <Controller
+          name="contactMethod"
+          control={control}
+          render={({ field, fieldState: { error } }) => (
+            <section>
+              <div className={st.titleService}>
+                <Text>Your Budget Range. Select your investment range:</Text>
+                {error?.message ? <Text>* {error?.message}</Text> : null}
+              </div>
+              <div className={st.grid}>
+                {contactMethod.map(method => (
+                  <Service
+                    key={method}
+                    title={method}
+                    checked={field.value === method}
+                    onChecked={checked =>
+                      field.onChange(checked ? method : field.value)
+                    }
+                  />
+                ))}
+              </div>
+            </section>
+          )}
+        />
+        <Controller
+          name="file"
+          control={control}
+          render={({ field }) => (
+            <Dropdzone
+              name="file"
+              onDrop={field.onChange}
+              value={field.value}
+            />
+          )}
+        />
       </section>
+      <section className={st.btns}>
+        <Button
+          size="md"
+          variant="white"
+          className={st.btn}
+          type="button"
+          onClick={() => setData({ step: 1 })}
+        >
+          <ArrowLeft />
+          Back
+        </Button>
+        <Button size="md" variant="black" className={st.btn} type="submit">
+          {isSubmitting ? 'Submitting...' : 'Submit'}
+          <ArrowRight />
+        </Button>
+      </section>
+      <ThankYouDialog open={dialogOpen} onOpenChange={setDialogOpen} />
     </form>
   );
 }

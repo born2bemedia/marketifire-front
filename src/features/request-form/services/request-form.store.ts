@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 
-type FormState = {
+export type RequestState = {
   step: number;
   fullName: string;
   email: string;
@@ -8,16 +8,16 @@ type FormState = {
   companyName?: string;
   website?: string;
   services: string[];
-  budget: string[];
+  budget: string;
   goals: string;
   targetAudience: string;
-  startDate: string[];
+  startDate: string;
   contactMethod: string;
   file?: File;
-  setData: (data: Partial<FormState>) => void;
+  setData: (data: Partial<RequestState>) => void;
 };
 
-export const useRequestFormStore = create<FormState>(set => ({
+export const useRequestFormStore = create<RequestState>(set => ({
   companyName: '',
   email: '',
   fullName: '',
@@ -25,11 +25,12 @@ export const useRequestFormStore = create<FormState>(set => ({
   step: 2,
   website: '',
   services: [],
-  budget: [],
+  budget: '',
   goals: '',
   targetAudience: '',
-  startDate: [],
+  startDate: '',
   contactMethod: '',
   file: undefined,
-  setData: (data: Partial<FormState>) => set(state => ({ ...state, ...data })),
+  setData: (data: Partial<RequestState>) =>
+    set(state => ({ ...state, ...data })),
 }));

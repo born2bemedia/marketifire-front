@@ -2,6 +2,10 @@
   line-height: normal;
 }
 
+.colorWhite {
+  color: var(--white-0);
+}
+
 .colorBlack60 {
   color: var(--black-60);
 }
@@ -24,6 +28,10 @@
 
 .weight500 {
   font-weight: 500;
+}
+
+.sizeSm {
+  font-size: 0.75rem;
 }
 
 .sizeBase {

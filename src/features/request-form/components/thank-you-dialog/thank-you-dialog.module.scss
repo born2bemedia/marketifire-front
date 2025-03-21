@@ -1,0 +1,92 @@
+.dialogOverlay {
+  background-color: var(--black-100);
+  opacity: 0.3;
+  position: fixed;
+  inset: 0;
+  animation: overlayShow 150ms cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 998;
+}
+
+.dialogContent {
+  border-radius: 22px;
+  background-color: var(--yellow);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  animation: contentShow 150ms cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 999;
+  overflow: hidden;
+}
+.dialogContent:focus {
+  outline: none;
+}
+
+.contentLayout {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  position: relative;
+}
+
+.textBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: center;
+}
+
+.lettersDesktop {
+  position: absolute;
+  bottom: 0;
+}
+
+.lettersMobile {
+  position: absolute;
+  bottom: 0;
+  display: none;
+}
+
+@keyframes overlayShow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes contentShow {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -48%) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@media (max-width: 1342px) {
+  .dialogContent {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .lettersDesktop {
+    display: none;
+  }
+
+  .lettersMobile {
+    display: block;
+  }
+}

@@ -35,6 +35,9 @@
 .btn {
   display: flex;
   align-items: center;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
   gap: 8px;
 }
 
@@ -51,4 +54,24 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 60px;
+}
+
+@media (max-width: 1058px) {
+  .grid {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .formLayout {
+    gap: 30px;
+  }
+
+  .btns {
+    justify-content: center;
+
+    button {
+      width: 100%;
+    }
+  }
 }

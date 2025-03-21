@@ -27,7 +27,7 @@ export function Checkbox({
         </Indicator>
       </Root>
       <label htmlFor={label}>
-        <Text color="black" weight={300} size="lg" className={st.label}>
+        <Text color="black" weight={300} className={st.label}>
           {label}
         </Text>
       </label>

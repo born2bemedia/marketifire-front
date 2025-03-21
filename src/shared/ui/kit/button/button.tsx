@@ -10,6 +10,7 @@ export function Button({
   children,
   className,
   fullWidth = false,
+  uppercase = false,
   variant = 'white',
   size = 'sm',
   ...args
@@ -17,10 +18,12 @@ export function Button({
   variant?: 'yellow' | 'black' | 'white';
   size?: 'sm' | 'md';
   fullWidth?: boolean;
+  uppercase?: boolean;
 }) {
   const btnClasses = cn(
     st.btn,
     {
+      [st.uppercase]: uppercase,
       [st.whiteBtn]: variant === 'white',
       [st.blackBtn]: variant === 'black',
       [st.yellowBtn]: variant === 'yellow',

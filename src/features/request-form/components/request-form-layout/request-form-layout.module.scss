@@ -4,3 +4,9 @@
   border-radius: 22px;
   z-index: 1;
 }
+
+@media (max-width: 768px) {
+  .layout {
+    padding: 20px 16px;
+  }
+}
