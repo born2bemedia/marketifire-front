@@ -15,7 +15,7 @@ export function Button({
   size = 'sm',
   ...args
 }: ButtonHTMLAttributes<HTMLButtonElement> & {
-  variant?: 'yellow' | 'black' | 'white';
+  variant?: 'yellow' | 'black' | 'white' | 'sand';
   size?: 'sm' | 'md';
   fullWidth?: boolean;
   uppercase?: boolean;
@@ -27,6 +27,7 @@ export function Button({
       [st.whiteBtn]: variant === 'white',
       [st.blackBtn]: variant === 'black',
       [st.yellowBtn]: variant === 'yellow',
+      [st.sandBtn]: variant === 'sand',
       [st.sizeSm]: size === 'sm',
       [st.sizeMd]: size === 'md',
       [st.fullWidth]: fullWidth,
