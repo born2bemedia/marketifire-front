@@ -169,7 +169,7 @@ export function RegisterForm() {
           <Controller
             name="isConfirmed"
             control={control}
-            render={({ field, fieldState: { error } }) => (
+            render={({ field }) => (
               <Checkbox
                 label={
                   <>
