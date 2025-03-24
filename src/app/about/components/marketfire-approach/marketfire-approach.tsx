@@ -1,4 +1,6 @@
 import { Asterisk } from '@/shared/ui/icons/fill';
+import { Line } from '@/shared/ui/icons/outline/line';
+import { LineMob } from '@/shared/ui/icons/outline/lineMob';
 import { Tag } from '@/shared/ui/kit/tag/tag';
 import { Text } from '@/shared/ui/kit/text';
 import { Title } from '@/shared/ui/kit/title';
@@ -15,10 +17,11 @@ export function MarketfireApproach() {
         </Tag>
         <Title level={2}>The Marketfire Approach</Title>
         <Text className={st.text}>
-          Success doesn’t happen by chance — it’s built through strategic
-          planning, continuous optimization, and smart execution. Our approach
-          focuses on understanding your market, crafting tailored strategies,
-          and scaling precisely to ensure sustained growth and real impact.
+          Success doesn&apos;t happen by chance — it&apos;s built through
+          strategic planning, continuous optimization, and smart execution. Our
+          approach focuses on understanding your market, crafting tailored
+          strategies, and scaling precisely to ensure sustained growth and real
+          impact.
         </Text>
       </section>
       <section className={st.lineLayout}>
@@ -52,16 +55,8 @@ export function MarketfireApproach() {
             </Text>
           </div>
         </div>
-        <img
-          src="/about/line.svg"
-          alt="Marketfire Approach"
-          className={st.line}
-        />
-        <img
-          src="/about/lineMob.svg"
-          alt="Marketfire Approach"
-          className={st.lineMob}
-        />
+        <Line className={st.line} />
+        <LineMob className={st.lineMob} />
       </section>
     </div>
   );

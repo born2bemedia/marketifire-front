@@ -1,0 +1,27 @@
+.text {
+  padding-top: 60px;
+  padding-bottom: 160px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
+  p {
+    max-width: 768px;
+    @media (max-width: 768px) {
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .text {
+    width: 100%;
+    padding: 60px 16px 42px 16px;
+  }
+}
