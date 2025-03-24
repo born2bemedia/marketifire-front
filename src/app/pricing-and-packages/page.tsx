@@ -1,3 +1,5 @@
+import type { Metadata } from 'next';
+
 import { Modal } from '@/features/request-popup/components/modal/modal';
 
 import {
@@ -14,6 +16,17 @@ import { DownloadPrice } from './components/download-price';
 import { Hero } from './components/hero';
 import Pricing from './components/pricing/pricing';
 import { ServicePackages } from './components/service-packages';
+
+export const metadata: Metadata = {
+  title: 'Pricing & Packages | Customized Marketing & Business Solutions',
+  description:
+    'Explore our pricing options and service packages designed to fit your business needs and help you achieve your growth goals efficiently.',
+  openGraph: {
+    title: 'Pricing & Packages | Customized Marketing & Business Solutions',
+    description:
+      'Explore our pricing options and service packages designed to fit your business needs and help you achieve your growth goals efficiently.',
+  },
+};
 
 export default function PricingAndPackages() {
   return (
