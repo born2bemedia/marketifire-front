@@ -1,3 +1,5 @@
+import type { Metadata } from 'next';
+
 import { CtaBlock } from '@/shared/ui/components/cta-block';
 
 import { Hero } from './components/hero';
@@ -6,7 +8,18 @@ import { OurMission } from './components/our-mission';
 import { WhatSetsApart } from './components/what-sets-apart';
 import { WhoWeWorkWith } from './components/who-we-work-with';
 
-export default function Home() {
+export const metadata: Metadata = {
+  title: 'About Marketfire | Business & Marketing Experts for Entrepreneurs',
+  description:
+    'Learn more about Marketfire and how we help entrepreneurs grow their brands with data-driven strategies, innovative solutions, and personalized marketing.',
+  openGraph: {
+    title: 'About Marketfire | Business & Marketing Experts for Entrepreneurs',
+    description:
+      'Learn more about Marketfire and how we help entrepreneurs grow their brands with data-driven strategies, innovative solutions, and personalized marketing.',
+  },
+};
+
+export default function About() {
   return (
     <main>
       <Hero />

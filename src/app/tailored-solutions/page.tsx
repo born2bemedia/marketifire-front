@@ -1,7 +1,21 @@
+import type { Metadata } from 'next';
+
 import { CtaBlock } from '@/shared/ui/components/cta-block';
 
 import { Hero } from './components/hero';
 import { SuccessFramework } from './components/success-framework';
+
+export const metadata: Metadata = {
+  title: 'Tailored Solutions | Industry-Specific Consulting for Entrepreneurs',
+  description:
+    'Explore our industry-specific consulting services to meet your unique business needs and help you thrive in competitive markets.',
+  openGraph: {
+    title:
+      'Tailored Solutions | Industry-Specific Consulting for Entrepreneurs',
+    description:
+      'Explore our industry-specific consulting services to meet your unique business needs and help you thrive in competitive markets.',
+  },
+};
 
 export default function TailoredSolutions() {
   return (
