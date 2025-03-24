@@ -1,5 +1,7 @@
 'use client';
 
+import { LoginDialog } from '@/core/auth/components';
+
 import { BurgerMenu } from '@/shared/ui/components/burger-menu';
 
 import { HeaderBottom } from './header-bottom';
@@ -11,6 +13,7 @@ export function Header() {
       <HeaderTop />
       <HeaderBottom />
       <BurgerMenu />
+      <LoginDialog />
     </header>
   );
 }

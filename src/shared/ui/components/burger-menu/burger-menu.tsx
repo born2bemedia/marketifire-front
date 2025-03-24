@@ -12,16 +12,13 @@ import {
   Trigger,
 } from '@radix-ui/react-dialog';
 
+import { UserBadge } from '@/core/user/components';
+
 import { routes } from '@/shared/lib/routes';
 import { headerSt } from '@/shared/ui/components/header';
 import { ShortAddress } from '@/shared/ui/components/short-address';
 import { SocialNetworks } from '@/shared/ui/components/social-networks';
-import {
-  BagIcon,
-  CloseIcon,
-  MenuIcon,
-  SignInIcon,
-} from '@/shared/ui/icons/outline';
+import { BagIcon, CloseIcon, MenuIcon } from '@/shared/ui/icons/outline';
 import { Button } from '@/shared/ui/kit/button';
 import { Text } from '@/shared/ui/kit/text';
 
@@ -69,10 +66,7 @@ function Menu() {
                     <Text uppercase>Cart</Text>
                     <BagIcon />
                   </Button>
-                  <Button variant="yellow" className={headerSt.btnWithIcon}>
-                    <Text uppercase>Login</Text>
-                    <SignInIcon />
-                  </Button>
+                  <UserBadge />
                 </div>
                 <Close className={st.closeLayout}>
                   <CloseIcon />

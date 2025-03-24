@@ -5,6 +5,7 @@ import { GoogleAnalytics } from '@next/third-parties/google';
 
 import { CartModal } from '@/features/cart/components/modal/modal';
 
+import { Toaster } from '@/shared/lib/notify';
 import { Footer } from '@/shared/ui/components/footer';
 import { Header } from '@/shared/ui/components/header';
 import { Preloader } from '@/shared/ui/components/preloader';
@@ -49,6 +50,7 @@ export default function RootLayout({
         <Preloader />
         {children}
         <Footer />
+        <Toaster position="bottom-right" reverseOrder={false} />
         <CartModal />
       </body>
     </html>
