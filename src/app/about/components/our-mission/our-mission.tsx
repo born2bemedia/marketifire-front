@@ -6,7 +6,6 @@ import { Text } from '@/shared/ui/kit/text';
 
 import st from './our-mission.module.scss';
 
-
 export function OurMission() {
   return (
     <section className={st.layout}>
@@ -16,20 +15,16 @@ export function OurMission() {
             Our Mission
             <RightArrowIcon />
           </Link>
-          <Image
-            src="/about/mission1.png"
-            alt="Our Mission"
-            width={315}
-            height={305}
-          />
+          <div>
+            <Image
+              src="/about/mission1.png"
+              alt="Our Mission"
+              fill
+            />
+          </div>
         </div>
         <div className={st.col2}>
-          <Image
-            src="/about/mission2.png"
-            alt="Our Mission"
-            width={427}
-            height={433}
-          />
+          <Image src="/about/mission2.png" alt="Our Mission" fill />
         </div>
         <div className={st.col3}>
           <div>
