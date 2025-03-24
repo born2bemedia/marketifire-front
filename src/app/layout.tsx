@@ -3,6 +3,7 @@ import { Outfit } from 'next/font/google';
 import Script from 'next/script';
 import { GoogleAnalytics } from '@next/third-parties/google';
 
+import { Toaster } from '@/shared/lib/notify';
 import { Footer } from '@/shared/ui/components/footer';
 import { Header } from '@/shared/ui/components/header';
 import { Preloader } from '@/shared/ui/components/preloader';
@@ -46,6 +47,7 @@ export default function RootLayout({
         <Preloader />
         {children}
         <Footer />
+        <Toaster position="bottom-right" reverseOrder={false} />
       </body>
     </html>
   );

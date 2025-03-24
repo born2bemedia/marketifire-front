@@ -3,11 +3,13 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+import { UserBadge } from '@/core/user/components';
+
 import { LangSwitcher } from '@/features/lang-switcher/components';
 
 import { ShortAddress } from '@/shared/ui/components/short-address';
 import { SocialNetworks } from '@/shared/ui/components/social-networks';
-import { BagIcon, SignInIcon } from '@/shared/ui/icons/outline';
+import { BagIcon } from '@/shared/ui/icons/outline';
 import { Button } from '@/shared/ui/kit/button';
 import { Text } from '@/shared/ui/kit/text';
 
@@ -29,10 +31,7 @@ export function HeaderTop() {
           <Text uppercase>Cart</Text>
           <BagIcon />
         </Button>
-        <Button variant="yellow" className={st.btnWithIcon}>
-          <Text uppercase>Login</Text>
-          <SignInIcon />
-        </Button>
+        <UserBadge />
       </div>
     </section>
   );
