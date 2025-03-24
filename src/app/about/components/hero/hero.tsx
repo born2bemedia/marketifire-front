@@ -4,11 +4,13 @@ import { Tag } from '@/shared/ui/kit/tag/tag';
 import { Text } from '@/shared/ui/kit/text';
 import { Title } from '@/shared/ui/kit/title';
 
+import { PulsingEllipse } from '../pulsing-ellipse';
 import st from './hero.module.scss';
 
 export function Hero() {
   return (
     <section className={st.text}>
+      <PulsingEllipse />
       <Tag color="yellow">Let’s Build Your Success Together</Tag>
       <Title>Igniting Growth, Empowering Success</Title>
       <Text>
