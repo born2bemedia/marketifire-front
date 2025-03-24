@@ -1,0 +1,51 @@
+.layout {
+  padding: 0 60px 40px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 39px;
+
+  @media (max-width: 768px) {
+    padding: 0 0 40px 0;
+  }
+  .ctaBlock {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    border-radius: 22px;
+    background: var(--White-10, #fcfcfa);
+    padding: 60px 50px;
+    background-image: url('/ctaBack.svg');
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    @media (max-width: 768px) {
+        border-radius: 0;
+      flex-direction: column;
+      align-items: center;
+      gap: 290px;
+      padding: 20px;
+      background-position: bottom center;
+      background-image: url('/ctaBackMob.svg');
+    }
+    .ctaBlockContent {
+      width: 500px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-width: 100%;
+      h2 {
+        font-size: 46px;
+        @media (max-width: 768px) {
+          font-size: 36px;
+          text-align: center;
+        }
+      }
+      p {
+        @media (max-width: 768px) {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
