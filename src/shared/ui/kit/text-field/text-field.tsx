@@ -28,12 +28,12 @@ export function TextField({
 
   return (
     <label className={st.layout}>
-      <Text color="black" className={st.label}>
+      <Text color="black100" className={st.label}>
         {label}
       </Text>
       <input className={inputClasses} {...args} />
       {hint && (
-        <Text color="black" className={st.hint}>
+        <Text color="black100" className={st.hint}>
           {hint}
         </Text>
       )}

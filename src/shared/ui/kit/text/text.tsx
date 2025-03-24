@@ -14,7 +14,7 @@ export function Text({
   weight = 400,
   size = 'base',
 }: HTMLAttributes<HTMLParagraphElement> & {
-  color?: 'white' | 'black' | 'black60';
+  color?: 'white' | 'black' | 'black60' | 'black100';
   uppercase?: boolean;
   weight?: 300 | 400 | 500;
   size?: 'sm' | 'base' | 'lg' | 'xl' | '2xl';
@@ -25,6 +25,7 @@ export function Text({
       [st.colorWhite]: color === 'white',
       [st.colorBlack]: color === 'black',
       [st.colorBlack60]: color === 'black60',
+      [st.colorBlack100]: color === 'black100',
       [st.uppercase]: uppercase,
       [st.weight300]: weight === 300,
       [st.weight400]: weight === 400,
