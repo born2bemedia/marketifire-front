@@ -3,6 +3,8 @@ import { Outfit } from 'next/font/google';
 import Script from 'next/script';
 import { GoogleAnalytics } from '@next/third-parties/google';
 
+import { CartModal } from '@/features/cart/components/modal/modal';
+
 import { Footer } from '@/shared/ui/components/footer';
 import { Header } from '@/shared/ui/components/header';
 import { Preloader } from '@/shared/ui/components/preloader';
@@ -10,6 +12,7 @@ import { Preloader } from '@/shared/ui/components/preloader';
 import './globals.css';
 import './reset.css';
 import 'modern-normalize/modern-normalize.css';
+
 
 const outfitFont = Outfit({
   variable: '--font-outfit',
@@ -46,6 +49,7 @@ export default function RootLayout({
         <Preloader />
         {children}
         <Footer />
+        <CartModal />
       </body>
     </html>
   );

@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react';
+import Image from 'next/image';
 
 import { CloseIcon } from '@/shared/ui/icons/outline';
 import { Button } from '@/shared/ui/kit/button';
@@ -40,18 +41,22 @@ export function Modal({}) {
             touch with you shortly to discuss the next steps and how we can
             assist you.
           </Text>
-          <img
+          <Image
             className={st.thanksImageMob}
             src="/pricing/thanksMob.png"
             alt="Thank you"
+            width={343}
+            height={169}
           />
           <Button variant="black" onClick={handleThanksPopupClose}>
             Close
           </Button>
-          <img
+          <Image
             className={st.thanksImage}
             src="/pricing/thanks.png"
             alt="Thank you"
+            width={914}
+            height={132}
           />
         </div>
       ) : (

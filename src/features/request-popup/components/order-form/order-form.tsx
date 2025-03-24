@@ -70,7 +70,7 @@ export function OrderForm({
 
   useEffect(() => {
     reset();
-  }, [isOpen]);
+  }, [isOpen, reset]);
 
   return (
     <form onSubmit={onSubmit} className={st.formLayout}>

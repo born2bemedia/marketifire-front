@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+import { useCartModalStore } from '@/features/cart/services/modal.store';
 import { LangSwitcher } from '@/features/lang-switcher/components';
 
 import { ShortAddress } from '@/shared/ui/components/short-address';
@@ -14,6 +15,12 @@ import { Text } from '@/shared/ui/kit/text';
 import st from './header.module.scss';
 
 export function HeaderTop() {
+  const { setIsOpen } = useCartModalStore();
+
+  const handleOpenCartModal = () => {
+    setIsOpen(true);
+  };
+
   return (
     <section className={st.headerTopLayout}>
       <div className={st.headerRow}>
@@ -25,7 +32,11 @@ export function HeaderTop() {
       </div>
       <div className={st.btns}>
         <LangSwitcher />
-        <Button variant="white" className={st.btnWithIcon}>
+        <Button
+          variant="white"
+          className={st.btnWithIcon}
+          onClick={handleOpenCartModal}
+        >
           <Text uppercase>Cart</Text>
           <BagIcon />
         </Button>
