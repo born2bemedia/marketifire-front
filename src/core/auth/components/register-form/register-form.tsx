@@ -165,7 +165,7 @@ export function RegisterForm() {
         </section>
       </section>
       <section className={st.btnLayout}>
-        <section>
+        <section className={st.checkboxWidth}>
           <Controller
             name="isConfirmed"
             control={control}
@@ -184,7 +184,8 @@ export function RegisterForm() {
                   </>
                 }
                 labelColor="black60"
-                {...field}
+                checked={field.value}
+                onCheckedChange={field.onChange}
               />
             )}
           />

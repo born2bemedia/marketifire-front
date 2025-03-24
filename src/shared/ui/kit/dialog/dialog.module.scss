@@ -39,6 +39,12 @@
   background-color: var(--white-20);
 }
 
+@media (max-width: 768px) {
+  .dialogContent {
+    min-width: 96%;
+  }
+}
+
 @keyframes overlayShow {
   from {
     opacity: 0;
