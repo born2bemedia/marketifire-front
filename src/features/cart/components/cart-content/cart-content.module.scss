@@ -36,8 +36,22 @@
         padding: 12px;
         border-bottom: 1px solid #e4e3d5;
         width: 100%;
+        position: relative;
         &:last-child {
           border: none;
+        }
+        .tableRowItemRemove {
+          position: absolute;
+          right: 12px;
+          top: 50%;
+          transform: translateY(-50%);
+          display: flex;
+          width: 28px;
+          height: 28px;
+          justify-content: center;
+          align-items: center;
+          border-radius: 100px;
+          background: #e4e3d5;
         }
         .tableRowItem {
           color: #3b3b35;
@@ -46,6 +60,9 @@
           font-style: normal;
           font-weight: 400;
           line-height: normal;
+          display: flex;
+          align-items: center;
+          justify-content: center;
           width: 25%;
           .tableRowItemTitle {
             font-size: 14px;
@@ -88,14 +105,27 @@
   @media (max-width: 768px) {
     display: flex;
     flex-direction: column;
+
     gap: 12px;
     margin: 12px 0;
   }
+  .tableRowItemRemove {
+    display: flex;
+    width: 28px;
+    height: 28px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background: #e4e3d5;
+  }
   .cartContentMobileItem {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 8px;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
     .cartContentMobileItemTitle {
       font-size: 14px;
       display: flex;
@@ -104,6 +134,7 @@
       align-items: center;
       border-radius: 100px;
       background: #f3ff97;
+      max-width: calc(100% - 38px);
     }
   }
   .cartTable {

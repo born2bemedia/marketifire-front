@@ -65,15 +65,6 @@ export function CartContent() {
             {cartProducts.map((product, index) => (
               <div key={index} className={st.tableRow}>
                 <div className={st.tableRowItem}>
-                  <button
-                    style={{
-                      display: 'none',
-                    }}
-                    className={st.tableRowItemRemove}
-                    onClick={() => handleRemoveProduct(product)}
-                  >
-                    x
-                  </button>
                   <div className={st.tableRowItemTitle}>{product.title}</div>
                 </div>
                 <div className={st.tableRowItem}>€{product.price}</div>
@@ -91,6 +82,12 @@ export function CartContent() {
                 <div className={st.tableRowItem}>
                   €{product.price * product.quantity}
                 </div>
+                <button
+                  className={st.tableRowItemRemove}
+                  onClick={() => handleRemoveProduct(product)}
+                >
+                  <MinusIcon />
+                </button>
               </div>
             ))}
           </div>
@@ -100,6 +97,12 @@ export function CartContent() {
         {cartProducts.map((product, index) => (
           <div key={index} className={st.cartContentMobileItem}>
             <div className={st.cartContentMobileItemTitle}>{product.title}</div>
+            <button
+              className={st.tableRowItemRemove}
+              onClick={() => handleRemoveProduct(product)}
+            >
+              <MinusIcon />
+            </button>
             <div className={st.cartTable}>
               <div className={st.tableHead}>
                 <div className={st.tableHeadItem}>Price</div>
