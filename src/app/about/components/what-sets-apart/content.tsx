@@ -16,7 +16,7 @@ export function Content() {
       <div className={st.annotation}>
         <Tag color="yellow">
           <Asterisk />
-          <Text>Unleash Your Brand’s Potential</Text>
+          <Text>Innovative Solutions for Unique Challenges</Text>
         </Tag>
         <Title level={2}>What Sets Us Apart?</Title>
         <Text>

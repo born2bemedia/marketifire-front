@@ -28,7 +28,7 @@ export function WhoWeWorkWith() {
       annotation="Marketfire is designed for individuals, professionals, and businesses looking for clear, effective, and sustainable growth strategies. Whether you’re just starting or looking to scale, we provide the tools, expertise, and insights to help you succeed in a competitive landscape."
       footerText=""
       cards={cards}
-      tagText="Text"
+      tagText="Tailored Strategies for Every Client"
     />
   );
 }

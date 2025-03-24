@@ -11,7 +11,7 @@ export function MarketfireApproach() {
       <section className={st.titleLayout}>
         <Tag color="yellow">
           <Asterisk />
-          <Text>Text</Text>
+          <Text>Success Through Strategic Precision</Text>
         </Tag>
         <Title level={2}>The Marketfire Approach</Title>
         <Text className={st.text}>
