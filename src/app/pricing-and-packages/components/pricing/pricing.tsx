@@ -1,7 +1,15 @@
 'use client';
 
+import { useEffect } from 'react';
+import toast from 'react-hot-toast';
+import Image from 'next/image';
+
+import { getCartProducts, getCartTotal } from '@/features/cart/services';
+import { useCartModalStore } from '@/features/cart/services/modal.store';
+import { type CartProduct } from '@/features/lib/types';
 import { useModalStore } from '@/features/request-popup/services/modal.store';
 
+import { lsRead, lsWrite } from '@/shared/lib/browser';
 import { Asterisk } from '@/shared/ui/icons/fill';
 import { Button } from '@/shared/ui/kit/button';
 import { Tag } from '@/shared/ui/kit/tag/tag';
@@ -9,7 +17,7 @@ import { Text } from '@/shared/ui/kit/text';
 import { Title } from '@/shared/ui/kit/title';
 
 import st from './pricing.module.scss';
-import type { PricingItem } from './types';
+import { type PricingItem } from './types';
 
 export default function Pricing({
   categoryLabel,
@@ -29,11 +37,34 @@ export default function Pricing({
   cardBackground: string;
 }) {
   const { setIsOpen, setType, setProduct } = useModalStore();
+  const { setIsCartOpen, setCartProducts, cartProducts, setCartTotal } =
+    useCartModalStore();
+
+  useEffect(() => {
+    setCartProducts(getCartProducts());
+  }, []);
+
+  const handleOpenCartModal = () => {
+    setIsCartOpen(true);
+  };
 
   const handleOpenModal = (type: 'service' | 'package', product: string) => {
     setIsOpen(true);
     setType(type);
     setProduct(product);
+  };
+
+  const handleAddToCart = (item: PricingItem) => {
+    const cart = lsRead<CartProduct[]>('cart', []);
+    cart.push({
+      title: item.title,
+      quantity: 1,
+      price: item.price,
+    });
+    lsWrite('cart', cart);
+    setCartProducts(cart);
+    setCartTotal(getCartTotal());
+    toast.success(`Product ${item.title} added to cart`);
   };
 
   return (
@@ -52,7 +83,12 @@ export default function Pricing({
           <Title level={2}>{categoryTitle}</Title>
           <Text>{categoryDescription}</Text>
         </div>
-        <img src={`/pricing/${index}.svg`} alt={categoryTitle} />
+        <Image
+          src={`/pricing/${index}.svg`}
+          alt={categoryTitle}
+          width={404}
+          height={324}
+        />
       </div>
       <div className={st.col2}>
         {pricingItems.map((item, index) => (
@@ -77,9 +113,15 @@ export default function Pricing({
                 <Button
                   size="md"
                   variant="black"
-                  onClick={() => handleOpenModal('service', item.title)}
+                  onClick={() =>
+                    !cartProducts.some(product => product.title === item.title)
+                      ? handleAddToCart(item)
+                      : handleOpenCartModal()
+                  }
                 >
-                  Buy
+                  {cartProducts.some(product => product.title === item.title)
+                    ? 'In Cart'
+                    : 'Buy'}
                 </Button>
               ) : (
                 <Button

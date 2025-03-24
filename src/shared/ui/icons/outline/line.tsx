@@ -1,6 +1,7 @@
-export function Line() {
+export function Line({ className }: { className?: string }) {
   return (
     <svg
+      className={className}
       xmlns="http://www.w3.org/2000/svg"
       width="1252"
       height="504"

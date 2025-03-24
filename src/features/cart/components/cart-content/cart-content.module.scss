@@ -1,0 +1,154 @@
+.cartContent,
+.cartContentMobile {
+  .cartTable {
+    margin: 20px 0;
+    border-radius: 12px;
+    border: 1px solid #e4e3d5;
+    background: #f5f4f2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    .tableHead {
+      display: flex;
+      gap: 20px;
+      padding: 12px;
+      border-radius: 12px;
+      background: #e4e3d5;
+      width: 100%;
+      .tableHeadItem {
+        color: #3b3b35;
+        text-align: center;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        width: 25%;
+      }
+    }
+    .tableBody {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      .tableRow {
+        display: flex;
+        gap: 20px;
+        padding: 12px;
+        border-bottom: 1px solid #e4e3d5;
+        width: 100%;
+        &:last-child {
+          border: none;
+        }
+        .tableRowItem {
+          color: #3b3b35;
+          text-align: center;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          width: 25%;
+          .tableRowItemTitle {
+            font-size: 14px;
+            display: flex;
+            padding: 6px 12px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100px;
+            background: #f3ff97;
+          }
+          .tableRowItemQuantity {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            button {
+              border-radius: 8px;
+              background: #fcfcfa;
+              width: 28px;
+              height: 28px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.cartContent {
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.cartContentMobile {
+  display: none;
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 12px 0;
+  }
+  .cartContentMobileItem {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+    .cartContentMobileItemTitle {
+      font-size: 14px;
+      display: flex;
+      padding: 6px 12px;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100px;
+      background: #f3ff97;
+    }
+  }
+  .cartTable {
+    width: 100%;
+    margin: 0;
+    .tableHead {
+      .tableHeadItem {
+        width: 33.33%;
+      }
+    }
+    .tableBody {
+      .tableRow {
+        width: 100%;
+        .tableRowItem {
+          width: 33.33%;
+        }
+      }
+    }
+  }
+}
+
+.cartTotal {
+  text-align: right;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
+}
+
+.cartButtons {
+  margin-top: 120px;
+  display: flex;
+  justify-content: center;
+  @media (max-width: 768px) {
+    margin-top: 48px;
+  }
+  a {
+    @media (max-width: 768px) {
+      width: 100%;
+      button {
+        width: 100%;
+        height: 48px;
+      }
+    }
+  }
+}
