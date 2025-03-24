@@ -3,8 +3,8 @@
 import { Oval } from 'react-loader-spinner';
 
 export function Loader({
-  width = 26,
-  height = 26,
+  width = 22,
+  height = 22,
 }: {
   width?: number;
   height?: number;
@@ -14,7 +14,7 @@ export function Loader({
       visible={true}
       height={height}
       width={width}
-      color="#3D4D7C"
+      color="#F3FF97"
       secondaryColor="#FFFFF"
     />
   );

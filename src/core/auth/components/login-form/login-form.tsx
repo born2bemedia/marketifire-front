@@ -62,7 +62,7 @@ export function LoginForm() {
     <form onSubmit={onSubmit} className={st.form}>
       <section>
         <section className={st.header}>
-          <Title level={2} color="black" weight={500} uppercase>
+          <Title level={2} color="black" weight={500}>
             Welcome Back to Marketfire
           </Title>
           <button className={st.icon} onClick={() => setOpen(false)}>

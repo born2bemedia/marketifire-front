@@ -12,9 +12,13 @@
 }
 
 .textWidth {
-  width: 60%;
+  width: 84%;
   margin-top: 12px;
   margin-bottom: 42px;
+}
+
+.checkboxWidth {
+  width: 46%;
 }
 
 .row {
@@ -34,10 +38,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 100px;
-  background: #FAFAFA;
-  height: 32px;
-  width: 32px;
+  border-radius: 8px;
+  background: var(--white-20);
+  height: 30px;
+  width: 30px;
 }
 
 .link {
@@ -69,6 +73,15 @@
 }
 
 @media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .checkboxWidth, .textWidth {
+    width: 100%;
+  }
+
   .btn {
     width: 100%;
     justify-content: space-between;
