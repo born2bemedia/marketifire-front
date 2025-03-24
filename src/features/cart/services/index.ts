@@ -1,2 +1,2 @@
-export * from './delete-cart-product';
 export * from './get-cart-products';
+export * from './get-cart-total';

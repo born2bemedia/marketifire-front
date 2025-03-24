@@ -1,10 +1,12 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
+import toast from 'react-hot-toast';
 import Image from 'next/image';
 
-import { type CartProduct } from '@/features/cart/lib/types';
-import { getCartProducts } from '@/features/cart/services';
+import { getCartProducts, getCartTotal } from '@/features/cart/services';
+import { useCartModalStore } from '@/features/cart/services/modal.store';
+import { type CartProduct } from '@/features/lib/types';
 import { useModalStore } from '@/features/request-popup/services/modal.store';
 
 import { lsRead, lsWrite } from '@/shared/lib/browser';
@@ -35,11 +37,16 @@ export default function Pricing({
   cardBackground: string;
 }) {
   const { setIsOpen, setType, setProduct } = useModalStore();
-  const [cartProducts, setCartProducts] = useState<CartProduct[]>([]);
+  const { setIsCartOpen, setCartProducts, cartProducts, setCartTotal } =
+    useCartModalStore();
 
   useEffect(() => {
     setCartProducts(getCartProducts());
   }, []);
+
+  const handleOpenCartModal = () => {
+    setIsCartOpen(true);
+  };
 
   const handleOpenModal = (type: 'service' | 'package', product: string) => {
     setIsOpen(true);
@@ -56,7 +63,8 @@ export default function Pricing({
     });
     lsWrite('cart', cart);
     setCartProducts(cart);
-    console.log('test');
+    setCartTotal(getCartTotal());
+    toast.success(`Product ${item.title} added to cart`);
   };
 
   return (
@@ -106,9 +114,9 @@ export default function Pricing({
                   size="md"
                   variant="black"
                   onClick={() =>
-                    !cartProducts.some(
-                      product => product.title === item.title,
-                    ) && handleAddToCart(item)
+                    !cartProducts.some(product => product.title === item.title)
+                      ? handleAddToCart(item)
+                      : handleOpenCartModal()
                   }
                 >
                   {cartProducts.some(product => product.title === item.title)

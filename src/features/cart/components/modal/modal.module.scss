@@ -28,7 +28,7 @@
     gap: 12px;
     position: relative;
     @media (max-width: 768px) {
-      padding: 16px;
+      padding: 20px 0 0 0;
       justify-content: flex-end;
     }
     p {
@@ -43,6 +43,7 @@
       @media (max-width: 768px) {
         width: 100%;
         margin: 0;
+        height: 48px;
       }
     }
   }

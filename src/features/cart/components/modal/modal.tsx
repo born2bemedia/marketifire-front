@@ -1,5 +1,4 @@
 'use client';
-import { useEffect, useState } from 'react';
 import Image from 'next/image';
 
 import { CloseIcon } from '@/shared/ui/icons/outline';
@@ -7,28 +6,19 @@ import { Button } from '@/shared/ui/kit/button';
 import { Text } from '@/shared/ui/kit/text';
 import { Title } from '@/shared/ui/kit/title';
 
-import type { CartProduct } from '../../lib/types';
-import { getCartProducts } from '../../services';
 import { useCartModalStore } from '../../services/modal.store';
+import { CartContent } from '../cart-content/cart-content';
 import st from './modal.module.scss';
 
 export function CartModal({}) {
-  const { isOpen, setIsOpen } = useCartModalStore();
-
-  const [cartProducts, setCartProducts] = useState<CartProduct[]>([]);
-
-  useEffect(() => {
-    if (isOpen) {
-      setCartProducts(getCartProducts());
-    }
-  }, [isOpen]);
+  const { isCartOpen, setIsCartOpen, cartProducts } = useCartModalStore();
 
   const handleClose = () => {
-    setIsOpen(false);
+    setIsCartOpen(false);
   };
 
   return (
-    <div className={`${st.modalWrapper} ${isOpen ? st.open : ''}`}>
+    <div className={`${st.modalWrapper} ${isCartOpen ? st.open : ''}`}>
       {cartProducts.length === 0 ? (
         <div className={st.modal}>
           <div className={st.modalTop}>
@@ -68,6 +58,7 @@ export function CartModal({}) {
               <CloseIcon />
             </button>
           </div>
+          <CartContent />
         </div>
       )}
     </div>
