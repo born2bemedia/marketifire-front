@@ -1,5 +1,7 @@
 'use client';
 
+import Link from 'next/link';
+
 import { Button } from '@/shared/ui/kit/button';
 import { Text } from '@/shared/ui/kit/text';
 import { Title } from '@/shared/ui/kit/title';
@@ -16,9 +18,11 @@ export function Hero() {
         customer relationships. Whether starting, scaling, or refining your
         strategy, Marketifire is your partner in success.
       </Text>
-      <Button size="md" variant="black">
-        Get Free Consultation
-      </Button>
+      <Link href="/request-form">
+        <Button size="md" variant="black">
+          Get Free Consultation
+        </Button>
+      </Link>
     </section>
   );
 }
