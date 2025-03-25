@@ -6,6 +6,13 @@
   @media (max-width: 768px) {
     padding: 0 0 0 0;
   }
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    margin-top: 40px;
+  }
   .container {
     padding: 40px 30px;
     border-radius: 22px;

@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { tailoredSolutions } from '@/shared/lib/tailored-solution';
 import { ArrowRight, Asterisk } from '@/shared/ui/icons/fill';
 import { PlusIcon } from '@/shared/ui/icons/outline/plus';
+import { Button } from '@/shared/ui/kit/button';
 import { Tag } from '@/shared/ui/kit/tag/tag';
 import { Text } from '@/shared/ui/kit/text';
 import { Title } from '@/shared/ui/kit/title';
@@ -81,6 +82,16 @@ export function Solutions() {
               </div>
             </div>
           ))}
+        </section>
+        <section className={st.bottom}>
+          <Link href={'/request-form'} className={st.link}>
+            <Button size="sm" variant="black">
+              Start Optimizing Your Strategy Today
+            </Button>
+          </Link>
+          <Text className={st.text}>
+            Every service is tailored to YOUR business goals.
+          </Text>
         </section>
       </div>
     </div>
