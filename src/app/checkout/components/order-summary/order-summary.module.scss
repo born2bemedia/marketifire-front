@@ -4,6 +4,9 @@
     display: flex;
     flex-direction: column;
     gap: 130px;
+    @media (max-width: 768px) {
+      gap: 30px;
+    }
     .orderSummaryItems {
       display: flex;
       flex-direction: column;
@@ -29,6 +32,10 @@
           border-radius: 100px;
           background: var(--Yellow, #f3ff97);
           min-height: 50px;
+          @media (max-width: 768px) {
+            font-size: 14px;
+            min-width: 100px;
+          }
         }
         .orderSummaryItemPrice {
           color: var(--Black-100, #3b3b35);
@@ -53,6 +60,9 @@
         font-style: normal;
         font-weight: 500;
         line-height: normal;
+        @media (max-width: 768px) {
+          font-size: 20px;
+        }
         &:last-child {
           color: var(--Black-100, #3b3b35);
         }
