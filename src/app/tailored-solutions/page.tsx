@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { CtaBlock } from '@/shared/ui/components/cta-block';
 
 import { Hero } from './components/hero';
+import { Solutions } from './components/solutions';
 import { SuccessFramework } from './components/success-framework';
 
 export const metadata: Metadata = {
@@ -21,6 +22,7 @@ export default function TailoredSolutions() {
   return (
     <>
       <Hero />
+      <Solutions />
       <SuccessFramework />
       <CtaBlock
         title="Let’s Tailor a Strategy for Your Industry"
