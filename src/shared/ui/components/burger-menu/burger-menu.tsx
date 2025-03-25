@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import {
   Close,
   Content,
@@ -24,6 +25,7 @@ import { Text } from '@/shared/ui/kit/text';
 
 import st from './burger-menu.module.scss';
 
+
 export function BurgerMenu() {
   return (
     <section className={st.layout}>
@@ -35,6 +37,11 @@ export function BurgerMenu() {
 
 function Menu() {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
+
+  useEffect(() => {
+    setOpen(false);
+  }, [pathname]);
 
   useEffect(() => {
     if (open) {
