@@ -11,11 +11,11 @@ import st from './page.module.scss';
 export const metadata: Metadata = {
   title: 'Request Form | Business & Marketing Consulting for Entrepreneurs',
   description:
-    'Unlock your business’s potential with Marketfire’s expert business consulting, marketing strategies, and growth solutions tailored for entrepreneurs.',
+    'Unlock your business’s potential with Marketifire’s expert business consulting, marketing strategies, and growth solutions tailored for entrepreneurs.',
   openGraph: {
     title: 'Request Form | Business & Marketing Consulting for Entrepreneurs',
     description:
-      'Unlock your business’s potential with Marketfire’s expert business consulting, marketing strategies, and growth solutions tailored for entrepreneurs.',
+      'Unlock your business’s potential with Marketifire’s expert business consulting, marketing strategies, and growth solutions tailored for entrepreneurs.',
     images: 'https://marketifire.com/meta/lg.png',
   },
 };

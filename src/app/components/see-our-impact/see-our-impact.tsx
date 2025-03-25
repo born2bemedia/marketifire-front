@@ -24,7 +24,7 @@ export function SeeOurImpact() {
             See Our Impact – Explore Client Success Stories
           </Title>
           <Text className={st.text}>
-            At Marketfire, we don’t believe in one-size-fits-all solutions. We
+            At Marketifire, we don’t believe in one-size-fits-all solutions. We
             craft strategies backed by market research, analytics, and
             real-world testing.
           </Text>

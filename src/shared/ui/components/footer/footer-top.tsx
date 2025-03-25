@@ -13,7 +13,7 @@ const navigation = [
     title: 'Quick Navigation',
     list: [
       { label: 'Home', link: '/' },
-      { label: 'About Marketfire', link: '/about' },
+      { label: 'About Marketifire', link: '/about' },
       { label: 'What We Do', link: '/what-we-do' },
     ],
   },

@@ -12,11 +12,11 @@ import st from './how-we-deliver.module.scss';
 
 const results = [
   {
-    title: 'How does Marketfire help individuals grow?',
+    title: 'How does Marketifire help individuals grow?',
     desc: 'We provide customized business and marketing strategies for individuals, freelancers, and entrepreneurs who want to enhance their personal brand, attract clients, and increase revenue through data-driven consulting.',
   },
   {
-    title: 'Who can benefit from Marketfire’s services?',
+    title: 'Who can benefit from Marketifire’s services?',
     desc: 'We specialize in helping professionals, digital creators, consultants, and solopreneurs optimize their marketing, sales, and business growth strategies. Whether you’re launching your brand or scaling an existing one, we create actionable solutions that work.',
   },
   {

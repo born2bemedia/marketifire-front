@@ -1,6 +1,6 @@
 export const routes = [
   { label: 'Home', href: '/' },
-  { label: 'About Marketfire', href: '/about' },
+  { label: 'About Marketifire', href: '/about' },
   { label: 'What We Do', href: '/what-we-do' },
   { label: 'Tailored Solutions', href: '/tailored-solutions' },
   { label: 'Case Studies', href: '/case-studies' },

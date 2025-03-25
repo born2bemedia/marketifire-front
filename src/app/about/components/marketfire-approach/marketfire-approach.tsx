@@ -15,7 +15,7 @@ export function MarketfireApproach() {
           <Asterisk />
           <Text>Success Through Strategic Precision</Text>
         </Tag>
-        <Title level={2}>The Marketfire Approach</Title>
+        <Title level={2}>The Marketifire Approach</Title>
         <Text className={st.text}>
           Success doesn&apos;t happen by chance — it&apos;s built through
           strategic planning, continuous optimization, and smart execution. Our

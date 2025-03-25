@@ -14,7 +14,7 @@ export function Hero() {
       <Tag color="yellow">Let’s Build Your Success Together</Tag>
       <Title>Igniting Growth, Empowering Success</Title>
       <Text>
-        At Marketfire, we believe that growth isn’t just about marketing — it’s
+        At Marketifire, we believe that growth isn’t just about marketing — it’s
         about creating a lasting impact. We work with entrepreneurs,
         professionals, and personal brands to transform ideas into strategies
         that scale, engage, and convert.

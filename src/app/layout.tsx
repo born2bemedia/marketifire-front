@@ -44,7 +44,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <title>Marketfire</title>
+        <title>Marketifire</title>
         <Script src="/scripts/translation.js" strategy="beforeInteractive" />
         {process.env.GOOGLE_TRANSLATION_CONFIG && (
           <Script
