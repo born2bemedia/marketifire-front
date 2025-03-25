@@ -1,17 +1,36 @@
 'use client';
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 
 import { CloseIcon } from '@/shared/ui/icons/outline';
 import { Button } from '@/shared/ui/kit/button';
 import { Text } from '@/shared/ui/kit/text';
 import { Title } from '@/shared/ui/kit/title';
 
+import { getCartProducts } from '../../services';
 import { useCartModalStore } from '../../services/modal.store';
 import { CartContent } from '../cart-content/cart-content';
 import st from './modal.module.scss';
 
-export function CartModal({}) {
-  const { isCartOpen, setIsCartOpen, cartProducts } = useCartModalStore();
+export function CartModal() {
+  const { isCartOpen, setIsCartOpen, setCartProducts, cartProducts } =
+    useCartModalStore();
+  const [isClient, setIsClient] = useState(false);
+  const pathname = usePathname();
+
+  useEffect(() => {
+    setIsClient(true);
+    setCartProducts(getCartProducts());
+  }, [setCartProducts]);
+
+  useEffect(() => {
+    setIsCartOpen(false);
+  }, [pathname, setIsCartOpen]);
+
+  if (!isClient) {
+    return <div className={st.modalWrapper} />;
+  }
 
   const handleClose = () => {
     setIsCartOpen(false);

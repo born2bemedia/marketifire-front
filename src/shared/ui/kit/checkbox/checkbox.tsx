@@ -12,19 +12,21 @@ export function Checkbox({
   labelColor = 'black',
   onCheckedChange,
   checked = false,
+  id,
 }: {
   label?: ReactNode;
   labelColor?: 'black' | 'black60';
   checked?: boolean;
   onCheckedChange?: (checked: boolean) => void;
+  id?: string;
 }) {
-  const id = nanoid();
+  const checkboxId = !id ? nanoid() : id;
 
   return (
     <div className={st.layout}>
       <Root
         className={st.checkboxRoot}
-        id={id}
+        id={checkboxId}
         checked={checked}
         onCheckedChange={onCheckedChange}
       >
@@ -32,7 +34,7 @@ export function Checkbox({
           <Check />
         </Indicator>
       </Root>
-      <label htmlFor={id}>
+      <label htmlFor={checkboxId}>
         <Text color={labelColor} weight={300} className={st.label}>
           {label}
         </Text>

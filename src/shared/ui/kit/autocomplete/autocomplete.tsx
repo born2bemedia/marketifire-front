@@ -15,6 +15,7 @@ export function Autocomplete({
   initialValue,
   onChange,
   disabled,
+  className,
 }: {
   items: { value: string; label: string }[];
   onChange?: (value: string) => void;
@@ -23,6 +24,7 @@ export function Autocomplete({
   label?: string;
   hint?: string;
   disabled?: boolean;
+  className?: string;
 }) {
   const [search, setSearch] = useState(initialValue);
   const [isOpen, setIsOpen] = useState(false);
@@ -58,7 +60,11 @@ export function Autocomplete({
   }, []);
 
   return (
-    <div ref={autocompleteRef} style={{ position: 'relative', width: '100%' }}>
+    <div
+      ref={autocompleteRef}
+      style={{ position: 'relative', width: '100%' }}
+      className={className}
+    >
       <TextField
         value={search}
         label={label}

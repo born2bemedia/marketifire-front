@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import toast from 'react-hot-toast';
 import Image from 'next/image';
 
@@ -39,8 +39,10 @@ export default function Pricing({
   const { setIsOpen, setType, setProduct } = useModalStore();
   const { setIsCartOpen, setCartProducts, cartProducts, setCartTotal } =
     useCartModalStore();
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    setMounted(true);
     setCartProducts(getCartProducts());
   }, []);
 
@@ -66,6 +68,10 @@ export default function Pricing({
     setCartTotal(getCartTotal());
     toast.success(`Product ${item.title} added to cart`);
   };
+
+  if (!mounted) {
+    return null;
+  }
 
   return (
     <div
