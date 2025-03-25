@@ -1,0 +1,62 @@
+.orderSummary {
+  .orderSummaryWrapper {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 130px;
+    .orderSummaryItems {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .orderSummaryItem {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        justify-content: space-between;
+        align-self: stretch;
+        .orderSummaryItemTitle {
+          display: flex;
+          justify-content: space-between;
+          color: var(--Black-100, #3b3b35);
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          min-width: 385px;
+          gap: 20px;
+          flex-grow: 1;
+          padding: 12px 22px;
+          border-radius: 100px;
+          background: var(--Yellow, #f3ff97);
+          min-height: 50px;
+        }
+        .orderSummaryItemPrice {
+          color: var(--Black-100, #3b3b35);
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          padding: 12px 22px;
+          border-radius: 100px;
+          background: #f5f4f2;
+          min-height: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+    .orderSummaryTotal {
+      text-align: right;
+      span {
+        color: var(--Black-60, #8e8e89);
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        &:last-child {
+          color: var(--Black-100, #3b3b35);
+        }
+      }
+    }
+  }
+}
