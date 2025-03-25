@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import {
@@ -25,11 +26,10 @@ import { Text } from '@/shared/ui/kit/text';
 
 import st from './burger-menu.module.scss';
 
-
 export function BurgerMenu() {
   return (
     <section className={st.layout}>
-      <Text>[BRAND] LOGO</Text>
+      <Image src="/full-logo.svg" alt="full-logo" width={155} height={28} />
       <Menu />
     </section>
   );

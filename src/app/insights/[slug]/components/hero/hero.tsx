@@ -1,6 +1,7 @@
 'use client';
 
 import type { ReactNode } from 'react';
+import { useLayoutEffect } from 'react';
 
 import { Title } from '@/shared/ui/kit/title';
 
@@ -13,6 +14,21 @@ export function Hero({
   title: string;
   description: ReactNode;
 }) {
+  useLayoutEffect(() => {
+    const style = document.createElement('style');
+    style.innerHTML = `
+    html, body {
+      overflow-x: hidden !important;
+      position: relative;
+    }
+  `;
+    document.head.appendChild(style);
+
+    return () => {
+      document.head.removeChild(style);
+    };
+  }, []);
+
   return (
     <section className={st.layout}>
       <Title level={1}>{title}</Title>
