@@ -19,7 +19,7 @@ export function Content() {
           <Text>Unleash Your Brand’s Potential</Text>
         </Tag>
         <Title level={2}>
-          Transform Your Business with Marketfire’s Expertise
+          Transform Your Business with Marketifire’s Expertise
         </Title>
         <Text>
           Struggling to gain traction, increase conversions, or optimize

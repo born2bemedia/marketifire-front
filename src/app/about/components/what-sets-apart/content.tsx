@@ -20,7 +20,7 @@ export function Content() {
         </Tag>
         <Title level={2}>What Sets Us Apart?</Title>
         <Text>
-          We don’t believe in one-size-fits-all solutions. At Marketfire, every
+          We don’t believe in one-size-fits-all solutions. At Marketifire, every
           strategy is custom-built to fit your unique goals. With a data-driven
           mindset, innovative execution, and a commitment to measurable results,
           we help you stand out, grow faster, and achieve long-term success.

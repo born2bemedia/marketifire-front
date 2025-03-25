@@ -68,7 +68,7 @@ export function RegisterForm() {
       <section>
         <section className={st.header}>
           <Title level={2} color="black" weight={500}>
-            Join Marketfire Today
+            Join Marketifire Today
           </Title>
           <button className={st.icon} onClick={() => setOpen(false)}>
             <Close />
@@ -78,7 +78,7 @@ export function RegisterForm() {
           Create your account to access all your order history, track progress,
           and enjoy exclusive updates, new features, and special offers tailored
           to help you grow your business. Sign up now and start maximizing your
-          potential with Marketfire!
+          potential with Marketifire!
         </Text>
       </section>
       <section className={st.formInner}>
@@ -198,7 +198,7 @@ export function RegisterForm() {
             </>
           ) : (
             <>
-              Join Marketfire <ArrowRight />
+              Join Marketifire <ArrowRight />
             </>
           )}
         </Button>

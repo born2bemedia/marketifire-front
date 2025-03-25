@@ -1,3 +1,5 @@
+import type { Metadata } from 'next';
+
 import {
   RequestForm,
   RequestFormLayout,
@@ -5,6 +7,18 @@ import {
 
 import { Hero, PulsingEllipse } from './components';
 import st from './page.module.scss';
+
+export const metadata: Metadata = {
+  title: 'Request Form | Business & Marketing Consulting for Entrepreneurs',
+  description:
+    'Unlock your business’s potential with Marketifire’s expert business consulting, marketing strategies, and growth solutions tailored for entrepreneurs.',
+  openGraph: {
+    title: 'Request Form | Business & Marketing Consulting for Entrepreneurs',
+    description:
+      'Unlock your business’s potential with Marketifire’s expert business consulting, marketing strategies, and growth solutions tailored for entrepreneurs.',
+    images: 'https://marketifire.com/meta/lg.png',
+  },
+};
 
 export default function RequestFormPage() {
   return (

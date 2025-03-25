@@ -34,7 +34,7 @@ export function ThankYouDialog({
             <Description asChild>
               <section className={st.contentLayout}>
                 <div className={st.textBlock}>
-                  <Title level={2}>Thank you for choosing Marketfire!</Title>
+                  <Title level={2}>Thank you for choosing Marketifire!</Title>
                   <Text weight={300}>
                     Our representative will reach out to you shortly.
                   </Text>
