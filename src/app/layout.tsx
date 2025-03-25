@@ -34,9 +34,6 @@ export const metadata: Metadata = {
       },
     ],
   },
-  openGraph: {
-    images: 'https://marketifire.com/meta/lg.png',
-  },
 };
 
 export default function RootLayout({

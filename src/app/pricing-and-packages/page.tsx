@@ -25,6 +25,7 @@ export const metadata: Metadata = {
     title: 'Pricing & Packages | Customized Marketing & Business Solutions',
     description:
       'Explore our pricing options and service packages designed to fit your business needs and help you achieve your growth goals efficiently.',
+    images: 'https://marketifire.com/meta/lg.png',
   },
 };
 

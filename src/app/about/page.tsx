@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     title: 'About Marketfire | Business & Marketing Experts for Entrepreneurs',
     description:
       'Learn more about Marketfire and how we help entrepreneurs grow their brands with data-driven strategies, innovative solutions, and personalized marketing.',
+    images: 'https://marketifire.com/meta/lg.png',
   },
 };
 

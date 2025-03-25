@@ -14,6 +14,7 @@ export const metadata: Metadata = {
       'Tailored Solutions | Industry-Specific Consulting for Entrepreneurs',
     description:
       'Explore our industry-specific consulting services to meet your unique business needs and help you thrive in competitive markets.',
+    images: 'https://marketifire.com/meta/lg.png',
   },
 };
 

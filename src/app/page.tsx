@@ -20,6 +20,7 @@ export const metadata: Metadata = {
     title: 'Marketfire | Business & Marketing Consulting for Entrepreneurs',
     description:
       'Unlock your business’s potential with Marketfire’s expert business consulting, marketing strategies, and growth solutions tailored for entrepreneurs.',
+    images: 'https://marketifire.com/meta/lg.png',
   },
 };
 
