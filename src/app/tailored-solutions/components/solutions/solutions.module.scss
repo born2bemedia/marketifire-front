@@ -1,10 +1,10 @@
 .layout {
-  padding: 100px 60px 0 60px;
+  padding: 0 60px 0 60px;
   display: flex;
   flex-direction: column;
   gap: 39px;
   @media (max-width: 768px) {
-    padding: 100px 0 0 0;
+    padding: 0 0 0 0;
   }
   .container {
     padding: 40px 30px;
