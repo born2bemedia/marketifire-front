@@ -2,11 +2,14 @@
 
 import { google } from 'googleapis';
 
+import { contactFormLetter } from '@/features/letters/components';
+
 import {
   EMAIL_CLIENT_ID,
   EMAIL_CLIENT_SECRET,
   EMAIL_USER,
 } from '@/shared/config/env';
+import { makeBody } from '@/shared/lib/email';
 
 import type { RequestState } from './request-form.store';
 
@@ -50,7 +53,6 @@ export async function sendRequest({
       fileBase64 = Buffer.from(fileContent).toString('base64');
     }
 
-    // Создание MIME сообщения с вложением
     const boundary = 'foo_bar_baz';
     const mimeMessage = [
       `From: ${EMAIL_USER}`,
@@ -96,6 +98,18 @@ export async function sendRequest({
       requestBody: {
         raw: Buffer.from(mimeMessage).toString('base64'),
       },
+    });
+
+    const userEmailBody = makeBody({
+      to: email,
+      from: EMAIL_USER,
+      subject: 'Thank You for Contacting Marketifire',
+      message: contactFormLetter({ username: fullName }),
+    });
+
+    await gmail.users.messages.send({
+      userId: 'me',
+      requestBody: { raw: userEmailBody },
     });
 
     if (res.status !== 200) {
