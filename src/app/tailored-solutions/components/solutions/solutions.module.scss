@@ -1,0 +1,172 @@
+.layout {
+  padding: 100px 60px 0 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 39px;
+  @media (max-width: 768px) {
+    padding: 100px 0 0 0;
+  }
+  .container {
+    padding: 40px 30px;
+    border-radius: 22px;
+    background: var(--White-0, #fff);
+    @media (max-width: 768px) {
+      padding: 20px 16px;
+    }
+    .titleLayout {
+      display: flex;
+      flex-direction: column;
+      gap: 19px;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 40px;
+      p {
+        max-width: 582px;
+        @media (max-width: 768px) {
+          max-width: 100%;
+        }
+      }
+    }
+    .solutionsLayout {
+      display: flex;
+      flex-direction: column;
+      gap: 80px;
+      @media (max-width: 768px) {
+        gap: 40px;
+      }
+      .solution {
+        display: flex;
+        align-items: center;
+        gap: 94px;
+        @media (max-width: 768px) {
+          flex-direction: column;
+          gap: 20px;
+        }
+        &:nth-child(even) {
+          flex-direction: row-reverse;
+          @media (max-width: 768px) {
+            flex-direction: column;
+          }
+        }
+        .col1 {
+          width: calc(50% - 94px);
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
+          @media (max-width: 768px) {
+            width: 100%;
+          }
+          h3 {
+            @media (max-width: 768px) {
+              br {
+                display: none;
+              }
+            }
+          }
+          ul {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 9px;
+            li {
+              display: flex;
+              align-items: center;
+              gap: 6px;
+              padding: 6px 15px;
+              border-radius: 100px;
+              background: var(--White-10, #fcfcfa);
+              span {
+                color: var(--Black-100, #3b3b35);
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                width: calc(100% - 22px);
+              }
+            }
+          }
+        }
+        .col2 {
+          width: 50%;
+          border-radius: 22px;
+          background: var(--White-20, #f5f4f2);
+          padding: 30px;
+          display: flex;
+          gap: 20px;
+          height: 500px;
+          position: relative;
+          @media (max-width: 768px) {
+            width: 100%;
+            padding: 12px;
+            flex-direction: column;
+            height: auto;
+          }
+          > div {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: calc(50% - 10px);
+            flex-grow: 1;
+            height: 440px;
+            box-sizing: border-box;
+            @media (max-width: 768px) {
+              width: 100%;
+              height: auto;
+            }
+            > img {
+              object-fit: cover;
+              border-radius: 22px;
+              width: 100%;
+              flex-grow: 1;
+              @media (max-width: 768px) {
+                height: 200px;
+              }
+            }
+            .link {
+              box-sizing: border-box;
+              width: 100%;
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              justify-content: space-between;
+              color: var(--White-0, #fff);
+              text-align: center;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: normal;
+              text-transform: uppercase;
+              padding: 10px 20px;
+              border-radius: 12px;
+              background: var(--Black-60, #8e8e89);
+              span {
+                text-align: left;
+                width: calc(100% - 42px);
+              }
+              svg {
+                width: 32px;
+                height: 32px;
+              }
+              &:hover {
+                background: var(--Black-100, #3b3b35);
+              }
+            }
+            .avatars {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-grow: 1;
+              height: 100%;
+              border-radius: 12px;
+              background: var(--Yellow, #f3ff97);
+              @media (max-width: 768px) {
+                height: 100px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
