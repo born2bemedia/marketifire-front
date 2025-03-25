@@ -1,0 +1,19 @@
+.layout {
+  position: relative;
+}
+
+.articleLayout {
+  width: 856px;
+  margin: 100px auto 0 auto;
+}
+
+.img {
+  border-radius: 22px;
+}
+
+@media (max-width: 900px) {
+  .articleLayout {
+    width: 100%;
+    margin: 100px 12px 0 12px;
+  }
+}

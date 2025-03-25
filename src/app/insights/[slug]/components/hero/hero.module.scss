@@ -1,0 +1,13 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.desc > p {
+  color: var(--black-100);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

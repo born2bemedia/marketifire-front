@@ -1,0 +1,28 @@
+.layout {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  p, h1, div {
+    z-index: 5;
+  }
+}
+
+.text {
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .text {
+    width: 100%;
+    font-weight: 300;
+  }
+
+  .layout {
+    margin: 100px 12px 0 12px;
+  }
+}

@@ -1,6 +1,6 @@
 'use client';
 
-export function ArrowRight() {
+export function ArrowRight({ color = 'white' }: { color?: string }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -12,20 +12,20 @@ export function ArrowRight() {
       <g clipPath="url(#clip0_6033_1545)">
         <path
           d="M2.5 8H13.5"
-          stroke="white"
+          stroke={color}
           strokeLinecap="round"
           strokeLinejoin="round"
         />
         <path
           d="M9 3.5L13.5 8L9 12.5"
-          stroke="white"
+          stroke={color}
           strokeLinecap="round"
           strokeLinejoin="round"
         />
       </g>
       <defs>
         <clipPath id="clip0_6033_1545">
-          <rect width="16" height="16" fill="white" />
+          <rect width="16" height="16" fill={color} />
         </clipPath>
       </defs>
     </svg>

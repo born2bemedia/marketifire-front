@@ -1,0 +1,25 @@
+.layout {
+  margin: 100px auto 0 auto;
+  padding: 0 60px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: max-content;
+  max-width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .layout {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .layout {
+    padding: 100px 12px 0 12px;
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+}

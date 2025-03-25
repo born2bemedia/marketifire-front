@@ -1,0 +1,91 @@
+.layout {
+  border-radius: 22px;
+  background-color: var(--white-10);
+  margin: 100px 60px 40px 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+.textContent {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+  padding: 30px 50px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 498px;
+  z-index: 5;
+}
+
+.btn {
+  width: max-content;
+  z-index: 5;
+  position: relative;
+}
+
+.ellipseFill {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.mainEllipse {
+  display: block;
+}
+
+.mobileEllipse {
+  display: none;
+}
+
+.halfEllipse {
+  position: absolute;
+  bottom: 0;
+  height: 200px;
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .mainEllipse {
+    display: none;
+  }
+
+  .line {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+  }
+
+  .mobileEllipse {
+    display: block;
+  }
+
+  .layout {
+    height: 628px;
+  }
+}
+
+@media (max-width: 768px) {
+  .text {
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 12px 18px;
+  }
+
+  .textContent {
+    padding: 12px;
+    gap: 62px;
+  }
+
+  .layout {
+    margin: 100px 0 32px 0;
+  }
+}
