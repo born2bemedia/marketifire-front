@@ -1,6 +1,9 @@
 import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
+  images: {
+    remotePatterns: [{ hostname: 'cms.marketifire.com' }],
+  },
   env: {
     GOOGLE_TRANSLATION_CONFIG: JSON.stringify({
       languages: [

@@ -1,0 +1,15 @@
+.section {
+  border-radius: 22px;
+  background: var(--white-10);
+  padding: 20px;
+}
+
+.sectionYellow {
+  background-color: var(--yellow);
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 12px;
+  }
+}
