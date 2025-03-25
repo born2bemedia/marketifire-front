@@ -24,7 +24,7 @@ const cards = [
 export function WhyBusinessesTrust() {
   return (
     <WhyOptions
-      title="Why Businesses Trust Marketfire?"
+      title="Why Businesses Trust Marketifire?"
       annotation="We may be a young agency but we bring industry expertise, innovative solutions, and results-driven strategies that businesses trust."
       footerText="Your Growth, Our Priority. Let’s Make It Happen!"
       cards={cards}

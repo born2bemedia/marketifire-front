@@ -13,13 +13,14 @@ import {
 } from './components';
 
 export const metadata: Metadata = {
-  title: 'Marketfire | Business & Marketing Consulting for Entrepreneurs',
+  title: 'Marketifire | Business & Marketing Consulting for Entrepreneurs',
   description:
-    'Unlock your business’s potential with Marketfire’s expert business consulting, marketing strategies, and growth solutions tailored for entrepreneurs.',
+    'Unlock your business’s potential with Marketifire’s expert business consulting, marketing strategies, and growth solutions tailored for entrepreneurs.',
   openGraph: {
-    title: 'Marketfire | Business & Marketing Consulting for Entrepreneurs',
+    title: 'Marketifire | Business & Marketing Consulting for Entrepreneurs',
     description:
-      'Unlock your business’s potential with Marketfire’s expert business consulting, marketing strategies, and growth solutions tailored for entrepreneurs.',
+      'Unlock your business’s potential with Marketifire’s expert business consulting, marketing strategies, and growth solutions tailored for entrepreneurs.',
+    images: 'https://marketifire.com/meta/lg.png',
   },
 };
 

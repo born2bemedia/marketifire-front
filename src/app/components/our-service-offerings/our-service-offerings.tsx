@@ -81,7 +81,7 @@ export function OurServiceOfferings() {
         </Tag>
         <Title level={2}>Our Comprehensive Service Offerings</Title>
         <Text className={st.text}>
-          Marketfire combines data, strategy, and execution to deliver a full
+          Marketifire combines data, strategy, and execution to deliver a full
           suite of consulting services designed to unlock your brand’s full
           potential.
         </Text>

@@ -63,7 +63,7 @@ export function LoginForm() {
       <section>
         <section className={st.header}>
           <Title level={2} color="black" weight={500}>
-            Welcome Back to Marketfire
+            Welcome Back to Marketifire
           </Title>
           <button className={st.icon} onClick={() => setOpen(false)}>
             <Close />
