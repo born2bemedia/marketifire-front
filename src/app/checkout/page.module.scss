@@ -4,15 +4,28 @@
   display: flex;
   gap: 20px;
   align-items: flex-start;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 42px 16px 42px 16px;
+  }
   > div {
     border-radius: 22px;
     background: #fff;
     padding: 30px;
+    @media (max-width: 768px) {
+      padding: 30px 16px;
+    }
     &:first-child {
       flex: 40%;
+      @media (max-width: 768px) {
+        flex: 100%;
+      }
     }
     &:last-child {
       flex: 60%;
+      @media (max-width: 768px) {
+        flex: 100%;
+      }
     }
   }
 }
