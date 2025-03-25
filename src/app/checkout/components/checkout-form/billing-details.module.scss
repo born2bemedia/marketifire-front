@@ -11,6 +11,9 @@
       > label,
       > div {
         width: calc(50% - 10px) !important;
+        @media (max-width: 768px) {
+          width: 100% !important;
+        }
         &.fullWidth {
           width: 100% !important;
           .paymentInfo {
