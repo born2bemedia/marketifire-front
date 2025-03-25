@@ -25,7 +25,7 @@ export function DownloadPrice() {
           to download the full price list. Everything is clearly outlined for
           you to make an informed decision!
         </Text>
-        <Link href="#">
+        <Link href="/Price_List_Marketfire.pdf" target="_blank">
           <Button variant="black" size="md">
             Download Price List in PDF
           </Button>
