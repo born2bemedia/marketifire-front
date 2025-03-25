@@ -4,13 +4,13 @@ export function contactFormLetter({ username }: { username: string }) {
   return htmlTemplate({
     body: `
       <header class="header">
-        <img class="headerLogo" src='https://marketifire.com/full-logo.svg' alt='full-logo' width="145" height="26" />
-        <section class="balloons">
+        <img class="headerLogo" src='https://marketifire.com/full-logo.png' alt='full-logo' width="145" height="26" />
+        <section class="balloons marginLeft">
           <img src='https://marketifire.com/letters/0.png' alt='zero-balloon' />
           <img src='https://marketifire.com/letters/1.png' alt='one-balloon' />
         </section>
       </header>
-      <main class="main">
+      <div class="main">
         <h1 class="heading">Thank You for Contacting Marketifire</h1>
         <p class="p">Dear <strong class="strong">${username}</strong></p>
         <p class="p">
@@ -32,7 +32,7 @@ export function contactFormLetter({ username }: { username: string }) {
         <p class="p">
         Kind regards, <br /><strong class="strong">The Marketfire Team</strong>
         </p>
-      </main>
+      </div>
       <footer class="footer"> 
         <a class="link uppercase" href='https://marketifire.com/contacts'>Contact Us</a>
         <a class="link marginLeft" href='mailto:info@marketifire.com'>info@marketifire.com</a>
@@ -57,23 +57,20 @@ export function contactFormLetter({ username }: { username: string }) {
       
       .main {
         padding: 40px 40px 80px 40px;
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
         background-color: #F5F4F2;
       }
       
       .heading {
         font-size: 28px;
         font-style: normal;
-        font-weight: 500;
+        font-weight: 600;
         line-height: 37px;
         letter-spacing: -0.1px;
         color: #000;
       }      
       
       .p {
-        font-size: 18px;
+        font-size: 16px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
