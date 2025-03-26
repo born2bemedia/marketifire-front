@@ -34,58 +34,34 @@ export default function PricingAndPackages() {
     <main>
       <Hero />
       <Pricing
-        categoryLabel="Innovative Solutions for Unique Challenges"
+        categoryLabel="01"
         categoryTitle="Marketing & Growth Strategies"
-        categoryDescription="We don't believe in one-size-fits-all solutions. At Marketifire, every strategy is custom-built to fit your unique goals. With a data-driven mindset, innovative execution, and a commitment to measurable results, we help you stand out, grow faster, and achieve long-term success."
         pricingItems={marketingAndGrowth}
-        index={'01'}
-        sectionBackground={'#FFF'}
-        cardBackground={'#F5F4F2'}
       />
       <Pricing
-        categoryLabel="Innovative Solutions for Unique Challenges"
+        categoryLabel="02"
         categoryTitle="Performance Marketing & Conversion Optimization"
-        categoryDescription="We don't believe in one-size-fits-all solutions. At Marketifire, every strategy is custom-built to fit your unique goals. With a data-driven mindset, innovative execution, and a commitment to measurable results, we help you stand out, grow faster, and achieve long-term success."
         pricingItems={performanceMarketing}
-        index={'02'}
-        sectionBackground={'#F5F4F2'}
-        cardBackground={'#FFF'}
       />
       <Pricing
-        categoryLabel="Innovative Solutions for Unique Challenges"
+        categoryLabel="03"
         categoryTitle="Business Consulting & Expansion Planning"
-        categoryDescription="We don't believe in one-size-fits-all solutions. At Marketifire, every strategy is custom-built to fit your unique goals. With a data-driven mindset, innovative execution, and a commitment to measurable results, we help you stand out, grow faster, and achieve long-term success."
         pricingItems={businessConsulting}
-        index={'03'}
-        sectionBackground={'#FFF'}
-        cardBackground={'#E4E3D5'}
       />
       <Pricing
-        categoryLabel="Innovative Solutions for Unique Challenges"
+        categoryLabel="04"
         categoryTitle="Content & Audience Engagement"
-        categoryDescription="We don't believe in one-size-fits-all solutions. At Marketifire, every strategy is custom-built to fit your unique goals. With a data-driven mindset, innovative execution, and a commitment to measurable results, we help you stand out, grow faster, and achieve long-term success."
         pricingItems={contentEngagement}
-        index={'04'}
-        sectionBackground={'#E4E3D5'}
-        cardBackground={'#FFF'}
       />
       <Pricing
-        categoryLabel="Innovative Solutions for Unique Challenges"
+        categoryLabel="05"
         categoryTitle="Automation & Digital Transformation"
-        categoryDescription="We don't believe in one-size-fits-all solutions. At Marketifire, every strategy is custom-built to fit your unique goals. With a data-driven mindset, innovative execution, and a commitment to measurable results, we help you stand out, grow faster, and achieve long-term success."
         pricingItems={automationDigitalTransformation}
-        index={'05'}
-        sectionBackground={'#fff'}
-        cardBackground={'#F3FF97'}
       />
       <Pricing
-        categoryLabel="Innovative Solutions for Unique Challenges"
+        categoryLabel="06"
         categoryTitle="Strategic Growth & Competitive Edge"
-        categoryDescription="We don't believe in one-size-fits-all solutions. At Marketifire, every strategy is custom-built to fit your unique goals. With a data-driven mindset, innovative execution, and a commitment to measurable results, we help you stand out, grow faster, and achieve long-term success."
         pricingItems={strategicGrowth}
-        index={'06'}
-        sectionBackground={'#F3FF97'}
-        cardBackground={'#fff'}
       />
       <ServicePackages packages={packages} />
       <DownloadPrice />
