@@ -23,7 +23,7 @@
       border-radius: 0;
       flex-direction: column;
       align-items: center;
-      gap: 290px;
+      height: 600px;
       padding: 20px;
       background-position: bottom center;
       background-image: url('/ctaBackMob.svg');
@@ -34,6 +34,10 @@
       flex-direction: column;
       gap: 20px;
       max-width: 100%;
+      @media (max-width: 768px) {
+        width: 100%;
+        align-items: center;
+      }
       h2 {
         font-size: 46px;
         @media (max-width: 768px) {
