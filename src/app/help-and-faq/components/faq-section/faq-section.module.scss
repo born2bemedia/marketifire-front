@@ -1,0 +1,83 @@
+.layout {
+  padding: 0 60px 20px 60px;
+  @media (max-width: 768px) {
+    padding: 0 0 20px 0;
+  }
+  .container {
+    padding: 40px 30px;
+    border-radius: 22px;
+    background: var(--White-0, #fff);
+    @media (max-width: 768px) {
+      padding: 20px 12px;
+    }
+    .title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 18px;
+      margin-bottom: 40px;
+      @media (max-width: 768px) {
+        margin-bottom: 20px;
+      }
+    }
+    .faq {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      .faqItem {
+        cursor: pointer;
+        border-radius: 22px;
+        background: var(--White-10, #fcfcfa);
+        padding: 20px;
+        &:nth-child(even) {
+          transform: rotate(0.5deg);
+        }
+        &:nth-child(odd) {
+          transform: rotate(-0.5deg);
+        }
+        &:first-child {
+          transform: rotate(0);
+        }
+        &.opened {
+          .faqItemQuestion {
+            svg {
+              transform: rotate(180deg);
+            }
+          }
+        }
+        .faqItemQuestion {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          gap: 12px;
+          span {
+            color: var(--Black-100, #3b3b35);
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            width: calc(100% - 34px);
+            @media (max-width: 768px) {
+              font-size: 22px;
+            }
+          }
+          svg {
+            transition: transform 0.3s ease-in-out;
+            transform: rotate(0);
+          }
+        }
+        .faqItemAnswer {
+          color: var(--Black-60, #8e8e89);
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          overflow: hidden;
+          transition: height 0.3s ease-in-out;
+          padding-top: 10px;
+        }
+      }
+    }
+  }
+}
