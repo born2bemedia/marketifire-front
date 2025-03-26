@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 
 import { cn } from '@/shared/lib/styles';
 import { Asterisk } from '@/shared/ui/icons/fill';
@@ -41,9 +42,11 @@ export function SeamlessSuccess() {
           We help bridge the gap between marketing, sales, and operations to
           ensure your brand’s growth is smooth, efficient, and long-term.
         </Text>
-        <Button variant="black" size="md">
-          Schedule a Free Strategy Session Today
-        </Button>
+        <Link href="/request-form" className={st.actionBtn}>
+          <Button variant="black" size="md">
+            Schedule a Free Strategy Session Today
+          </Button>
+        </Link>
       </div>
       <ExpandMarketsCard />
       <IntegrateSalesCard />

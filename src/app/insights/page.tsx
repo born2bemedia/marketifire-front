@@ -4,7 +4,9 @@ import { InsightsList } from '@/features/insights/components';
 import { insightsMapping } from '@/features/insights/lib';
 import { getInsights } from '@/features/insights/services';
 
-import { GetFreeConsultation, Hero } from './components';
+import { GetFreeConsultation } from '@/shared/ui/components/get-free-consultation';
+
+import { Hero } from './components';
 import st from './page.module.scss';
 import { PulsingEllipse } from '@/app/request-form/components';
 
@@ -29,7 +31,15 @@ export default async function Insights() {
       <PulsingEllipse />
       <Hero />
       <InsightsList values={insights} />
-      <GetFreeConsultation />
+      <GetFreeConsultation
+        text="Marketfire isn’t just another marketing consultancy — we are your
+            partners in growth. Let’s get started today if you’re ready to
+            elevate your brand, expand your audience, and drive revenue."
+        nav={{
+          url: '/request-form',
+          label: 'Get Your Free Consultation Today',
+        }}
+      />
     </main>
   );
 }
