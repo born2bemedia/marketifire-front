@@ -43,6 +43,7 @@ export const Preloader = () => {
         style={{
           transform: isLoading ? 'scale(1)' : 'scale(1.5)',
         }}
+        unoptimized
       />
     </div>
   );

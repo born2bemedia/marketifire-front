@@ -1,0 +1,132 @@
+.layout {
+  margin: 100px 60px 0 60px;
+  height: 924px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.actionBtn {
+  z-index: 10;
+}
+
+.textLayout {
+  display: flex;
+  width: 536px;
+  text-align: center;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.ellipseWrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 924px;
+  transform: translate(-50%, -50%);
+}
+
+.ellipse {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ellipseMd {
+  opacity: 0.3;
+}
+
+.codePos {
+  position: absolute;
+  top: 20%;
+  left: 75%;
+  transform: translate(-250%, -30%);
+}
+
+.userSoundPos {
+  position: absolute;
+  top: 20%;
+  left: 75%;
+  transform: translate(-230%, 765%);
+}
+
+.atomPos {
+  position: absolute;
+  top: 20%;
+  left: 75%;
+  transform: translate(230%, 515%);
+}
+
+.smileyPos {
+  position: absolute;
+  top: 20%;
+  left: 75%;
+  transform: translate(130%, -270%);
+}
+
+.monitorPos {
+  position: absolute;
+  top: 20%;
+  left: 75%;
+  transform: translate(390%, -40%);
+}
+
+.handCoinsPos {
+  position: absolute;
+  top: 20%;
+  left: 75%;
+  transform: translate(-450%, -40%);
+}
+
+.chartPos {
+  position: absolute;
+  top: 20%;
+  left: 75%;
+  transform: translate(-450%, 500%);
+}
+
+.linktreePos {
+  position: absolute;
+  top: 20%;
+  left: 75%;
+  transform: translate(180%, 650%);
+}
+
+.black10Bg {
+  border-radius: 100px;
+  background: var(--black-10);
+  padding: 20px;
+}
+
+.whiteBg {
+  border-radius: 100px;
+  background: var(--white-10);
+  padding: 20px;
+}
+
+.yellowBg {
+  border-radius: 100px;
+  background-color: var(--yellow);
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .layout {
+    margin: 100px 0 0 0;
+  }
+
+  .textLayout {
+    width: 100%;
+    padding: 0 16px;
+  }
+
+  .text {
+    font-weight: 300;
+  }
+}

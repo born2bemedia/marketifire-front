@@ -9,6 +9,10 @@
   overflow: hidden;
 }
 
+.actionBtn {
+  z-index: 10;
+}
+
 .textLayout {
   display: flex;
   width: 536px;

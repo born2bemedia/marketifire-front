@@ -1,5 +1,6 @@
 'use client';
 
+import type { ReactNode } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -9,21 +10,23 @@ import { Title } from '@/shared/ui/kit/title';
 
 import st from './get-free-consultation.module.scss';
 
-export function GetFreeConsultation() {
+export function GetFreeConsultation({
+  text,
+  nav,
+}: {
+  text: ReactNode;
+  nav: { url: string; label: string };
+}) {
   return (
     <section className={st.layout}>
       <section className={st.textContent}>
         <div className={st.text}>
           <Title level={1}>Let’s Build Something Powerful Together</Title>
-          <Text>
-            Marketfire isn’t just another marketing consultancy — we are your
-            partners in growth. Let’s get started today if you’re ready to
-            elevate your brand, expand your audience, and drive revenue.
-          </Text>
+          <Text>{text}</Text>
         </div>
-        <Link href="/request-form">
+        <Link href={nav.url}>
           <Button variant="black" className={st.btn}>
-            Get Your Free Consultation Today
+            {nav.label}
           </Button>
         </Link>
       </section>

@@ -1,0 +1,128 @@
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.gridItem {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 22px;
+  padding: 20px;
+  text-align: center;
+  background: var(--white-10);
+}
+
+.gridRow3 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column: span 3;
+  gap: 12px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.yellow {
+  background: var(--yellow);
+}
+
+.grey {
+  background: var(--white-20);
+}
+
+.accordionRoot {
+  width: 100%;
+}
+
+.accordionItem {
+  overflow: hidden;
+  margin-top: 1px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.accordionTrigger {
+  width: 100%;
+  padding: 10px 20px;
+  height: 46px;
+  display: flex;
+  border-radius: 12px;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  color: var(--black-100);
+  border: 1px solid var(--black-60);
+  background-color: transparent;
+
+  svg {
+    transition: all 300ms ease-in-out;
+  }
+
+  &[data-state="open"] {
+    svg {
+      rotate: 180deg;
+    }
+  }
+}
+
+.accordionContent {
+  overflow: hidden;
+}
+.accordionContent[data-state="open"] {
+  animation: slideDown 300ms cubic-bezier(0.87, 0, 0.13, 1);
+}
+.accordionContent[data-state="closed"] {
+  animation: slideUp 300ms cubic-bezier(0.87, 0, 0.13, 1);
+}
+
+.accordionContentText {
+  padding: 15px 20px;
+}
+
+.accordionChevron {
+  color: var(--violet-10);
+  transition: transform 300ms cubic-bezier(0.87, 0, 0.13, 1);
+}
+.accordionTrigger[data-state="open"] > .AccordionChevron {
+  transform: rotate(180deg);
+}
+
+@keyframes slideDown {
+  from {
+    height: 0;
+  }
+  to {
+    height: var(--radix-accordion-content-height);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    height: var(--radix-accordion-content-height);
+  }
+  to {
+    height: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .gridContainer, .gridRow3 {
+    display: flex;
+    flex-direction: column;
+  }
+}
