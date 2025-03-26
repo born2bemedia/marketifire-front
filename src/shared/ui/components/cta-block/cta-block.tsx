@@ -21,9 +21,9 @@ export function CtaBlock({
       <div className={st.ctaBlock}>
         <div className={st.ctaBlockContent}>
           <Title level={2}>{title}</Title>
-          <Text><span dangerouslySetInnerHTML={{ __html: text }} /></Text>
-        </div>
-        <div className={st.ctaBlockLink}>
+          <Text>
+            <span dangerouslySetInnerHTML={{ __html: text }} />
+          </Text>
           <Link href={link}>
             <Button variant="black" size="sm">
               {buttonText}

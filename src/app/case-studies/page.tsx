@@ -26,7 +26,7 @@ export default function TailoredSolutions() {
       <Testimonials />
       <CtaBlock
         title="Ready to Take Your Business to the Next Level?"
-        text="At Marketfire, we specialize in helping entrepreneurs grow their personal brands, attract clients, and achieve long-term success. These case studies are just a glimpse of our impact on our clients’ businesses.<br /><br /> Let’s create a personalized strategy for your brand! Book your free consultation today and discover how we can help you achieve your business goals."
+        text="At Marketfire, we specialize in helping entrepreneurs grow their personal brands, attract clients, and achieve long-term success. These case studies are just a glimpse of our impact on our clients’ businesses."
         link="/request-form"
         buttonText="Schedule a Free Strategy Session Today"
       />
