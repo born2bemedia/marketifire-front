@@ -1,7 +1,9 @@
 'use client';
 import { useModalStore } from '@/features/request-popup/services/modal.store';
 
+import { Asterisk } from '@/shared/ui/icons/fill';
 import { Button } from '@/shared/ui/kit/button';
+import { Tag } from '@/shared/ui/kit/tag/tag';
 import { Text } from '@/shared/ui/kit/text';
 import { Title } from '@/shared/ui/kit/title';
 
@@ -29,41 +31,36 @@ export function ServicePackages({
   return (
     <section className={st.layout}>
       <section className={st.content}>
-        <Title level={2}>Service Packages</Title>
+        <Tag color="yellow">
+          <Asterisk />
+          <Text>Text</Text>
+        </Tag>
+        <Title level={2}>Our Comprehensive Service Offerings</Title>
         <Text>
-          Choose from our comprehensive service packages, designed to meet the
-          specific needs of your project at every stage of growth. Whether
-          you&apos;re starting small or looking to scale dramatically, we have a
-          tailored solution that fits.
+          Marketfire combines data, strategy, and execution to deliver a full
+          suite of consulting services designed to unlock your brand’s full
+          potential.
         </Text>
       </section>
       <div className={st.cards}>
         {packages.map((item, index) => (
-          <section
-            className={st.card}
-            key={item.id}
-            style={{
-              top: `calc(10px + ${index * 20}px)`,
-            }}
-          >
-            <span className={st.cardNumber}>0{index + 1}</span>
+          <section className={st.card} key={index}>
             <div className={st.col1}>
               <div className={st.title}>
                 <Title level={2}>{item.title}</Title>
-                <Text>{item.description}</Text>
+                <Title level={3}>From {item.price}</Title>
               </div>
-              <div className={st.price}>
-                <Title level={2}>From {item.price}</Title>
-                <Button
-                  size="md"
-                  variant="black"
-                  onClick={() => handleOpenModal('package', item.title)}
-                >
-                  Order now
-                </Button>
-              </div>
+              <Text>{item.description}</Text>
+              <Included item={item} />
             </div>
-            <Included item={item} />
+
+            <Button
+              size="md"
+              variant="black"
+              onClick={() => handleOpenModal('package', item.title)}
+            >
+              Order now
+            </Button>
           </section>
         ))}
       </div>

@@ -11,6 +11,7 @@ import { useModalStore } from '@/features/request-popup/services/modal.store';
 
 import { lsRead, lsWrite } from '@/shared/lib/browser';
 import { Asterisk } from '@/shared/ui/icons/fill';
+import { ArrowDown } from '@/shared/ui/icons/outline/arrow-down';
 import { Button } from '@/shared/ui/kit/button';
 import { Tag } from '@/shared/ui/kit/tag/tag';
 import { Text } from '@/shared/ui/kit/text';
@@ -22,24 +23,22 @@ import { type PricingItem } from './types';
 export default function Pricing({
   categoryLabel,
   categoryTitle,
-  categoryDescription,
   pricingItems,
-  index,
-  sectionBackground,
-  cardBackground,
 }: {
   categoryLabel: string;
   categoryTitle: string;
-  categoryDescription: string;
   pricingItems: PricingItem[];
-  index: string;
-  sectionBackground: string;
-  cardBackground: string;
 }) {
   const { setIsOpen, setType, setProduct } = useModalStore();
   const { setIsCartOpen, setCartProducts, cartProducts, setCartTotal } =
     useCartModalStore();
   const [mounted, setMounted] = useState(false);
+
+  const [open, setOpen] = useState(false);
+
+  const handleOpen = () => {
+    setOpen(!open);
+  };
 
   useEffect(() => {
     setMounted(true);
@@ -74,73 +73,70 @@ export default function Pricing({
   }
 
   return (
-    <div
-      className={st.layout}
-      style={{
-        background: sectionBackground,
-      }}
-    >
-      <div className={st.col1}>
-        <div>
-          <Tag color={index === '06' ? 'white' : 'yellow'}>
-            <Asterisk />
-            <Text>{categoryLabel}</Text>
-          </Tag>
-          <Title level={2}>{categoryTitle}</Title>
-          <Text>{categoryDescription}</Text>
-        </div>
-        <Image
-          src={`/pricing/${index}.svg`}
-          alt={categoryTitle}
-          width={404}
-          height={324}
-        />
-      </div>
-      <div className={st.col2}>
-        {pricingItems.map((item, index) => (
-          <div
-            key={index}
-            className={st.item}
-            style={{
-              top: `calc(50px + ${index * 50}px)`,
-              background: cardBackground,
-              borderColor: cardBackground,
-            }}
-          >
-            <div className={st.top}>
-              <div className={st.itemTitle}>{item.title}</div>
-              <div className={st.itemDescription}>{item.description}</div>
-            </div>
-            <div className={st.bottom}>
-              <div className={st.price}>
-                {item.type === 'order' ? 'From ' : ''}€{item.price}
-              </div>
-              {item.type === 'buy' ? (
-                <Button
-                  size="md"
-                  variant="black"
-                  onClick={() =>
-                    !cartProducts.some(product => product.title === item.title)
-                      ? handleAddToCart(item)
-                      : handleOpenCartModal()
-                  }
-                >
-                  {cartProducts.some(product => product.title === item.title)
-                    ? 'In Cart'
-                    : 'Buy'}
-                </Button>
-              ) : (
-                <Button
-                  size="md"
-                  variant="black"
-                  onClick={() => handleOpenModal('service', item.title)}
-                >
-                  Order
-                </Button>
-              )}
-            </div>
+    <div className={st.layout}>
+      <div className={st.container}>
+        <div className={st.col1}>
+          <div>
+            <Tag color="yellow">
+              <Asterisk />
+              <Text>{categoryLabel}</Text>
+            </Tag>
+            <Title level={2}>{categoryTitle}</Title>
+            <button
+              className={`${st.tabOpen} ${open ? st.open : ''}`}
+              onClick={handleOpen}
+            >
+              <Text>{open ? 'Hide' : 'Open'}</Text>
+              <ArrowDown />
+            </button>
           </div>
-        ))}
+        </div>
+        <div className={`${st.col2} ${open ? st.open : ''}`}>
+          {pricingItems.map((item, index) => (
+            <div key={index} className={st.item}>
+              <div className={st.top}>
+                <Image
+                  src={item.icon}
+                  alt={item.title}
+                  width={44}
+                  height={44}
+                />
+                <div className={st.itemTitle}>{item.title}</div>
+                <div className={st.itemDescription}>{item.description}</div>
+              </div>
+              <div className={st.bottom}>
+                <div className={st.price}>
+                  {item.type === 'order' ? 'From ' : ''}€{item.price}
+                </div>
+                {item.type === 'buy' ? (
+                  <Button
+                    size="md"
+                    variant="black"
+                    onClick={() =>
+                      !cartProducts.some(
+                        product => product.title === item.title,
+                      )
+                        ? handleAddToCart(item)
+                        : handleOpenCartModal()
+                    }
+                  >
+                    {cartProducts.some(product => product.title === item.title)
+                      ? 'In Cart'
+                      : 'Buy'}
+                  </Button>
+                ) : (
+                  <Button
+                    size="md"
+                    variant="black"
+                    onClick={() => handleOpenModal('service', item.title)}
+                  >
+                    Order
+                  </Button>
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

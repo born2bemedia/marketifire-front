@@ -1,95 +1,60 @@
 .layout {
-  border-radius: 22px;
-  margin: 100px 60px;
-  padding: 60px 30px;
-  background-color: var(--yellow);
+  padding: 0 60px 40px 60px;
   display: flex;
   flex-direction: column;
-  gap: 65px;
-}
+  gap: 39px;
 
-.content {
-  display: flex;
-  gap: 19px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  >p {
-    max-width: 688px;
-    text-align: center;
-    margin-bottom: 65px;
+  @media (max-width: 768px) {
+    padding: 0 0 40px 0;
+  }
+  .ctaBlock {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    border-radius: 22px;
+    background: var(--White-10, #fcfcfa);
+    padding: 70px 50px;
+    background-image: url('/ctaBack.svg');
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: contain;
     @media (max-width: 768px) {
-      max-width: 100%;
+      border-radius: 0;
+      flex-direction: column;
+      align-items: center;
+      height: 600px;
+      padding: 20px;
+      background-position: bottom center;
+      background-image: url('/ctaBackMob.svg');
     }
-  }
-}
-
-.cards {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.cardLayout {
-  width: 100%;
-  height: 369px;
-  position: relative;
-  padding: 20px;
-  border-radius: 22px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: 4px solid var(--white-10);
-  background-color: var(--white-0);
-  position: sticky;
-  &:nth-child(even) {
-    transform: rotate(-2.079deg);
-  }
-  &:nth-child(odd) {
-    transform: rotate(2.079deg);
-  }
-  &:first-child {
-    transform: rotate(0deg);
-  }
-}
-
-.cardNumber {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  color: var(--black-10);
-  font-size: 48px;
-  font-weight: 500;
-}
-
-.cardInfo {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  text-align: center;
-}
-
-.contactsBtn {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  justify-content: center;
-  align-items: center;
-}
-
-@media (max-width: 768px) {
-  .layout {
-    border-radius: 0;
-    margin: 100px 0;
-    padding: 40px 16px;
-    a,
-    button {
+    .ctaBlockContent {
+      width: 550px;
       display: flex;
-      width: 100%;
+      flex-direction: column;
+      gap: 20px;
+      max-width: 100%;
+      @media (max-width: 768px) {
+        width: 100%;
+        align-items: center;
+      }
+      h2 {
+        font-size: 46px;
+        @media (max-width: 768px) {
+          font-size: 36px;
+          text-align: center;
+        }
+      }
+      p {
+        @media (max-width: 768px) {
+          text-align: center;
+        }
+      }
+      button {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
     }
-  }
-
-  .contactsBtn {
   }
 }
