@@ -3,4 +3,5 @@ export type PricingItem = {
   description: string;
   price: number;
   type: string;
+  icon: string;
 };

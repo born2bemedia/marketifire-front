@@ -1,5 +1,5 @@
 .layout {
-  padding: 0 60px 40px 60px;
+  padding: 100px 60px 40px 60px;
   display: flex;
   flex-direction: column;
   gap: 39px;
@@ -14,7 +14,7 @@
     gap: 40px;
     border-radius: 22px;
     background: var(--White-10, #fcfcfa);
-    padding: 70px 50px;
+    padding: 60px 50px;
     background-image: url('/ctaBack.svg');
     background-position: right center;
     background-repeat: no-repeat;
@@ -50,10 +50,21 @@
           text-align: center;
         }
       }
-      button {
+      .ctaBlockButtons {
+        margin-top: 28px;
         display: flex;
-        align-items: center;
-        gap: 8px;
+        gap: 12px;
+        width: 100%;
+        a {
+          @media screen and (max-width: 768px) {
+            flex-grow: 1;
+            display: flex;
+            button {
+              font-size: 14px;
+              width: 100%;
+            }
+          }
+        }
       }
     }
   }
