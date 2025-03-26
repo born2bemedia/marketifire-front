@@ -8,10 +8,11 @@ import {
 } from '@/features/insights/lib';
 import { getInsight } from '@/features/insights/services';
 
+import { GetFreeConsultation } from '@/shared/ui/components/get-free-consultation';
+
 import { Article, Banner, Hero } from './components';
 import st from './page.module.scss';
 import { insightsMeta } from '@/app/insights/[slug]/meta';
-import { GetFreeConsultation } from '@/app/insights/components';
 import { PulsingEllipse } from '@/app/request-form/components';
 
 export async function generateMetadata({
@@ -63,7 +64,15 @@ export default async function Insight({
         </Banner>
         <Article>{groupedElements}</Article>
       </section>
-      <GetFreeConsultation />
+      <GetFreeConsultation
+        text="Marketfire isn’t just another marketing consultancy — we are your
+            partners in growth. Let’s get started today if you’re ready to
+            elevate your brand, expand your audience, and drive revenue."
+        nav={{
+          url: '/request-form',
+          label: 'Get Your Free Consultation Today',
+        }}
+      />
     </main>
   );
 }
