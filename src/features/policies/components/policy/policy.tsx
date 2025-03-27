@@ -4,9 +4,7 @@ import {
 } from '@/features/policies/lib/payload';
 import { getPolicy } from '@/features/policies/services';
 
-import { Text } from '@/shared/ui/kit/text';
-import { Title } from '@/shared/ui/kit/title';
-
+import { Hero } from './hero';
 import st from './policy.module.scss';
 import { PulsingEllipse } from '@/app/request-form/components';
 
@@ -18,12 +16,9 @@ export async function Policy({ id, title }: { title: string; id: string }) {
   const groupedElements = groupElementsByH2(elements);
 
   return (
-    <main style={{ position: 'relative', overflowX: 'hidden' }}>
+    <main style={{ position: 'relative' }}>
       <PulsingEllipse />
-      <section className={st.title}>
-        <Title>{title}</Title>
-        <Text>{lastUpdate}</Text>
-      </section>
+      <Hero title={title} lastUpdate={lastUpdate} />
       <section className={st.layout}>{groupedElements}</section>
     </main>
   );
