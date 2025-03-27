@@ -63,7 +63,7 @@ export function CheckOutOurPricing() {
           comprehensive marketing overhaul or a focused growth strategy, we have
           a package that works for you.
         </Text>
-        <Link href="/pricing" className={st.actionBtn}>
+        <Link href="/pricing-and-packages" className={st.actionBtn}>
           <Button variant="black" size="md">
             View Pricing & Packages
           </Button>
