@@ -1,0 +1,115 @@
+.row {
+  display: flex;
+  gap: 20px;
+}
+
+.formLayout {
+  display: flex;
+  flex-direction: column;
+  padding: 70px;
+  background-color: var(--white-0);
+  border-radius: 22px;
+  width: 954px;
+  margin: 0 auto;
+  gap: 50px;
+}
+
+.formInner {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btns {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+}
+
+.titleService {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.specifyInput {
+  width: 50%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.service {
+  border-radius: 6px;
+  background-color: var(--white-10);
+  padding: 8px 20px 8px 12px;
+}
+
+.formLayout {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  width: max-content;
+  margin-left: auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 1058px) {
+  .row {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .grid {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .formLayout {
+    width: 100%;
+    padding: 16px 12px;
+    margin: 0;
+  }
+
+  .formLayout {
+    gap: 30px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}

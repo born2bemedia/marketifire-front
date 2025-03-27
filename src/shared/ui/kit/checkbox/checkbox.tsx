@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
+import { useId } from 'react';
 import { Indicator, Root } from '@radix-ui/react-checkbox';
-import { nanoid } from 'nanoid';
 
 import { Check } from '@/shared/ui/icons/fill';
 import { Text } from '@/shared/ui/kit/text';
@@ -20,7 +20,8 @@ export function Checkbox({
   onCheckedChange?: (checked: boolean) => void;
   id?: string;
 }) {
-  const checkboxId = !id ? nanoid() : id;
+  const generatedId = useId();
+  const checkboxId = id ?? generatedId;
 
   return (
     <div className={st.layout}>

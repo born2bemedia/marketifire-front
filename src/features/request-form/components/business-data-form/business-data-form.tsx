@@ -20,7 +20,7 @@ import { Title } from '@/shared/ui/kit/title';
 import { type BusinessDataSchema, businessDataSchema } from '../../lib';
 import st from './business-data-form.module.scss';
 
-const services = [
+export const services = [
   'Marketing & Growth Strategies',
   'Performance Marketing & Conversion Optimization',
   'Business Consulting & Expansion Planning',
@@ -30,7 +30,7 @@ const services = [
   'Other',
 ];
 
-const budgets = [
+export const budgets = [
   'Under €1,000',
   '€1,000 - €5,000',
   '€5,000 - €10,000',
@@ -38,14 +38,14 @@ const budgets = [
   '€20,000+',
 ];
 
-const startDate = [
+export const startDate = [
   'Within 1 Month',
   '1-3 Months',
   '3-6 Months',
   'Flexible Timeline',
 ];
 
-const contactMethod = ['Email', 'Phone', 'Video Call'];
+export const contactMethod = ['Email', 'Phone', 'Video Call'];
 
 export function BusinessDataForm() {
   const [dialogOpen, setDialogOpen] = useState(false);
@@ -272,7 +272,7 @@ export function BusinessDataForm() {
   );
 }
 
-function Service({
+export function Service({
   title,
   checked,
   onChecked,

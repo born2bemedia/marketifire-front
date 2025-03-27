@@ -33,7 +33,7 @@ export function TextArea({
       <Text color="black">{label}</Text>
       <textarea className={textareaClasses} {...args} />
       {hint && (
-        <Text color="black60" className={st.hint}>
+        <Text color="black100" className={st.hint}>
           {hint}
         </Text>
       )}

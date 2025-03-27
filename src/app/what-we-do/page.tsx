@@ -1,3 +1,5 @@
+import type { Metadata } from 'next';
+
 import { GetFreeConsultation } from '@/shared/ui/components/get-free-consultation';
 
 import {
@@ -12,6 +14,18 @@ import {
 } from './components';
 import st from './page.module.scss';
 import { PulsingEllipse } from '@/app/request-form/components';
+
+export const metadata: Metadata = {
+  title: 'What We Do | Business Consulting & Marketing Services',
+  description:
+    'Discover the comprehensive services we offer, including marketing strategies, business consulting, and performance optimization tailored to your goals.',
+  openGraph: {
+    title: 'What We Do | Business Consulting & Marketing Services',
+    description:
+      'Discover the comprehensive services we offer, including marketing strategies, business consulting, and performance optimization tailored to your goals.',
+    images: 'https://marketifire.com/meta/lg.png',
+  },
+};
 
 export default function WhatWeDo() {
   return (
