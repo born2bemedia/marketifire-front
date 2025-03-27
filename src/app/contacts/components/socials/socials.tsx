@@ -4,7 +4,6 @@ import Link from 'next/link';
 
 import { ArrowRight, Asterisk } from '@/shared/ui/icons/fill';
 import { FacebookIcon, InstagramIcon, XIcon } from '@/shared/ui/icons/socials';
-import { Button } from '@/shared/ui/kit/button';
 import { Tag } from '@/shared/ui/kit/tag/tag';
 import { Text } from '@/shared/ui/kit/text';
 import { Title } from '@/shared/ui/kit/title';
