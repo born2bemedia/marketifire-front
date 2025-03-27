@@ -1,0 +1,17 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+  width: 688px;
+  margin: 100px auto 0 auto;
+}
+
+@media (max-width: 768px) {
+  .layout {
+    margin: 0;
+    padding: 100px 12px 0 12px;
+    width: 100%;
+    text-align: center;
+  }
+}
