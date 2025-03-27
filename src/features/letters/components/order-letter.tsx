@@ -1,36 +1,55 @@
 import { htmlTemplate } from '@/features/letters/components/html-template';
 
-export function contactFormLetter({ username }: { username: string }) {
+export function orderLetter({
+  orderNumber,
+  username,
+  total,
+  orderDate,
+  description,
+}: {
+  orderNumber: string;
+  username: string;
+  orderDate: string;
+  description: string;
+  total: number;
+}) {
   return htmlTemplate({
     body: `
       <header class="header">
-        <img class="headerLogo" style="margin: auto 0;" src='https://marketifire.com/full-logo.png' alt='full-logo' width="145" height="26" />
+        <img class="headerLogo img" src='https://marketifire.com/full-logo.png' alt='full-logo' width="145" height="26" />
         <section class="balloons marginLeft">
           <img src='https://marketifire.com/letters/0.png' alt='zero-balloon' />
           <img src='https://marketifire.com/letters/1.png' alt='one-balloon' />
         </section>
       </header>
       <div class="main">
-        <h1 class="heading">Thank You for Contacting Marketifire</h1>
+        <h1 class="heading">Confirmation - ${orderNumber}</h1>
         <p class="p">Dear <strong class="strong">${username}</strong></p>
         <p class="p">
-          Thank you for reaching out to Marketfire for your business and marketing consulting needs!
-          We’ve received your request, and our team is excited to assist you in achieving your goals.
+          We are pleased to confirm that we’ve received your order for our business and marketing consulting 
+          services. At Marketfire, we are committed to delivering outstanding results tailored specifically 
+          to your business’s needs.
+        </p>
+        <ul class="p" style="padding: 0">
+          Below are the details of your order:
+          <li class="list">Order Number: ${orderNumber}</li>
+          <li class="list">Order Date: ${orderDate}</li>
+          <li class="list">Description of Services: ${description}</li>
+          <li class="list">Total Amount Due: ${total}</li>
+        </ul>
+        <p class="p">
+          We will send you the necessary payment details shortly. Once payment is received, we will begin 
+          processing your order promptly.
         </p>
         <p class="p">
-          We will review your information and contact you soon to discuss how we can tailor our services 
-          to meet your specific business needs.
+          Should you have any questions or need further clarification, please feel free to reach out.
         </p>
         <p class="p">
-          If you have any additional information or specific preferences in the meantime, please don’t 
-          hesitate to let us know.
+          Thank you for choosing Marketfire. We are excited to work with you and help you achieve your 
+          business goals.
         </p>
         <p class="p">
-          Thank you for choosing Marketfire. We are dedicated to providing high-quality, data-driven strategies 
-          that will help your business grow.
-        </p>
-        <p class="p">
-        Kind regards, <br /><strong class="strong">The Marketfire Team</strong>
+          Best regards, <br /><strong class="strong">The Marketfire Team</strong>
         </p>
       </div>
       <footer class="footer"> 
@@ -46,8 +65,17 @@ export function contactFormLetter({ username }: { username: string }) {
         align-items: center;
       }
       
+      .img {
+        margin: auto 0; 
+      }
+      
       .headerLogo {
         padding: 10px 40px;
+      }
+      
+      .list {
+        list-style-type: disc;
+        margin-left: 20px;
       }
       
       .balloons {
