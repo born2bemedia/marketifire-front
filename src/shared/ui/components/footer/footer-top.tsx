@@ -38,7 +38,7 @@ const navigation = [
     list: [
       { label: 'Terms and Conditions', link: '/terms-and-conditions' },
       { label: 'Privacy Policy', link: '/privacy-policy' },
-      { label: 'Cookie Policy', link: '/cookies-policy' },
+      { label: 'Cookie Policy', link: '/cookie-policy' },
       { label: 'Refund Policy', link: '/refund-policy' },
     ],
   },
