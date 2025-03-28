@@ -3,7 +3,8 @@ import { htmlTemplate } from '@/features/letters/components/html-template';
 export function contactFormLetter({ username }: { username: string }) {
   return htmlTemplate({
     body: `
-      <header class="header">
+      <div class="wrapper">
+        <header class="header">
         <img class="headerLogo" style="margin: auto 0;" src='https://marketifire.com/full-logo.png' alt='full-logo' width="145" height="26" />
         <section class="balloons marginLeft">
           <img src='https://marketifire.com/letters/0.png' alt='zero-balloon' />
@@ -37,8 +38,15 @@ export function contactFormLetter({ username }: { username: string }) {
         <a class="link uppercase" href='https://marketifire.com/contacts'>Contact Us</a>
         <a class="link marginLeft" href='mailto:info@marketifire.com'>info@marketifire.com</a>
       </footer>
+      </div>
     `,
     style: `
+      .wrapper {
+        max-width: 696px;
+        margin: 0 auto;
+        width: 100%;
+      }
+    
       .header {
         background-color: #FFF;
         display: flex;

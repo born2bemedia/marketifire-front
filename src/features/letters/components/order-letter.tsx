@@ -15,49 +15,57 @@ export function orderLetter({
 }) {
   return htmlTemplate({
     body: `
-      <header class="header">
-        <img class="headerLogo img" src='https://marketifire.com/full-logo.png' alt='full-logo' width="145" height="26" />
-        <section class="balloons marginLeft">
-          <img src='https://marketifire.com/letters/0.png' alt='zero-balloon' />
-          <img src='https://marketifire.com/letters/1.png' alt='one-balloon' />
-        </section>
-      </header>
-      <div class="main">
-        <h1 class="heading">Confirmation - ${orderNumber}</h1>
-        <p class="p">Dear <strong class="strong">${username}</strong></p>
-        <p class="p">
-          We are pleased to confirm that we’ve received your order for our business and marketing consulting 
-          services. At Marketfire, we are committed to delivering outstanding results tailored specifically 
-          to your business’s needs.
-        </p>
-        <ul class="p" style="padding: 0">
-          Below are the details of your order:
-          <li class="list">Order Number: ${orderNumber}</li>
-          <li class="list">Order Date: ${orderDate}</li>
-          <li class="list">Description of Services: ${description}</li>
-          <li class="list">Total Amount Due: ${total}</li>
-        </ul>
-        <p class="p">
-          We will send you the necessary payment details shortly. Once payment is received, we will begin 
-          processing your order promptly.
-        </p>
-        <p class="p">
-          Should you have any questions or need further clarification, please feel free to reach out.
-        </p>
-        <p class="p">
-          Thank you for choosing Marketfire. We are excited to work with you and help you achieve your 
-          business goals.
-        </p>
-        <p class="p">
-          Best regards, <br /><strong class="strong">The Marketfire Team</strong>
-        </p>
+      <div class="wrapper">
+        <header class="header">
+          <img class="headerLogo img" src='https://marketifire.com/full-logo.png' alt='full-logo' width="145" height="26" />
+          <section class="balloons marginLeft">
+            <img src='https://marketifire.com/letters/0.png' alt='zero-balloon' />
+            <img src='https://marketifire.com/letters/1.png' alt='one-balloon' />
+          </section>
+        </header>
+        <div class="main">
+          <h1 class="heading">Confirmation - ${orderNumber}</h1>
+          <p class="p">Dear <strong class="strong">${username}</strong></p>
+          <p class="p">
+            We are pleased to confirm that we’ve received your order for our business and marketing consulting 
+            services. At Marketfire, we are committed to delivering outstanding results tailored specifically 
+            to your business’s needs.
+          </p>
+          <ul class="p" style="padding: 0">
+            Below are the details of your order:
+            <li class="list">Order Number: ${orderNumber}</li>
+            <li class="list">Order Date: ${orderDate}</li>
+            <li class="list">Description of Services: ${description}</li>
+            <li class="list">Total Amount Due: ${total}</li>
+          </ul>
+          <p class="p">
+            We will send you the necessary payment details shortly. Once payment is received, we will begin 
+            processing your order promptly.
+          </p>
+          <p class="p">
+            Should you have any questions or need further clarification, please feel free to reach out.
+          </p>
+          <p class="p">
+            Thank you for choosing Marketfire. We are excited to work with you and help you achieve your 
+            business goals.
+          </p>
+          <p class="p">
+            Best regards, <br /><strong class="strong">The Marketfire Team</strong>
+          </p>
+        </div>
+        <footer class="footer"> 
+          <a class="link uppercase" href='https://marketifire.com/contacts'>Contact Us</a>
+          <a class="link marginLeft" href='mailto:info@marketifire.com'>info@marketifire.com</a>
+        </footer>
       </div>
-      <footer class="footer"> 
-        <a class="link uppercase" href='https://marketifire.com/contacts'>Contact Us</a>
-        <a class="link marginLeft" href='mailto:info@marketifire.com'>info@marketifire.com</a>
-      </footer>
     `,
     style: `
+      .wrapper {
+        max-width: 696px;
+        margin: 0 auto;
+        width: 100%;
+      }
+    
       .header {
         background-color: #FFF;
         display: flex;
