@@ -16,9 +16,9 @@ export function FooterBottom() {
       </Text>
       <section className={st.contacts}>
         <div className={st.links}>
-          {/*<Link href="tel:+00 000 000 00">*/}
-          {/*  <Text color="black60">+00 000 000 00</Text>*/}
-          {/*</Link>*/}
+          <Link href="tel:+421221011939">
+            <Text color="black60">+421221011939</Text>
+          </Link>
           <Link href="mailto:info@marketifire.com">
             <Text color="black60">info@marketifire.com</Text>
           </Link>
