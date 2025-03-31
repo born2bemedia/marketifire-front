@@ -30,8 +30,8 @@ const contacts = [
   },
   {
     title: 'Speak With Us',
-    link: 'tel:+1-888-555-5555',
-    text: 'NUMBER',
+    link: 'tel:+421221011939',
+    text: '+421221011939',
     balloons: [
       {
         src: '/contacts/0.png',
