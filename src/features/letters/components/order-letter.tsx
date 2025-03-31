@@ -55,7 +55,11 @@ export function orderLetter({
         </div>
         <footer class="footer"> 
           <a class="link uppercase" href='https://marketifire.com/contacts'>Contact Us</a>
-          <a class="link marginLeft" href='mailto:info@marketifire.com'>info@marketifire.com</a>
+          <div class="marginLeft links">
+            <a class="link" style="padding-right: 20px" href='mailto:info@marketifire.com'>info@marketifire.com</a>
+            <div class="divider" />
+            <a class="link" style="padding-left: 20px" href='tel:+421221011939'>+421221011939</a>
+          </div>
         </footer>
       </div>
     `,
@@ -64,6 +68,16 @@ export function orderLetter({
         max-width: 696px;
         margin: 0 auto;
         width: 100%;
+      }
+      
+      .divider {
+        background: #D9D9D9;
+        width: 1px;
+        height: 18px;
+      }
+      
+      .links {
+        display: flex;
       }
     
       .header {
