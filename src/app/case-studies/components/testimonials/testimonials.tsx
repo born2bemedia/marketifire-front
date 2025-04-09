@@ -16,7 +16,7 @@ export function Testimonials() {
       <section className={st.titleLayout}>
         <Tag color="yellow">
           <Asterisk />
-          <Text>Text</Text>
+          <Text>Client Testimonials and Success Stories</Text>
         </Tag>
         <Title level={2}>What Clients Say About Us</Title>
         <Text>

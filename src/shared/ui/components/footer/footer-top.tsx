@@ -34,7 +34,7 @@ const navigation = [
     ],
   },
   {
-    title: 'Support & Resources',
+    title: 'Legal & Compliance',
     list: [
       { label: 'Terms and Conditions', link: '/terms-and-conditions' },
       { label: 'Privacy Policy', link: '/privacy-policy' },
