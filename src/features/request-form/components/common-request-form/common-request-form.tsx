@@ -35,8 +35,8 @@ export function CommonRequestForm() {
     formState: { isSubmitting },
   } = useForm<CommonRequestSchema>({
     resolver: zodResolver(commonRequestSchema),
-    reValidateMode: 'onChange',
-    mode: 'onChange',
+    reValidateMode: 'onBlur',
+    mode: 'onBlur',
     defaultValues: {
       companyName: '',
       email: '',
