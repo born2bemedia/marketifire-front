@@ -8,13 +8,15 @@ const COOKIE_NAME = 'googtrans';
 
 const getLanguageConfig = (): LanguageConfig | undefined => {
   let cfg: LanguageConfig | undefined;
+
   if (process.env.GOOGLE_TRANSLATION_CONFIG) {
     try {
-      cfg = JSON.parse(process.env.GOOGLE_TRANSLATION_CONFIG!);
+      cfg = JSON.parse(process.env.GOOGLE_TRANSLATION_CONFIG ?? '{}');
     } catch (err) {
       console.error(err);
     }
   }
+
   return cfg;
 };
 
@@ -23,41 +25,37 @@ export const useLanguageSwitcher = () => {
 
   useEffect(() => {
     const cfg = getLanguageConfig();
-    const existing = cookies.get(COOKIE_NAME);
+    const existingLanguageCookieValue = cookies.get(COOKIE_NAME);
 
-    if (!existing && cfg?.defaultLanguage) {
-      cookies.set(COOKIE_NAME, `/auto/${cfg.defaultLanguage}`, {
-        path: '/',
-        expires: 30,
-        sameSite: 'lax',
-        domain: `.${window.location.hostname}`,
-      });
-      window.location.reload();
-      return;
-    }
-
-    let lang = '';
-    if (existing) {
-      const parts = existing.split('/');
-      if (parts.length > 2) {
-        lang = parts[2];
+    let languageValue = '';
+    if (existingLanguageCookieValue) {
+      const sp = existingLanguageCookieValue.split('/');
+      if (sp.length > 2) {
+        languageValue = sp[2];
       }
     }
-    if (cfg && !lang) {
-      lang = cfg.defaultLanguage;
+    if (cfg && !languageValue) {
+      languageValue = cfg.defaultLanguage;
     }
-    setCurrentLanguage(lang);
+    setCurrentLanguage(languageValue);
   }, []);
 
   const switchLanguage = async (lang: string) => {
-    try {
-      cookies.remove(COOKIE_NAME);
-      cookies.set(COOKIE_NAME, `/auto/${lang}`, {
-        path: '/',
-        expires: 30,
-        sameSite: 'lax',
-        domain: `.${window.location.hostname}`,
+    const setCookie = () => {
+      return new Promise<void>(resolve => {
+        cookies.remove(COOKIE_NAME);
+        cookies.set(COOKIE_NAME, `/auto/${lang}`, {
+          path: '/',
+          expires: 30,
+          sameSite: 'lax',
+          domain: `.${window.location.hostname}`,
+        });
+        resolve();
       });
+    };
+
+    try {
+      await setCookie();
       window.location.reload();
     } catch (err) {
       console.error('Error setting new language:', err);
