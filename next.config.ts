@@ -12,7 +12,7 @@ const nextConfig: NextConfig = {
         { title: 'Deutsch', name: 'de' },
         { title: 'Italiano', name: 'it' },
       ],
-      defaultLanguage: 'sk',
+      defaultLanguage: 'en',
     }),
   },
 };
