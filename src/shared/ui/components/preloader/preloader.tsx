@@ -19,7 +19,7 @@ export const Preloader = () => {
     const timer = setTimeout(() => {
       setIsLoading(false);
       setTimeout(() => setIsVisible(false), 200);
-    }, 1000);
+    }, 2000);
 
     return () => clearTimeout(timer);
   }, [pathname]);

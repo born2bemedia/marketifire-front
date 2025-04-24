@@ -27,6 +27,18 @@ export const useLanguageSwitcher = () => {
     const cfg = getLanguageConfig();
     const existingLanguageCookieValue = cookies.get(COOKIE_NAME);
 
+    if (!existingLanguageCookieValue && cfg?.defaultLanguage) {
+      cookies.set(COOKIE_NAME, `/auto/${cfg.defaultLanguage}`, {
+        path: '/',
+        expires: 30,
+        sameSite: 'lax',
+        domain: `.${window.location.hostname}`,
+      });
+      // сторінка перезавантажиться вже з польським перекладом
+      window.location.reload();
+      return;
+    }
+
     let languageValue = '';
     if (existingLanguageCookieValue) {
       const sp = existingLanguageCookieValue.split('/');
