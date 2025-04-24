@@ -58,8 +58,8 @@ export function BusinessDataForm() {
     formState: { isSubmitting },
   } = useForm<BusinessDataSchema>({
     resolver: zodResolver(businessDataSchema),
-    reValidateMode: 'onChange',
-    mode: 'onChange',
+    reValidateMode: 'onBlur',
+    mode: 'onBlur',
     defaultValues: {
       services: [],
       budget: '',

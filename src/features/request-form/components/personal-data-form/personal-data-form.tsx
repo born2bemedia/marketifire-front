@@ -24,8 +24,8 @@ export function PersonalDataForm() {
     formState: { isSubmitting },
   } = useForm<RequestFormSchema>({
     resolver: zodResolver(requestFormSchema),
-    reValidateMode: 'onChange',
-    mode: 'onChange',
+    reValidateMode: 'onBlur',
+    mode: 'onBlur',
     defaultValues: {
       companyName: '',
       email: '',
