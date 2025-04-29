@@ -1,13 +1,15 @@
 'use client';
 
-import { useEffect, useMemo } from 'react';
+import { useCallback, useEffect, useMemo } from 'react';
 import Link from 'next/link';
 
 import { useLoginModalStore } from '@/core/auth/services/auth.store';
+import { logout } from '@/core/auth/services/logout.action';
 
 import { cookies } from '@/shared/lib/browser';
+import { notifyError } from '@/shared/lib/notify';
 import { cn } from '@/shared/lib/styles';
-import { SignInIcon } from '@/shared/ui/icons/outline';
+import { ExitIcon, SignInIcon } from '@/shared/ui/icons/outline';
 import { Avatar } from '@/shared/ui/kit/avatar';
 import { Button } from '@/shared/ui/kit/button';
 import { Text } from '@/shared/ui/kit/text';
@@ -27,13 +29,28 @@ export function UserBadge({ className }: { className?: string }) {
 
   const initials = useMemo(() => user?.firstName[0] ?? '', [user?.firstName]);
 
+  const logoutHandler = useCallback(async () => {
+    const { success } = await logout();
+
+    if (success) {
+      setUser(null);
+    } else {
+      notifyError('Logout failed. Please try again.');
+    }
+  }, [setUser]);
+
   return user ? (
-    <Link href="/account" className={cn(st.badge, className)}>
-      <Text color="black" weight={400} uppercase>
-        {user.firstName} {user.lastName}
-      </Text>
-      <Avatar initials={initials} />
-    </Link>
+    <>
+      <Button variant="yellow" className={st.logout} onClick={logoutHandler}>
+        LOG OUT <ExitIcon />
+      </Button>
+      <Link href="/account" className={cn(st.badge, className)}>
+        <Text color="black" weight={400} uppercase>
+          {user.firstName} {user.lastName}
+        </Text>
+        <Avatar initials={initials} />
+      </Link>
+    </>
   ) : (
     <Button
       variant="yellow"

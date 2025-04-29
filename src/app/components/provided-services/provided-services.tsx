@@ -6,7 +6,6 @@ import { cn } from '@/shared/lib/styles';
 import { Text } from '@/shared/ui/kit/text';
 
 import st from './provided-services.module.scss';
-import { ExploreBtn } from '@/app/components/explore-btn/explore-btn';
 
 export function ProvidedServices() {
   return (
@@ -38,7 +37,6 @@ function TailoredStrategies() {
         width={220}
         height={352}
       />
-      <ExploreBtn />
     </article>
   );
 }
@@ -50,7 +48,6 @@ function ProvenTactics() {
         Proven Tactics
       </Text>
       <Graphics />
-      <ExploreBtn />
     </article>
   );
 }
@@ -110,7 +107,6 @@ function MeasurableGrowth() {
         width={336}
         height={336}
       />
-      <ExploreBtn />
     </article>
   );
 }
