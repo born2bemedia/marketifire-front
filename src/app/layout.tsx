@@ -3,6 +3,8 @@ import { Outfit } from 'next/font/google';
 import Script from 'next/script';
 import { GoogleAnalytics } from '@next/third-parties/google';
 
+import CookiePopup from '@/features/cookie-popup/CookiePopup';
+
 import { Toaster } from '@/shared/lib/notify';
 import { Footer } from '@/shared/ui/components/footer';
 import { Header } from '@/shared/ui/components/header';
@@ -59,6 +61,7 @@ export default function RootLayout({
         {children}
         <Footer />
         <Toaster position="bottom-right" reverseOrder={false} />
+        <CookiePopup />
       </body>
     </html>
   );
