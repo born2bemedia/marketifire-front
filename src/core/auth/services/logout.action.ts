@@ -1,13 +1,17 @@
 'use server';
 
 import { cookies } from 'next/headers';
-import { redirect } from 'next/navigation';
 
 export async function logout() {
-  const cookieInst = await cookies();
+  try {
+    const cookieInst = await cookies();
 
-  cookieInst.delete('token');
-  cookieInst.delete('user');
+    cookieInst.delete('token');
+    cookieInst.delete('user');
 
-  redirect('/');
+    return { success: true };
+  } catch (e) {
+    console.error(e);
+    return { success: false };
+  }
 }

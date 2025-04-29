@@ -24,6 +24,7 @@ export * from './code';
 export * from './coins';
 export * from './computer-tower';
 export * from './envelope';
+export * from './exit';
 export * from './eye';
 export * from './eyes';
 export * from './faders';
