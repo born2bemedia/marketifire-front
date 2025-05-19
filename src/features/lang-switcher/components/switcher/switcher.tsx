@@ -17,11 +17,9 @@ import st from './switcher.module.scss';
 export function Switcher({
   options,
   value,
-  onChange,
 }: {
   options: { label: ReactNode; value: string }[];
   value: ReactNode;
-  onChange: (value: string) => void;
 }) {
   return (
     <Root>
@@ -32,11 +30,7 @@ export function Switcher({
       <DropdownMenuPortal>
         <DropdownMenuContent className={st.selectContent} sideOffset={10}>
           {options.map(option => (
-            <DropdownMenuItem
-              key={option.value}
-              className={st.selectItem}
-              onClick={() => onChange(option.value)}
-            >
+            <DropdownMenuItem key={option.value} className={st.selectItem}>
               <Text>{option.label}</Text>
             </DropdownMenuItem>
           ))}

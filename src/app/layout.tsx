@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Outfit } from 'next/font/google';
-import Script from 'next/script';
+import { notFound } from 'next/navigation';
+import { hasLocale } from 'next-intl';
 import { GoogleAnalytics } from '@next/third-parties/google';
 
 import CookiePopup from '@/features/cookie-popup/CookiePopup';
@@ -10,9 +11,10 @@ import { Footer } from '@/shared/ui/components/footer';
 import { Header } from '@/shared/ui/components/header';
 import { Preloader } from '@/shared/ui/components/preloader';
 
+import 'modern-normalize/modern-normalize.css';
 import './globals.css';
 import './reset.css';
-import 'modern-normalize/modern-normalize.css';
+import { routing } from '@/i18n/routing';
 
 const outfitFont = Outfit({
   variable: '--font-outfit',
@@ -38,22 +40,21 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
+  params,
 }: Readonly<{
   children: React.ReactNode;
+  params: Promise<{ locale: string }>;
 }>) {
+  const { locale } = await params;
+
+  if (!hasLocale(routing.locales, locale)) {
+    notFound();
+  }
+
   return (
-    <html lang="en">
-      <head>
-        <Script src="/scripts/translation.js" strategy="beforeInteractive" />
-        {process.env.GOOGLE_TRANSLATION_CONFIG && (
-          <Script
-            src="//translate.google.com/translate_a/element.js?cb=TranslateInit"
-            strategy="afterInteractive"
-          />
-        )}
-      </head>
+    <html lang={locale}>
       <body className={outfitFont.variable}>
         <GoogleAnalytics gaId="G-0NR0307GP5" />
         <Header />
