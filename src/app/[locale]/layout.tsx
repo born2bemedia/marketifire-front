@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { Outfit } from 'next/font/google';
 import { notFound } from 'next/navigation';
-import { hasLocale } from 'next-intl';
+import { hasLocale, NextIntlClientProvider } from 'next-intl';
 import { GoogleAnalytics } from '@next/third-parties/google';
 
 import CookiePopup from '@/features/cookie-popup/CookiePopup';
@@ -57,12 +57,14 @@ export default async function RootLayout({
     <html lang={locale}>
       <body className={outfitFont.variable}>
         <GoogleAnalytics gaId="G-0NR0307GP5" />
-        <Header />
-        <Preloader />
-        {children}
-        <Footer />
-        <Toaster position="bottom-right" reverseOrder={false} />
-        <CookiePopup />
+        <NextIntlClientProvider>
+          <Header />
+          <Preloader />
+          {children}
+          <Footer />
+          <Toaster position="bottom-right" reverseOrder={false} />
+          <CookiePopup />
+        </NextIntlClientProvider>
       </body>
     </html>
   );

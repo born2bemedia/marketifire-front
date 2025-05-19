@@ -8,7 +8,7 @@ import { GetFreeConsultation } from '@/shared/ui/components/get-free-consultatio
 
 import { Hero } from './components';
 import st from './page.module.scss';
-import { PulsingEllipse } from '@/app/request-form/components';
+import { PulsingEllipse } from '@/app/[locale]/request-form/components';
 
 export const metadata: Metadata = {
   title: 'Insights | Business & Marketing Tips for Entrepreneurs',

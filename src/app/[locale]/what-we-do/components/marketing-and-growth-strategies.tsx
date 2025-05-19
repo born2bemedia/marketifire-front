@@ -12,7 +12,7 @@ import {
   Users,
 } from '@/shared/ui/icons/outline';
 
-import { InfoBlock } from '@/app/what-we-do/components/info-block';
+import { InfoBlock } from '@/app/[locale]/what-we-do/components/info-block';
 
 const strategies: DataGridDef[] = [
   {

@@ -7,7 +7,7 @@ import {
 
 import { Addresses, Contact, Hero, Socials } from './components';
 import st from './page.module.scss';
-import { PulsingEllipse } from '@/app/request-form/components';
+import { PulsingEllipse } from '@/app/[locale]/request-form/components';
 
 export const metadata: Metadata = {
   title: 'Contact Marketifire | Get in Touch for Business Growth Solutions',

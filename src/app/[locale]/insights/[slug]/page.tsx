@@ -12,8 +12,8 @@ import { GetFreeConsultation } from '@/shared/ui/components/get-free-consultatio
 
 import { Article, Banner, Hero } from './components';
 import st from './page.module.scss';
-import { insightsMeta } from '@/app/insights/[slug]/meta';
-import { PulsingEllipse } from '@/app/request-form/components';
+import { insightsMeta } from '@/app/[locale]/insights/[slug]/meta';
+import { PulsingEllipse } from '@/app/[locale]/request-form/components';
 
 export async function generateMetadata({
   params,

@@ -9,7 +9,7 @@ import { Text } from '@/shared/ui/kit/text';
 import { Title } from '@/shared/ui/kit/title';
 
 import st from './see-our-impact.module.scss';
-import { ImpactCards } from '@/app/components/see-our-impact/impact-cards';
+import { ImpactCards } from '@/app/[locale]/components/see-our-impact/impact-cards';
 
 export function SeeOurImpact() {
   return (

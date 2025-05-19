@@ -1,6 +1,7 @@
 'use client';
 
 import type { ReactNode } from 'react';
+import { useRouter } from 'next/navigation';
 import {
   DropdownMenuContent,
   DropdownMenuItem,
@@ -21,6 +22,8 @@ export function Switcher({
   options: { label: ReactNode; value: string }[];
   value: ReactNode;
 }) {
+  const router = useRouter();
+
   return (
     <Root>
       <DropdownMenuTrigger className={st.selectTrigger}>
@@ -30,7 +33,13 @@ export function Switcher({
       <DropdownMenuPortal>
         <DropdownMenuContent className={st.selectContent} sideOffset={10}>
           {options.map(option => (
-            <DropdownMenuItem key={option.value} className={st.selectItem}>
+            <DropdownMenuItem
+              key={option.value}
+              className={st.selectItem}
+              onClick={() => {
+                router.replace(`/${option.value}`);
+              }}
+            >
               <Text>{option.label}</Text>
             </DropdownMenuItem>
           ))}
