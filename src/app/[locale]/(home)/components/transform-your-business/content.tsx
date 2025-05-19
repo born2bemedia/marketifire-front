@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 import { Asterisk } from '@/shared/ui/icons/fill';
 import { Button } from '@/shared/ui/kit/button';
@@ -11,27 +12,23 @@ import { Title } from '@/shared/ui/kit/title';
 import st from './transform-your-business.module.scss';
 
 export function Content() {
+  const t = useTranslations('home.transformYourBusiness');
+
   return (
     <section className={st.contentLayout}>
       <div className={st.annotation}>
         <Tag color="yellow">
           <Asterisk />
-          <Text>Unleash Your Brand’s Potential</Text>
+          <Text>{t('tag')}</Text>
         </Tag>
-        <Title level={2}>
-          Transform Your Business with Marketifire’s Expertise
-        </Title>
-        <Text>
-          Struggling to gain traction, increase conversions, or optimize
-          marketing spending? Our experts build holistic, ROI-driven strategies
-          designed for long-term success.
-        </Text>
+        <Title level={2}>{t('title')}</Title>
+        <Text>{t('text')}</Text>
       </div>
       <div className={st.requestNavDesktop}>
-        <Text>Ready to Elevate Your Business?</Text>
+        <Text>{t('readyToElevate')}</Text>
         <Link href="/request-form">
           <Button variant="black" size="md">
-            Get Free Consultation
+            {t('btnLabel')}
           </Button>
         </Link>
       </div>

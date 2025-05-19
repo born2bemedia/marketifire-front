@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 import { Asterisk } from '@/shared/ui/icons/fill';
 import { Button } from '@/shared/ui/kit/button';
@@ -8,42 +9,38 @@ import { Tag } from '@/shared/ui/kit/tag/tag';
 import { Text } from '@/shared/ui/kit/text';
 import { Title } from '@/shared/ui/kit/title';
 
+import { ImpactCards } from './impact-cards';
 import st from './see-our-impact.module.scss';
-import { ImpactCards } from '@/app/[locale]/components/see-our-impact/impact-cards';
 
 export function SeeOurImpact() {
+  const t = useTranslations('home.seeOurImpact');
+
   return (
     <section className={st.layout}>
       <section className={st.contentLayout}>
         <div className={st.titleLayout}>
           <Tag color="yellow">
             <Asterisk />
-            <Text>Proven Success in Action</Text>
+            <Text>{t('tag')}</Text>
           </Tag>
-          <Title level={2}>
-            See Our Impact – Explore Client Success Stories
-          </Title>
-          <Text className={st.text}>
-            At Marketifire, we don’t believe in one-size-fits-all solutions. We
-            craft strategies backed by market research, analytics, and
-            real-world testing.
-          </Text>
+          <Title level={2}>{t('title')}</Title>
+          <Text className={st.text}>{t('text')}</Text>
         </div>
         <div className={st.caseStudiesNavDesktop}>
-          <Text>Your Business, Transformed with Precision & Strategy.</Text>
+          <Text>{t('label')}</Text>
           <Link href="/case-studies">
             <Button size="md" variant="black">
-              Dive into Case Studies
+              {t('btnLabel')}
             </Button>
           </Link>
         </div>
       </section>
       <ImpactCards />
       <div className={st.caseStudiesNavMobile}>
-        <Text>Your Business, Transformed with Precision & Strategy.</Text>
+        <Text>{t('label')}</Text>
         <Link href="/case-studies">
           <Button size="md" variant="black" className={st.text} fullWidth>
-            Dive into Case Studies
+            {t('btnLabel')}
           </Button>
         </Link>
       </div>

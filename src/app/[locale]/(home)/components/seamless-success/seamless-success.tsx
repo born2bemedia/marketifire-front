@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 import { cn } from '@/shared/lib/styles';
 import { Asterisk } from '@/shared/ui/icons/fill';
@@ -14,6 +15,8 @@ import { Title } from '@/shared/ui/kit/title';
 import st from './seamless-success.module.scss';
 
 export function SeamlessSuccess() {
+  const t = useTranslations('home.seamlessSuccess');
+
   return (
     <section className={st.layout}>
       <Image
@@ -33,18 +36,13 @@ export function SeamlessSuccess() {
       <div className={st.textLayout}>
         <Tag color="yellow">
           <Asterisk />
-          <Text>Bringing Strategy & Execution Together</Text>
+          <Text>{t('tag')}</Text>
         </Tag>
-        <Title level={2}>
-          We Align Business & Marketing for Seamless Success
-        </Title>
-        <Text className={st.text}>
-          We help bridge the gap between marketing, sales, and operations to
-          ensure your brand’s growth is smooth, efficient, and long-term.
-        </Text>
+        <Title level={2}>{t('title')}</Title>
+        <Text className={st.text}>{t('text')}</Text>
         <Link href="/request-form" className={st.actionBtn}>
           <Button variant="black" size="md">
-            Schedule a Free Strategy Session Today
+            {t('btnLabel')}
           </Button>
         </Link>
       </div>
@@ -57,49 +55,53 @@ export function SeamlessSuccess() {
 }
 
 function ExpandMarketsCard() {
+  const t = useTranslations('home.seamlessSuccess');
+
   return (
     <article className={cn(st.cardLayout, st.bgBlack10, st.expandPos)}>
       <div className={st.cardIcon}>
         <Globe />
       </div>
-      <Title level={3}>Expand into New Markets with Confidence</Title>
+      <Title level={3}>{t('expandMarkets')}</Title>
     </article>
   );
 }
 
 function IntegrateSalesCard() {
+  const t = useTranslations('home.seamlessSuccess');
+
   return (
     <article className={cn(st.cardLayout, st.bgYellow, st.integratePos)}>
       <div className={st.cardIcon}>
         <Coins />
       </div>
-      <Title level={3}>
-        Integrate Sales & Marketing for Higher Conversions
-      </Title>
+      <Title level={3}>{t('integrateSales')}</Title>
     </article>
   );
 }
 
 function MaximizeValueCard() {
+  const t = useTranslations('home.seamlessSuccess');
+
   return (
     <article className={cn(st.cardLayout, st.bgWhite, st.customerPos)}>
       <div className={st.cardIcon} style={{ backgroundColor: '#FCFCFA' }}>
         <TrendUp />
       </div>
-      <Title level={3}>Maximize Customer Value & Retention</Title>
+      <Title level={3}>{t('maximizeValue')}</Title>
     </article>
   );
 }
 
 function UserPerformanceCard() {
+  const t = useTranslations('home.seamlessSuccess');
+
   return (
     <article className={cn(st.cardLayout, st.bgYellow, st.userPos)}>
       <div className={st.cardIcon}>
         <Sun />
       </div>
-      <Title level={3}>
-        Use Performance Insights to Make Smarter Decisions
-      </Title>
+      <Title level={3}>{t('userPerformance')}</Title>
     </article>
   );
 }

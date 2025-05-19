@@ -2,6 +2,7 @@
 
 import type { JSX } from 'react';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 import { StepFour, StepOne, StepThree, StepTwo } from '@/shared/ui/icons/fill';
 import { Button } from '@/shared/ui/kit/button';
@@ -11,25 +12,6 @@ import { Title } from '@/shared/ui/kit/title';
 import { Content } from './content';
 import st from './transform-your-business.module.scss';
 
-const steps = [
-  {
-    title: 'Increase Brand Visibility',
-    desc: 'Get noticed where it matters most.',
-  },
-  {
-    title: 'Optimize Lead Generation',
-    desc: 'Convert visitors into customers effortlessly.',
-  },
-  {
-    title: 'Enhance Digital Performance',
-    desc: 'Maximize marketing ROI with data-backed decisions.',
-  },
-  {
-    title: 'Drive Sustainable Growth',
-    desc: 'Build strategies that scale with your business.',
-  },
-];
-
 const stepIcons: Record<number, () => JSX.Element> = {
   1: StepOne,
   2: StepTwo,
@@ -38,6 +20,27 @@ const stepIcons: Record<number, () => JSX.Element> = {
 };
 
 export function TransformYourBusiness() {
+  const t = useTranslations('home.transformYourBusiness');
+
+  const steps = [
+    {
+      title: t('steps.0.title'),
+      desc: t('steps.0.desc'),
+    },
+    {
+      title: t('steps.1.title'),
+      desc: t('steps.1.desc'),
+    },
+    {
+      title: t('steps.2.title'),
+      desc: t('steps.2.desc'),
+    },
+    {
+      title: t('steps.3.title'),
+      desc: t('steps.3.desc'),
+    },
+  ];
+
   return (
     <section className={st.layout}>
       <Content />
@@ -47,10 +50,10 @@ export function TransformYourBusiness() {
         ))}
       </section>
       <div className={st.requestNavMobile}>
-        <Text weight={300}>Ready to Elevate Your Business?</Text>
+        <Text weight={300}>{t('readyToElevate')}</Text>
         <Link href="/request-form">
           <Button variant="black" size="md">
-            Get Free Consultation
+            {t('btnLabel')}
           </Button>
         </Link>
       </div>
@@ -70,9 +73,12 @@ function Card({
   const Icon = stepIcons[number];
 
   return (
-    <section className={st.cardContainer} style={{
-      top: `calc(10px ${number * 50}px)`
-    }}>
+    <section
+      className={st.cardContainer}
+      style={{
+        top: `calc(10px ${number * 50}px)`,
+      }}
+    >
       <article className={st.card}>
         <div>
           <Title level={2}>{title}</Title>

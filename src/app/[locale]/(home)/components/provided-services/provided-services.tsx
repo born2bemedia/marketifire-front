@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 import { cn } from '@/shared/lib/styles';
 import { Text } from '@/shared/ui/kit/text';
@@ -18,10 +19,12 @@ export function ProvidedServices() {
 }
 
 function TailoredStrategies() {
+  const t = useTranslations('home.providedServices');
+
   return (
     <article className={cn(st.cardLayout, st.yellowBg)}>
       <Text className={st.title} weight={500} uppercase>
-        Tailored Strategies
+        {t('strategies')}
       </Text>
       <Image
         className={st.balloonGutImg}
@@ -42,10 +45,12 @@ function TailoredStrategies() {
 }
 
 function ProvenTactics() {
+  const t = useTranslations('home.providedServices');
+
   return (
     <article className={cn(st.cardLayout, st.whiteBg)}>
       <Text className={st.title} weight={500} uppercase>
-        Proven Tactics
+        {t('tactics')}
       </Text>
       <Graphics />
     </article>
@@ -81,10 +86,12 @@ function Graphics() {
 }
 
 function MeasurableGrowth() {
+  const t = useTranslations('home.providedServices');
+
   return (
     <article className={cn(st.cardLayout, st.black10Bg)}>
       <Text className={st.title} weight={500} uppercase>
-        Measurable Growth
+        {t('growth')}
       </Text>
       <Image
         className={st.circleLineMd}

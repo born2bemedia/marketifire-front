@@ -1,36 +1,39 @@
 'use client';
 
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 import { Text } from '@/shared/ui/kit/text';
 import { Title } from '@/shared/ui/kit/title';
 
 import st from './see-our-impact.module.scss';
 
-const cards = [
-  {
-    title: 'Real Insights, Not Guesswork',
-    desc: 'Every strategy is backed by data.',
-    imgPath: '/home/our-impact-1.png',
-  },
-  {
-    title: 'Adaptive & Scalable',
-    desc: 'Designed for growth at every stage.',
-    imgPath: '/home/our-impact-2.png',
-  },
-  {
-    title: 'Optimized for ROI',
-    desc: 'Reduce costs and maximize results.',
-    imgPath: '/home/our-impact-3.png',
-  },
-  {
-    title: 'Actionable Execution',
-    desc: 'We help implement, not just advise.',
-    imgPath: '/home/our-impact-4.png',
-  },
-];
-
 export function ImpactCards() {
+  const t = useTranslations('home.seeOurImpact.cards');
+
+  const cards = [
+    {
+      title: t('0.title'),
+      desc: t('0.desc'),
+      imgPath: '/home/our-impact-1.png',
+    },
+    {
+      title: t('1.title'),
+      desc: t('1.desc'),
+      imgPath: '/home/our-impact-2.png',
+    },
+    {
+      title: t('2.title'),
+      desc: t('2.desc'),
+      imgPath: '/home/our-impact-3.png',
+    },
+    {
+      title: t('3.title'),
+      desc: t('3.desc'),
+      imgPath: '/home/our-impact-4.png',
+    },
+  ];
+
   return (
     <section className={st.cards}>
       {cards.map((card, index) => (

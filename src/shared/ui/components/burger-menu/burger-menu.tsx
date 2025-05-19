@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { useTranslations } from 'next-intl';
 import {
   Close,
   Content,
@@ -16,7 +17,6 @@ import {
 
 import { UserBadge } from '@/core/user/components';
 
-import { routes } from '@/shared/lib/routes';
 import { headerSt } from '@/shared/ui/components/header';
 import { ShortAddress } from '@/shared/ui/components/short-address';
 import { SocialNetworks } from '@/shared/ui/components/social-networks';
@@ -36,6 +36,8 @@ export function BurgerMenu() {
 }
 
 function Menu() {
+  const t = useTranslations('header.routes');
+
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
 
@@ -54,6 +56,18 @@ function Menu() {
       document.documentElement.style.overflow = '';
     };
   }, [open]);
+
+  const routes = [
+    { label: t('home'), href: '/' },
+    { label: t('about'), href: '/about' },
+    { label: t('whatWeDo'), href: '/what-we-do' },
+    { label: t('tailoredSolutions'), href: '/tailored-solutions' },
+    { label: t('caseStudies'), href: '/case-studies' },
+    { label: t('insights'), href: '/insights' },
+    { label: t('pricingPackages'), href: '/pricing-and-packages' },
+    { label: t('help'), href: '/help-and-faq' },
+    { label: t('contacts'), href: '/contacts' },
+  ];
 
   return (
     <Root open={open} onOpenChange={setOpen}>

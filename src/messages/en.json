@@ -4,6 +4,235 @@
       "title": "Marketifire – Fueling Your Business & Marketing Success",
       "description": "With tailored business and marketing consulting, we help businesses accelerate growth, optimize marketing efforts, and build lasting customer relationships. Whether starting, scaling, or refining your strategy, Marketifire is your partner in success.",
       "btnLabel": "Get Free Consultation"
+    },
+    "providedServices": {
+      "strategies": "Tailored Strategies",
+      "tactics": "Proven Tactics",
+      "growth": "Measurable Growth"
+    },
+    "transformYourBusiness": {
+      "tag": "Unleash Your Brand’s Potential",
+      "title": "Transform Your Business with Marketifire’s Expertise",
+      "text": "Struggling to gain traction, increase conversions, or optimize marketing spending? Our experts build holistic, ROI-driven strategies designed for long-term success.",
+      "readyToElevate": "Ready to Elevate Your Business?",
+      "btnLabel": "Get Free Consultation",
+      "steps": {
+        "0": {
+          "title": "Increase Brand Visibility",
+          "desc": "Get noticed where it matters most."
+        },
+        "1": {
+          "title": "Optimize Lead Generation",
+          "desc": "Convert visitors into customers effortlessly."
+        },
+        "2": {
+          "title": "Enhance Digital Performance",
+          "desc": "Maximize marketing ROI with data-backed decisions."
+        },
+        "3": {
+          "title": "Drive Sustainable Growth",
+          "desc": "Build strategies that scale with your business."
+        }
+      }
+    },
+    "ourServiceOfferings": {
+      "tag": "Tailored Solutions for Every Need",
+      "title": "Our Comprehensive Service Offerings",
+      "text": "Marketifire combines data, strategy, and execution to deliver a full suite of consulting services designed to unlock your brand’s full potential.",
+      "btnLabel": "Start Optimizing Your Strategy Today",
+      "label": "Every service is tailored to YOUR business goals.",
+      "services": {
+        "0": {
+          "title": "Marketing & Growth Strategies",
+          "items": {
+            "0": "Market Research & Competitive Analysis",
+            "1": "Brand Positioning & Messaging Strategy",
+            "2": "Digital & Traditional Advertising",
+            "3": "Product Launch Strategy"
+          }
+        },
+        "1": {
+          "title": "Performance Marketing & Conversion Optimization",
+          "items": {
+            "0": "SEO & Search Visibility Growth",
+            "1": "PPC & Paid Advertising Campaigns",
+            "2": "Website & Funnel Optimization",
+            "3": "Data-Driven Sales Strategies"
+          }
+        },
+        "2": {
+          "title": "Business Consulting & Expansion Planning",
+          "items": {
+            "0": "Market Entry & Expansion Strategies",
+            "1": "Customer Acquisition & Retention Plans",
+            "2": "Revenue Model Optimization",
+            "3": "Business Process Automation"
+          }
+        },
+        "3": {
+          "title": "Content & Audience Engagement",
+          "items": {
+            "0": "Social Media & Community Growth",
+            "1": "Influencer & Affiliate Marketing",
+            "2": "Email & CRM Optimization",
+            "3": "High-Impact Content & Storytelling"
+          }
+        },
+        "4": {
+          "title": "Automation & Digital Transformation",
+          "items": {
+            "0": "AI-Driven Marketing Automation",
+            "1": "CRM & Email Marketing Integration",
+            "2": "Automated Sales Funnels",
+            "3": "Data-Driven Insights & Reporting"
+          }
+        },
+        "5": {
+          "title": "Strategic Growth & Competitive Edge",
+          "items": {
+            "0": "Personal Brand & Omni-Channel Growth",
+            "1": "Lead Building & Audience Retention Strategies",
+            "2": "Sales Strategies for Entrepreneurs",
+            "3": "Tailored Marketing & Monetization Plans"
+          }
+        }
+      }
+    },
+    "whyBusinessesTrust": {
+      "title": "Why Businesses Trust Marketifire?",
+      "annotation": "We may be a young agency but we bring industry expertise, innovative solutions, and results-driven strategies that businesses trust.",
+      "footerText": "Your Growth, Our Priority. Let’s Make It Happen!",
+      "tagText": "Results You Can Rely On",
+      "cards": {
+        "0": {
+          "title": "+200%",
+          "desc": "Avg. Increase in Client Online Engagement"
+        },
+        "1": {
+          "title": "+35%",
+          "desc": "Reduction in Marketing Spend Waste"
+        },
+        "2": {
+          "title": "96%",
+          "desc": "Avg. Increase in Client Online Engagement"
+        },
+        "3": {
+          "title": "+50%",
+          "desc": "Growth in Qualified Leads for Startups"
+        }
+      }
+    },
+    "whyOptions": {
+      "btnLabel": "Get Free Consultation"
+    },
+    "seeOurImpact": {
+      "tag": "Proven Success in Action",
+      "title": "See Our Impact – Explore Client Success Stories",
+      "text": "At Marketifire, we don’t believe in one-size-fits-all solutions. We craft strategies backed by market research, analytics, and real-world testing.",
+      "label": "Your Business, Transformed with Precision & Strategy.",
+      "btnLabel": "Dive into Case Studies",
+      "cards": {
+        "0": {
+          "title": "Real Insights, Not Guesswork",
+          "desc": "Every strategy is backed by data."
+        },
+        "1": {
+          "title": "Adaptive & Scalable",
+          "desc": "Designed for growth at every stage."
+        },
+        "2": {
+          "title": "Optimized for ROI",
+          "desc": "Reduce costs and maximize results."
+        },
+        "3": {
+          "title": "Actionable Execution",
+          "desc": "We help implement, not just advise."
+        }
+      }
+    },
+    "seamlessSuccess": {
+      "tag": "Bringing Strategy & Execution Together",
+      "title": "We Align Business & Marketing for Seamless Success",
+      "text": "We help bridge the gap between marketing, sales, and operations to ensure your brand’s growth is smooth, efficient, and long-term.",
+      "btnLabel": "Schedule a Free Strategy Session Today",
+      "expandMarkets": "Expand into New Markets with Confidence",
+      "integrateSales": "Integrate Sales & Marketing for Higher Conversions",
+      "maximizeValue": "Maximize Customer Value & Retention",
+      "userPerformance": "Use Performance Insights to Make Smarter Decisions"
+    },
+    "insightsAndExecution": {
+      "title": "Success Built on Insights & Execution",
+      "annotation": "Marketifire creates scalable marketing solutions that help businesses generate leads, nurture customers, and drive higher lifetime value.",
+      "footerText": "Your Growth Starts Now – Let’s Build a Plan That Works!",
+      "tagText": "Driving Growth Through Data",
+      "cards": {
+        "0": {
+          "title": "+40%",
+          "desc": "Avg. Increase in Customer Retention for Clients"
+        },
+        "1": {
+          "title": "2X",
+          "desc": "Higher Engagement Rates in Digital Campaigns"
+        },
+        "2": {
+          "title": "85%",
+          "desc": "Faster ROI on Marketing Investment with Data-Driven Plans"
+        }
+      }
+    },
+    "howWeDeliver": {
+      "tag": "Our Approach to Measurable Success",
+      "title": "Explore How We Deliver Results",
+      "label": "Have More Questions? Get in Touch!",
+      "btnLabel": "Drop Us a Message",
+      "cards": {
+        "0": {
+          "title": "How does Marketifire help individuals grow?",
+          "desc": "We provide customized business and marketing strategies for individuals, freelancers, and entrepreneurs who want to enhance their personal brand, attract clients, and increase revenue through data-driven consulting."
+        },
+        "1": {
+          "title": "Who can benefit from Marketifire’s services?",
+          "desc": "We specialize in helping professionals, digital creators, consultants, and solopreneurs optimize their marketing, sales, and business growth strategies. Whether you’re launching your brand or scaling an existing one, we create actionable solutions that work."
+        },
+        "2": {
+          "title": "Do you offer ongoing support and strategy updates?",
+          "desc": "Absolutely! We provide continuous optimization, analytics tracking, and performance reporting to ensure your long-term success. Our services evolve with your goals, so you always have the most effective strategies."
+        },
+        "3": {
+          "title": "Can I get a fully personalized marketing plan?",
+          "desc": "Yes! Every strategy we create suits your unique needs, target audience, and growth stage. We analyze your market, define opportunities, and provide step-by-step guidance to help you achieve sustainable success."
+        }
+      }
     }
+  },
+  "header": {
+    "login": "Login",
+    "logout": "Log Out",
+    "cart": "Cart",
+    "routes": {
+      "home": "Home",
+      "about": "About Marketifire",
+      "whatWeDo": "What We Do",
+      "tailoredSolutions": "Tailored Solutions",
+      "caseStudies": "Case Studies",
+      "insights": "Insights",
+      "pricingPackages": "Pricing & Packages",
+      "help": "Help & FAQs",
+      "contacts": "Contacts",
+      "termsAndConditions": "Terms and Conditions",
+      "privacyPolicy": "Privacy Policy",
+      "cookiePolicy": "Cookie Policy",
+      "refundPolicy": "Refund Policy"
+    }
+  },
+  "footer": {
+    "quickNavigation": "Quick Navigation",
+    "ourExpertise": "Our Expertise",
+    "supportResources": "Support & Resources",
+    "legal": "Legal & Compliance",
+    "office": "Office address",
+    "registeredAddress": "Registered address",
+    "registeredNumber": "Registered number",
+    "allRightsReserved": "All Rights Reserved."
   }
 }

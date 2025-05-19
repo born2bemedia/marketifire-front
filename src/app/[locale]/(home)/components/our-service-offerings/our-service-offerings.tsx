@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 import { cn } from '@/shared/lib/styles';
 import { Asterisk, Plus } from '@/shared/ui/icons/fill';
@@ -11,80 +12,78 @@ import { Title } from '@/shared/ui/kit/title';
 
 import st from './our-service-offerings.module.scss';
 
-const services = [
-  {
-    title: 'Marketing & Growth Strategies',
-    items: [
-      'Market Research & Competitive Analysis',
-      'Brand Positioning & Messaging Strategy',
-      'Digital & Traditional Advertising',
-      'Product Launch Strategy',
-    ],
-  },
-  {
-    title: 'Performance Marketing & Conversion Optimization',
-    bgImgPath: '/home/our-service-1.png',
-    items: [
-      'SEO & Search Visibility Growth',
-      'PPC & Paid Advertising Campaigns',
-      'Website & Funnel Optimization',
-      'Data-Driven Sales Strategies',
-    ],
-  },
-  {
-    title: 'Business Consulting & Expansion Planning',
-    bgImgPath: '/home/our-service-2.png',
-    items: [
-      'Market Entry & Expansion Strategies',
-      'Customer Acquisition & Retention Plans',
-      'Revenue Model Optimization',
-      'Business Process Automation',
-    ],
-  },
-  {
-    title: 'Content & Audience Engagement',
-    bgImgPath: '/home/our-service-3.png',
-    items: [
-      'Social Media & Community Growth',
-      'Influencer & Affiliate Marketing',
-      'Email & CRM Optimization',
-      'High-Impact Content & Storytelling',
-    ],
-  },
-  {
-    title: 'Automation & Digital Transformation',
-    items: [
-      'AI & Marketing Automation',
-      'CRM & Customer Journey Optimization',
-      'Chatbot & Lead Nurturing Flows',
-      'Performance Analytics & Reporting',
-    ],
-  },
-  {
-    title: 'Strategic Growth & Competitive Edge',
-    items: [
-      'Personal Brand & Omni-Channel Growth',
-      'Lead Building & Audience Retention Strategies',
-      'Sales Strategies for Entrepreneurs',
-      'Tailored Marketing & Monetization Plans',
-    ],
-  },
-];
-
 export function OurServiceOfferings() {
+  const t = useTranslations('home.ourServiceOfferings');
+
+  const services = [
+    {
+      title: t('services.0.title'),
+      items: [
+        t('services.0.items.0'),
+        t('services.0.items.1'),
+        t('services.0.items.2'),
+        t('services.0.items.3'),
+      ],
+    },
+    {
+      title: t('services.1.title'),
+      bgImgPath: '/home/our-service-1.png',
+      items: [
+        t('services.1.items.0'),
+        t('services.1.items.1'),
+        t('services.1.items.2'),
+        t('services.1.items.3'),
+      ],
+    },
+    {
+      title: t('services.2.title'),
+      bgImgPath: '/home/our-service-2.png',
+      items: [
+        t('services.2.items.0'),
+        t('services.2.items.1'),
+        t('services.2.items.2'),
+        t('services.2.items.3'),
+      ],
+    },
+    {
+      title: t('services.3.title'),
+      bgImgPath: '/home/our-service-3.png',
+      items: [
+        t('services.3.items.0'),
+        t('services.3.items.1'),
+        t('services.3.items.2'),
+        t('services.3.items.3'),
+      ],
+    },
+    {
+      title: t('services.4.title'),
+      items: [
+        t('services.4.items.0'),
+        t('services.4.items.1'),
+        t('services.4.items.2'),
+        t('services.4.items.3'),
+      ],
+    },
+    {
+      title: t('services.5.title'),
+      items: [
+        t('services.5.items.0'),
+        t('services.5.items.1'),
+        t('services.5.items.2'),
+        t('services.5.items.3'),
+      ],
+    },
+  ];
+
   return (
     <section className={st.layout}>
       <section className={st.top}>
         <Tag className={st.tag}>
           <Asterisk />
-          <Text>Tailored Solutions for Every Need</Text>
+          <Text>{t('tag')}</Text>
         </Tag>
-        <Title level={2}>Our Comprehensive Service Offerings</Title>
-        <Text className={st.text}>
-          Marketifire combines data, strategy, and execution to deliver a full
-          suite of consulting services designed to unlock your brand’s full
-          potential.
-        </Text>
+        <Title level={2}>{t('title')}</Title>
+        <Text className={st.text}>{t('text')}</Text>
       </section>
       <section className={st.servicesLayout}>
         {services.map(({ title, items, bgImgPath }) =>
@@ -101,10 +100,10 @@ export function OurServiceOfferings() {
         )}
       </section>
       <section className={st.requestFormNav}>
-        <Text>Every service is tailored to YOUR business goals.</Text>
+        <Text>{t('label')}</Text>
         <Link href="/request-form">
           <Button size="md" variant="black">
-            Start Optimizing Your Strategy Today
+            {t('btnLabel')}
           </Button>
         </Link>
       </section>
