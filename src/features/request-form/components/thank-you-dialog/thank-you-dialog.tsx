@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 import {
   Content,
   Description,
@@ -24,6 +25,8 @@ export function ThankYouDialog({
   open?: boolean;
   onOpenChange?: (open: boolean) => void;
 }) {
+  const t = useTranslations('requestForm.thankYou');
+
   return (
     <Root open={open} onOpenChange={onOpenChange}>
       <Portal>
@@ -34,14 +37,12 @@ export function ThankYouDialog({
             <Description asChild>
               <section className={st.contentLayout}>
                 <div className={st.textBlock}>
-                  <Title level={2}>Thank you for choosing Marketifire!</Title>
-                  <Text weight={300}>
-                    Our representative will reach out to you shortly.
-                  </Text>
+                  <Title level={2}>{t('title')}</Title>
+                  <Text weight={300}>{t('text')}</Text>
                 </div>
                 <Link href="/">
                   <Button variant="black" uppercase>
-                    Go to Home Page
+                    {t('btnLabel')}
                   </Button>
                 </Link>
                 <Image

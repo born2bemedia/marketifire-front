@@ -1,14 +1,9 @@
 'use client';
 
 import { useState } from 'react';
+import { useTranslations } from 'next-intl';
 
-import {
-  budgets,
-  contactMethod,
-  Service,
-  services,
-  startDate,
-} from '@/features/request-form/components/business-data-form';
+import { Service } from '@/features/request-form/components/business-data-form';
 import { ThankYouDialog } from '@/features/request-form/components/thank-you-dialog';
 import { sendRequest } from '@/features/request-form/services/send-request.action';
 
@@ -26,6 +21,7 @@ import { type CommonRequestSchema, commonRequestSchema } from '../../lib';
 import st from './common-request-form.module.scss';
 
 export function CommonRequestForm() {
+  const tr = useTranslations('requestForm');
   const countryCode = useCountryCode();
   const [dialogOpen, setDialogOpen] = useState(false);
 
@@ -62,6 +58,37 @@ export function CommonRequestForm() {
       console.log(err);
     }
   });
+
+  const services = [
+    tr('services.0'),
+    tr('services.1'),
+    tr('services.2'),
+    tr('services.3'),
+    tr('services.4'),
+    tr('services.5'),
+    tr('services.6'),
+  ];
+
+  const budgets = [
+    `${tr('budgets')} €1,000`,
+    '€1,000 - €5,000',
+    '€5,000 - €10,000',
+    '€10,000 - €20,000',
+    '€20,000+',
+  ];
+
+  const startDate = [
+    tr('startDate.0'),
+    tr('startDate.1'),
+    tr('startDate.2'),
+    tr('startDate.3'),
+  ];
+
+  const contactMethod = [
+    tr('contactMethod.0'),
+    tr('contactMethod.1'),
+    tr('contactMethod.2'),
+  ];
 
   return (
     <form onSubmit={onSubmit}>

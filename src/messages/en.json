@@ -310,6 +310,99 @@
       "btnLabel": "Get Your Free Consultation Today"
     }
   },
+  "requestForm": {
+    "hero": {
+      "tag": "Let’s Build Your Success Together",
+      "title": "Get Started with Marketifire",
+      "text": "Tell us your goals and challenges, and we’ll craft a personalized strategy to help you grow. Fill out the form below, and let’s take the next step toward measurable success."
+    },
+    "nextStep": "Next Step",
+    "back": "Back",
+    "processing": "Processing...",
+    "submit": "Submit",
+    "submitting": "Submitting...",
+    "personalData": {
+      "title": "Personal Data",
+      "fields": {
+        "fullName": {
+          "label": "Full Name",
+          "placeholder": "Enter your full name"
+        },
+        "email": {
+          "label": "Email Address",
+          "placeholder": "Enter your email address"
+        },
+        "phone": {
+          "label": "Phone number"
+        },
+        "companyName": {
+          "label": "Company Name (optional)",
+          "placeholder": "Enter your company name"
+        },
+        "website": {
+          "label": "Website (optional)",
+          "placeholder": "Enter your website"
+        }
+      }
+    },
+    "businessData": {
+      "services": {
+        "0": "Marketing & Growth Strategies",
+        "1": "Performance Marketing & Conversion Optimization",
+        "2": "Business Consulting & Expansion Planning",
+        "3": "Content & Audience Engagement",
+        "4": "Automation & Digital Transformation",
+        "5": "Strategic Growth & Competitive Edge",
+        "6": "Other"
+      },
+      "budgets": "Under",
+      "startDate": {
+        "0": "Within 1 Month",
+        "1": "1-3 Months",
+        "2": "3-6 Months",
+        "3": "Flexible Timeline"
+      },
+      "contactMethod": {
+        "0": "Email",
+        "1": "Phone",
+        "2": "Video Call"
+      },
+      "title": "Business & Marketing Data",
+      "fields": {
+        "services": {
+          "label": "Select the Service You’re Interested In"
+        },
+        "pleaseSpecify": "Please specify",
+        "budget": {
+          "label": "Your Budget Range. Select your investment range:"
+        },
+        "goals": {
+          "label": "Your Goals & Challenges",
+          "placeholder": "What are your key objectives and current pain points?"
+        },
+        "targetAudience": {
+          "label": "Who Is Your Target Audience?",
+          "placeholder": "What are your key objectives and current pain points? Age, Gender, Location, Interests"
+        },
+        "startDate": {
+          "label": "When do you plan to start?"
+        },
+        "contactMethod": {
+          "label": "Preferred Contact Method"
+        }
+      }
+    },
+    "thankYou": {
+      "title": "Thank you for choosing Marketifire!",
+      "text": "Our representative will reach out to you shortly.",
+      "btnLabel": "Go to Home Page"
+    }
+  },
+  "dropzone": {
+    "noFileSelected": "No file selected",
+    "chooseFile": "Choose file",
+    "attachDocuments": "Attach any relevant documents, proposals, or briefs (Max size: 10MB)"
+  },
   "footer": {
     "quickNavigation": "Quick Navigation",
     "ourExpertise": "Our Expertise",
