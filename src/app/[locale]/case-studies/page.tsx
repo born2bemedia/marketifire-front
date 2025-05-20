@@ -1,8 +1,7 @@
 import type { Metadata } from 'next';
 
-import { CtaBlock } from '@/shared/ui/components/cta-block';
-
 import { Cases } from './components/cases';
+import { FreeSession } from './components/free-session';
 import { Hero } from './components/hero';
 import { Testimonials } from './components/testimonials';
 
@@ -18,18 +17,13 @@ export const metadata: Metadata = {
   },
 };
 
-export default function TailoredSolutions() {
+export default function CaseStudies() {
   return (
     <>
       <Hero />
       <Cases />
       <Testimonials />
-      <CtaBlock
-        title="Ready to Take Your Business to the Next Level?"
-        text="At Marketfire, we specialize in helping entrepreneurs grow their personal brands, attract clients, and achieve long-term success. These case studies are just a glimpse of our impact on our clients’ businesses."
-        link="/request-form"
-        buttonText="Schedule a Free Strategy Session Today"
-      />
+      <FreeSession />
     </>
   );
 }

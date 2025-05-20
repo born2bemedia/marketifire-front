@@ -758,6 +758,286 @@
       "btnLabel": "Get Your Free Consultation Today"
     }
   },
+  "caseStudies": {
+    "hero": {
+      "tag": "Solutions for Lasting Entrepreneurial Growth",
+      "title": "Case Studies – Proven Results for Entrepreneurs",
+      "text": "Marketfire specialises in providing customized marketing strategies for entrepreneurs who want to scale their personal brands, increase their visibility, and achieve long-term success. These case studies are just a glimpse of our impact on our clients’ businesses."
+    },
+    "cases": {
+      "caseStudy": "Case Study",
+      "client": "Client",
+      "challenge": "Challenge",
+      "results": "Results",
+      "solution": "Solution",
+      "items": {
+        "0": {
+          "title": "Scaling a Fashion Entrepreneur’s Online Presence",
+          "client": {
+            "name": "Olivia Roberts",
+            "profession": "Fashion Entrepreneur"
+          },
+          "challenge": "Olivia had a div personal style but struggled with low online engagement and limited sales from her online store. She needed help with boosting her visibility and driving sales.",
+          "solution": {
+            "0": {
+              "title": "Brand Positioning & Messaging",
+              "text": "to enhance Olivia’s unique value proposition"
+            },
+            "1": {
+              "title": "SEO & Search Visibility Growth",
+              "text": "to improve her website’s search ranking"
+            },
+            "2": {
+              "title": "PPC & Paid Advertising",
+              "text": "to target fashion-conscious buyers"
+            },
+            "3": {
+              "title": "Social Media Strategy",
+              "text": "to build a more engaged community and grow her brand presence"
+            }
+          },
+          "results": {
+            "0": {
+              "heading": "40%",
+              "text": "increase in website traffic",
+              "text2": "in just two months"
+            },
+            "1": {
+              "heading": "30%",
+              "text": "increase in online sales",
+              "text2": "through optimized ads"
+            },
+            "2": {
+              "heading": "50%",
+              "text": "growth in social media following",
+              "text2": "and engagement"
+            }
+          }
+        },
+        "1": {
+          "title": "Empowering a Health Coach’s Personal Brand",
+          "client": {
+            "name": "David Collins",
+            "profession": "Health Coach & Wellness Expert"
+          },
+          "challenge": "David wanted to build a div online presence to showcase his health coaching services but lacked a cohesive strategy and had little online engagement. He needed guidance to expand his reach and attract more clients.",
+          "solution": {
+            "0": {
+              "title": "Personal Brand Strategy",
+              "text": "to define David’s message and unique offering"
+            },
+            "1": {
+              "title": "Content Creation & Storytelling",
+              "text": "to share David’s expertise through blogs and videos"
+            },
+            "2": {
+              "title": "Social Media Marketing",
+              "text": "to increase his visibility on platforms like Instagram and Facebook"
+            },
+            "3": {
+              "title": "Lead Generation Strategies",
+              "text": "to attract potential clients and boost consultation bookings"
+            }
+          },
+          "results": {
+            "0": {
+              "heading": "60%",
+              "text": "increase in client inquiries",
+              "text2": "within three months"
+            },
+            "1": {
+              "heading": "55%",
+              "text": "growth in social media engagement",
+              "text2": ""
+            },
+            "2": {
+              "heading": "30%",
+              "text": "increase in bookings for one-on-one consultations",
+              "text2": ""
+            }
+          }
+        },
+        "2": {
+          "title": "Launching a Digital Entrepreneur’s Online Course",
+          "client": {
+            "name": "Emily Turner",
+            "profession": "Digital Entrepreneur & Course Creator"
+          },
+          "challenge": "Emily created an online course but struggled to attract customers and drive sales. She needed a launch strategy and marketing plan to generate interest in her course.",
+          "solution": {
+            "0": {
+              "title": "Product Launch Strategy",
+              "text": "to create excitement and anticipation around the course launch"
+            },
+            "1": {
+              "title": "Email Marketing & CRM Optimization",
+              "text": "to nurture leads and convert them into customers"
+            },
+            "2": {
+              "title": "Social Media Advertising",
+              "text": "to reach her target audience and drive course sign-ups"
+            },
+            "3": {
+              "title": "Customer Testimonials & Case Studies",
+              "text": "to build social proof and trust"
+            }
+          },
+          "results": {
+            "0": {
+              "heading": "150",
+              "text": "course sign-ups",
+              "text2": "in the first-month post-launch"
+            },
+            "1": {
+              "heading": "40%",
+              "text": "increase in email open rates",
+              "text2": "through targeted campaigns"
+            },
+            "2": {
+              "heading": "10x",
+              "text": "return on ad spend",
+              "text2": "through effective PPC campaigns"
+            }
+          }
+        },
+        "3": {
+          "title": "Boosting a Personal Trainer’s Online Client Base",
+          "client": {
+            "name": "James Foster",
+            "profession": "Personal Trainer & Fitness Expert"
+          },
+          "challenge": "James had an offline fitness business but wanted to expand his client base by transitioning to online training. He needed help marketing his services to a broader audience and generating leads.",
+          "solution": {
+            "0": {
+              "title": "Social Media Strategy",
+              "text": "to reach new clients on platforms like Instagram and YouTube"
+            },
+            "1": {
+              "title": "Lead Generation & Retargeting",
+              "text": "to convert leads into paying clients"
+            },
+            "2": {
+              "title": "Email Marketing & Client Engagement",
+              "text": "to build relationships and increase retention"
+            },
+            "3": {
+              "title": "Content Strategy & Video Production",
+              "text": "to showcase James’ fitness expertise"
+            }
+          },
+          "results": {
+            "0": {
+              "heading": "50%",
+              "text": "increase in online client inquiries",
+              "text2": ""
+            },
+            "1": {
+              "heading": "35%",
+              "text": "increase in social media engagement",
+              "text2": ""
+            },
+            "2": {
+              "heading": "20%",
+              "text": "increase in revenue",
+              "text2": "from online personal training services"
+            }
+          }
+        },
+        "4": {
+          "title": "Building a Financial Consultant’s Authority",
+          "client": {
+            "name": "Sarah Lee",
+            "profession": "Financial Consultant"
+          },
+          "challenge": "Sarah was an established consultant but lacked an effective online strategy to expand her reach and establish herself as an authority in the financial consulting industry.",
+          "solution": {
+            "0": {
+              "title": "Brand Positioning & Messaging",
+              "text": "to clarify Sarah’s unique value proposition"
+            },
+            "1": {
+              "title": "Content Strategy",
+              "text": "including blog posts and thought-leadership articles"
+            },
+            "2": {
+              "title": "PPC Advertising",
+              "text": "to attract leads in need of financial advice"
+            },
+            "3": {
+              "title": "Social Media Marketing",
+              "text": "to position Sarah as a trusted expert in the field"
+            }
+          },
+          "results": {
+            "0": {
+              "heading": "50%",
+              "text": "increase in qualified leads",
+              "text2": "within the first quarter"
+            },
+            "1": {
+              "heading": "Doubled",
+              "text": "online visibility",
+              "text2": "through targeted PPC campaigns"
+            },
+            "2": {
+              "heading": "Leader",
+              "text": "Positioned as a thought leader",
+              "text2": "with guest articles and speaking engagements"
+            }
+          }
+        }
+      }
+    },
+    "testimonials": {
+      "tag": "Client Testimonials and Success Stories",
+      "title": "What Clients Say About Us",
+      "text": "Here’s how we’ve helped entrepreneurs scale their businesses and achieve their goals.",
+      "items": {
+        "0": {
+          "rating": "5",
+          "testimonial": "Marketifire helped me increase my client base by over 50% in just three months! Their team understood my brand, and their strategy made a real difference.",
+          "author": "Sophia James",
+          "role": "Fitness Coach"
+        },
+        "1": {
+          "rating": "5",
+          "testimonial": "I saw an immediate boost in my sales after working with Marketifire. Their marketing strategies are top-notch, and the results speak for themselves.",
+          "author": "Ryan Williams",
+          "role": "Digital Marketer"
+        },
+        "2": {
+          "rating": "4",
+          "testimonial": "The team at Marketifire helped me get more exposure and manage my client relationships better. While the results were great, I would’ve loved more frequent updates.",
+          "author": "Mia Roberts",
+          "role": "Freelance Writer"
+        },
+        "3": {
+          "rating": "5",
+          "testimonial": "Marketifire’s marketing and growth strategies took my business to the next level. I’m now seeing consistent growth month after month. Highly recommended!",
+          "author": "Lucas Thompson",
+          "role": "E-Commerce Entrepreneur"
+        },
+        "4": {
+          "rating": "5",
+          "testimonial": "I couldn’t be happier with the results! Marketifire’s team provided tailored strategies that helped me build a div online presence and attract the right clients.",
+          "author": "Emma Davis",
+          "role": "Health Consultant"
+        },
+        "5": {
+          "rating": "4",
+          "testimonial": "Great service and excellent strategies. My client retention has improved, and I’m seeing positive results overall. A bit more clarity on the process would’ve made it perfect.",
+          "author": "Noah Clark",
+          "role": "Personal Trainer"
+        }
+      },
+      "btnLabel": "Start Optimizing Your Strategy Today"
+    },
+    "freeSession": {
+      "title": "Ready to Take Your Business to the Next Level?",
+      "text": "At Marketfire, we specialize in helping entrepreneurs grow their personal brands, attract clients, and achieve long-term success. These case studies are just a glimpse of our impact on our clients’ businesses.",
+      "btnLabel": "Schedule a Free Strategy Session Today"
+    }
+  },
   "dropzone": {
     "noFileSelected": "No file selected",
     "chooseFile": "Choose file",

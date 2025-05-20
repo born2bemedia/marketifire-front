@@ -221,7 +221,6 @@
             > div {
               color: var(--Black-100, #3b3b35);
               text-align: center;
-              font-size: 46px;
               font-style: normal;
               font-weight: 500;
               line-height: normal;
@@ -239,4 +238,15 @@
       }
     }
   }
+}
+
+.heading {
+  color: var(--Black-100, #3b3b35);
+  text-align: center;
+  font-feature-settings:
+    'liga' off,
+    'clig' off;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
