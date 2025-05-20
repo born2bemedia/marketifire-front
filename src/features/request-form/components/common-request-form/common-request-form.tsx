@@ -17,20 +17,23 @@ import { TextArea } from '@/shared/ui/kit/text-area';
 import { TextField } from '@/shared/ui/kit/text-field';
 import { Title } from '@/shared/ui/kit/title';
 
-import { type CommonRequestSchema, commonRequestSchema } from '../../lib';
+import { type CommonRequestSchema, createCommonRequestSchema } from '../../lib';
 import st from './common-request-form.module.scss';
 
 export function CommonRequestForm() {
   const tr = useTranslations('requestForm');
+  const te = useTranslations('requestForm.errors');
   const countryCode = useCountryCode();
   const [dialogOpen, setDialogOpen] = useState(false);
+
+  const schema = createCommonRequestSchema(te);
 
   const {
     handleSubmit,
     control,
     formState: { isSubmitting },
   } = useForm<CommonRequestSchema>({
-    resolver: zodResolver(commonRequestSchema),
+    resolver: zodResolver(schema),
     reValidateMode: 'onBlur',
     mode: 'onBlur',
     defaultValues: {

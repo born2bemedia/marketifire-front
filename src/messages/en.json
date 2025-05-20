@@ -321,6 +321,17 @@
     "processing": "Processing...",
     "submit": "Submit",
     "submitting": "Submitting...",
+    "errors": {
+      "fullName": "Please provide your full name",
+      "email": "Please provide a valid email address",
+      "phone": "Please provide your phone number",
+      "phoneInvalid": "Invalid phone number format",
+      "budget": "Please provide your budget",
+      "goals": "Please provide your Goals & Challenges",
+      "targetAudience": "Please provide your Target Audience",
+      "startDate": "Please provide your Start Date",
+      "contactMethod": "Please provide your Contact Method"
+    },
     "personalData": {
       "title": "Personal Data",
       "fields": {

@@ -18,22 +18,25 @@ import { TextArea } from '@/shared/ui/kit/text-area';
 import { TextField } from '@/shared/ui/kit/text-field';
 import { Title } from '@/shared/ui/kit/title';
 
-import { type BusinessDataSchema, businessDataSchema } from '../../lib';
+import { type BusinessDataSchema, createBusinessDataSchema } from '../../lib';
 import st from './business-data-form.module.scss';
 
 export function BusinessDataForm() {
   const [dialogOpen, setDialogOpen] = useState(false);
 
   const t = useTranslations('requestForm');
+  const te = useTranslations('requestForm.errors');
   const { fullName, email, phone, website, companyName, setData } =
     useRequestFormStore();
+
+  const schema = createBusinessDataSchema(te);
 
   const {
     handleSubmit,
     control,
     formState: { isSubmitting },
   } = useForm<BusinessDataSchema>({
-    resolver: zodResolver(businessDataSchema),
+    resolver: zodResolver(schema),
     reValidateMode: 'onBlur',
     mode: 'onBlur',
     defaultValues: {

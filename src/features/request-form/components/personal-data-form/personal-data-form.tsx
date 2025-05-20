@@ -11,22 +11,25 @@ import { PhoneField } from '@/shared/ui/kit/phone-field';
 import { TextField } from '@/shared/ui/kit/text-field';
 import { Title } from '@/shared/ui/kit/title';
 
-import { type RequestFormSchema, requestFormSchema } from '../../lib';
+import { createRequestFormSchema, type RequestFormSchema } from '../../lib';
 import { useRequestFormStore } from '../../services';
 import st from './personal-data-form.module.scss';
 
 export function PersonalDataForm() {
   const t = useTranslations('requestForm');
+  const te = useTranslations('requestForm.errors');
 
   const countryCode = useCountryCode();
   const { setData } = useRequestFormStore();
+
+  const schema = createRequestFormSchema(te);
 
   const {
     handleSubmit,
     control,
     formState: { isSubmitting },
   } = useForm<RequestFormSchema>({
-    resolver: zodResolver(requestFormSchema),
+    resolver: zodResolver(schema),
     reValidateMode: 'onBlur',
     mode: 'onBlur',
     defaultValues: {
