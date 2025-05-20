@@ -409,6 +409,264 @@
       "btnLabel": "Go to Home Page"
     }
   },
+  "whatWeDo": {
+    "hero": {
+      "tag": "Strategies for Real-World Success",
+      "title": "What We Do – Comprehensive Services Tailored for Your Project",
+      "text": "At Marketifire, we provide end-to-end marketing and business consulting solutions to help you grow, optimize, and succeed in your industry. Our services are tailored to your unique needs, ensuring that every strategy is built to drive real results, regardless of your business stage.",
+      "text2": "Here’s a closer look at the extensive services we offer:"
+    },
+    "marketingAndGrowthStrategies": {
+      "annotation": "We design customized strategies that drive brand visibility, customer acquisition, and market expansion. Our approach ensures that every step we take aligns with your specific goals, helping you reach your target audience and grow your presence.",
+      "subAnnotation": "Our services include:",
+      "title": "Marketing & Growth Strategies",
+      "values": {
+        "0": {
+          "title": "Market Research & Competitive Analysis",
+          "desc": "Deep insights into your industry and competitors."
+        },
+        "1": {
+          "title": "Brand Positioning & Messaging",
+          "desc": "Crafting your unique value proposition for maximum impact."
+        },
+        "2": {
+          "title": "Digital & Traditional Advertising",
+          "desc": "Multi-channel campaigns that engage and convert."
+        },
+        "3": {
+          "title": "Product Launch Strategy",
+          "desc": "Launching a new product or service with a comprehensive plan."
+        },
+        "4": {
+          "title": "Customer Segmentation Strategy",
+          "desc": "Identifying key customer segments to target with tailored marketing."
+        },
+        "5": {
+          "title": "Brand Identity Design",
+          "desc": "Crafting a unique visual and verbal identity for your business."
+        },
+        "6": {
+          "title": "Local Market Penetration",
+          "desc": "Targeting regional and local markets for stronger community engagement."
+        },
+        "7": {
+          "title": "Strategic Partnership Development",
+          "desc": "Identifying and forming valuable partnerships to scale your brand."
+        }
+      }
+    },
+    "perfomanceOptimization": {
+      "annotation": "Achieving success online means making sure every click and interaction counts. We focus on driving measurable results through optimized campaigns, enhancing your ROI and conversion rates at every customer journey stage.",
+      "subAnnotation": "Our services include:",
+      "title": "Performance Marketing & Conversion Optimization",
+      "values": {
+        "0": {
+          "title": "SEO & Search Visibility Growth",
+          "desc": "Boosting your organic search rankings to attract high-quality traffic."
+        },
+        "1": {
+          "title": "PPC & Paid Advertising",
+          "desc": "Creating highly effective ad campaigns that deliver fast results."
+        },
+        "2": {
+          "title": "Website & Funnel Optimization",
+          "desc": "Optimizing user flows to maximize conversions and sales."
+        },
+        "3": {
+          "title": "Data-Driven Sales Strategies",
+          "desc": "Implementing strategies that guide and convert prospects effectively."
+        },
+        "4": {
+          "title": "Landing Page Optimization",
+          "desc": "Designing high-converting landing pages tailored to your audience."
+        },
+        "5": {
+          "title": "Retargeting & Remarketing Campaigns",
+          "desc": "Re-engaging past visitors to increase conversions."
+        },
+        "6": {
+          "title": "Lead Generation Tactics",
+          "desc": "Capturing high-quality leads through smart targeting strategies."
+        },
+        "7": {
+          "title": "A/B Testing & Performance Tracking",
+          "desc": "Continuously improving your campaigns with data insights."
+        }
+      }
+    },
+    "businessConsulting": {
+      "annotation": "Whether you’re looking to expand into new markets or streamline your business processes, our consulting services provide the expertise and strategies you need to scale successfully.",
+      "subAnnotation": "Our services include:",
+      "title": "Business Consulting & Expansion Planning",
+      "values": {
+        "0": {
+          "title": "Market Entry & Expansion Strategies",
+          "desc": "Comprehensive plans for entering new markets or launching new products."
+        },
+        "1": {
+          "title": "Customer Acquisition & Retention Plans",
+          "desc": "Building sustainable growth through effective lead generation and loyalty tactics."
+        },
+        "2": {
+          "title": "Revenue Model Optimization",
+          "desc": "Refining your business model to increase profitability and scalability."
+        },
+        "3": {
+          "title": "Business Process Automation",
+          "desc": "Automating routine tasks to streamline operations and reduce costs."
+        },
+        "4": {
+          "title": "Strategic Business Planning",
+          "desc": "Helping you define your growth and long-term success roadmap."
+        },
+        "5": {
+          "title": "Financial Forecasting & Budgeting",
+          "desc": "Projecting and managing business growth and expenditures effectively."
+        },
+        "6": {
+          "title": "Organizational Design & Development",
+          "desc": "Structuring your team for maximum productivity and growth."
+        },
+        "7": {
+          "title": "Competitive Market Intelligence",
+          "desc": "Gathering industry trends, competitor strategies, and market dynamics insights."
+        }
+      }
+    },
+    "contentAndAudience": {
+      "annotation": "Creating meaningful content that resonates with your audience is key to building relationships and driving conversions. We help you build a strong brand presence and engage with your audience through impactful, high-quality content.",
+      "subAnnotation": "Our services include:",
+      "title": "Content & Audience Engagement",
+      "values": {
+        "0": {
+          "title": "Social Media & Community Growth",
+          "desc": "Growing your social presence and creating active, engaged communities."
+        },
+        "1": {
+          "title": "Influencer & Affiliate Marketing",
+          "desc": "Leveraging trusted influencers and affiliates to extend your reach."
+        },
+        "2": {
+          "title": "High-Impact Content Creation & Storytelling",
+          "desc": "Crafting content that informs, engages, and converts your audience."
+        },
+        "3": {
+          "title": "Email & CRM Optimization",
+          "desc": "Nurturing customer relationships with targeted email marketing and CRM strategies."
+        },
+        "4": {
+          "title": "Blogging & Thought Leadership",
+          "desc": "Positioning your brand as an industry authority through consistent, high-quality content."
+        },
+        "5": {
+          "title": "Video Content Strategy",
+          "desc": "Creating engaging video content that resonates and drives conversions."
+        },
+        "6": {
+          "title": "Social Media Ad Campaigns",
+          "desc": "Leveraging platforms like Facebook, Instagram, and LinkedIn to generate targeted leads."
+        },
+        "7": {
+          "title": "Customer Testimonial & Case Study Creation",
+          "desc": "Showcasing your success through compelling customer stories."
+        }
+      }
+    },
+    "automationAndDigitalTransform": {
+      "annotation": "Stay ahead of the competition with cutting-edge automation and digital transformation solutions. We help you implement advanced tools and technology to streamline operations, enhance customer journeys, and scale seamlessly.",
+      "subAnnotation": "Our services include:",
+      "title": "Automation & Digital Transformation",
+      "values": {
+        "0": {
+          "title": "AI & Marketing Automation",
+          "desc": "Using AI-driven tools to automate marketing processes and save time."
+        },
+        "1": {
+          "title": "CRM & Customer Journey Optimization",
+          "desc": "Designing customer journeys that lead to long-term loyalty and growth."
+        },
+        "2": {
+          "title": "Chatbot & Lead Nurturing Flows",
+          "desc": "Implementing automated systems for customer support and lead nurturing."
+        },
+        "3": {
+          "title": "Performance Analytics & Reporting",
+          "desc": "Monitoring and analyzing key metrics to improve and refine strategies."
+        },
+        "4": {
+          "title": "Sales Process Automation",
+          "desc": "Streamlining your sales funnel to boost efficiency and close rates."
+        },
+        "5": {
+          "title": "Customer Data Integration",
+          "desc": "Combining your data sources to create a single view of your customer journey."
+        },
+        "6": {
+          "title": "Workflow Automation",
+          "desc": "Automating internal business processes to save time and increase productivity."
+        },
+        "7": {
+          "title": "Custom API Development",
+          "desc": "Integrating different tools and platforms to create a cohesive workflow for your business."
+        }
+      }
+    },
+    "strategicGrowth": {
+      "annotation": "Achieving sustainable growth requires a strategic approach that builds long-term value. We help you stay competitive by offering personalized growth plans that focus on scalability, revenue generation, and market positioning.",
+      "subAnnotation": "Our services include:",
+      "title": "Strategic Growth & Competitive Edge",
+      "values": {
+        "0": {
+          "title": "Personal Brand & Omni-Channel Growth",
+          "desc": "Helping individuals build and scale their personal brands across all channels."
+        },
+        "1": {
+          "title": "Lead Building & Audience Retention Strategies",
+          "desc": "Developing strategies to attract new leads and maintain lasting relationships."
+        },
+        "2": {
+          "title": "Sales Strategies for Entrepreneurs",
+          "desc": "Tailored sales tactics to help you grow and scale your business."
+        },
+        "3": {
+          "title": "Tailored Marketing & Monetization Plans",
+          "desc": "Creating strategies that maximize your business’s profitability and growth potential."
+        },
+        "4": {
+          "title": "Business Valuation & Exit Strategy",
+          "desc": "Planning for your long-term business goals and potential exit."
+        },
+        "5": {
+          "title": "Strategic Partnership & Collaboration",
+          "desc": "Identifying opportunities for alliances to help you scale."
+        },
+        "6": {
+          "title": "Market Differentiation Strategy",
+          "desc": "Helping you stand out in a crowded market with unique selling propositions."
+        },
+        "7": {
+          "title": "Long-Term Growth & Sustainability Plans",
+          "desc": "Building strategies for continuous innovation and sustained growth."
+        }
+      }
+    },
+    "checkOutOurPricing": {
+      "tag": "Bringing Strategy & Execution Together",
+      "title": "Want to Order a Service? Check Out Our Pricing & Packages",
+      "text": "Ready to take the next step? Explore our flexible pricing and packages designed to fit your goals and budget. Whether you need a comprehensive marketing overhaul or a focused growth strategy, we have a package that works for you.",
+      "btnLabel": "View Pricing & Packages"
+    },
+    "freeConsultation": {
+      "text": {
+        "0": "At Marketfire, we are committed to providing you with the tools, expertise, and strategies to grow your business and achieve measurable success.",
+        "1": "Ready to get started? Book a free consultation, and let's create a tailored strategy that's perfect for your goals. Together, we can unlock your business's potential and set the stage for long-term success."
+      },
+      "btnLabel": "Schedule a Free Strategy Session Today"
+    }
+  },
+  "freeConsultation": {
+    "title": "Let’s Build Something Powerful Together"
+  },
   "dropzone": {
     "noFileSelected": "No file selected",
     "chooseFile": "Choose file",

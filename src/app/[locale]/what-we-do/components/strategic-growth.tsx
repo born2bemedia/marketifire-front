@@ -1,5 +1,7 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
+
 import type { DataGridDef } from '@/shared/ui/components/data-grid';
 import {
   BluePrint,
@@ -14,64 +16,66 @@ import {
 
 import { InfoBlock } from './info-block';
 
-const strategies: DataGridDef[] = [
-  {
-    title: 'Personal Brand & Omni-Channel Growth',
-    desc: 'Helping individuals build and scale their personal brands across all channels.',
-    icon: ChartBar,
-    iconBg: 'yellow',
-  },
-  {
-    title: 'Lead Building & Audience Retention Strategies',
-    desc: 'Developing strategies to attract new leads and maintain lasting relationships.',
-    icon: ChartPie,
-    iconBg: 'grey',
-  },
-  {
-    title: 'Sales Strategies for Entrepreneurs',
-    desc: 'Tailored sales tactics to help you grow and scale your business.',
-    icon: Briefcase,
-    iconBg: 'grey',
-  },
-  {
-    title: 'Tailored Marketing & Monetization Plans',
-    desc: 'Creating strategies that maximize your business’s profitability and growth potential.',
-    icon: HandCoins,
-    iconBg: 'grey',
-  },
-  {
-    title: 'Business Valuation & Exit Strategy',
-    desc: 'Planning for your long-term business goals and potential exit.',
-    icon: BluePrint,
-    iconBg: 'grey',
-  },
-  {
-    title: 'Strategic Partnership & Collaboration',
-    desc: 'Identifying opportunities for alliances to help you scale.',
-    icon: HandGrabbing,
-    iconBg: 'grey',
-  },
-  {
-    title: 'Market Differentiation Strategy',
-    desc: 'Helping you stand out in a crowded market with unique selling propositions.',
-    icon: IntersectThree,
-    iconBg: 'yellow',
-  },
-  {
-    title: 'Long-Term Growth & Sustainability Plans',
-    desc: 'Building strategies for continuous innovation and sustained growth.',
-    icon: UsersThree,
-    iconBg: 'yellow',
-  },
-];
-
 export function StrategicGrowth() {
+  const t = useTranslations('whatWeDo.strategicGrowth');
+
+  const strategies: DataGridDef[] = [
+    {
+      title: t('values.0.title'),
+      desc: t('values.0.desc'),
+      icon: ChartBar,
+      iconBg: 'yellow',
+    },
+    {
+      title: t('values.1.title'),
+      desc: t('values.1.desc'),
+      icon: ChartPie,
+      iconBg: 'grey',
+    },
+    {
+      title: t('values.2.title'),
+      desc: t('values.2.desc'),
+      icon: Briefcase,
+      iconBg: 'grey',
+    },
+    {
+      title: t('values.3.title'),
+      desc: t('values.3.desc'),
+      icon: HandCoins,
+      iconBg: 'grey',
+    },
+    {
+      title: t('values.4.title'),
+      desc: t('values.4.desc'),
+      icon: BluePrint,
+      iconBg: 'grey',
+    },
+    {
+      title: t('values.5.title'),
+      desc: t('values.5.desc'),
+      icon: HandGrabbing,
+      iconBg: 'grey',
+    },
+    {
+      title: t('values.6.title'),
+      desc: t('values.6.desc'),
+      icon: IntersectThree,
+      iconBg: 'yellow',
+    },
+    {
+      title: t('values.7.title'),
+      desc: t('values.7.desc'),
+      icon: UsersThree,
+      iconBg: 'yellow',
+    },
+  ];
+
   return (
     <InfoBlock
       number="06"
-      annotation="Achieving sustainable growth requires a strategic approach that builds long-term value. We help you stay competitive by offering personalized growth plans that focus on scalability, revenue generation, and market positioning."
-      subAnnotation="Our services include:"
-      title="Strategic Growth & Competitive Edge"
+      annotation={t('annotation')}
+      subAnnotation={t('subAnnotation')}
+      title={t('title')}
       values={strategies}
       startFromBig
     />

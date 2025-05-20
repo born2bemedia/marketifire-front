@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 import { cn } from '@/shared/lib/styles';
 import { Asterisk } from '@/shared/ui/icons/fill';
@@ -23,6 +24,8 @@ import { Title } from '@/shared/ui/kit/title';
 import st from './check-out-our-pricing.module.scss';
 
 export function CheckOutOurPricing() {
+  const t = useTranslations('whatWeDo.checkOutOurPricing');
+
   return (
     <section className={st.layout}>
       <section className={st.ellipseWrapper}>
@@ -52,20 +55,13 @@ export function CheckOutOurPricing() {
       <div className={st.textLayout}>
         <Tag color="yellow">
           <Asterisk />
-          <Text>Bringing Strategy & Execution Together</Text>
+          <Text>{t('tag')}</Text>
         </Tag>
-        <Title level={2}>
-          Want to Order a Service? Check Out Our Pricing & Packages
-        </Title>
-        <Text className={st.text}>
-          Ready to take the next step? Explore our flexible pricing and packages
-          designed to fit your goals and budget. Whether you need a
-          comprehensive marketing overhaul or a focused growth strategy, we have
-          a package that works for you.
-        </Text>
+        <Title level={2}>{t('title')}</Title>
+        <Text className={st.text}>{t('text')}</Text>
         <Link href="/pricing-and-packages" className={st.actionBtn}>
           <Button variant="black" size="md">
-            View Pricing & Packages
+            {t('btnLabel')}
           </Button>
         </Link>
       </div>

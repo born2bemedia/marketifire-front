@@ -1,7 +1,5 @@
 import type { Metadata } from 'next';
 
-import { GetFreeConsultation } from '@/shared/ui/components/get-free-consultation';
-
 import {
   AutomationAndDigitalTransform,
   BusinessConsulting,
@@ -12,9 +10,9 @@ import {
   PerfomanceOptimization,
   StrategicGrowth,
 } from './components';
+import { FreeConsultation } from './components/free-consultation';
 import st from './page.module.scss';
 import { PulsingEllipse } from '@/app/[locale]/request-form/components';
-
 export const metadata: Metadata = {
   title: 'What We Do | Business Consulting & Marketing Services',
   description:
@@ -41,25 +39,7 @@ export default function WhatWeDo() {
         <StrategicGrowth />
       </section>
       <CheckOutOurPricing />
-      <GetFreeConsultation
-        text={
-          <>
-            At Marketfire, we are committed to providing you with the tools,
-            expertise, and strategies to grow your business and achieve
-            measurable success.
-            <br />
-            <br />
-            Ready to get started? Book a free consultation, and let’s create a
-            tailored strategy that’s perfect for your goals. Together, we can
-            unlock your business’s potential and set the stage for long-term
-            success.
-          </>
-        }
-        nav={{
-          url: '/pricing-and-packages',
-          label: 'Schedule a Free Strategy Session Today',
-        }}
-      />
+      <FreeConsultation />
     </main>
   );
 }
