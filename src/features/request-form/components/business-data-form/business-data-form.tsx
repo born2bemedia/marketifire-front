@@ -91,7 +91,7 @@ export function BusinessDataForm() {
   return (
     <form onSubmit={onSubmit}>
       <section className={st.header}>
-        <Title level={3}>Personal Data</Title>
+        <Title level={3}>Business & Marketing Data</Title>
         <Image
           src="/request-form/level-indicator-2.svg"
           alt="level-indicator"
@@ -197,7 +197,7 @@ export function BusinessDataForm() {
           render={({ field, fieldState: { error } }) => (
             <section>
               <div className={st.titleService}>
-                <Text>Your Budget Range. Select your investment range:</Text>
+                <Text>When do you plan to start? </Text>
                 {error?.message ? <Text>* {error?.message}</Text> : null}
               </div>
               <div className={st.grid}>
@@ -221,7 +221,7 @@ export function BusinessDataForm() {
           render={({ field, fieldState: { error } }) => (
             <section>
               <div className={st.titleService}>
-                <Text>Your Budget Range. Select your investment range:</Text>
+                <Text>Preferred Contact Method</Text>
                 {error?.message ? <Text>* {error?.message}</Text> : null}
               </div>
               <div className={st.grid}>
