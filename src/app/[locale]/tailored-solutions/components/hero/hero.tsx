@@ -1,5 +1,7 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
+
 import { Tag } from '@/shared/ui/kit/tag/tag';
 import { Text } from '@/shared/ui/kit/text';
 import { Title } from '@/shared/ui/kit/title';
@@ -8,23 +10,16 @@ import { PulsingEllipse } from '../pulsing-ellipse';
 import st from './hero.module.scss';
 
 export function Hero() {
+  const t = useTranslations('tailoredSolutions.hero');
+
   return (
     <section className={st.text}>
       <PulsingEllipse />
       <div className={st.content}>
-        <Tag color="yellow">Let’s Build Your Success Together</Tag>
-        <Title>Igniting Growth, Empowering Success</Title>
-        <Text>
-          At Marketfire, we believe that growth isn’t just about marketing —
-          it’s about creating a lasting impact. We work with entrepreneurs,
-          professionals, and personal brands to transform ideas into strategies
-          that scale, engage, and convert.
-        </Text>
-        <Text>
-          We don’t follow trends — we create them. With a data-driven approach,
-          innovative thinking, and a passion for results, we craft solutions
-          that fuel success at every stage of your journey.
-        </Text>
+        <Tag color="yellow">{t('tag')}</Tag>
+        <Title>{t('title')}</Title>
+        <Text>{t('text')}</Text>
+        <Text>{t('text2')}</Text>
       </div>
     </section>
   );

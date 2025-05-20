@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 
-import { CtaBlock } from '@/shared/ui/components/cta-block';
-
+import { Consultation } from './components/consultation';
 import { Hero } from './components/hero';
 import { Solutions } from './components/solutions';
 import { SuccessFramework } from './components/success-framework';
@@ -25,12 +24,7 @@ export default function TailoredSolutions() {
       <Hero />
       <Solutions />
       <SuccessFramework />
-      <CtaBlock
-        title="Let’s Tailor a Strategy for Your Industry"
-        text="No two industries are the same — and neither are our solutions. Let’s build a strategy for your unique business, market, and goals. <br /><br /> Get in touch today to discuss your industry-specific growth plan."
-        link="/request-form"
-        buttonText="Get Your Free Consultation Today"
-      />
+      <Consultation />
     </>
   );
 }

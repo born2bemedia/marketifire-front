@@ -667,6 +667,97 @@
   "freeConsultation": {
     "title": "Let’s Build Something Powerful Together"
   },
+  "tailoredSolutions": {
+    "hero": {
+      "tag": "Let’s Build Your Success Together",
+      "title": "Igniting Growth, Empowering Success",
+      "text": "At Marketfire, we believe that growth isn’t just about marketing — it’s about creating a lasting impact. We work with entrepreneurs, professionals, and personal brands to transform ideas into strategies that scale, engage, and convert.",
+      "text2": "We don’t follow trends — we create them. With a data-driven approach, innovative thinking, and a passion for results, we craft solutions that fuel success at every stage of your journey."
+    },
+    "solutions": {
+      "tag": "Tailored Expertise for Your Industry",
+      "title": "Targeted Consulting Solutions",
+      "text": "We provide expert guidance tailored to your field, helping you optimize visibility, customer acquisition, and revenue generation through targeted consulting.",
+      "btnLabel": "Start Optimizing Your Strategy Today",
+      "label": "Every service is tailored to YOUR business goals.",
+      "values": {
+        "0": {
+          "title": "Coaching & Consulting",
+          "items": {
+            "0": "Personal brand positioning for thought leadership",
+            "1": "High-value lead generation & client acquisition",
+            "2": "Authority-building strategies & trust-based marketing",
+            "3": "Pricing models & service monetization"
+          }
+        },
+        "1": {
+          "title": "E-Commerce & Digital Products",
+          "items": {
+            "0": "Conversion-optimized online store strategies",
+            "1": "Customer experience & sales funnel optimization",
+            "2": "Automated sales & remarketing systems",
+            "3": "Product launch frameworks tailored for niche markets"
+          }
+        },
+        "2": {
+          "title": "Education & Online Courses",
+          "items": {
+            "0": "High-impact course positioning & curriculum structuring",
+            "1": "Digital learning engagement & student retention",
+            "2": "Paid & organic marketing strategies for course creators",
+            "3": "Scaling with membership models & certification programs"
+          }
+        },
+        "3": {
+          "title": "Health, Wellness & Lifestyle Brands",
+          "items": {
+            "0": "Nutrition & wellness coaching",
+            "1": "Yoga & fitness programs",
+            "2": "Holistic health coaching",
+            "3": "Nutrition & wellness products"
+          }
+        },
+        "4": {
+          "title": "Financial & Investment Advisory",
+          "items": {
+            "0": "Financial planning & investment strategies",
+            "1": "Retirement planning & wealth management",
+            "2": "Tax planning & compliance",
+            "3": "Estate planning & legacy strategies"
+          }
+        }
+      }
+    },
+    "successFramework": {
+      "title": "Industry-Focused Success Framework",
+      "annotation": "We don’t just create strategies — we develop frameworks that align with your industry’s core success drivers. Whether you want to grow your client base, increase engagement, or refine your business model, we build custom roadmaps that ensure long-term scalability.",
+      "footerText": "",
+      "tagText": "Crafting Roadmaps for Long-Term Growth",
+      "cards": {
+        "0": {
+          "title": "Data-Driven Market Positioning",
+          "desc": "Understanding where you stand and where you need to be."
+        },
+        "1": {
+          "title": "Customer Behavior & Trend Analysis",
+          "desc": "Identifying key patterns to enhance engagement."
+        },
+        "2": {
+          "title": "Revenue Optimization Strategies",
+          "desc": "Maximizing value through tailored monetization approaches."
+        },
+        "3": {
+          "title": "Growth & Expansion Roadmaps",
+          "desc": "A step-by-step guide to industry dominance."
+        }
+      }
+    },
+    "consultation": {
+      "title": "Let’s Tailor a Strategy for Your Industry",
+      "text": "No two industries are the same — and neither are our solutions. Let’s build a strategy for your unique business, market, and goals. <br /><br /> Get in touch today to discuss your industry-specific growth plan.",
+      "btnLabel": "Get Your Free Consultation Today"
+    }
+  },
   "dropzone": {
     "noFileSelected": "No file selected",
     "chooseFile": "Choose file",

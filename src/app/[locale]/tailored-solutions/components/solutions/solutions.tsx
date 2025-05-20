@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
-import { tailoredSolutions } from '@/shared/lib/tailored-solution';
 import { ArrowRight, Asterisk } from '@/shared/ui/icons/fill';
 import { PlusIcon } from '@/shared/ui/icons/outline/plus';
 import { Button } from '@/shared/ui/kit/button';
@@ -12,20 +12,86 @@ import { Title } from '@/shared/ui/kit/title';
 import st from './solutions.module.scss';
 
 export function Solutions() {
+  const t = useTranslations('tailoredSolutions.solutions');
+
+  const tailoredSolutions = [
+    {
+      category: t('values.0.title'),
+      items: [
+        t('values.0.items.0'),
+        t('values.0.items.1'),
+        t('values.0.items.2'),
+        t('values.0.items.3'),
+      ],
+      image1: '/tailored/image1_1.png',
+      image2: '/tailored/image1_2.png',
+      image3: '/tailored/image1_3.png',
+      buttonText: t('values.0.title'),
+    },
+    {
+      category: t('values.1.title'),
+      items: [
+        t('values.1.items.0'),
+        t('values.1.items.1'),
+        t('values.1.items.2'),
+        t('values.1.items.3'),
+      ],
+      image1: '/tailored/image2_1.png',
+      image2: '/tailored/image2_2.png',
+      image3: '/tailored/image2_3.png',
+      buttonText: t('values.1.title'),
+    },
+    {
+      category: t('values.2.title'),
+      items: [
+        t('values.2.items.0'),
+        t('values.2.items.1'),
+        t('values.2.items.2'),
+        t('values.2.items.3'),
+      ],
+      image1: '/tailored/image3_1.png',
+      image2: '/tailored/image3_2.png',
+      image3: '/tailored/image3_3.png',
+      buttonText: t('values.2.title'),
+    },
+    {
+      category: t('values.3.title'),
+      items: [
+        t('values.3.items.0'),
+        t('values.3.items.1'),
+        t('values.3.items.2'),
+        t('values.3.items.3'),
+      ],
+      image1: '/tailored/image4_1.png',
+      image2: '/tailored/image4_2.png',
+      image3: '/tailored/image4_3.png',
+      buttonText: t('values.3.title'),
+    },
+    {
+      category: t('values.4.title'),
+      items: [
+        t('values.4.items.0'),
+        t('values.4.items.1'),
+        t('values.4.items.2'),
+        t('values.4.items.3'),
+      ],
+      image1: '/tailored/image5_1.png',
+      image2: '/tailored/image5_2.png',
+      image3: '/tailored/image5_3.png',
+      buttonText: t('values.4.title'),
+    },
+  ];
+
   return (
     <div className={st.layout}>
       <div className={st.container}>
         <section className={st.titleLayout}>
           <Tag color="yellow">
             <Asterisk />
-            <Text>Tailored Expertise for Your Industry</Text>
+            <Text>{t('tag')}</Text>
           </Tag>
-          <Title level={2}>Targeted Consulting Solutions</Title>
-          <Text className={st.text}>
-            We provide expert guidance tailored to your field, helping you
-            optimize visibility, customer acquisition, and revenue generation
-            through targeted consulting.
-          </Text>
+          <Title level={2}>{t('title')}</Title>
+          <Text className={st.text}>{t('text')}</Text>
         </section>
         <section className={st.solutionsLayout}>
           {tailoredSolutions.map((solution, index) => (
@@ -86,12 +152,10 @@ export function Solutions() {
         <section className={st.bottom}>
           <Link href={'/request-form'} className={st.link}>
             <Button size="sm" variant="black">
-              Start Optimizing Your Strategy Today
+              {t('btnLabel')}
             </Button>
           </Link>
-          <Text className={st.text}>
-            Every service is tailored to YOUR business goals.
-          </Text>
+          <Text className={st.text}>{t('label')}</Text>
         </section>
       </div>
     </div>
