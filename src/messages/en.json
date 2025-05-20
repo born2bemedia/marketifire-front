@@ -320,6 +320,7 @@
     "back": "Back",
     "processing": "Processing...",
     "submit": "Submit",
+    "submitYourRequest": "Submit Your Request",
     "submitting": "Submitting...",
     "errors": {
       "fullName": "Please provide your full name",
@@ -1137,6 +1138,30 @@
       "text": "If you have more questions or need assistance with a specific issue, don’t hesitate to reach out. We’re here to help you succeed!",
       "contactUs": "Contact Us",
       "scheduleFreeConsultation": "Schedule a Free Consultation"
+    }
+  },
+  "commonRequest": {
+    "title": "Get in Touch with Marketfire",
+    "text": "We’re excited to hear from you! Whether you have a question, need expert advice, or are ready to begin a project, our team is here to provide the support and solutions you need. Simply fill out the form below with your details, and we’ll get back to you as soon as possible to discuss how we can help you achieve your business goals."
+  },
+  "contacts": {
+    "socials": {
+      "tag": "Follow Us",
+      "title": "Follow Us on Social Media",
+      "text": "Stay connected with us for updates, tips, and insights:"
+    },
+    "addresses": {
+      "whereWeWork": "Where We Work",
+      "officialCorrespondence": "Official Correspondence"
+    },
+    "contact": {
+      "getInTouch": "Get in Touch",
+      "speakWithUs": "Speak With Us"
+    },
+    "hero": {
+      "tag": "We’re Here to Help You Reach Your Business Goals",
+      "title": "Contacts",
+      "text": "At Marketfire, we believe in providing the right tools and strategies for business growth. Whether you have a question, need guidance, or are ready to start a project, we’re here to assist you every step of the way."
     }
   },
   "dropzone": {

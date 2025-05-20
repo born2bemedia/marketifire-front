@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 import { ArrowRight, Asterisk } from '@/shared/ui/icons/fill';
 import { FacebookIcon, InstagramIcon, XIcon } from '@/shared/ui/icons/socials';
@@ -11,15 +12,17 @@ import { Title } from '@/shared/ui/kit/title';
 import st from './socials.module.scss';
 
 export function Socials() {
+  const t = useTranslations('contacts.socials');
+
   return (
     <section className={st.layout}>
       <section className={st.title}>
         <Tag color="yellow">
           <Asterisk />
-          Follow Us
+          {t('tag')}
         </Tag>
-        <Title level={2}>Follow Us on Social Media</Title>
-        <Text>Stay connected with us for updates, tips, and insights:</Text>
+        <Title level={2}>{t('title')}</Title>
+        <Text>{t('text')}</Text>
       </section>
       <section className={st.cards}>
         <article className={st.cardLayout}>

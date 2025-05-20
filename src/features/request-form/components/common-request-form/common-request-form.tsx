@@ -21,8 +21,9 @@ import { type CommonRequestSchema, createCommonRequestSchema } from '../../lib';
 import st from './common-request-form.module.scss';
 
 export function CommonRequestForm() {
-  const tr = useTranslations('requestForm');
+  const tr = useTranslations('requestForm.businessData');
   const te = useTranslations('requestForm.errors');
+  const t = useTranslations('requestForm');
   const countryCode = useCountryCode();
   const [dialogOpen, setDialogOpen] = useState(false);
 
@@ -97,7 +98,7 @@ export function CommonRequestForm() {
     <form onSubmit={onSubmit}>
       <section className={st.formLayout}>
         <section>
-          <Title level={3}>Personal Data</Title>
+          <Title level={3}>{t('personalData.title')}</Title>
           <section className={st.formInner}>
             <section className={st.row}>
               <Controller
@@ -106,8 +107,8 @@ export function CommonRequestForm() {
                 render={({ field, fieldState: { error } }) => (
                   <TextField
                     {...field}
-                    placeholder="Enter your full name"
-                    label="Full Name"
+                    placeholder={t('personalData.fields.fullName.placeholder')}
+                    label={t('personalData.fields.fullName.label')}
                     hint={error?.message}
                   />
                 )}
@@ -118,8 +119,8 @@ export function CommonRequestForm() {
                 render={({ field, fieldState: { error } }) => (
                   <TextField
                     {...field}
-                    placeholder="Enter your email address"
-                    label="Email Address"
+                    placeholder={t('personalData.fields.email.placeholder')}
+                    label={t('personalData.fields.email.label')}
                     hint={error?.message}
                   />
                 )}
@@ -133,7 +134,7 @@ export function CommonRequestForm() {
                   <PhoneField
                     {...field}
                     country={countryCode}
-                    label="Phone number"
+                    label={t('personalData.fields.phone.label')}
                     hint={error?.message}
                   />
                 )}
@@ -144,8 +145,10 @@ export function CommonRequestForm() {
                 render={({ field, fieldState: { error } }) => (
                   <TextField
                     {...field}
-                    placeholder="Enter your company name"
-                    label="Company Name (optional)"
+                    placeholder={t(
+                      'personalData.fields.companyName.placeholder',
+                    )}
+                    label={t('personalData.fields.companyName.label')}
                     hint={error?.message}
                   />
                 )}
@@ -158,8 +161,8 @@ export function CommonRequestForm() {
                 render={({ field, fieldState: { error } }) => (
                   <TextField
                     {...field}
-                    placeholder="Enter your website URL"
-                    label="Your Website (optional)"
+                    placeholder={t('personalData.fields.website.placeholder')}
+                    label={t('personalData.fields.website.label')}
                     hint={error?.message}
                   />
                 )}
@@ -168,7 +171,7 @@ export function CommonRequestForm() {
           </section>
         </section>
         <section>
-          <Title level={3}>Business & Marketing Data</Title>
+          <Title level={3}>{t('businessData.title')}</Title>
           <section className={st.formInner}>
             <section>
               <Controller
@@ -177,7 +180,7 @@ export function CommonRequestForm() {
                 render={({ field, fieldState: { error } }) => (
                   <div>
                     <div className={st.titleService}>
-                      <Text>Select the Service You’re Interested In</Text>
+                      <Text>{t('businessData.fields.services.label')}</Text>
                       {error?.message ? <Text>* {error?.message}</Text> : null}
                     </div>
                     <div className={st.grid}>
@@ -198,7 +201,9 @@ export function CommonRequestForm() {
                     {field.value.some(value => value === 'Other') ? (
                       <div>
                         <TextField
-                          placeholder="Please specify"
+                          placeholder={t(
+                            'businessData.fields.services.pleaseSpecify',
+                          )}
                           className={st.specifyInput}
                           onChange={e =>
                             field.onChange([...field.value, e.target.value])
@@ -217,9 +222,7 @@ export function CommonRequestForm() {
                 render={({ field, fieldState: { error } }) => (
                   <div>
                     <div className={st.titleService}>
-                      <Text>
-                        Your Budget Range. Select your investment range:
-                      </Text>
+                      <Text>{t('businessData.fields.budget.label')}</Text>
                       {error?.message ? <Text>* {error?.message}</Text> : null}
                     </div>
                     <div className={st.grid}>
@@ -247,8 +250,8 @@ export function CommonRequestForm() {
               render={({ field, fieldState: { error } }) => (
                 <TextArea
                   {...field}
-                  label="Your Goals & Challenges"
-                  placeholder="What are your key objectives and current pain points?"
+                  label={t('businessData.fields.goals.label')}
+                  placeholder={t('businessData.fields.goals.placeholder')}
                   hint={error?.message}
                 />
               )}
@@ -259,8 +262,10 @@ export function CommonRequestForm() {
               render={({ field, fieldState: { error } }) => (
                 <TextArea
                   {...field}
-                  label="Who Is Your Target Audience?"
-                  placeholder="What are your key objectives and current pain points? Age, Gender, Location, Interests"
+                  label={t('businessData.fields.targetAudience.label')}
+                  placeholder={t(
+                    'businessData.fields.targetAudience.placeholder',
+                  )}
                   hint={error?.message}
                 />
               )}
@@ -271,9 +276,7 @@ export function CommonRequestForm() {
               render={({ field, fieldState: { error } }) => (
                 <section>
                   <div className={st.titleService}>
-                    <Text>
-                      Your Budget Range. Select your investment range:
-                    </Text>
+                    <Text>{t('businessData.fields.startDate.label')}</Text>
                     {error?.message ? <Text>* {error?.message}</Text> : null}
                   </div>
                   <div className={st.grid}>
@@ -297,9 +300,7 @@ export function CommonRequestForm() {
               render={({ field, fieldState: { error } }) => (
                 <section>
                   <div className={st.titleService}>
-                    <Text>
-                      Your Budget Range. Select your investment range:
-                    </Text>
+                    <Text>{t('businessData.fields.contactMethod.label')}</Text>
                     {error?.message ? <Text>* {error?.message}</Text> : null}
                   </div>
                   <div className={st.grid}>
@@ -331,7 +332,7 @@ export function CommonRequestForm() {
           </section>
         </section>
         <Button variant="black" type="submit" className={st.btn} uppercase>
-          {isSubmitting ? 'Submitting...' : 'Submit Your Request'}
+          {isSubmitting ? t('submitting') : t('submitYourRequest')}
         </Button>
       </section>
       <ThankYouDialog open={dialogOpen} onOpenChange={setDialogOpen} />

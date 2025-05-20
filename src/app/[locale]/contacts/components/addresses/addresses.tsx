@@ -1,11 +1,15 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
+
 import { Text } from '@/shared/ui/kit/text';
 import { Title } from '@/shared/ui/kit/title';
 
 import st from './addresses.module.scss';
 
 export function Addresses() {
+  const t = useTranslations('contacts.addresses');
+
   return (
     <section className={st.layout}>
       <article className={st.cardLayout}>
@@ -23,7 +27,7 @@ export function Addresses() {
         ></iframe>
         <section className={st.text}>
           <Title level={4} color="black60" uppercase>
-            Where We Work
+            {t('whereWeWork')}
           </Title>
           <Text color="black100" size="xl" weight={500}>
             Galvaniho 7/D, 821 04 Bratislava, Slovakia
@@ -45,7 +49,7 @@ export function Addresses() {
         ></iframe>
         <section className={st.text}>
           <Title level={4} color="black60" uppercase>
-            Official Correspondence
+            {t('officialCorrespondence')}
           </Title>
           <Text color="black100" size="xl" weight={500}>
             Biskupa Kondého Street 5138/30, 929 01 Dunajská Streda, Slovakia
