@@ -225,6 +225,91 @@
       "refundPolicy": "Refund Policy"
     }
   },
+  "about": {
+    "hero": {
+      "tag": "Let’s Build Your Success Together",
+      "title": "Igniting Growth, Empowering Success",
+      "text": "At Marketifire, we believe that growth isn’t just about marketing — it’s about creating a lasting impact. We work with entrepreneurs, professionals, and personal brands to transform ideas into strategies that scale, engage, and convert.",
+      "text2": "We don’t follow trends — we create them. With a data-driven approach, innovative thinking, and a passion for results, we craft solutions that fuel success at every stage of your journey."
+    },
+    "ourMission": {
+      "title": "Our Mission",
+      "description": "To empower individuals and businesses with tailored marketing and business strategies that drive real growth, enhance brand visibility, and maximize revenue potential.",
+      "text": "Whether you're building your brand from scratch or looking to optimize your digital presence, we're here to guide you every step of the way."
+    },
+    "whatSetsApart": {
+      "tag": "Innovative Solutions for Unique Challenges",
+      "title": "What Sets Us Apart?",
+      "description": "We don't believe in one-size-fits-all solutions. At Marketifire, every strategy is custom-built to fit your unique goals. With a data-driven mindset, innovative execution, and a commitment to measurable results, we help you stand out, grow faster, and achieve long-term success.",
+      "label": "Ready to Elevate Your Business?",
+      "btnLabel": "Get Free Consultation",
+      "steps": {
+        "0": {
+          "title": "Tailored Strategies, Not Templates",
+          "desc": "Every business is unique, and so are our solutions. No generic approaches — just custom strategies designed for your goals."
+        },
+        "1": {
+          "title": "Data-Driven Decisions",
+          "desc": "We analyze, optimize, and refine every strategy to ensure maximum impact. Numbers don’t lie, and we let the data lead."
+        },
+        "2": {
+          "title": "End-to-End Expertise",
+          "desc": "From market research and content creation to conversion optimization and automation, we cover every aspect of your growth journey."
+        },
+        "3": {
+          "title": "Your Success is Our Success",
+          "desc": "We don’t just consult — we partner with you to execute and achieve measurable results."
+        }
+      }
+    },
+    "whoWeWorkWith": {
+      "title": "Who We Work With",
+      "desc": "Marketifire is designed for individuals, professionals, and businesses looking for clear, effective, and sustainable growth strategies. Whether you’re just starting or looking to scale, we provide the tools, expertise, and insights to help you succeed in a competitive landscape.",
+      "tagText": "Tailored Strategies for Every Client",
+      "cards": {
+        "0": {
+          "title": "Entrepreneurs & Startups",
+          "desc": "Launch, grow, and confidently establish your brand."
+        },
+        "1": {
+          "title": "Consultants & Experts",
+          "desc": "Position yourself as a leader in your field and attract the right audience."
+        },
+        "2": {
+          "title": "Freelancers & Solopreneurs",
+          "desc": "Avg. Increase in Client Online Engagement"
+        },
+        "3": {
+          "title": "Personal Brands & Creators",
+          "desc": "Growth in Qualified Leads for Startups"
+        }
+      }
+    },
+    "marketfireApproach": {
+      "title": "The Marketifire Approach",
+      "desc": "Success doesn't happen by chance — it's built through strategic planning, continuous optimization, and smart execution. Our approach focuses on understanding your market, crafting tailored strategies, and scaling precisely to ensure sustained growth and real impact.",
+      "tag": "Success Through Strategic Precision",
+      "cards": {
+        "0": {
+          "title": "Understand Your Market",
+          "desc": "Every strategy starts with in-depth market research and competitor analysis."
+        },
+        "1": {
+          "title": "Define Your Strategy",
+          "desc": "We craft a clear, customized plan based on your goals and audience."
+        },
+        "2": {
+          "title": "Optimize & Scale",
+          "desc": "Continuous testing, refinement, and execution to ensure long-term success."
+        }
+      }
+    },
+    "contactBlock": {
+      "title": "Let’s Build Something Powerful Together",
+      "text": "Marketifire isn’t just another marketing consultancy — we are your partners in growth. Let’s get started today if you’re ready to elevate your brand, expand your audience, and drive revenue. <br /><br /> Contact us to discuss your goals and take the first step toward realizing your vision.",
+      "btnLabel": "Get Your Free Consultation Today"
+    }
+  },
   "footer": {
     "quickNavigation": "Quick Navigation",
     "ourExpertise": "Our Expertise",

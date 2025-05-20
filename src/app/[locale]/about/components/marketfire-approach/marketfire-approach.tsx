@@ -1,3 +1,5 @@
+import { useTranslations } from 'next-intl';
+
 import { Asterisk } from '@/shared/ui/icons/fill';
 import { Line } from '@/shared/ui/icons/outline/line';
 import { LineMob } from '@/shared/ui/icons/outline/lineMob';
@@ -8,51 +10,38 @@ import { Title } from '@/shared/ui/kit/title';
 import st from './marketfire-approach.module.scss';
 
 export function MarketfireApproach() {
+  const t = useTranslations('about.marketfireApproach');
+
   return (
     <div className={st.layout}>
       <section className={st.titleLayout}>
         <Tag color="yellow">
           <Asterisk />
-          <Text>Success Through Strategic Precision</Text>
+          <Text>{t('tag')}</Text>
         </Tag>
-        <Title level={2}>The Marketifire Approach</Title>
-        <Text className={st.text}>
-          Success doesn&apos;t happen by chance — it&apos;s built through
-          strategic planning, continuous optimization, and smart execution. Our
-          approach focuses on understanding your market, crafting tailored
-          strategies, and scaling precisely to ensure sustained growth and real
-          impact.
-        </Text>
+        <Title level={2}>{t('title')}</Title>
+        <Text className={st.text}>{t('desc')}</Text>
       </section>
       <section className={st.lineLayout}>
         <div className={st.card}>
           <div className={st.cardNumber}>01</div>
           <div className={st.cardContent}>
-            <Title level={3}>Understand Your Market</Title>
-            <Text className={st.text}>
-              Every strategy starts with in-depth market research and competitor
-              analysis.
-            </Text>
+            <Title level={3}>{t('cards.0.title')}</Title>
+            <Text className={st.text}>{t('cards.0.desc')}</Text>
           </div>
         </div>
         <div className={st.card}>
           <div className={st.cardNumber}>02</div>
           <div className={st.cardContent}>
-            <Title level={3}>Define Your Strategy</Title>
-            <Text className={st.text}>
-              We craft a clear, customized plan based on your goals and
-              audience.
-            </Text>
+            <Title level={3}>{t('cards.1.title')}</Title>
+            <Text className={st.text}>{t('cards.1.desc')}</Text>
           </div>
         </div>
         <div className={st.card}>
           <div className={st.cardNumber}>03</div>
           <div className={st.cardContent}>
-            <Title level={3}>Optimize & Scale</Title>
-            <Text className={st.text}>
-              Continuous testing, refinement, and execution to ensure long-term
-              success.
-            </Text>
+            <Title level={3}>{t('cards.2.title')}</Title>
+            <Text className={st.text}>{t('cards.2.desc')}</Text>
           </div>
         </div>
         <Line className={st.line} />

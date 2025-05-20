@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 import { Asterisk } from '@/shared/ui/icons/fill';
 import { Button } from '@/shared/ui/kit/button';
@@ -11,25 +12,22 @@ import { Title } from '@/shared/ui/kit/title';
 import st from './what-sets-apart.module.scss';
 
 export function Content() {
+  const t = useTranslations('about.whatSetsApart');
+
   return (
     <section className={st.contentLayout}>
       <div className={st.annotation}>
         <Tag color="yellow">
           <Asterisk />
-          <Text>Innovative Solutions for Unique Challenges</Text>
+          <Text>{t('tag')}</Text>
         </Tag>
-        <Title level={2}>What Sets Us Apart?</Title>
-        <Text>
-          We don’t believe in one-size-fits-all solutions. At Marketifire, every
-          strategy is custom-built to fit your unique goals. With a data-driven
-          mindset, innovative execution, and a commitment to measurable results,
-          we help you stand out, grow faster, and achieve long-term success.
-        </Text>
+        <Title level={2}>{t('title')}</Title>
+        <Text>{t('description')}</Text>
       </div>
       <div className={st.requestNavDesktop}>
         <Link href="/request-form">
           <Button variant="black" size="md">
-            Get Free Consultation
+            {t('btnLabel')}
           </Button>
         </Link>
       </div>

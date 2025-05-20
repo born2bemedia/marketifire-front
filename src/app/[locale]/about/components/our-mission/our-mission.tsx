@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 import { RightArrowIcon } from '@/shared/ui/icons/outline/right-arrow';
 import { Text } from '@/shared/ui/kit/text';
@@ -7,20 +8,17 @@ import { Text } from '@/shared/ui/kit/text';
 import st from './our-mission.module.scss';
 
 export function OurMission() {
+  const t = useTranslations('about.ourMission');
   return (
     <section className={st.layout}>
       <div className={st.ourMission}>
         <div className={st.col1}>
           <Link href="#">
-            Our Mission
+            {t('title')}
             <RightArrowIcon />
           </Link>
           <div>
-            <Image
-              src="/about/mission1.png"
-              alt="Our Mission"
-              fill
-            />
+            <Image src="/about/mission1.png" alt="Our Mission" fill />
           </div>
         </div>
         <div className={st.col2}>
@@ -34,18 +32,10 @@ export function OurMission() {
               width={518}
               height={200}
             />
-            <Text>
-              To empower individuals and businesses with tailored marketing and
-              business strategies that drive real growth, enhance brand
-              visibility, and maximize revenue potential.
-            </Text>
+            <Text>{t('description')}</Text>
           </div>
           <div>
-            <Text>
-              Whether you’re building your brand from scratch or looking to
-              optimize your digital presence, we’re here to guide you every step
-              of the way.
-            </Text>
+            <Text>{t('text')}</Text>
           </div>
         </div>
       </div>

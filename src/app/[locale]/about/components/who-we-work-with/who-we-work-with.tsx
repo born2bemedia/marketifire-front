@@ -1,34 +1,38 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
+
 import { WhyOptions } from '../why-options';
 
-const cards = [
-  {
-    title: 'Entrepreneurs & Startups',
-    desc: 'Launch, grow, and confidently establish your brand.',
-  },
-  {
-    title: 'Consultants & Experts',
-    desc: 'Position yourself as a leader in your field and attract the right audience.',
-  },
-  {
-    title: 'Freelancers & Solopreneurs',
-    desc: 'Avg. Increase in Client Online Engagement',
-  },
-  {
-    title: 'Personal Brands & Creators',
-    desc: 'Growth in Qualified Leads for Startups',
-  },
-];
-
 export function WhoWeWorkWith() {
+  const t = useTranslations('about.whoWeWorkWith');
+
+  const cards = [
+    {
+      title: t('cards.0.title'),
+      desc: t('cards.0.desc'),
+    },
+    {
+      title: t('cards.1.title'),
+      desc: t('cards.1.desc'),
+    },
+    {
+      title: t('cards.2.title'),
+      desc: t('cards.2.desc'),
+    },
+    {
+      title: t('cards.3.title'),
+      desc: t('cards.3.desc'),
+    },
+  ];
+
   return (
     <WhyOptions
-      title="Who We Work With"
-      annotation="Marketifire is designed for individuals, professionals, and businesses looking for clear, effective, and sustainable growth strategies. Whether you’re just starting or looking to scale, we provide the tools, expertise, and insights to help you succeed in a competitive landscape."
+      title={t('title')}
+      annotation={t('desc')}
       footerText=""
       cards={cards}
-      tagText="Tailored Strategies for Every Client"
+      tagText={t('tagText')}
     />
   );
 }

@@ -2,6 +2,7 @@
 
 import type { JSX } from 'react';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 import { StepFour, StepOne, StepThree, StepTwo } from '@/shared/ui/icons/fill';
 import { Button } from '@/shared/ui/kit/button';
@@ -11,25 +12,6 @@ import { Title } from '@/shared/ui/kit/title';
 import { Content } from './content';
 import st from './what-sets-apart.module.scss';
 
-const steps = [
-  {
-    title: 'Tailored Strategies, Not Templates',
-    desc: 'Every business is unique, and so are our solutions. No generic approaches — just custom strategies designed for your goals.',
-  },
-  {
-    title: 'Data-Driven Decisions',
-    desc: 'We analyze, optimize, and refine every strategy to ensure maximum impact. Numbers don’t lie, and we let the data lead.',
-  },
-  {
-    title: 'End-to-End Expertise',
-    desc: 'From market research and content creation to conversion optimization and automation, we cover every aspect of your growth journey.',
-  },
-  {
-    title: 'Your Success is Our Success',
-    desc: 'We don’t just consult — we partner with you to execute and achieve measurable results.',
-  },
-];
-
 const stepIcons: Record<number, () => JSX.Element> = {
   1: StepOne,
   2: StepTwo,
@@ -38,6 +20,27 @@ const stepIcons: Record<number, () => JSX.Element> = {
 };
 
 export function WhatSetsApart() {
+  const t = useTranslations('about.whatSetsApart');
+
+  const steps = [
+    {
+      title: t('steps.0.title'),
+      desc: t('steps.0.desc'),
+    },
+    {
+      title: t('steps.1.title'),
+      desc: t('steps.1.desc'),
+    },
+    {
+      title: t('steps.2.title'),
+      desc: t('steps.2.desc'),
+    },
+    {
+      title: t('steps.3.title'),
+      desc: t('steps.3.desc'),
+    },
+  ];
+
   return (
     <section className={st.layout}>
       <Content />
@@ -47,10 +50,10 @@ export function WhatSetsApart() {
         ))}
       </section>
       <div className={st.requestNavMobile}>
-        <Text weight={300}>Ready to Elevate Your Business?</Text>
+        <Text weight={300}>{t('label')}</Text>
         <Link href="/request-form">
           <Button variant="black" size="md">
-            Get Free Consultation
+            {t('btnLabel')}
           </Button>
         </Link>
       </div>
