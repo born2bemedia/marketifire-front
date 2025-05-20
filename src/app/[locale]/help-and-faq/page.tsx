@@ -1,13 +1,6 @@
 import type { Metadata } from 'next';
 
-import {
-  accountBilling,
-  customerSupport,
-  generalQuestions,
-  servicesPricing,
-} from '@/shared/lib/faq';
-
-import { FaqSection } from './components/faq-section';
+import { Faq } from './components/faq';
 import { Hero } from './components/hero';
 import { NeedHelp } from './components/need-help';
 
@@ -27,22 +20,7 @@ export default function HelpAndFaq() {
   return (
     <main>
       <Hero />
-      <FaqSection
-        number="01"
-        title="General Questions"
-        faq={generalQuestions}
-      />
-      <FaqSection
-        number="02"
-        title="Services & Pricing"
-        faq={servicesPricing}
-      />
-      <FaqSection number="03" title="Account & Billing" faq={accountBilling} />
-      <FaqSection
-        number="04"
-        title="Customer Support & Communication"
-        faq={customerSupport}
-      />
+      <Faq />
       <NeedHelp />
     </main>
   );

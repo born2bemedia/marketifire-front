@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 import { Button } from '@/shared/ui/kit/button';
 import { Text } from '@/shared/ui/kit/text';
@@ -7,27 +8,25 @@ import { Title } from '@/shared/ui/kit/title';
 import st from './need-help.module.scss';
 
 export function NeedHelp() {
+  const t = useTranslations('helpAndFaq.needHelp');
+
   return (
     <div className={st.layout}>
       <div className={st.ctaBlock}>
         <div className={st.ctaBlockContent}>
-          <Title level={2}>Need More Help?</Title>
+          <Title level={2}>{t('title')}</Title>
           <Text>
-            <span>
-              If you have more questions or need assistance with a specific
-              issue, don’t hesitate to reach out. We’re here to help you
-              succeed!
-            </span>
+            <span>{t('text')}</span>
           </Text>
           <div className={st.ctaBlockButtons}>
             <Link href={'/contacts'}>
               <Button variant="black" size="sm">
-                Contact Us
+                {t('contactUs')}
               </Button>
             </Link>
             <Link href={'/request-form'}>
               <Button variant="yellow" size="sm">
-                Schedule a Free Consultation
+                {t('scheduleFreeConsultation')}
               </Button>
             </Link>
           </div>

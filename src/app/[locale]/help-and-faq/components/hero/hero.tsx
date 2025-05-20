@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 import { PulsingFrame } from '@/shared/ui/components/pulsing-frame';
 import { Tag } from '@/shared/ui/kit/tag/tag';
@@ -10,6 +11,8 @@ import { Title } from '@/shared/ui/kit/title';
 import st from './hero.module.scss';
 
 export function Hero() {
+  const t = useTranslations('helpAndFaq.hero');
+
   return (
     <section className={st.text}>
       <PulsingFrame
@@ -32,15 +35,9 @@ export function Hero() {
           />
         }
       />
-      <Tag color="yellow">Your Questions Answered</Tag>
-      <Title>Help & FAQs</Title>
-      <Text>
-        We understand that clarity is key to making the right decisions for your
-        business. That’s why we’ve compiled answers to the most frequently asked
-        questions to help you better understand our services, processes, and how
-        we can help you grow. If you don’t find what you’re looking for, feel
-        free to reach out directly!
-      </Text>
+      <Tag color="yellow">{t('tag')}</Tag>
+      <Title>{t('title')}</Title>
+      <Text>{t('text')}</Text>
     </section>
   );
 }
