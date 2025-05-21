@@ -1,6 +1,7 @@
 'use client';
 import { useState } from 'react';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 import { CloseIcon } from '@/shared/ui/icons/outline';
 import { Button } from '@/shared/ui/kit/button';
@@ -12,7 +13,9 @@ import { useModalStore } from '../../services/modal.store';
 import { OrderForm } from '../order-form/order-form';
 import st from './modal.module.scss';
 
-export function Modal({}) {
+export function Modal() {
+  const t = useTranslations('orderModal');
+
   const { isOpen, setIsOpen, type, product } = useModalStore();
 
   const [thanksPopupOpen, setThanksPopupOpen] = useState(false);
@@ -27,20 +30,14 @@ export function Modal({}) {
     setIsOpen(false);
   };
 
-  const title =
-    type === 'service' ? 'Service Request Form' : 'Package Request Form';
+  const title = type === 'service' ? t('service') : t('package');
 
   return (
     <div className={`${st.modalWrapper} ${isOpen ? st.open : ''}`}>
       {thanksPopupOpen ? (
         <div className={st.modalThanks}>
-          <Title level={2}>Thank you!</Title>
-          <Text>
-            Your request for our service package has been successfully
-            submitted. Our team will review the information provided and get in
-            touch with you shortly to discuss the next steps and how we can
-            assist you.
-          </Text>
+          <Title level={2}>{t('title')}</Title>
+          <Text>{t('description')}</Text>
           <Image
             className={st.thanksImageMob}
             src="/pricing/thanksMob.png"
@@ -49,7 +46,7 @@ export function Modal({}) {
             height={169}
           />
           <Button variant="black" onClick={handleThanksPopupClose}>
-            Close
+            {t('close')}
           </Button>
           <Image
             className={st.thanksImage}

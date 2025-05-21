@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import toast from 'react-hot-toast';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 import { getCartProducts, getCartTotal } from '@/features/cart/services';
 import { useCartModalStore } from '@/features/cart/services/modal.store';
@@ -20,7 +21,7 @@ import { Title } from '@/shared/ui/kit/title';
 import st from './pricing.module.scss';
 import { type PricingItem } from './types';
 
-export default function Pricing({
+export function Pricing({
   categoryLabel,
   categoryTitle,
   pricingItems,
@@ -29,6 +30,8 @@ export default function Pricing({
   categoryTitle: string;
   pricingItems: PricingItem[];
 }) {
+  const t = useTranslations('pricingPackages');
+
   const { setIsOpen, setType, setProduct } = useModalStore();
   const { setIsCartOpen, setCartProducts, cartProducts, setCartTotal } =
     useCartModalStore();
@@ -43,7 +46,7 @@ export default function Pricing({
   useEffect(() => {
     setMounted(true);
     setCartProducts(getCartProducts());
-  }, []);
+  }, [setCartProducts]);
 
   const handleOpenCartModal = () => {
     setIsCartOpen(true);
@@ -65,7 +68,7 @@ export default function Pricing({
     lsWrite('cart', cart);
     setCartProducts(cart);
     setCartTotal(getCartTotal());
-    toast.success(`Product ${item.title} added to cart`);
+    toast.success(`${item.title} ${t('addedToCart')}`);
   };
 
   if (!mounted) {
@@ -86,7 +89,7 @@ export default function Pricing({
               className={`${st.tabOpen} ${open ? st.open : ''}`}
               onClick={handleOpen}
             >
-              <Text>{open ? 'Hide' : 'Open'}</Text>
+              <Text>{open ? t('hide') : t('open')}</Text>
               <ArrowDown />
             </button>
           </div>
@@ -106,7 +109,7 @@ export default function Pricing({
               </div>
               <div className={st.bottom}>
                 <div className={st.price}>
-                  {item.type === 'order' ? 'From ' : ''}€{item.price}
+                  {item.type === 'order' ? t('from') : ''} €{item.price}
                 </div>
                 {item.type === 'buy' ? (
                   <Button
@@ -121,8 +124,8 @@ export default function Pricing({
                     }
                   >
                     {cartProducts.some(product => product.title === item.title)
-                      ? 'In Cart'
-                      : 'Buy'}
+                      ? t('inCart')
+                      : t('buy')}
                   </Button>
                 ) : (
                   <Button
@@ -130,7 +133,7 @@ export default function Pricing({
                     variant="black"
                     onClick={() => handleOpenModal('service', item.title)}
                   >
-                    Order
+                    {t('order')}
                   </Button>
                 )}
               </div>

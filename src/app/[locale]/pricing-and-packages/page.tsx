@@ -2,19 +2,14 @@ import type { Metadata } from 'next';
 
 import { Modal } from '@/features/request-popup/components/modal/modal';
 
-import {
-  automationDigitalTransformation,
-  businessConsulting,
-  contentEngagement,
-  marketingAndGrowth,
-  packages,
-  performanceMarketing,
-  strategicGrowth,
-} from '@/shared/lib/pricing';
-
+import { StrategicGrowth } from '../what-we-do/components/strategic-growth';
+import { BusinessConsulting } from './components/business-consulting';
+import { ContentAudience } from './components/content-audience';
+import { DigitalTransformation } from './components/digital-transformation';
 import { DownloadPrice } from './components/download-price';
 import { Hero } from './components/hero';
-import Pricing from './components/pricing/pricing';
+import { MarketingStrategies } from './components/marketing-strategies';
+import { PerfomanceMarketing } from './components/perfomance-marketing';
 import { ServicePackages } from './components/service-packages';
 
 export const metadata: Metadata = {
@@ -33,37 +28,13 @@ export default function PricingAndPackages() {
   return (
     <main>
       <Hero />
-      <Pricing
-        categoryLabel="01"
-        categoryTitle="Marketing & Growth Strategies"
-        pricingItems={marketingAndGrowth}
-      />
-      <Pricing
-        categoryLabel="02"
-        categoryTitle="Performance Marketing & Conversion Optimization"
-        pricingItems={performanceMarketing}
-      />
-      <Pricing
-        categoryLabel="03"
-        categoryTitle="Business Consulting & Expansion Planning"
-        pricingItems={businessConsulting}
-      />
-      <Pricing
-        categoryLabel="04"
-        categoryTitle="Content & Audience Engagement"
-        pricingItems={contentEngagement}
-      />
-      <Pricing
-        categoryLabel="05"
-        categoryTitle="Automation & Digital Transformation"
-        pricingItems={automationDigitalTransformation}
-      />
-      <Pricing
-        categoryLabel="06"
-        categoryTitle="Strategic Growth & Competitive Edge"
-        pricingItems={strategicGrowth}
-      />
-      <ServicePackages packages={packages} />
+      <MarketingStrategies />
+      <PerfomanceMarketing />
+      <BusinessConsulting />
+      <ContentAudience />
+      <DigitalTransformation />
+      <StrategicGrowth />
+      <ServicePackages />
       <DownloadPrice />
       <Modal />
     </main>

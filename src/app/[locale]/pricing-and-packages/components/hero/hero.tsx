@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 import { PulsingFrame } from '@/shared/ui/components/pulsing-frame';
 import { Tag } from '@/shared/ui/kit/tag/tag';
@@ -10,6 +11,8 @@ import { Title } from '@/shared/ui/kit/title';
 import st from './hero.module.scss';
 
 export function Hero() {
+  const t = useTranslations('pricingPackages.hero');
+
   return (
     <section className={st.text}>
       <PulsingFrame
@@ -32,17 +35,9 @@ export function Hero() {
           />
         }
       />
-      <Tag color="yellow">
-        Choose the Solution That Best Fits Your Objectives
-      </Tag>
-      <Title>Pricing & Packages</Title>
-      <Text>
-        We offer customized solutions for entrepreneurs at every growth stage.
-        Whether you need a single solution or a full-service package, we have
-        the right plan to meet your needs. Our pricing structure ensures
-        flexibility and transparency, giving you various options based on your
-        budget and goals.
-      </Text>
+      <Tag color="yellow">{t('tag')}</Tag>
+      <Title>{t('title')}</Title>
+      <Text>{t('text')}</Text>
     </section>
   );
 }
