@@ -1197,6 +1197,19 @@
       "text": "Our representative will reach out to you shortly.",
       "goToHomePage": "GO TO HOME PAGE"
     },
+    "errors": {
+      "firstName": "First name is required",
+      "lastName": "Last name is required",
+      "email": "Invalid email address",
+      "phone": "Phone is required",
+      "invalidPhone": "Invalid phone number format",
+      "street": "Street is required",
+      "city": "City is required",
+      "zip": "Zip is required",
+      "country": "Country is required",
+      "refundPolicy": "You must agree to the refund policy.",
+      "terms": "You must agree to the terms."
+    },
     "fields": {
       "firstName": {
         "placeholder": "Enter First Name",

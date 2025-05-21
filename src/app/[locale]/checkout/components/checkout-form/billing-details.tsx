@@ -12,8 +12,8 @@ import { clearCart } from '@/features/cart/services/clear-cart';
 import { useCartModalStore } from '@/features/cart/services/modal.store';
 import { allowedCountries } from '@/features/checkout/lib/countries';
 import {
+  createOrderSchema,
   type OrderSchema,
-  orderSchema,
 } from '@/features/checkout/lib/order.schema';
 import { createOrder } from '@/features/checkout/services/create-order.action';
 
@@ -33,13 +33,17 @@ import { Title } from '@/shared/ui/kit/title';
 import st from './billing-details.module.scss';
 
 export function BillingDetails() {
+  const [isThanksPopupOpen, setIsThanksPopupOpen] = useState(false);
+  const router = useRouter();
+
   const t = useTranslations('checkout');
+  const te = useTranslations('checkout.errors');
 
   const countryCode = useCountryCode();
   const { cartProducts, cartTotal } = useCartModalStore();
-  const [isThanksPopupOpen, setIsThanksPopupOpen] = useState(false);
-  const router = useRouter();
   const { user } = useUserStore();
+
+  const orderSchema = createOrderSchema(te);
 
   const {
     handleSubmit,
