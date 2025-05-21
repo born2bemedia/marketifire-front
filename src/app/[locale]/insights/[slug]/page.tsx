@@ -36,24 +36,23 @@ export async function generateMetadata({
 export default async function Insight({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ slug: string; locale: string }>;
 }) {
   const awaitedParams = await params;
-  const { slug } = awaitedParams;
+  const { slug, locale } = awaitedParams;
 
-  const res = await getInsight({ slug });
+  const res = await getInsight({ slug, locale });
   const insight = res.map(insightsMapping);
+
 
   const { elements } = parseJSONToElements(insight[0].content);
   const groupedElements = groupElementsByH3(elements);
-
-  const { elements: desc } = parseJSONToElements(insight[0].excerpt);
 
   return (
     <main className={st.layout}>
       <section className={st.articleLayout}>
         <PulsingEllipse />
-        <Hero title={insight[0].title} description={desc} />
+        <Hero title={insight[0].title} description={insight[0].excerpt} />
         <Banner>
           <Image
             className={st.img}

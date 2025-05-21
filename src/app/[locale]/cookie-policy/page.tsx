@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
 
 import { Policy } from '@/features/policies/components';
 
@@ -15,5 +16,7 @@ export const metadata: Metadata = {
 };
 
 export default async function CookiePolicy() {
-  return <Policy title="Cookie Policy" id="4" />;
+  const t = await getTranslations('policies');
+
+  return <Policy title={t('cookiePolicy')} id="4" />;
 }

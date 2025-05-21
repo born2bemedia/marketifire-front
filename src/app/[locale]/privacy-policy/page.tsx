@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
 
 import { Policy } from '@/features/policies/components';
 
@@ -15,5 +16,7 @@ export const metadata: Metadata = {
 };
 
 export default async function PrivacyPolicy() {
-  return <Policy title="Privacy Policy" id="2" />;
+  const t = await getTranslations('policies');
+
+  return <Policy title={t('privacyPolicy')} id="2" />;
 }

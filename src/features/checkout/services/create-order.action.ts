@@ -36,8 +36,6 @@ export async function createOrder({
     quantity,
   }));
 
-  console.log('@user', user);
-
   const OAuth2 = google.auth.OAuth2;
   const oauth2Client = new OAuth2(
     EMAIL_CLIENT_ID,

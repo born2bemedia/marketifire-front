@@ -1811,6 +1811,23 @@
       }
     }
   },
+  "insights": {
+    "hero": {
+      "tag": "Knowledge to Fuel Your Growth",
+      "title": "Insights",
+      "description": "Welcome to Marketifire’s Insights page, where we share valuable articles, tips, and strategies to help entrepreneurs thrive. Stay updated on the latest marketing trends, business growth tactics, and industry insights that will help you optimize your approach and achieve long-term success. Explore our articles below to discover proven methods and actionable advice."
+    },
+    "freeConsultation": {
+      "description": "Marketfire isn’t just another marketing consultancy — we are your partners in growth. Let’s get started today if you’re ready to elevate your brand, expand your audience, and drive revenue.",
+      "button": "Get Your Free Consultation Today"
+    }
+  },
+  "policies": {
+    "cookiePolicy": "Cookie Policy",
+    "privacyPolicy": "Privacy Policy",
+    "termsAndConditions": "Terms & Conditions",
+    "refundPolicy": "Refund Policy"
+  },
   "footer": {
     "quickNavigation": "Quick Navigation",
     "ourExpertise": "Our Expertise",

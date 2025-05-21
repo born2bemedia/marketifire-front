@@ -63,7 +63,7 @@ export function BusinessDataForm() {
 
       setDialogOpen(true);
     } catch (err) {
-      console.log(err);
+      console.error(err);
     }
   });
 

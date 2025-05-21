@@ -1,12 +1,11 @@
 import type { Metadata } from 'next';
 
 import { InsightsList } from '@/features/insights/components';
-import { insightsMapping } from '@/features/insights/lib';
+import { previewInsightMapping } from '@/features/insights/lib';
 import { getInsights } from '@/features/insights/services';
 
-import { GetFreeConsultation } from '@/shared/ui/components/get-free-consultation';
-
 import { Hero } from './components';
+import { FreeConsultation } from './components/free-consultation';
 import st from './page.module.scss';
 import { PulsingEllipse } from '@/app/[locale]/request-form/components';
 
@@ -22,24 +21,23 @@ export const metadata: Metadata = {
   },
 };
 
-export default async function Insights() {
-  const res = await getInsights();
-  const insights = res.map(insightsMapping);
+export default async function Insights({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const awaitedParams = await params;
+  const { locale } = awaitedParams;
+
+  const res = await getInsights({ locale });
+  const insights = res.map(previewInsightMapping);
 
   return (
     <main className={st.layout}>
       <PulsingEllipse />
       <Hero />
       <InsightsList values={insights} />
-      <GetFreeConsultation
-        text="Marketfire isn’t just another marketing consultancy — we are your
-            partners in growth. Let’s get started today if you’re ready to
-            elevate your brand, expand your audience, and drive revenue."
-        nav={{
-          url: '/request-form',
-          label: 'Get Your Free Consultation Today',
-        }}
-      />
+      <FreeConsultation />
     </main>
   );
 }

@@ -3,9 +3,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import type { Insight } from '@/features/insights/lib';
+import type { PreviewInsight } from '@/features/insights/lib';
 
-import { truncateText } from '@/shared/lib/utils';
 import { ArrowRight } from '@/shared/ui/icons/fill';
 import { Button } from '@/shared/ui/kit/button';
 import { Text } from '@/shared/ui/kit/text';
@@ -13,11 +12,7 @@ import { Title } from '@/shared/ui/kit/title';
 
 import st from './insight-card.module.scss';
 
-export function InsightCard({ info }: { info: Insight }) {
-  const desc = truncateText(
-    info.excerpt[0].children.map(item => item.text).join(),
-  );
-
+export function InsightCard({ info }: { info: PreviewInsight }) {
   return (
     <article className={st.layout}>
       <section className={st.imgLayout}>
@@ -26,7 +21,7 @@ export function InsightCard({ info }: { info: Insight }) {
       <section>
         <Title level={3}>{info.title}</Title>
         <Text color="black60" className={st.text}>
-          {desc}
+          {info.excerpt}
         </Text>
       </section>
       <Link href={`/insights/${info.slug}`}>
