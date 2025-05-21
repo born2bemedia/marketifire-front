@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
+import { useTranslations } from 'next-intl';
 
 import { useUserStore } from '@/core/user/services';
 
@@ -32,6 +33,8 @@ import { Title } from '@/shared/ui/kit/title';
 import st from './billing-details.module.scss';
 
 export function BillingDetails() {
+  const t = useTranslations('checkout');
+
   const countryCode = useCountryCode();
   const { cartProducts, cartTotal } = useCartModalStore();
   const [isThanksPopupOpen, setIsThanksPopupOpen] = useState(false);
@@ -101,8 +104,7 @@ export function BillingDetails() {
   });
   return (
     <div className={st.billingDetails}>
-      <Title level={3}>Billing Details</Title>
-
+      <Title level={3}>{t('billingDetails')}</Title>
       <form className={st.layout} onSubmit={onSubmit}>
         <div className={st.fields}>
           <Controller
@@ -110,8 +112,8 @@ export function BillingDetails() {
             control={control}
             render={({ field, fieldState: { error } }) => (
               <TextField
-                placeholder="Enter First Name"
-                label="First Name"
+                placeholder={t('fields.firstName.placeholder')}
+                label={t('fields.firstName.label')}
                 hint={error?.message}
                 className={error?.message ? st.error : ''}
                 {...field}
@@ -123,8 +125,8 @@ export function BillingDetails() {
             control={control}
             render={({ field, fieldState: { error } }) => (
               <TextField
-                placeholder="Enter Last Name"
-                label="Last Name"
+                placeholder={t('fields.lastName.placeholder')}
+                label={t('fields.lastName.label')}
                 hint={error?.message}
                 className={error?.message ? st.error : ''}
                 {...field}
@@ -136,8 +138,8 @@ export function BillingDetails() {
             control={control}
             render={({ field, fieldState: { error } }) => (
               <TextField
-                placeholder="Enter your address "
-                label="Address line 1"
+                placeholder={t('fields.street.placeholder')}
+                label={t('fields.street.label')}
                 hint={error?.message}
                 className={error?.message ? st.error : ''}
                 {...field}
@@ -149,8 +151,8 @@ export function BillingDetails() {
             control={control}
             render={({ field, fieldState: { error } }) => (
               <TextField
-                placeholder="Enter your address "
-                label="Address line 2"
+                placeholder={t('fields.addressLine2.placeholder')}
+                label={t('fields.addressLine2.label')}
                 hint={error?.message}
                 className={error?.message ? st.error : ''}
                 {...field}
@@ -162,8 +164,8 @@ export function BillingDetails() {
             control={control}
             render={({ field, fieldState: { error } }) => (
               <TextField
-                placeholder="Enter Your City"
-                label="City"
+                placeholder={t('fields.city.placeholder')}
+                label={t('fields.city.label')}
                 hint={error?.message}
                 className={error?.message ? st.error : ''}
                 {...field}
@@ -177,8 +179,8 @@ export function BillingDetails() {
               <Autocomplete
                 initialValue={field.value}
                 items={allowedCountries}
-                placeholder="Select or Enter Your Country"
-                label="Country"
+                placeholder={t('fields.country.placeholder')}
+                label={t('fields.country.label')}
                 hint={error?.message}
                 onChange={field.onChange}
               />
@@ -189,8 +191,8 @@ export function BillingDetails() {
             control={control}
             render={({ field, fieldState: { error } }) => (
               <TextField
-                placeholder="Enter your postal code"
-                label="Postal code"
+                placeholder={t('fields.zip.placeholder')}
+                label={t('fields.zip.label')}
                 hint={error?.message}
                 className={error?.message ? st.error : ''}
                 {...field}
@@ -202,7 +204,7 @@ export function BillingDetails() {
             control={control}
             render={({ field, fieldState: { error, isTouched } }) => (
               <PhoneField
-                label="Phone"
+                label={t('fields.phone.label')}
                 country={countryCode}
                 hint={isTouched ? error?.message : undefined}
                 {...field}
@@ -214,8 +216,8 @@ export function BillingDetails() {
             control={control}
             render={({ field, fieldState: { error } }) => (
               <TextField
-                placeholder="Enter Your Email"
-                label="Email"
+                placeholder={t('fields.email.placeholder')}
+                label={t('fields.email.label')}
                 hint={error?.message}
                 className={error?.message ? st.error : ''}
                 {...field}
@@ -227,8 +229,8 @@ export function BillingDetails() {
             control={control}
             render={({ field, fieldState: { error } }) => (
               <TextField
-                placeholder="Bank Transfer"
-                label="Payment Method"
+                placeholder={t('fields.paymentMethod.placeholder')}
+                label={t('fields.paymentMethod.label')}
                 hint={error?.message}
                 disabled
                 {...field}
@@ -237,22 +239,18 @@ export function BillingDetails() {
           />
 
           <div className={st.fullWidth}>
-            <Text className={st.paymentInfo}>
-              * After placing an order, you will receive an email with payment
-              instructions, including our bank details and a summary of your
-              purchase.
-            </Text>
+            <Text className={st.paymentInfo}>* {t('info')}.</Text>
           </div>
         </div>
         <div className={st.additionalInfo}>
-          <Title level={3}>Additional Information</Title>
+          <Title level={3}>{t('addInfo')}</Title>
           <Controller
             name="message"
             control={control}
             render={({ field, fieldState: { error } }) => (
               <TextArea
-                placeholder="Please write your thoughts..."
-                label="Message"
+                placeholder={t('fields.message.placeholder')}
+                label={t('fields.message.label')}
                 hint={error?.message}
                 {...field}
               />
@@ -270,7 +268,7 @@ export function BillingDetails() {
                     id="terms-agreement"
                     checked={field.value}
                     onCheckedChange={field.onChange}
-                    label="I have read and agree to the website's Terms and Conditions."
+                    label={t('fields.agreement.label')}
                   />
                   {error && (
                     <Text className={st.agreementError}>{error.message}</Text>
@@ -287,7 +285,7 @@ export function BillingDetails() {
                     id="refund-policy-agreement"
                     checked={field.value}
                     onCheckedChange={field.onChange}
-                    label="I have read and agree to the Refund Policy."
+                    label={t('fields.isDetailsCorrect.label')}
                   />
                   {error && (
                     <Text className={st.agreementError}>{error.message}</Text>
@@ -299,24 +297,23 @@ export function BillingDetails() {
           <Button variant="black" className={st.btn} disabled={isSubmitting}>
             {isSubmitting ? (
               <>
-                Sending...
+                {t('sending')}
                 <Loader />
               </>
             ) : (
-              <>Submit</>
+              <>{t('submit')}</>
             )}
           </Button>
           <Text className={st.agreementText}>
-            We process your personal data to fulfill your order, enhance your
-            browsing experience, and serve other purposes outlined in our
-            <Link href="/privacy-policy">Privacy Policy</Link>.
+            {t('weProcess')}{' '}
+            <Link href="/privacy-policy">{t('privacyPolicy')}</Link>.
           </Text>
         </div>
       </form>
       <div className={`${st.modalWrapper} ${isThanksPopupOpen ? st.open : ''}`}>
         <div className={st.modalThanks}>
-          <Title level={2}>Thank you for choosing Marketfire!</Title>
-          <Text>Our representative will reach out to you shortly.</Text>
+          <Title level={2}>{t('modal.title')}</Title>
+          <Text>{t('modal.text')}</Text>
           <Image
             className={st.thanksImageMob}
             src="/pricing/thanksMob.png"
@@ -325,7 +322,7 @@ export function BillingDetails() {
             height={169}
           />
           <Button variant="black" onClick={handleThanksPopupClose}>
-            GO TO HOME PAGE
+            {t('modal.goToHomePage')}
           </Button>
           <Image
             className={st.thanksImage}

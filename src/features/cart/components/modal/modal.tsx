@@ -2,6 +2,7 @@
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
+import { useTranslations } from 'next-intl';
 
 import { CloseIcon } from '@/shared/ui/icons/outline';
 import { Button } from '@/shared/ui/kit/button';
@@ -14,6 +15,8 @@ import { CartContent } from '../cart-content/cart-content';
 import st from './modal.module.scss';
 
 export function CartModal() {
+  const t = useTranslations('cart');
+
   const { isCartOpen, setIsCartOpen, setCartProducts, cartProducts } =
     useCartModalStore();
   const [isClient, setIsClient] = useState(false);
@@ -38,23 +41,31 @@ export function CartModal() {
 
   return (
     <div className={`${st.modalWrapper} ${isCartOpen ? st.open : ''}`}>
-      {cartProducts.length === 0 ? (
+      {cartProducts.length ? (
         <div className={st.modal}>
           <div className={st.modalTop}>
             <div className={st.modalTopLeft}>
-              <Title level={2}>Cart</Title>
+              <Title level={2}>{t('cart')}</Title>
+            </div>
+            <button className={st.close} onClick={handleClose}>
+              <CloseIcon />
+            </button>
+          </div>
+          <CartContent />
+        </div>
+      ) : (
+        <div className={st.modal}>
+          <div className={st.modalTop}>
+            <div className={st.modalTopLeft}>
+              <Title level={2}>{t('cart')}</Title>
             </div>
             <button className={st.close} onClick={handleClose}>
               <CloseIcon />
             </button>
           </div>
           <div className={st.modalEmpty}>
-            <Title level={2}>Your cart is empty.</Title>
-            <Text>
-              Browse our range of business and marketing consulting services to
-              find the perfect strategy to elevate your brand and achieve your
-              goals.
-            </Text>
+            <Title level={2}>{t('emptyCart')}</Title>
+            <Text>{t('browseOurRange')}</Text>
             <Image
               className={st.thanksImageMob}
               src="/star.png"
@@ -63,21 +74,9 @@ export function CartModal() {
               height={230}
             />
             <Button variant="black" onClick={handleClose}>
-              Start Exploring
+              {t('startExploring')}
             </Button>
           </div>
-        </div>
-      ) : (
-        <div className={st.modal}>
-          <div className={st.modalTop}>
-            <div className={st.modalTopLeft}>
-              <Title level={2}>Cart</Title>
-            </div>
-            <button className={st.close} onClick={handleClose}>
-              <CloseIcon />
-            </button>
-          </div>
-          <CartContent />
         </div>
       )}
     </div>

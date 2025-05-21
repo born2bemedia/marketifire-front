@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { useTranslations } from 'next-intl';
 
 import { useCartModalStore } from '@/features/cart/services/modal.store';
 
@@ -9,6 +10,8 @@ import { Title } from '@/shared/ui/kit/title';
 import st from './order-summary.module.scss';
 
 export function OrderSummary() {
+  const t = useTranslations('checkout');
+
   const { cartProducts, cartTotal } = useCartModalStore();
   const [mounted, setMounted] = useState(false);
 
@@ -19,7 +22,7 @@ export function OrderSummary() {
   if (!mounted) {
     return (
       <div className={st.orderSummary}>
-        <Title level={3}>Your Order Summary</Title>
+        <Title level={3}>{t('orderSummary')}</Title>
         <div className={st.orderSummaryWrapper}></div>
       </div>
     );
@@ -27,7 +30,7 @@ export function OrderSummary() {
 
   return (
     <div className={st.orderSummary}>
-      <Title level={3}>Your Order Summary</Title>
+      <Title level={3}>{t('orderSummary')}</Title>
       <div className={st.orderSummaryWrapper}>
         <div className={st.orderSummaryItems}>
           {cartProducts.map((product, index) => (
@@ -43,7 +46,7 @@ export function OrderSummary() {
           ))}
         </div>
         <div className={st.orderSummaryTotal}>
-          <span className={st.orderSummaryTotalTitle}>Total: </span>
+          <span className={st.orderSummaryTotalTitle}>{t('total')}: </span>
           <span className={st.orderSummaryTotalPrice}>€{cartTotal}</span>
         </div>
       </div>

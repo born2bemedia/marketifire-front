@@ -1169,6 +1169,167 @@
     "chooseFile": "Choose file",
     "attachDocuments": "Attach any relevant documents, proposals, or briefs (Max size: 10MB)"
   },
+  "cart": {
+    "cart": "Cart",
+    "cartEmpty": "Your cart is empty.",
+    "browseOurRange": "Browse our range of business and marketing consulting services to find the perfect strategy to elevate your brand and achieve your goals.",
+    "startExploring": "Start Exploring",
+    "emptyCart": "Your cart is empty.",
+    "serviceName": "Service Name",
+    "price": "Price",
+    "quantity": "Quantity",
+    "subtotal": "Subtotal",
+    "proceedToCheckout": "Proceed to Checkout",
+    "total": "Total"
+  },
+  "checkout": {
+    "orderSummary": "Your Order Summary",
+    "total": "Total",
+    "billingDetails": "Billing Details",
+    "info": "After placing an order, you will receive an email with payment instructions, including our bank details and a summary of your purchase",
+    "addInfo": "Additional Information",
+    "sending": "Sending...",
+    "submit": "Submit",
+    "weProcess": "We process your personal data to fulfill your order, enhance your browsing experience, and serve other purposes outlined in our",
+    "privacyPolicy": "Privacy Policy",
+    "modal": {
+      "title": "Thank you for choosing Marketfire!",
+      "text": "Our representative will reach out to you shortly.",
+      "goToHomePage": "GO TO HOME PAGE"
+    },
+    "fields": {
+      "firstName": {
+        "placeholder": "Enter First Name",
+        "label": "First Name"
+      },
+      "lastName": {
+        "placeholder": "Enter Last Name",
+        "label": "Last Name"
+      },
+      "street": {
+        "placeholder": "Enter your address",
+        "label": "Address line 1"
+      },
+      "addressLine2": {
+        "placeholder": "Enter your address",
+        "label": "Address line 2"
+      },
+      "city": {
+        "placeholder": "Enter your city",
+        "label": "City"
+      },
+      "country": {
+        "placeholder": "Select or Enter Your Country",
+        "label": "Country"
+      },
+      "zip": {
+        "placeholder": "Enter your postal code",
+        "label": "Postal code"
+      },
+      "phone": {
+        "placeholder": "Enter your phone number",
+        "label": "Phone number"
+      },
+      "email": {
+        "placeholder": "Enter Your Email",
+        "label": "Email"
+      },
+      "paymentMethod": {
+        "placeholder": "Bank Transfer",
+        "label": "Payment Method"
+      },
+      "message": {
+        "placeholder": "Please write your thoughts...",
+        "label": "Message"
+      },
+      "agreement": {
+        "label": "I have read and agree to the website's Terms and Conditions."
+      },
+      "isDetailsCorrect": {
+        "label": "I have read and agree to the Refund Policy."
+      }
+    }
+  },
+  "account": {
+    "orderHistory": "My Order History",
+    "accountSettings": "Account Settings",
+    "orderId": "Order ID",
+    "orderDate": "Order Date",
+    "services": "Services",
+    "orderStatus": "Order Status",
+    "paymentMethod": "Payment Method",
+    "getInvoice": "Get Invoice",
+    "download": "Download",
+    "personalInfo": {
+      "title": "Personal Information",
+      "save": "Save",
+      "saving": "Saving...",
+      "edit": "Edit",
+      "errors": {
+        "firstName": "Please provide your name",
+        "lastName": "Please provide your last name",
+        "email": "Please provide your email",
+        "phone": "Please provide your phone number",
+        "invalidPhone": "Invalid phone number format"
+      },
+      "fields": {
+        "firstName": {
+          "label": "First Name",
+          "placeholder": "Enter First Name"
+        },
+        "lastName": {
+          "label": "Last Name",
+          "placeholder": "Enter Last Name"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "Enter Your Email"
+        },
+        "phone": {
+          "label": "Phone"
+        },
+        "address": {
+          "label": "Address",
+          "placeholder": "Enter Your Address"
+        },
+        "city": {
+          "label": "City",
+          "placeholder": "Enter Your City"
+        },
+        "zip": {
+          "label": "ZIP",
+          "placeholder": "Enter Your ZIP"
+        },
+        "country": {
+          "label": "Country",
+          "placeholder": "Select or Enter Your Country"
+        }
+      }
+    },
+    "changePassword": {
+      "title": "Account Access",
+      "edit": "Edit",
+      "editing": "Editing...",
+      "errors": {
+        "password": "Password must be at least 6 characters long",
+        "confirmPassword": "Retype Password must be at least 6 characters",
+        "passwordsDoNotMatch": "The passwords do not match"
+      },
+      "fields": {
+        "password": {
+          "label": "New Password",
+          "placeholder": "Enter New Password"
+        },
+        "confirmPassword": {
+          "label": "Confirm New Password",
+          "placeholder": "Confirm New Password"
+        }
+      }
+    }
+  },
+  "table": {
+    "noData": "No Data"
+  },
   "footer": {
     "quickNavigation": "Quick Navigation",
     "ourExpertise": "Our Expertise",
