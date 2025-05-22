@@ -13,7 +13,7 @@ export type Insight = {
   title: string;
   slug: string;
   thumbnail: string;
-  excerpt: Children[];
+  excerpt: string;
   content: Children3[];
 };
 
