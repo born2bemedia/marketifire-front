@@ -1828,6 +1828,13 @@
     "termsAndConditions": "Terms & Conditions",
     "refundPolicy": "Refund Policy"
   },
+  "cookiePopup": {
+    "title": "Cookie settings",
+    "text": "This site uses cookies for analytics and personalized content. By accepting, you agree to the use of cookies. You can read more in our",
+    "link": "Cookie Policy",
+    "accept": "Accept",
+    "decline": "Decline"
+  },
   "footer": {
     "quickNavigation": "Quick Navigation",
     "ourExpertise": "Our Expertise",
