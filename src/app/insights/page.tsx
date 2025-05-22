@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 import { InsightsList } from '@/features/insights/components';
-import { insightsMapping } from '@/features/insights/lib';
+import { previewInsightMapping } from '@/features/insights/lib';
 import { getInsights } from '@/features/insights/services';
 
 import { GetFreeConsultation } from '@/shared/ui/components/get-free-consultation';
@@ -23,8 +23,10 @@ export const metadata: Metadata = {
 };
 
 export default async function Insights() {
-  const res = await getInsights();
-  const insights = res.map(insightsMapping);
+  const locale = 'en';
+
+  const res = await getInsights({ locale });
+  const insights = res.map(previewInsightMapping);
 
   return (
     <main className={st.layout}>

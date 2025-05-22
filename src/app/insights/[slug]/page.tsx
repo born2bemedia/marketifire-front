@@ -47,13 +47,11 @@ export default async function Insight({
   const { elements } = parseJSONToElements(insight[0].content);
   const groupedElements = groupElementsByH3(elements);
 
-  const { elements: desc } = parseJSONToElements(insight[0].excerpt);
-
   return (
     <main className={st.layout}>
       <section className={st.articleLayout}>
         <PulsingEllipse />
-        <Hero title={insight[0].title} description={desc} />
+        <Hero title={insight[0].title} description={insight[0].excerpt} />
         <Banner>
           <Image
             className={st.img}
