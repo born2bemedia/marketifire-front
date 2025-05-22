@@ -22,6 +22,7 @@ export function InsightCard({ info }: { info: PreviewInsight }) {
         <Title level={3}>{info.title}</Title>
         <Text color="black60" className={st.text}>
           {info.excerpt}
+          {info.excerpt}
         </Text>
       </section>
       <Link href={`/insights/${info.slug}`}>
