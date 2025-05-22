@@ -5,6 +5,7 @@ import Link from 'next/link';
 
 import type { Insight } from '@/features/insights/lib';
 
+import { truncateText } from '@/shared/lib/utils';
 import { ArrowRight } from '@/shared/ui/icons/fill';
 import { Button } from '@/shared/ui/kit/button';
 import { Text } from '@/shared/ui/kit/text';
@@ -21,7 +22,7 @@ export function InsightCard({ info }: { info: Insight }) {
       <section>
         <Title level={3}>{info.title}</Title>
         <Text color="black60" className={st.text}>
-          {info.excerpt}
+          {truncateText(info.excerpt)}
         </Text>
       </section>
       <Link href={`/insights/${info.slug}`}>
