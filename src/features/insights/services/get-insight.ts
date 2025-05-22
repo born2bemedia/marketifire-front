@@ -1,8 +1,14 @@
 'use server';
 
-export async function getInsight({ slug }: { slug: string }) {
+export async function getInsight({
+  slug,
+  locale,
+}: {
+  slug: string;
+  locale: string;
+}) {
   const res = await fetch(
-    `${process.env.SERVER_URL}/api/insights?where[slug][in]=${slug}`,
+    `${process.env.SERVER_URL}/api/insights?where[slug][in]=${slug}&locale=${locale}`,
     {
       method: 'GET',
     },

@@ -9,7 +9,6 @@ export async function login({
   email: string;
   password: string;
 }) {
-  console.log(process.env.SERVER_URL);
   const res = await fetch(`${process.env.SERVER_URL}/api/users/login`, {
     method: 'POST',
     headers: {
@@ -27,7 +26,6 @@ export async function login({
     cookieInst.set('user', JSON.stringify(result.user));
     return { message: result.message, success: true, user: result.user };
   } else {
-    console.log(result);
     return {
       message: result.errors
         .map(({ message }: { message: string }) => message)

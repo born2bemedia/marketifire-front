@@ -1,7 +1,11 @@
 'use client';
 
-import type { ChangePasswordSchema } from '@/core/user/lib/change-password.schema';
-import { changePasswordSchema } from '@/core/user/lib/change-password.schema';
+import { useTranslations } from 'next-intl';
+
+import {
+  type ChangePasswordSchema,
+  createChangePasswordSchema,
+} from '@/core/user/lib/change-password.schema';
 import { changePassword, useUserStore } from '@/core/user/services';
 
 import { Controller, useForm, zodResolver } from '@/shared/lib/forms';
@@ -15,7 +19,11 @@ import { Title } from '@/shared/ui/kit/title';
 import st from './personal-settings.module.scss';
 
 export function ChangePasswordForm() {
+  const t = useTranslations('account.changePassword');
+  const te = useTranslations('account.changePassword.errors');
   const { user } = useUserStore();
+
+  const changePasswordSchema = createChangePasswordSchema(te);
 
   const {
     handleSubmit,
@@ -48,17 +56,17 @@ export function ChangePasswordForm() {
     <form className={st.form} onSubmit={onSubmit}>
       <section className={st.title}>
         <Title level={3} weight={500}>
-          Account Access
+          {t('title')}
         </Title>
         <Button variant="sand" className={st.btn} uppercase>
           {isSubmitting ? (
             <>
-              Editing...
+              {t('editing')}
               <Loader width={14} height={14} />
             </>
           ) : (
             <>
-              Edit <Pencil />
+              {t('edit')} <Pencil />
             </>
           )}
         </Button>
@@ -69,8 +77,8 @@ export function ChangePasswordForm() {
           control={control}
           render={({ field, fieldState: { error } }) => (
             <TextField
-              placeholder="Enter New Password"
-              label="New Password"
+              placeholder={t('fields.password.placeholder')}
+              label={t('fields.password.label')}
               hint={error?.message}
               {...field}
             />
@@ -81,8 +89,8 @@ export function ChangePasswordForm() {
           control={control}
           render={({ field, fieldState: { error } }) => (
             <TextField
-              placeholder="Confirm New Password"
-              label="Confirm New Password"
+              placeholder={t('fields.confirmPassword.placeholder')}
+              label={t('fields.confirmPassword.label')}
               hint={error?.message}
               {...field}
             />

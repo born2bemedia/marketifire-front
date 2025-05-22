@@ -2,6 +2,7 @@
 
 import { useRef } from 'react';
 import { useDropzone } from 'react-dropzone';
+import { useTranslations } from 'next-intl';
 
 import { Text } from '@/shared/ui/kit/text';
 
@@ -19,6 +20,8 @@ export function Dropdzone({
   value?: File | null;
 }) {
   const hiddenInputRef = useRef<HTMLInputElement | null>(null);
+
+  const t = useTranslations('dropzone');
 
   const { getRootProps, getInputProps, open, acceptedFiles } = useDropzone({
     multiple: false,
@@ -43,7 +46,7 @@ export function Dropdzone({
           {...getInputProps()}
         />
         <Text color="black60" size="sm">
-          {file ? file.name : 'No file selected'}
+          {file ? file.name : t('noFileSelected')}
         </Text>
         <button
           className={st.chooseFile}
@@ -53,11 +56,9 @@ export function Dropdzone({
             open();
           }}
         >
-          Choose file
+          {t('chooseFile')}
         </button>
-        <Text color="black60">
-          Attach any relevant documents, proposals, or briefs (Max size: 10MB)
-        </Text>
+        <Text color="black60">{t('attachDocuments')}</Text>
       </div>
     </div>
   );

@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 import { Controller, useForm, zodResolver } from '@/shared/lib/forms';
 import { useCountryCode } from '@/shared/lib/hooks';
@@ -10,20 +11,25 @@ import { PhoneField } from '@/shared/ui/kit/phone-field';
 import { TextField } from '@/shared/ui/kit/text-field';
 import { Title } from '@/shared/ui/kit/title';
 
-import { type RequestFormSchema, requestFormSchema } from '../../lib';
+import { createRequestFormSchema, type RequestFormSchema } from '../../lib';
 import { useRequestFormStore } from '../../services';
 import st from './personal-data-form.module.scss';
 
 export function PersonalDataForm() {
+  const t = useTranslations('requestForm');
+  const te = useTranslations('requestForm.errors');
+
   const countryCode = useCountryCode();
   const { setData } = useRequestFormStore();
+
+  const schema = createRequestFormSchema(te);
 
   const {
     handleSubmit,
     control,
     formState: { isSubmitting },
   } = useForm<RequestFormSchema>({
-    resolver: zodResolver(requestFormSchema),
+    resolver: zodResolver(schema),
     reValidateMode: 'onBlur',
     mode: 'onBlur',
     defaultValues: {
@@ -42,7 +48,7 @@ export function PersonalDataForm() {
   return (
     <form onSubmit={onSubmit}>
       <section className={st.header}>
-        <Title level={3}>Personal Data</Title>
+        <Title level={3}>{t('personalData.title')}</Title>
         <Image
           src="/request-form/level-indicator-1.svg"
           alt="level-indicator"
@@ -58,8 +64,8 @@ export function PersonalDataForm() {
             render={({ field, fieldState: { error } }) => (
               <TextField
                 {...field}
-                placeholder="Enter your full name"
-                label="Full Name"
+                placeholder={t('personalData.fields.fullName.placeholder')}
+                label={t('personalData.fields.fullName.label')}
                 hint={error?.message}
               />
             )}
@@ -70,8 +76,8 @@ export function PersonalDataForm() {
             render={({ field, fieldState: { error } }) => (
               <TextField
                 {...field}
-                placeholder="Enter your email address"
-                label="Email Address"
+                placeholder={t('personalData.fields.email.placeholder')}
+                label={t('personalData.fields.email.label')}
                 hint={error?.message}
               />
             )}
@@ -85,7 +91,7 @@ export function PersonalDataForm() {
               <PhoneField
                 {...field}
                 country={countryCode}
-                label="Phone number"
+                label={t('personalData.fields.phone.label')}
                 hint={error?.message}
               />
             )}
@@ -96,8 +102,8 @@ export function PersonalDataForm() {
             render={({ field, fieldState: { error } }) => (
               <TextField
                 {...field}
-                placeholder="Enter your company name"
-                label="Company Name (optional)"
+                placeholder={t('personalData.fields.companyName.placeholder')}
+                label={t('personalData.fields.companyName.label')}
                 hint={error?.message}
               />
             )}
@@ -110,8 +116,8 @@ export function PersonalDataForm() {
             render={({ field, fieldState: { error } }) => (
               <TextField
                 {...field}
-                placeholder="Enter your website URL"
-                label="Your Website (optional)"
+                placeholder={t('personalData.fields.website.placeholder')}
+                label={t('personalData.fields.website.label')}
                 hint={error?.message}
               />
             )}
@@ -121,10 +127,10 @@ export function PersonalDataForm() {
       <section className={st.btns}>
         <Button variant="white" className={st.btn} disabled>
           <ArrowLeft />
-          Back
+          {t('back')}
         </Button>
         <Button variant="black" className={st.btn} type="submit">
-          {isSubmitting ? 'Processing...' : 'Next Step'}
+          {isSubmitting ? t('processing') : t('nextStep')}
           <ArrowRight />
         </Button>
       </section>

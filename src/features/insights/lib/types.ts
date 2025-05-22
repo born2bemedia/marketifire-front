@@ -17,7 +17,15 @@ export type Insight = {
   content: Children3[];
 };
 
-type Thumbnail = {
+export type PreviewInsight = {
+  id: number;
+  title: string;
+  slug: string;
+  thumbnail: string;
+  excerpt: string;
+};
+
+export type Thumbnail = {
   id: number;
   alt: string;
   updatedAt: string;

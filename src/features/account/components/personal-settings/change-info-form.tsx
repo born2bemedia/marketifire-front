@@ -1,9 +1,9 @@
 'use client';
 
 import { useState } from 'react';
+import { useTranslations } from 'next-intl';
 
-import type { UserSchema } from '@/core/user/lib';
-import { userSchema } from '@/core/user/lib';
+import { createUserSchema, type UserSchema } from '@/core/user/lib';
 import { saveUser, useUserStore } from '@/core/user/services';
 
 import { Controller, useForm, zodResolver } from '@/shared/lib/forms';
@@ -23,8 +23,12 @@ import st from './personal-settings.module.scss';
 export function ChangeInfoForm() {
   const [edit, setEdit] = useState<boolean>(false);
 
+  const t = useTranslations('account.personalInfo');
+  const te = useTranslations('account.personalInfo.errors');
   const { user, setUser } = useUserStore();
   const countryCode = useCountryCode();
+
+  const userSchema = createUserSchema(te);
 
   const {
     handleSubmit,
@@ -67,17 +71,17 @@ export function ChangeInfoForm() {
     <form className={st.form} onSubmit={onSubmit}>
       <section className={st.title}>
         <Title level={3} weight={500}>
-          Personal Information
+          {t('title')}
         </Title>
         {edit ? (
           <Button variant="sand" type="submit" className={st.btn}>
             {isSubmitting ? (
               <>
-                SAVING...
+                {t('saving')}
                 <Loader width={14} height={14} />
               </>
             ) : (
-              <>SAVE</>
+              <>{t('save')}</>
             )}
           </Button>
         ) : (
@@ -91,7 +95,7 @@ export function ChangeInfoForm() {
             }}
             uppercase
           >
-            Edit <Pencil />
+            {t('edit')} <Pencil />
           </Button>
         )}
       </section>
@@ -102,8 +106,8 @@ export function ChangeInfoForm() {
             control={control}
             render={({ field, fieldState: { error } }) => (
               <TextField
-                placeholder="Enter First Name"
-                label="First Name"
+                placeholder={t('fields.firstName.placeholder')}
+                label={t('fields.firstName.label')}
                 hint={error?.message}
                 disabled={!edit}
                 {...field}
@@ -115,8 +119,8 @@ export function ChangeInfoForm() {
             control={control}
             render={({ field, fieldState: { error } }) => (
               <TextField
-                placeholder="Enter Last Name"
-                label="Last Name"
+                placeholder={t('fields.lastName.placeholder')}
+                label={t('fields.lastName.label')}
                 hint={error?.message}
                 disabled={!edit}
                 {...field}
@@ -130,8 +134,8 @@ export function ChangeInfoForm() {
             control={control}
             render={({ field, fieldState: { error } }) => (
               <TextField
-                placeholder="Enter Your Email"
-                label="Email"
+                placeholder={t('fields.email.placeholder')}
+                label={t('fields.email.label')}
                 disabled={!edit}
                 hint={error?.message}
                 {...field}
@@ -143,7 +147,7 @@ export function ChangeInfoForm() {
             control={control}
             render={({ field, fieldState: { error, isTouched } }) => (
               <PhoneField
-                label="Phone"
+                label={t('fields.phone.label')}
                 country={countryCode}
                 hint={isTouched ? error?.message : undefined}
                 disabled={!edit}
@@ -158,8 +162,8 @@ export function ChangeInfoForm() {
             control={control}
             render={({ field, fieldState: { error } }) => (
               <TextField
-                placeholder="Enter Your Address"
-                label="Address"
+                placeholder={t('fields.address.placeholder')}
+                label={t('fields.address.label')}
                 hint={error?.message}
                 disabled={!edit}
                 {...field}
@@ -171,8 +175,8 @@ export function ChangeInfoForm() {
             control={control}
             render={({ field, fieldState: { error } }) => (
               <TextField
-                placeholder="Enter Your City"
-                label="City"
+                placeholder={t('fields.city.placeholder')}
+                label={t('fields.city.label')}
                 hint={error?.message}
                 disabled={!edit}
                 {...field}
@@ -186,8 +190,8 @@ export function ChangeInfoForm() {
             control={control}
             render={({ field, fieldState: { error } }) => (
               <TextField
-                placeholder="Enter Your ZIP"
-                label="ZIP"
+                placeholder={t('fields.zip.placeholder')}
+                label={t('fields.zip.label')}
                 hint={error?.message}
                 disabled={!edit}
                 {...field}
@@ -201,8 +205,8 @@ export function ChangeInfoForm() {
               <Autocomplete
                 initialValue={field.value}
                 items={allowedCountries}
-                placeholder="Select or Enter Your Country"
-                label="Country"
+                placeholder={t('fields.country.placeholder')}
+                label={t('fields.country.label')}
                 hint={error?.message}
                 onChange={field.onChange}
                 disabled={!edit}

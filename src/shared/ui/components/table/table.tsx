@@ -1,5 +1,7 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
+
 import { cn } from '@/shared/lib/styles';
 import {
   type ColumnDef,
@@ -22,6 +24,8 @@ export function Table<TData, TColumn>({
   columnFullWidth?: boolean;
   className?: string;
 }) {
+  const t = useTranslations('table');
+
   const table = useReactTable({
     data,
     columns,
@@ -78,7 +82,7 @@ export function Table<TData, TColumn>({
             <tr>
               <td colSpan={columns.length} className={st.noData}>
                 <Text size="xl" color="black100">
-                  No Data
+                  {t('noData')}
                 </Text>
               </td>
             </tr>

@@ -1,21 +1,24 @@
-"use client";
-import { useEffect, useState } from "react";
-import classNames from "classnames";
+'use client';
+import { useEffect, useState } from 'react';
+import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+import classNames from 'classnames';
 
-import styles from "./CookiePopup.module.scss";
-
+import styles from './CookiePopup.module.scss';
 const CookiePopup = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    const hasAcceptedCookies = localStorage.getItem("cookiesAccepted");
+    const hasAcceptedCookies = localStorage.getItem('cookiesAccepted');
     if (!hasAcceptedCookies) {
       setIsVisible(true);
     }
   }, []);
 
+  const t = useTranslations('cookiePopup');
+
   const handleAccept = () => {
-    localStorage.setItem("cookiesAccepted", "true");
+    localStorage.setItem('cookiesAccepted', 'true');
     setIsVisible(false);
   };
 
@@ -29,17 +32,16 @@ const CookiePopup = () => {
         [styles.visible]: isVisible,
       })}
     >
-      <h2>Cookie settings</h2>
+      <h2>{t('title')}</h2>
       <p>
-      This site uses cookies for analytics and personalized content. By accepting, you agree to the use of cookies. You can read more in our{" "}
-        <a href="/cookie-policy">Cookie Policy</a>.
+        {t('text')} <Link href="/cookie-policy">{t('link')}</Link>.
       </p>
       <div className={styles.buttons}>
         <button onClick={handleDecline} className={classNames(styles.decline)}>
-          Decline
+          {t('decline')}
         </button>
         <button onClick={handleAccept} className={classNames(styles.accept)}>
-          Accept
+          {t('accept')}
         </button>
       </div>
     </div>

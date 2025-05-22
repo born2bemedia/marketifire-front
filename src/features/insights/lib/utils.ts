@@ -1,4 +1,4 @@
-import type { OriginInsight } from './types';
+import type { OriginInsight, PreviewInsight, Thumbnail } from './types';
 
 export function insightsMapping(insight: OriginInsight) {
   return {
@@ -10,7 +10,9 @@ export function insightsMapping(insight: OriginInsight) {
   };
 }
 
-export function previewInsightMapping(insight: OriginInsight) {
+export function previewInsightMapping(
+  insight: Omit<PreviewInsight, 'thumbnail'> & { thumbnail: Thumbnail },
+) {
   return {
     title: insight.title,
     slug: insight.slug,

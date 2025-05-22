@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 import { Asterisk } from '@/shared/ui/icons/fill';
 import { Button } from '@/shared/ui/kit/button';
@@ -23,6 +24,8 @@ export function WhyOptions({
   cards: { title: string; desc: string }[];
   tagText?: string;
 }) {
+  const t = useTranslations('home.whyOptions');
+
   return (
     <section className={st.layout}>
       <section className={st.titleLayout}>
@@ -42,7 +45,7 @@ export function WhyOptions({
         <Text className={st.text}>{footerText}</Text>
         <Link href="/request-form">
           <Button size="md" variant="black">
-            Get Free Consultation
+            {t('btnLabel')}
           </Button>
         </Link>
       </footer>

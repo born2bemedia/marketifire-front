@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 import { SocialNetworks } from '@/shared/ui/components/social-networks';
 import { Text } from '@/shared/ui/kit/text';
@@ -8,11 +9,13 @@ import { Text } from '@/shared/ui/kit/text';
 import st from './footer.module.scss';
 
 export function FooterBottom() {
+  const t = useTranslations('footer');
+
   return (
     <section className={st.footerBottomLayout}>
       <Text color="black60" className={st.text}>
-        © {new Date().getFullYear()} SL Freight Management S.R.O All Rights
-        Reserved.
+        © {new Date().getFullYear()} SL Freight Management S.R.O{' '}
+        {t('allRightsReserved')}
       </Text>
       <section className={st.contacts}>
         <div className={st.links}>

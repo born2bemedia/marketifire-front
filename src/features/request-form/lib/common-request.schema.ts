@@ -1,8 +1,19 @@
+import type { useTranslations } from 'next-intl';
+
 import type { z } from '@/shared/lib/forms';
 
-import { businessDataSchema } from './business-data.schema';
-import { requestFormSchema } from './request-form.schema';
+import { createBusinessDataSchema } from './business-data.schema';
+import { createRequestFormSchema } from './request-form.schema';
 
-export const commonRequestSchema = businessDataSchema.merge(requestFormSchema);
+export const createCommonRequestSchema = (
+  t: ReturnType<typeof useTranslations>,
+) => {
+  const schema = createRequestFormSchema(t);
+  const businessDataSchema = createBusinessDataSchema(t);
 
-export type CommonRequestSchema = z.infer<typeof commonRequestSchema>;
+  return schema.merge(businessDataSchema);
+};
+
+export type CommonRequestSchema = z.infer<
+  ReturnType<typeof createCommonRequestSchema>
+>;
