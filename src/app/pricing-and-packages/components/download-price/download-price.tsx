@@ -21,7 +21,7 @@ export function DownloadPrice() {
               outlined for you to make an informed decision!
             </span>
           </Text>
-          <Link href={'/Price_List_Marketfire.pdf'} target="_blank">
+          <Link href="/Price_List_Marketifire.pdf" target="_blank">
             <Button variant="black" size="sm">
               Download Price List in PDF
               <DownloadIcon />
