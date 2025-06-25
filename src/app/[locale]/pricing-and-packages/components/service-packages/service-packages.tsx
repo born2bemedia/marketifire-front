@@ -27,7 +27,7 @@ export function ServicePackages() {
     {
       id: '01',
       title: t('packages.0.title'),
-      price: '€1,800',
+      price: '€6,800',
       description: t('packages.0.description'),
       whatIncluded: [
         `<b>${t('packages.0.includes.0.title')}</b> – ${t('packages.0.includes.0.description')}`,
@@ -40,7 +40,7 @@ export function ServicePackages() {
     {
       id: '02',
       title: t('packages.1.title'),
-      price: '€2,500',
+      price: '€12,600',
       description: t('packages.1.description'),
       whatIncluded: [
         `<b>${t('packages.1.includes.0.title')}</b>`,
@@ -55,7 +55,7 @@ export function ServicePackages() {
     {
       id: '03',
       title: t('packages.2.title'),
-      price: '€3,500',
+      price: '€18,840',
       description: t('packages.2.description'),
       whatIncluded: [
         `<b>${t('packages.2.includes.0.title')}</b>`,
@@ -72,7 +72,7 @@ export function ServicePackages() {
     {
       id: '04',
       title: t('packages.3.title'),
-      price: '€5,000',
+      price: '€23,000',
       description: t('packages.3.description'),
       whatIncluded: [
         `<b>${t('packages.3.includes.0.title')}</b>`,

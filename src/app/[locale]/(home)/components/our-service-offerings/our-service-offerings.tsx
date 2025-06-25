@@ -116,8 +116,8 @@ function SimpleCard({ title, items }: { title: string; items: string[] }) {
     <article className={st.cardLayout}>
       <Title level={3}>{title}</Title>
       <section className={cn(st.services, st.servicesBottom)}>
-        {items.map(item => (
-          <Tag key={item} color="white10" className={st.tag}>
+        {items.map((item, i) => (
+          <Tag key={item + i} color="white10" className={st.tag}>
             <Plus />
             <Text className={st.tagText}>{item}</Text>
           </Tag>
@@ -147,8 +147,8 @@ function CardWithBg({
       }}
     >
       <section className={st.services} style={{ padding: '20px' }}>
-        {items.map(item => (
-          <Tag key={item} color="white10">
+        {items.map((item, i) => (
+          <Tag key={item + i} color="white10">
             <Plus />
             <Text>{item}</Text>
           </Tag>
