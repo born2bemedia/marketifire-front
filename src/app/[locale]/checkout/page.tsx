@@ -5,9 +5,9 @@ import { OrderSummary } from './components/order-summary';
 import st from './page.module.scss';
 
 export const metadata: Metadata = {
-  title: 'Marketifire | Checkout',
+  title: 'Checkout | Business & Marketing Consulting for Entrepreneurs',
   openGraph: {
-    title: 'Marketifire | Checkout',
+    title: 'Checkout | Business & Marketing Consulting for Entrepreneurs',
     images: 'https://marketifire.com/meta/lg.png',
   },
 };
