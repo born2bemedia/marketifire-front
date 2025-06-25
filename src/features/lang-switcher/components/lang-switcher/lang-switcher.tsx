@@ -1,10 +1,14 @@
 'use client';
 
+import { useLocale } from 'next-intl';
+
 import { English, Germany, Italy, Slovakia } from '@/shared/ui/icons/countries';
 
 import { Switcher } from '../switcher';
 
 export function LangSwitcher() {
+  const locale = useLocale();
+
   return (
     <Switcher
       options={[
@@ -57,7 +61,7 @@ export function LangSwitcher() {
           value: 'sk',
         },
       ]}
-      value={<span className="notranslate">EN</span>}
+      value={<span className="notranslate">{locale.toUpperCase()}</span>}
     />
   );
 }
