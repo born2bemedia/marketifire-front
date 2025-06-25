@@ -117,9 +117,9 @@ function SimpleCard({ title, items }: { title: string; items: string[] }) {
       <Title level={3}>{title}</Title>
       <section className={cn(st.services, st.servicesBottom)}>
         {items.map(item => (
-          <Tag key={item} color="white10">
+          <Tag key={item} color="white10" className={st.tag}>
             <Plus />
-            <Text>{item}</Text>
+            <Text className={st.tagText}>{item}</Text>
           </Tag>
         ))}
       </section>

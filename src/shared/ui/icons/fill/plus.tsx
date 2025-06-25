@@ -3,6 +3,7 @@
 export function Plus() {
   return (
     <svg
+      style={{ flexShrink: 0 }}
       xmlns="http://www.w3.org/2000/svg"
       width="16"
       height="17"
