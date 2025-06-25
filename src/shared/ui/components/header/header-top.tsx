@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 import { UserBadge } from '@/core/user/components';
 
@@ -18,6 +19,8 @@ import { Text } from '@/shared/ui/kit/text';
 import st from './header.module.scss';
 
 export function HeaderTop() {
+  const t = useTranslations('header');
+
   const { setIsCartOpen } = useCartModalStore();
 
   const handleOpenCartModal = () => {
@@ -46,7 +49,7 @@ export function HeaderTop() {
             className={st.btnWithIcon}
             onClick={handleOpenCartModal}
           >
-            <Text uppercase>Cart</Text>
+            <Text uppercase>{t('cart')}</Text>
             <BagIcon />
           </Button>
           <UserBadge />

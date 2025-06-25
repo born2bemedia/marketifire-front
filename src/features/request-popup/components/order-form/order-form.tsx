@@ -1,8 +1,9 @@
 'use client';
 import { useEffect, useState } from 'react';
+import { useTranslations } from 'next-intl';
 
 import { Controller, useForm, zodResolver } from '@/shared/lib/forms';
-//import { useCountryCode } from '@/shared/lib/hooks';
+import { useCountryCode } from '@/shared/lib/hooks';
 import { Button } from '@/shared/ui/kit/button';
 import { PhoneField } from '@/shared/ui/kit/phone-field';
 import { TextArea } from '@/shared/ui/kit/text-area';
@@ -10,8 +11,10 @@ import { TextField } from '@/shared/ui/kit/text-field';
 
 import { useModalStore } from '../../services/modal.store';
 import st from './order-form.module.scss';
-import { type OrderFormSchema, orderFormSchema } from './order-form.schema';
-
+import {
+  createOrderFormSchema,
+  type OrderFormSchema,
+} from './order-form.schema';
 
 export function OrderForm({
   setThanksPopupOpen,
@@ -20,13 +23,18 @@ export function OrderForm({
   setThanksPopupOpen: (open: boolean) => void;
   product: string;
 }) {
-  //const countryCode = useCountryCode();
+  const t = useTranslations('orderForm');
+  const te = useTranslations('orderForm.errors');
+
+  const countryCode = useCountryCode();
   const { isOpen } = useModalStore();
   const [productValue, setProductValue] = useState(product);
 
   useEffect(() => {
     setProductValue(product);
   }, [product]);
+
+  const orderFormSchema = createOrderFormSchema(te);
 
   const {
     handleSubmit,
@@ -53,13 +61,10 @@ export function OrderForm({
       product: productValue,
     };
     try {
-      const response = await fetch('/api/product-request', {
+      await fetch('/api/product-request', {
         method: 'POST',
         body: JSON.stringify(orderData),
       });
-      if (!response.ok) {
-        throw new Error('Failed to send form');
-      }
     } catch (e) {
       console.error('Error send form', e);
     } finally {
@@ -80,8 +85,8 @@ export function OrderForm({
           control={control}
           render={({ field, fieldState: { error } }) => (
             <TextField
-              placeholder="Enter First Name"
-              label="First Name"
+              placeholder={t('fields.firstName.placeholder')}
+              label={t('fields.firstName.label')}
               hint={error?.message}
               {...field}
             />
@@ -94,8 +99,8 @@ export function OrderForm({
           control={control}
           render={({ field, fieldState: { error } }) => (
             <TextField
-              placeholder="Enter Last Name"
-              label="Last Name"
+              placeholder={t('fields.lastName.placeholder')}
+              label={t('fields.lastName.label')}
               hint={error?.message}
               {...field}
             />
@@ -108,8 +113,8 @@ export function OrderForm({
           control={control}
           render={({ field, fieldState: { error } }) => (
             <TextField
-              placeholder="Enter Your Email"
-              label="Email"
+              placeholder={t('fields.email.placeholder')}
+              label={t('fields.email.label')}
               hint={error?.message}
               {...field}
             />
@@ -122,8 +127,8 @@ export function OrderForm({
           control={control}
           render={({ field, fieldState: { error, isTouched } }) => (
             <PhoneField
-              label="Phone"
-              country={'gb'}
+              label={t('fields.phone.label')}
+              country={countryCode}
               hint={isTouched ? error?.message : undefined}
               {...field}
             />
@@ -136,8 +141,8 @@ export function OrderForm({
           control={control}
           render={({ field, fieldState: { error } }) => (
             <TextField
-              placeholder="Enter your website URL"
-              label="Your Website (optional)"
+              placeholder={t('fields.website.placeholder')}
+              label={t('fields.website.label')}
               hint={error?.message}
               {...field}
             />
@@ -150,22 +155,21 @@ export function OrderForm({
           control={control}
           render={({ field, fieldState: { error } }) => (
             <TextArea
-              placeholder="Please write your thoughts..."
-              label="Message"
+              placeholder={t('fields.message.placeholder')}
+              label={t('fields.message.label')}
               hint={error?.message}
               {...field}
             />
           )}
         />
       </div>
-
       <div className={st.button}>
         <Button
           variant="black"
           className={st.requestBtn}
           disabled={isSubmitting}
         >
-          {isSubmitting ? <>Sending...</> : <>Submit</>}
+          {isSubmitting ? t('sending') : t('submit')}
         </Button>
       </div>
     </form>

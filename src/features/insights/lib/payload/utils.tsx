@@ -1,5 +1,5 @@
 import type { JSX } from 'react';
-import { isValidElement, type ReactNode } from 'react';
+import { Fragment, isValidElement, type ReactNode } from 'react';
 import { nanoid } from 'nanoid';
 
 import { cn } from '@/shared/lib/styles';
@@ -12,7 +12,8 @@ export function parseJSONToElements(json: Node[]): {
   elements: ReactNode[];
   lastUpdate: string | null;
 } {
-  if (!Array.isArray(json)) return { elements: [<></>], lastUpdate: null };
+  if (!Array.isArray(json))
+    return { elements: [<Fragment key="empty" />], lastUpdate: null };
 
   let lastUpdate: string | null = null;
   const elements: ReactNode[] = [];

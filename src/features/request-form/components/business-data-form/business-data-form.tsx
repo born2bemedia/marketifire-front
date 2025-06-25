@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 import { ThankYouDialog } from '@/features/request-form/components/thank-you-dialog';
 import { useRequestFormStore } from '@/features/request-form/services';
@@ -17,47 +18,25 @@ import { TextArea } from '@/shared/ui/kit/text-area';
 import { TextField } from '@/shared/ui/kit/text-field';
 import { Title } from '@/shared/ui/kit/title';
 
-import { type BusinessDataSchema, businessDataSchema } from '../../lib';
+import { type BusinessDataSchema, createBusinessDataSchema } from '../../lib';
 import st from './business-data-form.module.scss';
-
-export const services = [
-  'Marketing & Growth Strategies',
-  'Performance Marketing & Conversion Optimization',
-  'Business Consulting & Expansion Planning',
-  'Content & Audience Engagement',
-  'Automation & Digital Transformation',
-  'Strategic Growth & Competitive Edge',
-  'Other',
-];
-
-export const budgets = [
-  'Under €1,000',
-  '€1,000 - €5,000',
-  '€5,000 - €10,000',
-  '€10,000 - €20,000',
-  '€20,000+',
-];
-
-export const startDate = [
-  'Within 1 Month',
-  '1-3 Months',
-  '3-6 Months',
-  'Flexible Timeline',
-];
-
-export const contactMethod = ['Email', 'Phone', 'Video Call'];
 
 export function BusinessDataForm() {
   const [dialogOpen, setDialogOpen] = useState(false);
+
+  const t = useTranslations('requestForm');
+  const te = useTranslations('requestForm.errors');
   const { fullName, email, phone, website, companyName, setData } =
     useRequestFormStore();
+
+  const schema = createBusinessDataSchema(te);
 
   const {
     handleSubmit,
     control,
     formState: { isSubmitting },
   } = useForm<BusinessDataSchema>({
-    resolver: zodResolver(businessDataSchema),
+    resolver: zodResolver(schema),
     reValidateMode: 'onBlur',
     mode: 'onBlur',
     defaultValues: {
@@ -84,14 +63,45 @@ export function BusinessDataForm() {
 
       setDialogOpen(true);
     } catch (err) {
-      console.log(err);
+      console.error(err);
     }
   });
+
+  const services = [
+    t('businessData.services.0'),
+    t('businessData.services.1'),
+    t('businessData.services.2'),
+    t('businessData.services.3'),
+    t('businessData.services.4'),
+    t('businessData.services.5'),
+    t('businessData.services.6'),
+  ];
+
+  const budgets = [
+    `${t('businessData.budgets')} €1,000`,
+    '€1,000 - €5,000',
+    '€5,000 - €10,000',
+    '€10,000 - €20,000',
+    '€20,000+',
+  ];
+
+  const startDate = [
+    t('businessData.startDate.0'),
+    t('businessData.startDate.1'),
+    t('businessData.startDate.2'),
+    t('businessData.startDate.3'),
+  ];
+
+  const contactMethod = [
+    t('businessData.contactMethod.0'),
+    t('businessData.contactMethod.1'),
+    t('businessData.contactMethod.2'),
+  ];
 
   return (
     <form onSubmit={onSubmit}>
       <section className={st.header}>
-        <Title level={3}>Business & Marketing Data</Title>
+        <Title level={3}>{t('businessData.title')}</Title>
         <Image
           src="/request-form/level-indicator-2.svg"
           alt="level-indicator"
@@ -107,7 +117,7 @@ export function BusinessDataForm() {
             render={({ field, fieldState: { error } }) => (
               <div>
                 <div className={st.titleService}>
-                  <Text>Select the Service You’re Interested In</Text>
+                  <Text>{t('businessData.fields.services.label')}</Text>
                   {error?.message ? <Text>* {error?.message}</Text> : null}
                 </div>
                 <div className={st.grid}>
@@ -147,7 +157,7 @@ export function BusinessDataForm() {
             render={({ field, fieldState: { error } }) => (
               <div>
                 <div className={st.titleService}>
-                  <Text>Your Budget Range. Select your investment range:</Text>
+                  <Text>{t('businessData.fields.budget.label')}</Text>
                   {error?.message ? <Text>* {error?.message}</Text> : null}
                 </div>
                 <div className={st.grid}>
@@ -173,8 +183,8 @@ export function BusinessDataForm() {
           render={({ field, fieldState: { error } }) => (
             <TextArea
               {...field}
-              label="Your Goals & Challenges"
-              placeholder="What are your key objectives and current pain points?"
+              label={t('businessData.fields.goals.label')}
+              placeholder={t('businessData.fields.goals.placeholder')}
               hint={error?.message}
             />
           )}
@@ -185,8 +195,8 @@ export function BusinessDataForm() {
           render={({ field, fieldState: { error } }) => (
             <TextArea
               {...field}
-              label="Who Is Your Target Audience?"
-              placeholder="What are your key objectives and current pain points? Age, Gender, Location, Interests"
+              label={t('businessData.fields.targetAudience.label')}
+              placeholder={t('businessData.fields.targetAudience.placeholder')}
               hint={error?.message}
             />
           )}
@@ -197,7 +207,7 @@ export function BusinessDataForm() {
           render={({ field, fieldState: { error } }) => (
             <section>
               <div className={st.titleService}>
-                <Text>When do you plan to start? </Text>
+                <Text>{t('businessData.fields.startDate.label')}</Text>
                 {error?.message ? <Text>* {error?.message}</Text> : null}
               </div>
               <div className={st.grid}>
@@ -221,7 +231,7 @@ export function BusinessDataForm() {
           render={({ field, fieldState: { error } }) => (
             <section>
               <div className={st.titleService}>
-                <Text>Preferred Contact Method</Text>
+                <Text>{t('businessData.fields.contactMethod.label')}</Text>
                 {error?.message ? <Text>* {error?.message}</Text> : null}
               </div>
               <div className={st.grid}>
@@ -260,10 +270,10 @@ export function BusinessDataForm() {
           onClick={() => setData({ step: 1 })}
         >
           <ArrowLeft />
-          Back
+          {t('back')}
         </Button>
         <Button size="md" variant="black" className={st.btn} type="submit">
-          {isSubmitting ? 'Submitting...' : 'Submit'}
+          {isSubmitting ? t('submitting') : t('submit')}
           <ArrowRight />
         </Button>
       </section>

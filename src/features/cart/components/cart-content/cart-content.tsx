@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 import { getCartProducts, getCartTotal } from '@/features/cart/services';
 import { type CartProduct } from '@/features/lib/types';
@@ -13,13 +14,15 @@ import { useCartModalStore } from '../../services/modal.store';
 import st from './cart-content.module.scss';
 
 export function CartContent() {
+  const t = useTranslations('cart');
+
   const { cartProducts, setCartProducts, cartTotal, setCartTotal } =
     useCartModalStore();
 
   useEffect(() => {
     setCartProducts(getCartProducts());
     setCartTotal(getCartTotal());
-  }, []);
+  }, [setCartProducts, setCartTotal]);
 
   const handleDecreaseQuantity = (product: CartProduct) => {
     const newQuantity = product.quantity - 1;
@@ -56,10 +59,10 @@ export function CartContent() {
       <div className={st.cartContent}>
         <div className={st.cartTable}>
           <div className={st.tableHead}>
-            <div className={st.tableHeadItem}>Service Name</div>
-            <div className={st.tableHeadItem}>Price</div>
-            <div className={st.tableHeadItem}>Quantity</div>
-            <div className={st.tableHeadItem}>Subtotal</div>
+            <div className={st.tableHeadItem}>{t('serviceName')}</div>
+            <div className={st.tableHeadItem}>{t('price')}</div>
+            <div className={st.tableHeadItem}>{t('quantity')}</div>
+            <div className={st.tableHeadItem}>{t('subtotal')}</div>
           </div>
           <div className={st.tableBody}>
             {cartProducts.map((product, index) => (
@@ -105,9 +108,9 @@ export function CartContent() {
             </button>
             <div className={st.cartTable}>
               <div className={st.tableHead}>
-                <div className={st.tableHeadItem}>Price</div>
-                <div className={st.tableHeadItem}>Quantity</div>
-                <div className={st.tableHeadItem}>Subtotal</div>
+                <div className={st.tableHeadItem}>{t('price')}</div>
+                <div className={st.tableHeadItem}>{t('quantity')}</div>
+                <div className={st.tableHeadItem}>{t('subtotal')}</div>
               </div>
               <div className={st.tableBody}>
                 <div className={st.tableRow}>
@@ -132,11 +135,13 @@ export function CartContent() {
           </div>
         ))}
       </div>
-      <div className={st.cartTotal}>Total: €{cartTotal}</div>
+      <div className={st.cartTotal}>
+        {t('total')}: €{cartTotal}
+      </div>
       <div className={st.cartButtons}>
         <Link href="/checkout">
           <Button size="sm" variant="black">
-            Proceed to Checkout
+            {t('proceedToCheckout')}
           </Button>
         </Link>
       </div>

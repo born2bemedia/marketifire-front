@@ -3,6 +3,7 @@
 import type { ReactNode } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 import { Button } from '@/shared/ui/kit/button';
 import { Text } from '@/shared/ui/kit/text';
@@ -17,11 +18,13 @@ export function GetFreeConsultation({
   text: ReactNode;
   nav: { url: string; label: string };
 }) {
+  const t = useTranslations('freeConsultation');
+
   return (
     <section className={st.layout}>
       <section className={st.textContent}>
         <div className={st.text}>
-          <Title level={1}>Let’s Build Something Powerful Together</Title>
+          <Title level={1}>{t('title')}</Title>
           <Text>{text}</Text>
         </div>
         <Link href={nav.url}>

@@ -1,0 +1,17 @@
+.layout {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.formLayout {
+  width: 60%;
+  margin: 0 auto 80px auto;
+}
+
+@media (max-width: 768px) {
+  .formLayout {
+    width: 100%;
+  }
+}

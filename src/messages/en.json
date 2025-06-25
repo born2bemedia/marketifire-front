@@ -1,0 +1,1848 @@
+{
+  "home": {
+    "hero": {
+      "title": "Marketifire – Fueling Your Business & Marketing Success",
+      "description": "With tailored business and marketing consulting, we help businesses accelerate growth, optimize marketing efforts, and build lasting customer relationships. Whether starting, scaling, or refining your strategy, Marketifire is your partner in success.",
+      "btnLabel": "Get Free Consultation"
+    },
+    "providedServices": {
+      "strategies": "Tailored Strategies",
+      "tactics": "Proven Tactics",
+      "growth": "Measurable Growth"
+    },
+    "transformYourBusiness": {
+      "tag": "Unleash Your Brand’s Potential",
+      "title": "Transform Your Business with Marketifire’s Expertise",
+      "text": "Struggling to gain traction, increase conversions, or optimize marketing spending? Our experts build holistic, ROI-driven strategies designed for long-term success.",
+      "readyToElevate": "Ready to Elevate Your Business?",
+      "btnLabel": "Get Free Consultation",
+      "steps": {
+        "0": {
+          "title": "Increase Brand Visibility",
+          "desc": "Get noticed where it matters most."
+        },
+        "1": {
+          "title": "Optimize Lead Generation",
+          "desc": "Convert visitors into customers effortlessly."
+        },
+        "2": {
+          "title": "Enhance Digital Performance",
+          "desc": "Maximize marketing ROI with data-backed decisions."
+        },
+        "3": {
+          "title": "Drive Sustainable Growth",
+          "desc": "Build strategies that scale with your business."
+        }
+      }
+    },
+    "ourServiceOfferings": {
+      "tag": "Tailored Solutions for Every Need",
+      "title": "Our Comprehensive Service Offerings",
+      "text": "Marketifire combines data, strategy, and execution to deliver a full suite of consulting services designed to unlock your brand’s full potential.",
+      "btnLabel": "Start Optimizing Your Strategy Today",
+      "label": "Every service is tailored to YOUR business goals.",
+      "services": {
+        "0": {
+          "title": "Marketing & Growth Strategies",
+          "items": {
+            "0": "Market Research & Competitive Analysis",
+            "1": "Brand Positioning & Messaging Strategy",
+            "2": "Digital & Traditional Advertising",
+            "3": "Product Launch Strategy"
+          }
+        },
+        "1": {
+          "title": "Performance Marketing & Conversion Optimization",
+          "items": {
+            "0": "SEO & Search Visibility Growth",
+            "1": "PPC & Paid Advertising Campaigns",
+            "2": "Website & Funnel Optimization",
+            "3": "Data-Driven Sales Strategies"
+          }
+        },
+        "2": {
+          "title": "Business Consulting & Expansion Planning",
+          "items": {
+            "0": "Market Entry & Expansion Strategies",
+            "1": "Customer Acquisition & Retention Plans",
+            "2": "Revenue Model Optimization",
+            "3": "Business Process Automation"
+          }
+        },
+        "3": {
+          "title": "Content & Audience Engagement",
+          "items": {
+            "0": "Social Media & Community Growth",
+            "1": "Influencer & Affiliate Marketing",
+            "2": "Email & CRM Optimization",
+            "3": "High-Impact Content & Storytelling"
+          }
+        },
+        "4": {
+          "title": "Automation & Digital Transformation",
+          "items": {
+            "0": "AI-Driven Marketing Automation",
+            "1": "CRM & Email Marketing Integration",
+            "2": "Automated Sales Funnels",
+            "3": "Data-Driven Insights & Reporting"
+          }
+        },
+        "5": {
+          "title": "Strategic Growth & Competitive Edge",
+          "items": {
+            "0": "Personal Brand & Omni-Channel Growth",
+            "1": "Lead Building & Audience Retention Strategies",
+            "2": "Sales Strategies for Entrepreneurs",
+            "3": "Tailored Marketing & Monetization Plans"
+          }
+        }
+      }
+    },
+    "whyBusinessesTrust": {
+      "title": "Why Businesses Trust Marketifire?",
+      "annotation": "We may be a young agency but we bring industry expertise, innovative solutions, and results-driven strategies that businesses trust.",
+      "footerText": "Your Growth, Our Priority. Let’s Make It Happen!",
+      "tagText": "Results You Can Rely On",
+      "cards": {
+        "0": {
+          "title": "+200%",
+          "desc": "Avg. Increase in Client Online Engagement"
+        },
+        "1": {
+          "title": "+35%",
+          "desc": "Reduction in Marketing Spend Waste"
+        },
+        "2": {
+          "title": "96%",
+          "desc": "Avg. Increase in Client Online Engagement"
+        },
+        "3": {
+          "title": "+50%",
+          "desc": "Growth in Qualified Leads for Startups"
+        }
+      }
+    },
+    "whyOptions": {
+      "btnLabel": "Get Free Consultation"
+    },
+    "seeOurImpact": {
+      "tag": "Proven Success in Action",
+      "title": "See Our Impact – Explore Client Success Stories",
+      "text": "At Marketifire, we don’t believe in one-size-fits-all solutions. We craft strategies backed by market research, analytics, and real-world testing.",
+      "label": "Your Business, Transformed with Precision & Strategy.",
+      "btnLabel": "Dive into Case Studies",
+      "cards": {
+        "0": {
+          "title": "Real Insights, Not Guesswork",
+          "desc": "Every strategy is backed by data."
+        },
+        "1": {
+          "title": "Adaptive & Scalable",
+          "desc": "Designed for growth at every stage."
+        },
+        "2": {
+          "title": "Optimized for ROI",
+          "desc": "Reduce costs and maximize results."
+        },
+        "3": {
+          "title": "Actionable Execution",
+          "desc": "We help implement, not just advise."
+        }
+      }
+    },
+    "seamlessSuccess": {
+      "tag": "Bringing Strategy & Execution Together",
+      "title": "We Align Business & Marketing for Seamless Success",
+      "text": "We help bridge the gap between marketing, sales, and operations to ensure your brand’s growth is smooth, efficient, and long-term.",
+      "btnLabel": "Schedule a Free Strategy Session Today",
+      "expandMarkets": "Expand into New Markets with Confidence",
+      "integrateSales": "Integrate Sales & Marketing for Higher Conversions",
+      "maximizeValue": "Maximize Customer Value & Retention",
+      "userPerformance": "Use Performance Insights to Make Smarter Decisions"
+    },
+    "insightsAndExecution": {
+      "title": "Success Built on Insights & Execution",
+      "annotation": "Marketifire creates scalable marketing solutions that help businesses generate leads, nurture customers, and drive higher lifetime value.",
+      "footerText": "Your Growth Starts Now – Let’s Build a Plan That Works!",
+      "tagText": "Driving Growth Through Data",
+      "cards": {
+        "0": {
+          "title": "+40%",
+          "desc": "Avg. Increase in Customer Retention for Clients"
+        },
+        "1": {
+          "title": "2X",
+          "desc": "Higher Engagement Rates in Digital Campaigns"
+        },
+        "2": {
+          "title": "85%",
+          "desc": "Faster ROI on Marketing Investment with Data-Driven Plans"
+        }
+      }
+    },
+    "howWeDeliver": {
+      "tag": "Our Approach to Measurable Success",
+      "title": "Explore How We Deliver Results",
+      "label": "Have More Questions? Get in Touch!",
+      "btnLabel": "Drop Us a Message",
+      "cards": {
+        "0": {
+          "title": "How does Marketifire help individuals grow?",
+          "desc": "We provide customized business and marketing strategies for individuals, freelancers, and entrepreneurs who want to enhance their personal brand, attract clients, and increase revenue through data-driven consulting."
+        },
+        "1": {
+          "title": "Who can benefit from Marketifire’s services?",
+          "desc": "We specialize in helping professionals, digital creators, consultants, and solopreneurs optimize their marketing, sales, and business growth strategies. Whether you’re launching your brand or scaling an existing one, we create actionable solutions that work."
+        },
+        "2": {
+          "title": "Do you offer ongoing support and strategy updates?",
+          "desc": "Absolutely! We provide continuous optimization, analytics tracking, and performance reporting to ensure your long-term success. Our services evolve with your goals, so you always have the most effective strategies."
+        },
+        "3": {
+          "title": "Can I get a fully personalized marketing plan?",
+          "desc": "Yes! Every strategy we create suits your unique needs, target audience, and growth stage. We analyze your market, define opportunities, and provide step-by-step guidance to help you achieve sustainable success."
+        }
+      }
+    }
+  },
+  "header": {
+    "login": "Login",
+    "logout": "Log Out",
+    "cart": "Cart",
+    "routes": {
+      "home": "Home",
+      "about": "About Marketifire",
+      "whatWeDo": "What We Do",
+      "tailoredSolutions": "Tailored Solutions",
+      "caseStudies": "Case Studies",
+      "insights": "Insights",
+      "pricingPackages": "Pricing & Packages",
+      "help": "Help & FAQs",
+      "contacts": "Contacts",
+      "termsAndConditions": "Terms and Conditions",
+      "privacyPolicy": "Privacy Policy",
+      "cookiePolicy": "Cookie Policy",
+      "refundPolicy": "Refund Policy"
+    }
+  },
+  "about": {
+    "hero": {
+      "tag": "Let’s Build Your Success Together",
+      "title": "Igniting Growth, Empowering Success",
+      "text": "At Marketifire, we believe that growth isn’t just about marketing — it’s about creating a lasting impact. We work with entrepreneurs, professionals, and personal brands to transform ideas into strategies that scale, engage, and convert.",
+      "text2": "We don’t follow trends — we create them. With a data-driven approach, innovative thinking, and a passion for results, we craft solutions that fuel success at every stage of your journey."
+    },
+    "ourMission": {
+      "title": "Our Mission",
+      "description": "To empower individuals and businesses with tailored marketing and business strategies that drive real growth, enhance brand visibility, and maximize revenue potential.",
+      "text": "Whether you're building your brand from scratch or looking to optimize your digital presence, we're here to guide you every step of the way."
+    },
+    "whatSetsApart": {
+      "tag": "Innovative Solutions for Unique Challenges",
+      "title": "What Sets Us Apart?",
+      "description": "We don't believe in one-size-fits-all solutions. At Marketifire, every strategy is custom-built to fit your unique goals. With a data-driven mindset, innovative execution, and a commitment to measurable results, we help you stand out, grow faster, and achieve long-term success.",
+      "label": "Ready to Elevate Your Business?",
+      "btnLabel": "Get Free Consultation",
+      "steps": {
+        "0": {
+          "title": "Tailored Strategies, Not Templates",
+          "desc": "Every business is unique, and so are our solutions. No generic approaches — just custom strategies designed for your goals."
+        },
+        "1": {
+          "title": "Data-Driven Decisions",
+          "desc": "We analyze, optimize, and refine every strategy to ensure maximum impact. Numbers don’t lie, and we let the data lead."
+        },
+        "2": {
+          "title": "End-to-End Expertise",
+          "desc": "From market research and content creation to conversion optimization and automation, we cover every aspect of your growth journey."
+        },
+        "3": {
+          "title": "Your Success is Our Success",
+          "desc": "We don’t just consult — we partner with you to execute and achieve measurable results."
+        }
+      }
+    },
+    "whoWeWorkWith": {
+      "title": "Who We Work With",
+      "desc": "Marketifire is designed for individuals, professionals, and businesses looking for clear, effective, and sustainable growth strategies. Whether you’re just starting or looking to scale, we provide the tools, expertise, and insights to help you succeed in a competitive landscape.",
+      "tagText": "Tailored Strategies for Every Client",
+      "cards": {
+        "0": {
+          "title": "Entrepreneurs & Startups",
+          "desc": "Launch, grow, and confidently establish your brand."
+        },
+        "1": {
+          "title": "Consultants & Experts",
+          "desc": "Position yourself as a leader in your field and attract the right audience."
+        },
+        "2": {
+          "title": "Freelancers & Solopreneurs",
+          "desc": "Avg. Increase in Client Online Engagement"
+        },
+        "3": {
+          "title": "Personal Brands & Creators",
+          "desc": "Growth in Qualified Leads for Startups"
+        }
+      }
+    },
+    "marketfireApproach": {
+      "title": "The Marketifire Approach",
+      "desc": "Success doesn't happen by chance — it's built through strategic planning, continuous optimization, and smart execution. Our approach focuses on understanding your market, crafting tailored strategies, and scaling precisely to ensure sustained growth and real impact.",
+      "tag": "Success Through Strategic Precision",
+      "cards": {
+        "0": {
+          "title": "Understand Your Market",
+          "desc": "Every strategy starts with in-depth market research and competitor analysis."
+        },
+        "1": {
+          "title": "Define Your Strategy",
+          "desc": "We craft a clear, customized plan based on your goals and audience."
+        },
+        "2": {
+          "title": "Optimize & Scale",
+          "desc": "Continuous testing, refinement, and execution to ensure long-term success."
+        }
+      }
+    },
+    "contactBlock": {
+      "title": "Let’s Build Something Powerful Together",
+      "text": "Marketifire isn’t just another marketing consultancy — we are your partners in growth. Let’s get started today if you’re ready to elevate your brand, expand your audience, and drive revenue. <br /><br /> Contact us to discuss your goals and take the first step toward realizing your vision.",
+      "btnLabel": "Get Your Free Consultation Today"
+    }
+  },
+  "requestForm": {
+    "hero": {
+      "tag": "Let’s Build Your Success Together",
+      "title": "Get Started with Marketifire",
+      "text": "Tell us your goals and challenges, and we’ll craft a personalized strategy to help you grow. Fill out the form below, and let’s take the next step toward measurable success."
+    },
+    "nextStep": "Next Step",
+    "back": "Back",
+    "processing": "Processing...",
+    "submit": "Submit",
+    "submitYourRequest": "Submit Your Request",
+    "submitting": "Submitting...",
+    "errors": {
+      "fullName": "Please provide your full name",
+      "email": "Please provide a valid email address",
+      "phone": "Please provide your phone number",
+      "phoneInvalid": "Invalid phone number format",
+      "budget": "Please provide your budget",
+      "goals": "Please provide your Goals & Challenges",
+      "targetAudience": "Please provide your Target Audience",
+      "startDate": "Please provide your Start Date",
+      "contactMethod": "Please provide your Contact Method"
+    },
+    "personalData": {
+      "title": "Personal Data",
+      "fields": {
+        "fullName": {
+          "label": "Full Name",
+          "placeholder": "Enter your full name"
+        },
+        "email": {
+          "label": "Email Address",
+          "placeholder": "Enter your email address"
+        },
+        "phone": {
+          "label": "Phone number"
+        },
+        "companyName": {
+          "label": "Company Name (optional)",
+          "placeholder": "Enter your company name"
+        },
+        "website": {
+          "label": "Website (optional)",
+          "placeholder": "Enter your website"
+        }
+      }
+    },
+    "businessData": {
+      "services": {
+        "0": "Marketing & Growth Strategies",
+        "1": "Performance Marketing & Conversion Optimization",
+        "2": "Business Consulting & Expansion Planning",
+        "3": "Content & Audience Engagement",
+        "4": "Automation & Digital Transformation",
+        "5": "Strategic Growth & Competitive Edge",
+        "6": "Other"
+      },
+      "budgets": "Under",
+      "startDate": {
+        "0": "Within 1 Month",
+        "1": "1-3 Months",
+        "2": "3-6 Months",
+        "3": "Flexible Timeline"
+      },
+      "contactMethod": {
+        "0": "Email",
+        "1": "Phone",
+        "2": "Video Call"
+      },
+      "title": "Business & Marketing Data",
+      "fields": {
+        "services": {
+          "label": "Select the Service You’re Interested In"
+        },
+        "pleaseSpecify": "Please specify",
+        "budget": {
+          "label": "Your Budget Range. Select your investment range:"
+        },
+        "goals": {
+          "label": "Your Goals & Challenges",
+          "placeholder": "What are your key objectives and current pain points?"
+        },
+        "targetAudience": {
+          "label": "Who Is Your Target Audience?",
+          "placeholder": "What are your key objectives and current pain points? Age, Gender, Location, Interests"
+        },
+        "startDate": {
+          "label": "When do you plan to start?"
+        },
+        "contactMethod": {
+          "label": "Preferred Contact Method"
+        }
+      }
+    },
+    "thankYou": {
+      "title": "Thank you for choosing Marketifire!",
+      "text": "Our representative will reach out to you shortly.",
+      "btnLabel": "Go to Home Page"
+    }
+  },
+  "whatWeDo": {
+    "hero": {
+      "tag": "Strategies for Real-World Success",
+      "title": "What We Do – Comprehensive Services Tailored for Your Project",
+      "text": "At Marketifire, we provide end-to-end marketing and business consulting solutions to help you grow, optimize, and succeed in your industry. Our services are tailored to your unique needs, ensuring that every strategy is built to drive real results, regardless of your business stage.",
+      "text2": "Here’s a closer look at the extensive services we offer:"
+    },
+    "marketingAndGrowthStrategies": {
+      "annotation": "We design customized strategies that drive brand visibility, customer acquisition, and market expansion. Our approach ensures that every step we take aligns with your specific goals, helping you reach your target audience and grow your presence.",
+      "subAnnotation": "Our services include:",
+      "title": "Marketing & Growth Strategies",
+      "values": {
+        "0": {
+          "title": "Market Research & Competitive Analysis",
+          "desc": "Deep insights into your industry and competitors."
+        },
+        "1": {
+          "title": "Brand Positioning & Messaging",
+          "desc": "Crafting your unique value proposition for maximum impact."
+        },
+        "2": {
+          "title": "Digital & Traditional Advertising",
+          "desc": "Multi-channel campaigns that engage and convert."
+        },
+        "3": {
+          "title": "Product Launch Strategy",
+          "desc": "Launching a new product or service with a comprehensive plan."
+        },
+        "4": {
+          "title": "Customer Segmentation Strategy",
+          "desc": "Identifying key customer segments to target with tailored marketing."
+        },
+        "5": {
+          "title": "Brand Identity Design",
+          "desc": "Crafting a unique visual and verbal identity for your business."
+        },
+        "6": {
+          "title": "Local Market Penetration",
+          "desc": "Targeting regional and local markets for stronger community engagement."
+        },
+        "7": {
+          "title": "Strategic Partnership Development",
+          "desc": "Identifying and forming valuable partnerships to scale your brand."
+        }
+      }
+    },
+    "perfomanceOptimization": {
+      "annotation": "Achieving success online means making sure every click and interaction counts. We focus on driving measurable results through optimized campaigns, enhancing your ROI and conversion rates at every customer journey stage.",
+      "subAnnotation": "Our services include:",
+      "title": "Performance Marketing & Conversion Optimization",
+      "values": {
+        "0": {
+          "title": "SEO & Search Visibility Growth",
+          "desc": "Boosting your organic search rankings to attract high-quality traffic."
+        },
+        "1": {
+          "title": "PPC & Paid Advertising",
+          "desc": "Creating highly effective ad campaigns that deliver fast results."
+        },
+        "2": {
+          "title": "Website & Funnel Optimization",
+          "desc": "Optimizing user flows to maximize conversions and sales."
+        },
+        "3": {
+          "title": "Data-Driven Sales Strategies",
+          "desc": "Implementing strategies that guide and convert prospects effectively."
+        },
+        "4": {
+          "title": "Landing Page Optimization",
+          "desc": "Designing high-converting landing pages tailored to your audience."
+        },
+        "5": {
+          "title": "Retargeting & Remarketing Campaigns",
+          "desc": "Re-engaging past visitors to increase conversions."
+        },
+        "6": {
+          "title": "Lead Generation Tactics",
+          "desc": "Capturing high-quality leads through smart targeting strategies."
+        },
+        "7": {
+          "title": "A/B Testing & Performance Tracking",
+          "desc": "Continuously improving your campaigns with data insights."
+        }
+      }
+    },
+    "businessConsulting": {
+      "annotation": "Whether you’re looking to expand into new markets or streamline your business processes, our consulting services provide the expertise and strategies you need to scale successfully.",
+      "subAnnotation": "Our services include:",
+      "title": "Business Consulting & Expansion Planning",
+      "values": {
+        "0": {
+          "title": "Market Entry & Expansion Strategies",
+          "desc": "Comprehensive plans for entering new markets or launching new products."
+        },
+        "1": {
+          "title": "Customer Acquisition & Retention Plans",
+          "desc": "Building sustainable growth through effective lead generation and loyalty tactics."
+        },
+        "2": {
+          "title": "Revenue Model Optimization",
+          "desc": "Refining your business model to increase profitability and scalability."
+        },
+        "3": {
+          "title": "Business Process Automation",
+          "desc": "Automating routine tasks to streamline operations and reduce costs."
+        },
+        "4": {
+          "title": "Strategic Business Planning",
+          "desc": "Helping you define your growth and long-term success roadmap."
+        },
+        "5": {
+          "title": "Financial Forecasting & Budgeting",
+          "desc": "Projecting and managing business growth and expenditures effectively."
+        },
+        "6": {
+          "title": "Organizational Design & Development",
+          "desc": "Structuring your team for maximum productivity and growth."
+        },
+        "7": {
+          "title": "Competitive Market Intelligence",
+          "desc": "Gathering industry trends, competitor strategies, and market dynamics insights."
+        }
+      }
+    },
+    "contentAndAudience": {
+      "annotation": "Creating meaningful content that resonates with your audience is key to building relationships and driving conversions. We help you build a strong brand presence and engage with your audience through impactful, high-quality content.",
+      "subAnnotation": "Our services include:",
+      "title": "Content & Audience Engagement",
+      "values": {
+        "0": {
+          "title": "Social Media & Community Growth",
+          "desc": "Growing your social presence and creating active, engaged communities."
+        },
+        "1": {
+          "title": "Influencer & Affiliate Marketing",
+          "desc": "Leveraging trusted influencers and affiliates to extend your reach."
+        },
+        "2": {
+          "title": "High-Impact Content Creation & Storytelling",
+          "desc": "Crafting content that informs, engages, and converts your audience."
+        },
+        "3": {
+          "title": "Email & CRM Optimization",
+          "desc": "Nurturing customer relationships with targeted email marketing and CRM strategies."
+        },
+        "4": {
+          "title": "Blogging & Thought Leadership",
+          "desc": "Positioning your brand as an industry authority through consistent, high-quality content."
+        },
+        "5": {
+          "title": "Video Content Strategy",
+          "desc": "Creating engaging video content that resonates and drives conversions."
+        },
+        "6": {
+          "title": "Social Media Ad Campaigns",
+          "desc": "Leveraging platforms like Facebook, Instagram, and LinkedIn to generate targeted leads."
+        },
+        "7": {
+          "title": "Customer Testimonial & Case Study Creation",
+          "desc": "Showcasing your success through compelling customer stories."
+        }
+      }
+    },
+    "automationAndDigitalTransform": {
+      "annotation": "Stay ahead of the competition with cutting-edge automation and digital transformation solutions. We help you implement advanced tools and technology to streamline operations, enhance customer journeys, and scale seamlessly.",
+      "subAnnotation": "Our services include:",
+      "title": "Automation & Digital Transformation",
+      "values": {
+        "0": {
+          "title": "AI & Marketing Automation",
+          "desc": "Using AI-driven tools to automate marketing processes and save time."
+        },
+        "1": {
+          "title": "CRM & Customer Journey Optimization",
+          "desc": "Designing customer journeys that lead to long-term loyalty and growth."
+        },
+        "2": {
+          "title": "Chatbot & Lead Nurturing Flows",
+          "desc": "Implementing automated systems for customer support and lead nurturing."
+        },
+        "3": {
+          "title": "Performance Analytics & Reporting",
+          "desc": "Monitoring and analyzing key metrics to improve and refine strategies."
+        },
+        "4": {
+          "title": "Sales Process Automation",
+          "desc": "Streamlining your sales funnel to boost efficiency and close rates."
+        },
+        "5": {
+          "title": "Customer Data Integration",
+          "desc": "Combining your data sources to create a single view of your customer journey."
+        },
+        "6": {
+          "title": "Workflow Automation",
+          "desc": "Automating internal business processes to save time and increase productivity."
+        },
+        "7": {
+          "title": "Custom API Development",
+          "desc": "Integrating different tools and platforms to create a cohesive workflow for your business."
+        }
+      }
+    },
+    "strategicGrowth": {
+      "annotation": "Achieving sustainable growth requires a strategic approach that builds long-term value. We help you stay competitive by offering personalized growth plans that focus on scalability, revenue generation, and market positioning.",
+      "subAnnotation": "Our services include:",
+      "title": "Strategic Growth & Competitive Edge",
+      "values": {
+        "0": {
+          "title": "Personal Brand & Omni-Channel Growth",
+          "desc": "Helping individuals build and scale their personal brands across all channels."
+        },
+        "1": {
+          "title": "Lead Building & Audience Retention Strategies",
+          "desc": "Developing strategies to attract new leads and maintain lasting relationships."
+        },
+        "2": {
+          "title": "Sales Strategies for Entrepreneurs",
+          "desc": "Tailored sales tactics to help you grow and scale your business."
+        },
+        "3": {
+          "title": "Tailored Marketing & Monetization Plans",
+          "desc": "Creating strategies that maximize your business’s profitability and growth potential."
+        },
+        "4": {
+          "title": "Business Valuation & Exit Strategy",
+          "desc": "Planning for your long-term business goals and potential exit."
+        },
+        "5": {
+          "title": "Strategic Partnership & Collaboration",
+          "desc": "Identifying opportunities for alliances to help you scale."
+        },
+        "6": {
+          "title": "Market Differentiation Strategy",
+          "desc": "Helping you stand out in a crowded market with unique selling propositions."
+        },
+        "7": {
+          "title": "Long-Term Growth & Sustainability Plans",
+          "desc": "Building strategies for continuous innovation and sustained growth."
+        }
+      }
+    },
+    "checkOutOurPricing": {
+      "tag": "Bringing Strategy & Execution Together",
+      "title": "Want to Order a Service? Check Out Our Pricing & Packages",
+      "text": "Ready to take the next step? Explore our flexible pricing and packages designed to fit your goals and budget. Whether you need a comprehensive marketing overhaul or a focused growth strategy, we have a package that works for you.",
+      "btnLabel": "View Pricing & Packages"
+    },
+    "freeConsultation": {
+      "text": {
+        "0": "At Marketfire, we are committed to providing you with the tools, expertise, and strategies to grow your business and achieve measurable success.",
+        "1": "Ready to get started? Book a free consultation, and let's create a tailored strategy that's perfect for your goals. Together, we can unlock your business's potential and set the stage for long-term success."
+      },
+      "btnLabel": "Schedule a Free Strategy Session Today"
+    }
+  },
+  "freeConsultation": {
+    "title": "Let’s Build Something Powerful Together"
+  },
+  "tailoredSolutions": {
+    "hero": {
+      "tag": "Let’s Build Your Success Together",
+      "title": "Igniting Growth, Empowering Success",
+      "text": "At Marketfire, we believe that growth isn’t just about marketing — it’s about creating a lasting impact. We work with entrepreneurs, professionals, and personal brands to transform ideas into strategies that scale, engage, and convert.",
+      "text2": "We don’t follow trends — we create them. With a data-driven approach, innovative thinking, and a passion for results, we craft solutions that fuel success at every stage of your journey."
+    },
+    "solutions": {
+      "tag": "Tailored Expertise for Your Industry",
+      "title": "Targeted Consulting Solutions",
+      "text": "We provide expert guidance tailored to your field, helping you optimize visibility, customer acquisition, and revenue generation through targeted consulting.",
+      "btnLabel": "Start Optimizing Your Strategy Today",
+      "label": "Every service is tailored to YOUR business goals.",
+      "values": {
+        "0": {
+          "title": "Coaching & Consulting",
+          "items": {
+            "0": "Personal brand positioning for thought leadership",
+            "1": "High-value lead generation & client acquisition",
+            "2": "Authority-building strategies & trust-based marketing",
+            "3": "Pricing models & service monetization"
+          }
+        },
+        "1": {
+          "title": "E-Commerce & Digital Products",
+          "items": {
+            "0": "Conversion-optimized online store strategies",
+            "1": "Customer experience & sales funnel optimization",
+            "2": "Automated sales & remarketing systems",
+            "3": "Product launch frameworks tailored for niche markets"
+          }
+        },
+        "2": {
+          "title": "Education & Online Courses",
+          "items": {
+            "0": "High-impact course positioning & curriculum structuring",
+            "1": "Digital learning engagement & student retention",
+            "2": "Paid & organic marketing strategies for course creators",
+            "3": "Scaling with membership models & certification programs"
+          }
+        },
+        "3": {
+          "title": "Health, Wellness & Lifestyle Brands",
+          "items": {
+            "0": "Nutrition & wellness coaching",
+            "1": "Yoga & fitness programs",
+            "2": "Holistic health coaching",
+            "3": "Nutrition & wellness products"
+          }
+        },
+        "4": {
+          "title": "Financial & Investment Advisory",
+          "items": {
+            "0": "Financial planning & investment strategies",
+            "1": "Retirement planning & wealth management",
+            "2": "Tax planning & compliance",
+            "3": "Estate planning & legacy strategies"
+          }
+        }
+      }
+    },
+    "successFramework": {
+      "title": "Industry-Focused Success Framework",
+      "annotation": "We don’t just create strategies — we develop frameworks that align with your industry’s core success drivers. Whether you want to grow your client base, increase engagement, or refine your business model, we build custom roadmaps that ensure long-term scalability.",
+      "footerText": "",
+      "tagText": "Crafting Roadmaps for Long-Term Growth",
+      "cards": {
+        "0": {
+          "title": "Data-Driven Market Positioning",
+          "desc": "Understanding where you stand and where you need to be."
+        },
+        "1": {
+          "title": "Customer Behavior & Trend Analysis",
+          "desc": "Identifying key patterns to enhance engagement."
+        },
+        "2": {
+          "title": "Revenue Optimization Strategies",
+          "desc": "Maximizing value through tailored monetization approaches."
+        },
+        "3": {
+          "title": "Growth & Expansion Roadmaps",
+          "desc": "A step-by-step guide to industry dominance."
+        }
+      }
+    },
+    "consultation": {
+      "title": "Let’s Tailor a Strategy for Your Industry",
+      "text": "No two industries are the same — and neither are our solutions. Let’s build a strategy for your unique business, market, and goals. <br /><br /> Get in touch today to discuss your industry-specific growth plan.",
+      "btnLabel": "Get Your Free Consultation Today"
+    }
+  },
+  "caseStudies": {
+    "hero": {
+      "tag": "Solutions for Lasting Entrepreneurial Growth",
+      "title": "Case Studies – Proven Results for Entrepreneurs",
+      "text": "Marketfire specialises in providing customized marketing strategies for entrepreneurs who want to scale their personal brands, increase their visibility, and achieve long-term success. These case studies are just a glimpse of our impact on our clients’ businesses."
+    },
+    "cases": {
+      "caseStudy": "Case Study",
+      "client": "Client",
+      "challenge": "Challenge",
+      "results": "Results",
+      "solution": "Solution",
+      "items": {
+        "0": {
+          "title": "Scaling a Fashion Entrepreneur’s Online Presence",
+          "client": {
+            "name": "Olivia Roberts",
+            "profession": "Fashion Entrepreneur"
+          },
+          "challenge": "Olivia had a div personal style but struggled with low online engagement and limited sales from her online store. She needed help with boosting her visibility and driving sales.",
+          "solution": {
+            "0": {
+              "title": "Brand Positioning & Messaging",
+              "text": "to enhance Olivia’s unique value proposition"
+            },
+            "1": {
+              "title": "SEO & Search Visibility Growth",
+              "text": "to improve her website’s search ranking"
+            },
+            "2": {
+              "title": "PPC & Paid Advertising",
+              "text": "to target fashion-conscious buyers"
+            },
+            "3": {
+              "title": "Social Media Strategy",
+              "text": "to build a more engaged community and grow her brand presence"
+            }
+          },
+          "results": {
+            "0": {
+              "heading": "40%",
+              "text": "increase in website traffic",
+              "text2": "in just two months"
+            },
+            "1": {
+              "heading": "30%",
+              "text": "increase in online sales",
+              "text2": "through optimized ads"
+            },
+            "2": {
+              "heading": "50%",
+              "text": "growth in social media following",
+              "text2": "and engagement"
+            }
+          }
+        },
+        "1": {
+          "title": "Empowering a Health Coach’s Personal Brand",
+          "client": {
+            "name": "David Collins",
+            "profession": "Health Coach & Wellness Expert"
+          },
+          "challenge": "David wanted to build a div online presence to showcase his health coaching services but lacked a cohesive strategy and had little online engagement. He needed guidance to expand his reach and attract more clients.",
+          "solution": {
+            "0": {
+              "title": "Personal Brand Strategy",
+              "text": "to define David’s message and unique offering"
+            },
+            "1": {
+              "title": "Content Creation & Storytelling",
+              "text": "to share David’s expertise through blogs and videos"
+            },
+            "2": {
+              "title": "Social Media Marketing",
+              "text": "to increase his visibility on platforms like Instagram and Facebook"
+            },
+            "3": {
+              "title": "Lead Generation Strategies",
+              "text": "to attract potential clients and boost consultation bookings"
+            }
+          },
+          "results": {
+            "0": {
+              "heading": "60%",
+              "text": "increase in client inquiries",
+              "text2": "within three months"
+            },
+            "1": {
+              "heading": "55%",
+              "text": "growth in social media engagement",
+              "text2": ""
+            },
+            "2": {
+              "heading": "30%",
+              "text": "increase in bookings for one-on-one consultations",
+              "text2": ""
+            }
+          }
+        },
+        "2": {
+          "title": "Launching a Digital Entrepreneur’s Online Course",
+          "client": {
+            "name": "Emily Turner",
+            "profession": "Digital Entrepreneur & Course Creator"
+          },
+          "challenge": "Emily created an online course but struggled to attract customers and drive sales. She needed a launch strategy and marketing plan to generate interest in her course.",
+          "solution": {
+            "0": {
+              "title": "Product Launch Strategy",
+              "text": "to create excitement and anticipation around the course launch"
+            },
+            "1": {
+              "title": "Email Marketing & CRM Optimization",
+              "text": "to nurture leads and convert them into customers"
+            },
+            "2": {
+              "title": "Social Media Advertising",
+              "text": "to reach her target audience and drive course sign-ups"
+            },
+            "3": {
+              "title": "Customer Testimonials & Case Studies",
+              "text": "to build social proof and trust"
+            }
+          },
+          "results": {
+            "0": {
+              "heading": "150",
+              "text": "course sign-ups",
+              "text2": "in the first-month post-launch"
+            },
+            "1": {
+              "heading": "40%",
+              "text": "increase in email open rates",
+              "text2": "through targeted campaigns"
+            },
+            "2": {
+              "heading": "10x",
+              "text": "return on ad spend",
+              "text2": "through effective PPC campaigns"
+            }
+          }
+        },
+        "3": {
+          "title": "Boosting a Personal Trainer’s Online Client Base",
+          "client": {
+            "name": "James Foster",
+            "profession": "Personal Trainer & Fitness Expert"
+          },
+          "challenge": "James had an offline fitness business but wanted to expand his client base by transitioning to online training. He needed help marketing his services to a broader audience and generating leads.",
+          "solution": {
+            "0": {
+              "title": "Social Media Strategy",
+              "text": "to reach new clients on platforms like Instagram and YouTube"
+            },
+            "1": {
+              "title": "Lead Generation & Retargeting",
+              "text": "to convert leads into paying clients"
+            },
+            "2": {
+              "title": "Email Marketing & Client Engagement",
+              "text": "to build relationships and increase retention"
+            },
+            "3": {
+              "title": "Content Strategy & Video Production",
+              "text": "to showcase James’ fitness expertise"
+            }
+          },
+          "results": {
+            "0": {
+              "heading": "50%",
+              "text": "increase in online client inquiries",
+              "text2": ""
+            },
+            "1": {
+              "heading": "35%",
+              "text": "increase in social media engagement",
+              "text2": ""
+            },
+            "2": {
+              "heading": "20%",
+              "text": "increase in revenue",
+              "text2": "from online personal training services"
+            }
+          }
+        },
+        "4": {
+          "title": "Building a Financial Consultant’s Authority",
+          "client": {
+            "name": "Sarah Lee",
+            "profession": "Financial Consultant"
+          },
+          "challenge": "Sarah was an established consultant but lacked an effective online strategy to expand her reach and establish herself as an authority in the financial consulting industry.",
+          "solution": {
+            "0": {
+              "title": "Brand Positioning & Messaging",
+              "text": "to clarify Sarah’s unique value proposition"
+            },
+            "1": {
+              "title": "Content Strategy",
+              "text": "including blog posts and thought-leadership articles"
+            },
+            "2": {
+              "title": "PPC Advertising",
+              "text": "to attract leads in need of financial advice"
+            },
+            "3": {
+              "title": "Social Media Marketing",
+              "text": "to position Sarah as a trusted expert in the field"
+            }
+          },
+          "results": {
+            "0": {
+              "heading": "50%",
+              "text": "increase in qualified leads",
+              "text2": "within the first quarter"
+            },
+            "1": {
+              "heading": "Doubled",
+              "text": "online visibility",
+              "text2": "through targeted PPC campaigns"
+            },
+            "2": {
+              "heading": "Leader",
+              "text": "Positioned as a thought leader",
+              "text2": "with guest articles and speaking engagements"
+            }
+          }
+        }
+      }
+    },
+    "testimonials": {
+      "tag": "Client Testimonials and Success Stories",
+      "title": "What Clients Say About Us",
+      "text": "Here’s how we’ve helped entrepreneurs scale their businesses and achieve their goals.",
+      "items": {
+        "0": {
+          "rating": "5",
+          "testimonial": "Marketifire helped me increase my client base by over 50% in just three months! Their team understood my brand, and their strategy made a real difference.",
+          "author": "Sophia James",
+          "role": "Fitness Coach"
+        },
+        "1": {
+          "rating": "5",
+          "testimonial": "I saw an immediate boost in my sales after working with Marketifire. Their marketing strategies are top-notch, and the results speak for themselves.",
+          "author": "Ryan Williams",
+          "role": "Digital Marketer"
+        },
+        "2": {
+          "rating": "4",
+          "testimonial": "The team at Marketifire helped me get more exposure and manage my client relationships better. While the results were great, I would’ve loved more frequent updates.",
+          "author": "Mia Roberts",
+          "role": "Freelance Writer"
+        },
+        "3": {
+          "rating": "5",
+          "testimonial": "Marketifire’s marketing and growth strategies took my business to the next level. I’m now seeing consistent growth month after month. Highly recommended!",
+          "author": "Lucas Thompson",
+          "role": "E-Commerce Entrepreneur"
+        },
+        "4": {
+          "rating": "5",
+          "testimonial": "I couldn’t be happier with the results! Marketifire’s team provided tailored strategies that helped me build a div online presence and attract the right clients.",
+          "author": "Emma Davis",
+          "role": "Health Consultant"
+        },
+        "5": {
+          "rating": "4",
+          "testimonial": "Great service and excellent strategies. My client retention has improved, and I’m seeing positive results overall. A bit more clarity on the process would’ve made it perfect.",
+          "author": "Noah Clark",
+          "role": "Personal Trainer"
+        }
+      },
+      "btnLabel": "Start Optimizing Your Strategy Today"
+    },
+    "freeSession": {
+      "title": "Ready to Take Your Business to the Next Level?",
+      "text": "At Marketfire, we specialize in helping entrepreneurs grow their personal brands, attract clients, and achieve long-term success. These case studies are just a glimpse of our impact on our clients’ businesses.",
+      "btnLabel": "Schedule a Free Strategy Session Today"
+    }
+  },
+  "helpAndFaq": {
+    "generalQuestions": {
+      "0": {
+        "question": "What services does Marketifire offer?",
+        "answer": "We offer a comprehensive range of business and marketing consulting services, including marketing strategies, performance optimization, business consulting, content creation, digital transformation, and more."
+      },
+      "1": {
+        "question": "Who can benefit from Marketifire’s services?",
+        "answer": "Our services are designed for entrepreneurs and professionals looking to scale their personal brand, improve marketing efforts, and achieve long-term success."
+      },
+      "2": {
+        "question": "How do I get started with Marketifire?",
+        "answer": "Simply reach out through our contact form or book a free consultation with our team to discuss your business goals and challenges. We’ll craft a personalized strategy to meet your needs."
+      },
+      "3": {
+        "question": "What industries do you specialize in?",
+        "answer": "We work with clients across various industries, including e-commerce, consulting, health and wellness, personal branding, digital entrepreneurship, and more. Our strategies are tailored to fit your specific needs."
+      },
+      "4": {
+        "question": "Do I need to have a clear idea of what I want before contacting you?",
+        "answer": "Not at all! We’re here to help you clarify your goals. Whether you know exactly what you need or need guidance, our team is equipped to support you at any stage."
+      },
+      "5": {
+        "question": "How long does it take to see results?",
+        "answer": "The timeline for results can vary depending on the service and scope of the project. Typically, businesses see noticeable improvements within 3-6 months, though some services may show results sooner."
+      }
+    },
+    "servicesPricing": {
+      "0": {
+        "question": "Do you offer any package deals?",
+        "answer": "Yes, we offer flexible service packages that can be tailored to your specific business needs. You can explore our pricing options on our Pricing & Packages page."
+      },
+      "1": {
+        "question": "How do I know which service package is right for me?",
+        "answer": "We recommend scheduling a free consultation so our team can understand your business goals. From there, we’ll guide you in choosing the most suitable package."
+      },
+      "2": {
+        "question": "How do you charge for your services?",
+        "answer": "Our pricing is based on the complexity of the project, the scope of services, and the timeframe. We offer both fixed-rate services and packages with transparent pricing. Custom pricing is available for larger or specialized projects."
+      },
+      "3": {
+        "question": "Do you offer discounts for long-term projects?",
+        "answer": "Yes, we offer flexible pricing options and discounts for long-term collaborations or retainer contracts. Please get in touch with us to discuss your specific needs."
+      },
+      "4": {
+        "question": "Can I change the services I’ve selected after purchasing?",
+        "answer": "Yes, we offer flexibility in adjusting services based on your changing business needs. Please contact us directly to discuss adjustments to your plan."
+      },
+      "5": {
+        "question": "Are there any additional costs besides the listed services?",
+        "answer": "Any additional costs outside of the standard service offerings will be clearly communicated before any work begins. We ensure full transparency in our pricing structure."
+      }
+    },
+    "accountBilling": {
+      "0": {
+        "question": "Do I need to create an account with Marketifire?",
+        "answer": "While it’s not required to book a consultation, creating an account will give you access to track your services, manage your billing information, and keep up with project updates."
+      },
+      "1": {
+        "question": "How can I pay for services?",
+        "answer": "We accept payments through bank transfers. You’ll receive an invoice with detailed payment instructions."
+      },
+      "2": {
+        "question": "Can I get a refund if I’m not satisfied with the service?",
+        "answer": "We are committed to delivering high-quality services tailored to your needs. While we do not offer refunds, if you’re not satisfied with any part of the service, please contact us. We’ll work with you to address any concerns and ensure the best possible outcome for your business."
+      }
+    },
+    "customerSupport": {
+      "0": {
+        "question": "How can I reach you if I need help?",
+        "answer": "You can contact us via email at info@marketifire.com or fill out our contact form on the website. We also offer phone consultations upon request."
+      },
+      "1": {
+        "question": "How long does it take for you to respond to an inquiry?",
+        "answer": "We aim to respond to all inquiries within 24 hours on business days. For more urgent matters, feel free to reach out by phone."
+      },
+      "2": {
+        "question": "Can I schedule a consultation or meeting?",
+        "answer": "Yes, you can schedule a free consultation directly through our website or by contacting us via email. We’ll find a time that works best for you."
+      },
+      "3": {
+        "question": "Do you provide ongoing support after completing a project?",
+        "answer": "Yes, we offer ongoing support for clients, including performance tracking, optimization, and strategy updates to ensure continued success."
+      },
+      "4": {
+        "question": "How can I provide feedback on the services you’ve provided?",
+        "answer": "We value feedback from our clients to improve our services. You can leave a review on our website or contact us directly to share your thoughts."
+      }
+    },
+    "hero": {
+      "title": "Help & FAQs",
+      "tag": "Your Questions Answered",
+      "text": "We understand that clarity is key to making the right decisions for your business. That’s why we’ve compiled answers to the most frequently asked questions to help you better understand our services, processes, and how we can help you grow. If you don’t find what you’re looking for, feel free to reach out directly!"
+    },
+    "needHelp": {
+      "title": "Need More Help?",
+      "text": "If you have more questions or need assistance with a specific issue, don’t hesitate to reach out. We’re here to help you succeed!",
+      "contactUs": "Contact Us",
+      "scheduleFreeConsultation": "Schedule a Free Consultation"
+    }
+  },
+  "commonRequest": {
+    "title": "Get in Touch with Marketfire",
+    "text": "We’re excited to hear from you! Whether you have a question, need expert advice, or are ready to begin a project, our team is here to provide the support and solutions you need. Simply fill out the form below with your details, and we’ll get back to you as soon as possible to discuss how we can help you achieve your business goals."
+  },
+  "contacts": {
+    "socials": {
+      "tag": "Follow Us",
+      "title": "Follow Us on Social Media",
+      "text": "Stay connected with us for updates, tips, and insights:"
+    },
+    "addresses": {
+      "whereWeWork": "Where We Work",
+      "officialCorrespondence": "Official Correspondence"
+    },
+    "contact": {
+      "getInTouch": "Get in Touch",
+      "speakWithUs": "Speak With Us"
+    },
+    "hero": {
+      "tag": "We’re Here to Help You Reach Your Business Goals",
+      "title": "Contacts",
+      "text": "At Marketfire, we believe in providing the right tools and strategies for business growth. Whether you have a question, need guidance, or are ready to start a project, we’re here to assist you every step of the way."
+    }
+  },
+  "dropzone": {
+    "noFileSelected": "No file selected",
+    "chooseFile": "Choose file",
+    "attachDocuments": "Attach any relevant documents, proposals, or briefs (Max size: 10MB)"
+  },
+  "cart": {
+    "cart": "Cart",
+    "cartEmpty": "Your cart is empty.",
+    "browseOurRange": "Browse our range of business and marketing consulting services to find the perfect strategy to elevate your brand and achieve your goals.",
+    "startExploring": "Start Exploring",
+    "emptyCart": "Your cart is empty.",
+    "serviceName": "Service Name",
+    "price": "Price",
+    "quantity": "Quantity",
+    "subtotal": "Subtotal",
+    "proceedToCheckout": "Proceed to Checkout",
+    "total": "Total"
+  },
+  "checkout": {
+    "orderSummary": "Your Order Summary",
+    "total": "Total",
+    "billingDetails": "Billing Details",
+    "info": "After placing an order, you will receive an email with payment instructions, including our bank details and a summary of your purchase",
+    "addInfo": "Additional Information",
+    "sending": "Sending...",
+    "submit": "Submit",
+    "weProcess": "We process your personal data to fulfill your order, enhance your browsing experience, and serve other purposes outlined in our",
+    "privacyPolicy": "Privacy Policy",
+    "modal": {
+      "title": "Thank you for choosing Marketfire!",
+      "text": "Our representative will reach out to you shortly.",
+      "goToHomePage": "GO TO HOME PAGE"
+    },
+    "errors": {
+      "firstName": "First name is required",
+      "lastName": "Last name is required",
+      "email": "Invalid email address",
+      "phone": "Phone is required",
+      "invalidPhone": "Invalid phone number format",
+      "street": "Street is required",
+      "city": "City is required",
+      "zip": "Zip is required",
+      "country": "Country is required",
+      "refundPolicy": "You must agree to the refund policy.",
+      "terms": "You must agree to the terms."
+    },
+    "fields": {
+      "firstName": {
+        "placeholder": "Enter First Name",
+        "label": "First Name"
+      },
+      "lastName": {
+        "placeholder": "Enter Last Name",
+        "label": "Last Name"
+      },
+      "street": {
+        "placeholder": "Enter your address",
+        "label": "Address line 1"
+      },
+      "addressLine2": {
+        "placeholder": "Enter your address",
+        "label": "Address line 2"
+      },
+      "city": {
+        "placeholder": "Enter your city",
+        "label": "City"
+      },
+      "country": {
+        "placeholder": "Select or Enter Your Country",
+        "label": "Country"
+      },
+      "zip": {
+        "placeholder": "Enter your postal code",
+        "label": "Postal code"
+      },
+      "phone": {
+        "placeholder": "Enter your phone number",
+        "label": "Phone number"
+      },
+      "email": {
+        "placeholder": "Enter Your Email",
+        "label": "Email"
+      },
+      "paymentMethod": {
+        "placeholder": "Bank Transfer",
+        "label": "Payment Method"
+      },
+      "message": {
+        "placeholder": "Please write your thoughts...",
+        "label": "Message"
+      },
+      "agreement": {
+        "label": "I have read and agree to the website's Terms and Conditions."
+      },
+      "isDetailsCorrect": {
+        "label": "I have read and agree to the Refund Policy."
+      }
+    }
+  },
+  "account": {
+    "orderHistory": "My Order History",
+    "accountSettings": "Account Settings",
+    "orderId": "Order ID",
+    "orderDate": "Order Date",
+    "services": "Services",
+    "orderStatus": "Order Status",
+    "paymentMethod": "Payment Method",
+    "getInvoice": "Get Invoice",
+    "download": "Download",
+    "personalInfo": {
+      "title": "Personal Information",
+      "save": "Save",
+      "saving": "Saving...",
+      "edit": "Edit",
+      "errors": {
+        "firstName": "Please provide your name",
+        "lastName": "Please provide your last name",
+        "email": "Please provide your email",
+        "phone": "Please provide your phone number",
+        "invalidPhone": "Invalid phone number format"
+      },
+      "fields": {
+        "firstName": {
+          "label": "First Name",
+          "placeholder": "Enter First Name"
+        },
+        "lastName": {
+          "label": "Last Name",
+          "placeholder": "Enter Last Name"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "Enter Your Email"
+        },
+        "phone": {
+          "label": "Phone"
+        },
+        "address": {
+          "label": "Address",
+          "placeholder": "Enter Your Address"
+        },
+        "city": {
+          "label": "City",
+          "placeholder": "Enter Your City"
+        },
+        "zip": {
+          "label": "ZIP",
+          "placeholder": "Enter Your ZIP"
+        },
+        "country": {
+          "label": "Country",
+          "placeholder": "Select or Enter Your Country"
+        }
+      }
+    },
+    "changePassword": {
+      "title": "Account Access",
+      "edit": "Edit",
+      "editing": "Editing...",
+      "errors": {
+        "password": "Password must be at least 6 characters long",
+        "confirmPassword": "Retype Password must be at least 6 characters",
+        "passwordsDoNotMatch": "The passwords do not match"
+      },
+      "fields": {
+        "password": {
+          "label": "New Password",
+          "placeholder": "Enter New Password"
+        },
+        "confirmPassword": {
+          "label": "Confirm New Password",
+          "placeholder": "Confirm New Password"
+        }
+      }
+    }
+  },
+  "table": {
+    "noData": "No Data"
+  },
+  "pricingPackages": {
+    "hero": {
+      "tag": "Choose the Solution That Best Fits Your Objectives",
+      "title": "Pricing & Packages",
+      "text": "We offer customized solutions for entrepreneurs at every growth stage. Whether you need a single solution or a full-service package, we have the right plan to meet your needs. Our pricing structure ensures flexibility and transparency, giving you various options based on your budget and goals."
+    },
+    "hide": "Hide",
+    "open": "Open",
+    "from": "From",
+    "inCart": "In Cart",
+    "buy": "Buy",
+    "order": "Order",
+    "addedToCart": "added to cart",
+    "marketingStrategies": {
+      "title": "Marketing & Growth Strategies",
+      "0": {
+        "title": "Market Research & Competitive Analysis",
+        "description": "Deep insights into your industry and competitors.",
+        "price": "1400"
+      },
+      "1": {
+        "title": "Brand Positioning & Messaging",
+        "description": "Crafting your unique value proposition for maximum impact.",
+        "price": "1500"
+      },
+      "2": {
+        "title": "Digital & Traditional Advertising",
+        "description": "Multi-channel campaigns that engage and convert.",
+        "price": "2400"
+      },
+      "3": {
+        "title": "Product Launch Strategy",
+        "description": "Comprehensive plans for successful product introductions.",
+        "price": "2900"
+      },
+      "4": {
+        "title": "Customer Segmentation Strategy",
+        "description": "Identifying key customer segments to target with tailored marketing.",
+        "price": "1200"
+      },
+      "5": {
+        "title": "Brand Identity Design",
+        "description": "Crafting a unique visual and verbal identity for your business.",
+        "price": "2500"
+      },
+      "6": {
+        "title": "Local Market Penetration",
+        "description": "Targeting regional and local markets for stronger community engagement.",
+        "price": "3450"
+      },
+      "7": {
+        "title": "Strategic Partnership Development",
+        "description": "Identifying and forming valuable partnerships to scale your brand.",
+        "price": "2550"
+      }
+    },
+    "performanceMarketing": {
+      "title": "Performance Marketing & Conversion Optimization",
+      "0": {
+        "title": "SEO & Search Visibility Growth",
+        "description": "Boosting your organic search rankings to attract high-quality traffic.",
+        "price": "1300"
+      },
+      "1": {
+        "title": "PPC & Paid Advertising",
+        "description": "Creating highly effective ad campaigns that deliver fast results.",
+        "price": "2650"
+      },
+      "2": {
+        "title": "Website & Funnel Optimization",
+        "description": "Optimizing user flows to maximize conversions and sales.",
+        "price": "2000"
+      },
+      "3": {
+        "title": "Data-Driven Sales Strategies",
+        "description": "Implementing strategies that guide and convert prospects effectively.",
+        "price": "1500"
+      },
+      "4": {
+        "title": "Landing Page Optimization",
+        "description": "Designing high-converting landing pages tailored to your audience.",
+        "price": "1270"
+      },
+      "5": {
+        "title": "Retargeting & Remarketing Campaigns",
+        "description": "Re-engaging past visitors to increase conversions.",
+        "price": "1750"
+      },
+      "6": {
+        "title": "Lead Generation Tactics",
+        "description": "Capturing high-quality leads through smart targeting strategies.",
+        "price": "2100"
+      },
+      "7": {
+        "title": "A/B Testing & Performance Tracking",
+        "description": "Continuously improving your campaigns with data insights.",
+        "price": "2550"
+      }
+    },
+    "businessConsulting": {
+      "title": "Business Consulting & Expansion Planning",
+      "0": {
+        "title": "Market Entry & Expansion Strategies",
+        "description": "Comprehensive plans for entering new markets or launching new products.",
+        "price": "2600"
+      },
+      "1": {
+        "title": "Customer Acquisition & Retention Plans",
+        "description": "Building sustainable growth through effective lead generation and loyalty tactics.",
+        "price": "1500"
+      },
+      "2": {
+        "title": "Revenue Model Optimization",
+        "description": "Refining your business model to increase profitability and scalability.",
+        "price": "2350"
+      },
+      "3": {
+        "title": "Business Process Automation",
+        "description": "Streamlining operations to save time and improve efficiency.",
+        "price": "3650"
+      },
+      "4": {
+        "title": "Strategic Business Planning",
+        "description": "Helping you define your growth and long-term success roadmap.",
+        "price": "2450"
+      },
+      "5": {
+        "title": "Financial Forecasting & Budgeting",
+        "description": "Projecting and managing business growth and expenditures effectively.",
+        "price": "1600"
+      },
+      "6": {
+        "title": "Organizational Design & Development",
+        "description": "Structuring your team for maximum productivity and growth.",
+        "price": "2600"
+      },
+      "7": {
+        "title": "Competitive Market Intelligence",
+        "description": "Gathering industry trends, competitor strategies, and market dynamics insights.",
+        "price": "2700"
+      }
+    },
+    "contentAudience": {
+      "title": "Content & Audience Engagement",
+      "0": {
+        "title": "Social Media & Community Growth",
+        "description": "Growing your social presence and creating active, engaged communities.",
+        "price": "1100"
+      },
+      "1": {
+        "title": "Influencer & Affiliate Marketing",
+        "description": "Leveraging trusted influencers and affiliates to extend your reach.",
+        "price": "1900"
+      },
+      "2": {
+        "title": "Email & CRM Optimization",
+        "description": "Nurturing customer relationships with targeted email marketing and CRM strategies.",
+        "price": "1150"
+      },
+      "3": {
+        "title": "High-Impact Content Creation & Storytelling",
+        "description": "Crafting content that informs, engages, and converts your audience.",
+        "price": "1200"
+      },
+      "4": {
+        "title": "Video Content Strategy",
+        "description": "Creating engaging video content that resonates and drives conversions.",
+        "price": "1300"
+      },
+      "5": {
+        "title": "Blogging & Thought Leadership",
+        "description": "Positioning your brand as an industry authority through consistent, high-quality content.",
+        "price": "2450"
+      },
+      "6": {
+        "title": "Social Media Ad Campaigns",
+        "description": "Leveraging platforms like Facebook, Instagram, and LinkedIn to generate targeted leads.",
+        "price": "1500"
+      },
+      "7": {
+        "title": "Customer Testimonial & Case Study Creation",
+        "description": "Showcasing your success through compelling customer stories.",
+        "price": "1150"
+      }
+    },
+    "digitalTransformation": {
+      "title": "Automation & Digital Transformation",
+      "0": {
+        "title": "AI & Marketing Automation",
+        "description": "Using AI-driven tools to automate marketing processes and save time.",
+        "price": "2600"
+      },
+      "1": {
+        "title": "CRM & Customer Journey Optimization",
+        "description": "Designing customer journeys that lead to long-term loyalty and growth.",
+        "price": "2450"
+      },
+      "2": {
+        "title": "Chatbot & Lead Nurturing Flows",
+        "description": "Implementing automated systems for customer support and lead nurturing.",
+        "price": "1550"
+      },
+      "3": {
+        "title": "Performance Analytics & Reporting",
+        "description": "Monitoring and analyzing key metrics to improve and refine strategies.",
+        "price": "1500"
+      },
+      "4": {
+        "title": "Sales Process Automation",
+        "description": "Streamlining your sales funnel to boost efficiency and close rates.",
+        "price": "1550"
+      },
+      "5": {
+        "title": "Customer Data Integration",
+        "description": "Combining your data sources to create a single view of your customer journey.",
+        "price": "1600"
+      },
+      "6": {
+        "title": "Workflow Automation",
+        "description": "Automating internal business processes to save time and increase productivity.",
+        "price": "1800"
+      },
+      "7": {
+        "title": "Custom API Development",
+        "description": "Integrating different tools and platforms to create a cohesive workflow for your business.",
+        "price": "2700"
+      }
+    },
+    "strategicGrowth": {
+      "title": "Strategic Growth & Competitive Edge",
+      "0": {
+        "title": "Personal Brand & Omni-Channel Growth",
+        "description": "Helping individuals build and scale their personal brands across all channels.",
+        "price": "1580"
+      },
+      "1": {
+        "title": "Lead Building & Audience Retention Strategies",
+        "description": "Developing strategies to attract new leads and maintain lasting relationships.",
+        "price": "1640"
+      },
+      "2": {
+        "title": "Sales Strategies for Entrepreneurs",
+        "description": "Tailored sales tactics to help you grow and scale your business.",
+        "price": "1450"
+      },
+      "3": {
+        "title": "Tailored Marketing & Monetization Plans",
+        "description": "Creating strategies that maximize your business’s profitability and growth potential.",
+        "price": "1600"
+      },
+      "4": {
+        "title": "Business Valuation & Exit Strategy",
+        "description": "Planning for your long-term business goals and potential exit.",
+        "price": "2600"
+      },
+      "5": {
+        "title": "Strategic Partnership & Collaboration",
+        "description": "Identifying opportunities for alliances to help you scale.",
+        "price": "2500"
+      },
+      "6": {
+        "title": "Market Differentiation Strategy",
+        "description": "Helping you stand out in a crowded market with unique selling propositions.",
+        "price": "2750"
+      },
+      "7": {
+        "title": "Long-Term Growth & Sustainability Plans",
+        "description": "Building strategies for continuous innovation and sustained growth.",
+        "price": "1950"
+      }
+    },
+    "servicePackages": {
+      "title": "Our Comprehensive Service Offerings",
+      "description": "Marketfire combines data, strategy, and execution to deliver a full suite of consulting services designed to unlock your brand's full potential.",
+      "orderNow": "Order now",
+      "packages": {
+        "0": {
+          "title": "Ignite Your Brand",
+          "description": "Perfect for startups, solopreneurs, or those new to the market, this package focuses on building visibility, engaging your audience, and laying the foundation for future success. A great way to kick-start your marketing with targeted strategies that get results quickly.",
+          "includes": {
+            "0": {
+              "title": "Market Research & Competitive Analysis",
+              "description": "Understand your market landscape and competitors to inform decisions."
+            },
+            "1": {
+              "title": "Brand Positioning & Messaging",
+              "description": "Craft your unique value proposition and refine your brand’s voice."
+            },
+            "2": {
+              "title": "SEO & Search Visibility Growth",
+              "description": "Boost your website’s organic search ranking and visibility."
+            },
+            "3": {
+              "title": "Social Media & Community Growth",
+              "description": "Build an active and engaged audience across social platforms."
+            },
+            "4": {
+              "title": "Content Strategy",
+              "description": "Develop engaging content that aligns with your brand and audience."
+            }
+          }
+        },
+        "1": {
+          "title": "Accelerate Growth",
+          "description": "Ideal for small-to-medium projects looking to expand their reach, increase conversions, and build lasting relationships with their target audience. This package focuses on optimization and performance, ensuring that your growth is measurable and sustainable.",
+          "includes": {
+            "0": {
+              "title": "Package 'Ignite Your Brand'"
+            },
+            "1": {
+              "title": "SEO & Search Visibility Growth",
+              "description": "Enhance your rankings and attract high-quality organic traffic."
+            },
+            "2": {
+              "title": "PPC & Paid Advertising Campaigns",
+              "description": "Implement targeted ads that drive traffic and increase conversions."
+            },
+            "3": {
+              "title": "Content Creation & Storytelling",
+              "description": "Craft compelling content that connects with your audience on a deeper level."
+            },
+            "4": {
+              "title": "Customer Acquisition & Retention Plans",
+              "description": "Build systems to attract and retain loyal customers."
+            },
+            "5": {
+              "title": "Email & CRM Optimization",
+              "description": "Improve customer relationships and email marketing strategies."
+            },
+            "6": {
+              "title": "Conversion Rate Optimization (CRO)",
+              "description": "Maximize your website’s ability to convert visitors into paying customers."
+            }
+          }
+        },
+        "2": {
+          "title": "Scale & Optimize",
+          "description": "For projects ready to scale, this package includes advanced growth strategies and optimization to ensure that every part of your business is working toward accelerating your success. Perfect for those who need to optimize their entire ecosystem for more revenue and deeper engagement.",
+          "includes": {
+            "0": {
+              "title": "Package 'Accelerate Growth'"
+            },
+            "1": {
+              "title": "PPC & Paid Advertising Campaigns",
+              "description": "Implement targeted ads that drive traffic and increase conversions."
+            },
+            "2": {
+              "title": "Market Entry & Expansion Strategies",
+              "description": "Break into new markets with tailored plans for expansion."
+            },
+            "3": {
+              "title": "Lead Building & Audience Retention Strategies",
+              "description": "Develop effective lead generation and retention systems."
+            },
+            "4": {
+              "title": "CRM & Customer Journey Optimization",
+              "description": "Streamline the customer experience from first contact to long-term loyalty."
+            },
+            "5": {
+              "title": "Business Process Automation",
+              "description": "Save time and resources by automating key business functions."
+            },
+            "6": {
+              "title": "Performance Analytics & Reporting",
+              "description": "Track results and continuously optimize strategies."
+            },
+            "7": {
+              "title": "Revenue Model & Pricing Strategy Optimization",
+              "description": "Maximize profitability through pricing and value proposition strategies."
+            },
+            "8": {
+              "title": "Sales Funnel Optimization",
+              "description": "Refine your sales process to increase conversions and customer lifetime value."
+            }
+          }
+        },
+        "3": {
+          "title": "Ultimate Success Blueprint",
+          "description": "For brands aiming for maximum growth and long-term scalability, this all-encompassing package combines full-service consulting, advanced automation, and performance marketing to ensure continuous success. Ideal for projects that want to dominate their market and build a strong, sustainable brand.",
+          "includes": {
+            "0": {
+              "title": "Package 'Scale & Optimize'"
+            },
+            "1": {
+              "title": "Full Branding Strategy (Positioning & Messaging)",
+              "description": "Create a distinct and memorable brand identity."
+            },
+            "2": {
+              "title": "Product Launch Strategy & Market Research",
+              "description": "Plan and execute successful product launches that captivate your market."
+            },
+            "3": {
+              "title": "SEO & Search Visibility Growth",
+              "description": "Secure top rankings and increase organic traffic."
+            },
+            "4": {
+              "title": "PPC & Paid Advertising Campaigns",
+              "description": "Achieve targeted ad success with expertly managed paid campaigns."
+            },
+            "5": {
+              "title": "Content & Social Media Strategy",
+              "description": "Build a consistent, high-impact content strategy across platforms."
+            },
+            "6": {
+              "title": "Business Expansion & Revenue Model Optimization",
+              "description": "Scale your business through optimized revenue streams."
+            },
+            "7": {
+              "title": "AI & Marketing Automation",
+              "description": "Utilize cutting-edge automation to streamline your marketing and operations."
+            },
+            "8": {
+              "title": "Lead Nurturing & Performance Analytics",
+              "description": "Implement data-driven strategies for continuous growth and optimization."
+            }
+          }
+        }
+      }
+    }
+  },
+  "downloadPrice": {
+    "title": "Download Full Price List",
+    "description": "All the pricing details you need are already listed here on the page. If you'd like to have a PDF version for your reference, feel free to download the full price list. Everything is clearly outlined for you to make an informed decision!",
+    "download": "Download Price List in PDF"
+  },
+  "orderModal": {
+    "title": "Thank you!",
+    "description": "Your request for our service package has been successfully submitted. Our team will review the information provided and get in touch with you shortly to discuss the next steps and how we can assist you.",
+    "service": "Service Request Form",
+    "package": "Package Request Form",
+    "close": "Close"
+  },
+  "orderForm": {
+    "sending": "Sending...",
+    "submit": "Submit",
+    "errors": {
+      "firstName": "First name is required",
+      "lastName": "Last name is required",
+      "phone": "Phone is required",
+      "invalidPhone": "Invalid phone number format",
+      "invalidEmail": "Invalid email address"
+    },
+    "fields": {
+      "firstName": {
+        "label": "First Name",
+        "placeholder": "Enter First Name"
+      },
+      "lastName": {
+        "label": "Last Name",
+        "placeholder": "Enter Last Name"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "Enter Your Email"
+      },
+      "phone": {
+        "label": "Phone"
+      },
+      "website": {
+        "label": "Your Website (optional)",
+        "placeholder": "Enter your website URL"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Please write your thoughts..."
+      }
+    }
+  },
+  "insights": {
+    "hero": {
+      "tag": "Knowledge to Fuel Your Growth",
+      "title": "Insights",
+      "description": "Welcome to Marketifire’s Insights page, where we share valuable articles, tips, and strategies to help entrepreneurs thrive. Stay updated on the latest marketing trends, business growth tactics, and industry insights that will help you optimize your approach and achieve long-term success. Explore our articles below to discover proven methods and actionable advice."
+    },
+    "freeConsultation": {
+      "description": "Marketfire isn’t just another marketing consultancy — we are your partners in growth. Let’s get started today if you’re ready to elevate your brand, expand your audience, and drive revenue.",
+      "button": "Get Your Free Consultation Today"
+    }
+  },
+  "policies": {
+    "cookiePolicy": "Cookie Policy",
+    "privacyPolicy": "Privacy Policy",
+    "termsAndConditions": "Terms & Conditions",
+    "refundPolicy": "Refund Policy"
+  },
+  "cookiePopup": {
+    "title": "Cookie settings",
+    "text": "This site uses cookies for analytics and personalized content. By accepting, you agree to the use of cookies. You can read more in our",
+    "link": "Cookie Policy",
+    "accept": "Accept",
+    "decline": "Decline"
+  },
+  "footer": {
+    "quickNavigation": "Quick Navigation",
+    "ourExpertise": "Our Expertise",
+    "supportResources": "Support & Resources",
+    "legal": "Legal & Compliance",
+    "office": "Office address",
+    "registeredAddress": "Registered address",
+    "registeredNumber": "Registered number",
+    "allRightsReserved": "All Rights Reserved."
+  }
+}

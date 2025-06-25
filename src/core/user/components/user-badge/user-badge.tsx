@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useMemo } from 'react';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 import { useLoginModalStore } from '@/core/auth/services/auth.store';
 import { logout } from '@/core/auth/services/logout.action';
@@ -18,6 +19,8 @@ import { useUserStore } from '../../services';
 import st from './user-badge.module.scss';
 
 export function UserBadge({ className }: { className?: string }) {
+  const t = useTranslations('header');
+
   const { setOpen } = useLoginModalStore();
   const { user, setUser } = useUserStore();
 
@@ -42,7 +45,7 @@ export function UserBadge({ className }: { className?: string }) {
   return user ? (
     <>
       <Button variant="yellow" className={st.logout} onClick={logoutHandler}>
-        LOG OUT <ExitIcon />
+        {t('logout')} <ExitIcon />
       </Button>
       <Link href="/account" className={cn(st.badge, className)}>
         <Text color="black" weight={400} uppercase>
@@ -57,7 +60,7 @@ export function UserBadge({ className }: { className?: string }) {
       className={st.btnWithIcon}
       onClick={() => setOpen(true)}
     >
-      <Text uppercase>Login</Text>
+      <Text uppercase>{t('login')}</Text>
       <SignInIcon />
     </Button>
   );

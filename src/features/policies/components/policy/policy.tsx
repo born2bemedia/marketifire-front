@@ -6,7 +6,7 @@ import { getPolicy } from '@/features/policies/services';
 
 import { Hero } from './hero';
 import st from './policy.module.scss';
-import { PulsingEllipse } from '@/app/request-form/components';
+import { PulsingEllipse } from '@/app/[locale]/request-form/components';
 
 export async function Policy({ id, title }: { title: string; id: string }) {
   const res = await getPolicy({ id });

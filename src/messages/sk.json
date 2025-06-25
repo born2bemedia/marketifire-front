@@ -1,0 +1,1848 @@
+{
+  "cart": {
+    "cart": "Vozík\n",
+    "price": "Cena\n",
+    "total": "Celkom\n",
+    "quantity": "Množstvo\n",
+    "subtotal": "Medzisúčet\n",
+    "cartEmpty": "Váš košík je prázdny.\n",
+    "emptyCart": "Váš košík je prázdny.\n",
+    "serviceName": "Názov služby\n",
+    "browseOurRange": "Prezrite si našu ponuku podnikateľských a marketingových poradenských služieb a nájdite dokonalú stratégiu na pozdvihnutie vašej značky a dosiahnutie vašich cieľov.\n",
+    "startExploring": "Začnite objavovať\n",
+    "proceedToCheckout": "Prejsť k pokladni\n"
+  },
+  "home": {
+    "hero": {
+      "title": "Marketifire – Palivo pre váš obchodný a marketingový úspech\n",
+      "btnLabel": "Získajte bezplatnú konzultáciu\n",
+      "description": "S poradenstvom šitým na mieru v oblasti podnikania a marketingu pomáhame firmám urýchliť rast, optimalizovať marketingové aktivity a budovať trvalé vzťahy so zákazníkmi. Či už začínate, rozširujete svoje pôsobenie alebo zdokonaľujete svoju stratégiu, Marketifire je váš partner pre úspech.\n"
+    },
+    "whyOptions": {
+      "btnLabel": "Získajte bezplatnú konzultáciu\n"
+    },
+    "howWeDeliver": {
+      "tag": "Náš prístup k merateľnému úspechu\n",
+      "cards": {
+        "0": {
+          "desc": "Poskytujeme personalizované obchodné a marketingové stratégie pre jednotlivcov, freelancerov a podnikateľov, ktorí chcú posilniť svoju osobnú značku, pritiahnuť klientov a zvýšiť príjmy prostredníctvom konzultácií založených na dátach.\n",
+          "title": "Ako Marketifire pomáha jednotlivcom rásť?\n"
+        },
+        "1": {
+          "desc": "Špecializujeme sa na pomoc profesionálom, digitálnym tvorcom, konzultantom a živnostníkom pri optimalizácii ich marketingových, predajných a obchodných rastových stratégií. Či už spúšťate svoju značku, alebo rozširujete existujúcu, vytvárame realizovateľné riešenia, ktoré fungujú.\n",
+          "title": "Kto môže mať prospech zo služieb Marketifire?\n"
+        },
+        "2": {
+          "desc": "Rozhodne! Poskytujeme nepretržitú optimalizáciu, sledovanie analytických údajov a reportovanie výkonu, aby sme zaistili váš dlhodobý úspech. Naše služby sa vyvíjajú spolu s vašimi cieľmi, takže máte vždy k dispozícii najefektívnejšie stratégie.\n",
+          "title": "Ponúkate priebežnú podporu a aktualizácie stratégie?\n"
+        },
+        "3": {
+          "desc": "Áno! Každá stratégia, ktorú vytvoríme, je prispôsobená vašim jedinečným potrebám, cieľovej skupine a fáze rastu. Analyzujeme váš trh, definujeme príležitosti a poskytujeme podrobné pokyny, ktoré vám pomôžu dosiahnuť trvalý úspech.\n",
+          "title": "Môžem dostať plne personalizovaný marketingový plán?\n"
+        }
+      },
+      "label": "Máte ďalšie otázky? Kontaktujte nás!\n",
+      "title": "Zistite, ako dosahujeme výsledky\n",
+      "btnLabel": "Napíšte nám.\n"
+    },
+    "seeOurImpact": {
+      "tag": "Osvedčený úspech v praxi\n",
+      "text": "V Marketifire neveríme na univerzálne riešenia. Tvoríme stratégie podložené prieskumom trhu, analytikou a testovaním v reálnom svete.\n",
+      "cards": {
+        "0": {
+          "desc": "Každá stratégia je podložená dátami.\n",
+          "title": "Skutočné poznatky, nie dohady.\n"
+        },
+        "1": {
+          "desc": "Navrhnuté pre rast v každej fáze.\n",
+          "title": "Adaptabilný a škálovateľný\n"
+        },
+        "2": {
+          "desc": "Znížte náklady a maximalizujte výsledky.\n",
+          "title": "Optimalizované pre návratnosť investícií.\n"
+        },
+        "3": {
+          "desc": "Pomáhame implementovať, nielen radiť.\n",
+          "title": "Realizovateľná implementácia\n"
+        }
+      },
+      "label": "Vaše podnikanie, transformované s precíznosťou a stratégiou.\n",
+      "title": "Pozrite si náš vplyv – Preštudujte si príbehy o úspechu našich klientov\n",
+      "btnLabel": "Ponorte sa do prípadových štúdií.\n"
+    },
+    "seamlessSuccess": {
+      "tag": "Spojenie stratégie a realizácie\n",
+      "text": "Pomáhame preklenúť priepasť medzi marketingom, predajom a prevádzkou, aby sme zabezpečili plynulý, efektívny a dlhodobý rast vašej značky.\n",
+      "title": "Zosúlaďujeme obchod a marketing pre bezproblémový úspech.\n",
+      "btnLabel": "Naplánujte si bezplatnú strategickú konzultáciu ešte dnes.\n",
+      "expandMarkets": "Rozšírte sa na nové trhy s istotou\n",
+      "maximizeValue": "Maximalizujte hodnotu a udržanie zákazníka.\n",
+      "integrateSales": "Integrujte predaj a marketing pre vyššiu konverziu.\n",
+      "userPerformance": "Používajte Performance Insights na inteligentnejšie rozhodovanie.\n"
+    },
+    "providedServices": {
+      "growth": "Merateľný rast\n",
+      "tactics": "Overené taktiky\n",
+      "strategies": "Stratégie na mieru\n"
+    },
+    "whyBusinessesTrust": {
+      "cards": {
+        "0": {
+          "desc": "Priemerný nárast online interakcie klientov\n",
+          "title": "+200 %"
+        },
+        "1": {
+          "desc": "Zníženie plytvania v marketingových výdavkoch\n",
+          "title": "+35 %\n"
+        },
+        "2": {
+          "desc": "Priem. nárast zapojenia klientov online\n",
+          "title": "96%\n"
+        },
+        "3": {
+          "desc": "Rast počtu kvalifikovaných leadov pre startupy\n",
+          "title": "+50 %\n"
+        }
+      },
+      "title": "Prečo podniky dôverujú Marketifire?\n",
+      "tagText": "Výsledky, na ktoré sa môžete spoľahnúť.\n",
+      "annotation": "Možno sme mladá agentúra, ale prinášame odborné znalosti z odvetvia, inovatívne riešenia a stratégie orientované na výsledky, ktorým podniky dôverujú.\n",
+      "footerText": "Váš rast, naša priorita. Poďme na to!\n"
+    },
+    "ourServiceOfferings": {
+      "tag": "Riešenia šité na mieru pre každú potrebu\n",
+      "text": "Marketifire spája dáta, stratégiu a realizáciu, aby poskytoval kompletný balík poradenských služieb, ktoré sú navrhnuté tak, aby naplno odomkli potenciál vašej značky.\n",
+      "label": "Každú službu prispôsobujeme CIEĽOM VÁŠHO podnikania.\n",
+      "title": "Naše komplexné ponuky služieb\n",
+      "btnLabel": "Začnite optimalizovať svoju stratégiu ešte dnes.\n",
+      "services": {
+        "0": {
+          "items": {
+            "0": "Prieskum trhu a konkurenčná analýza\n",
+            "1": "Stratégia umiestnenia značky a tvorby správ\n",
+            "2": "Digitálna a tradičná reklama\n",
+            "3": "Stratégia uvedenia produktu na trh\n"
+          },
+          "title": "Marketingové a rastové stratégie\n"
+        },
+        "1": {
+          "items": {
+            "0": "SEO & Rast viditeľnosti vo vyhľadávaní\n",
+            "1": "PPC & platené reklamné kampane\n",
+            "2": "Optimalizácia webovej stránky a predajného lievika\n",
+            "3": "Stratégie predaja založené na dátach\n"
+          },
+          "title": "Výkonnostný marketing a optimalizácia konverzií\n"
+        },
+        "2": {
+          "items": {
+            "0": "Stratégie vstupu na trh a expanzie\n",
+            "1": "Plány akvizície a udržania zákazníkov\n",
+            "2": "Optimalizácia modelu príjmov\n",
+            "3": "Automatizácia podnikových procesov\n"
+          },
+          "title": "Podnikové poradenstvo a plánovanie expanzie\n"
+        },
+        "3": {
+          "items": {
+            "0": "Sociálne médiá a rast komunity\n",
+            "1": "Influencer a affiliate marketing\n",
+            "2": "Optimalizácia e-mailov a CRM\n",
+            "3": "Vplyvný obsah a rozprávanie príbehov\n"
+          },
+          "title": "Obsah a Zapojenie Publikum\n"
+        },
+        "4": {
+          "items": {
+            "0": "Marketingová automatizácia riadená umelou inteligenciou.\n",
+            "1": "Integrácia CRM a e-mailového marketingu\n",
+            "2": "Automatizované predajné lieviky\n",
+            "3": "Štatistiky a reporting založené na dátach\n"
+          },
+          "title": "Automatizácia a digitálna transformácia\n"
+        },
+        "5": {
+          "items": {
+            "0": "Osobná značka a omnikanálový rast\n",
+            "1": "Stratégie budovania základne potenciálnych zákazníkov a udržania si publika",
+            "2": "Predajné stratégie pre podnikateľov\n",
+            "3": "Marketingové a monetizačné plány šité na mieru.\n"
+          },
+          "title": "Strategický rast & konkurenčná výhoda\n"
+        }
+      }
+    },
+    "insightsAndExecution": {
+      "cards": {
+        "0": {
+          "desc": "Priemerný nárast udržania zákazníkov pre klientov\n",
+          "title": "+40 %\n"
+        },
+        "1": {
+          "desc": "Vyššia miera zapojenia v digitálnych kampaniach\n",
+          "title": "2-krát\n"
+        },
+        "2": {
+          "desc": "Rýchlejšia návratnosť investícií do marketingu s plánmi založenými na dátach\n",
+          "title": "85%\n"
+        }
+      },
+      "title": "Úspech postavený na postrehoch a realizácii\n",
+      "tagText": "Rast prostredníctvom dát\n",
+      "annotation": "Marketifire vytvára škálovateľné marketingové riešenia, ktoré pomáhajú firmám generovať potenciálnych zákazníkov, starať sa o existujúcich zákazníkov a zvyšovať ich celoživotnú hodnotu.\n",
+      "footerText": "Tvoj rast začína už teraz – poďme si vytvoriť plán, ktorý funguje!\n"
+    },
+    "transformYourBusiness": {
+      "tag": "Uvoľnite potenciál svojej značky.\n",
+      "text": "Máte problémy získať trakciu, zvýšiť konverzie alebo optimalizovať marketingové výdavky? Naši experti vytvárajú holistické stratégie založené na návratnosti investícií, navrhnuté pre dlhodobý úspech.\n",
+      "steps": {
+        "0": {
+          "desc": "Buďte videní tam, kde na tom najviac záleží.\n",
+          "title": "Zvýšte viditeľnosť značky\n"
+        },
+        "1": {
+          "desc": "Premeňte návštevníkov na zákazníkov bez námahy.\n",
+          "title": "Optimalizujte získavanie potenciálnych zákazníkov.\n"
+        },
+        "2": {
+          "desc": "Maximalizujte návratnosť marketingových investícií rozhodnutiami podloženými dátami.\n",
+          "title": "Zlepšite digitálnu výkonnosť\n"
+        },
+        "3": {
+          "desc": "Vytvorte stratégie, ktoré sa dajú škálovať s vaším podnikaním.\n",
+          "title": "Podporujte trvalo udržateľný rast\n"
+        }
+      },
+      "title": "Transformujte svoje podnikanie s odbornými znalosťami Marketifire.\n",
+      "btnLabel": "Získajte bezplatnú konzultáciu\n",
+      "readyToElevate": "Pripravení posunúť vaše podnikanie na vyššiu úroveň?\n"
+    }
+  },
+  "about": {
+    "hero": {
+      "tag": "Spoločne vybudujme váš úspech.\n",
+      "text": "V Marketifire veríme, že rast nie je len o marketingu — je o vytváraní trvalého dopadu. Spolupracujeme s podnikateľmi, profesionálmi a osobnými značkami, aby sme premenili nápady na stratégie, ktoré sa škálujú, zapájajú a konvertujú.\n",
+      "text2": "My trendy nenasledujeme – my ich vytvárame. Vďaka prístupu založenému na dátach, inovatívnemu mysleniu a vášni pre výsledky vytvárame riešenia, ktoré podporujú úspech v každej fáze vašej cesty.\n",
+      "title": "Zažínanie rastu, posilňovanie úspechu.\n"
+    },
+    "ourMission": {
+      "text": "Či už budujete svoju značku od nuly alebo sa snažíte optimalizovať svoju digitálnu prítomnosť, sme tu, aby sme vás sprevádzali na každom kroku.\n",
+      "title": "Naša misia\n",
+      "description": "Poskytovať jednotlivcom a firmám prispôsobené marketingové a obchodné stratégie, ktoré podporujú skutočný rast, zvyšujú viditeľnosť značky a maximalizujú potenciál príjmov.\n"
+    },
+    "contactBlock": {
+      "text": "Marketifire nie je len ďalšia marketingová poradenská spoločnosť – sme vaši partneri v raste. Ak ste pripravení pozdvihnúť svoju značku, rozšíriť svoje publikum a zvýšiť príjmy, začnime ešte dnes.\n\nKontaktujte nás, aby sme prediskutovali vaše ciele a urobili prvý krok k realizácii vašej vízie.\n",
+      "title": "Postavme spolu niečo silné.\n",
+      "btnLabel": "Získajte bezplatnú konzultáciu ešte dnes\n"
+    },
+    "whatSetsApart": {
+      "tag": "Inovatívne riešenia pre jedinečné výzvy\n",
+      "label": "Pripravení posunúť vaše podnikanie na vyššiu úroveň?\n",
+      "steps": {
+        "0": {
+          "desc": "Každý podnik je jedinečný a rovnako aj naše riešenia. Žiadne všeobecné postupy — len stratégie na mieru, navrhnuté pre vaše ciele.\n",
+          "title": "Stratégie na mieru, nie šablóny.\n"
+        },
+        "1": {
+          "desc": "Analyzujeme, optimalizujeme a zdokonaľujeme každú stratégiu, aby sme zabezpečili maximálny dopad. Čísla neklamú a nechávame sa viesť dátami.\n",
+          "title": "Rozhodovanie na základe dát\n"
+        },
+        "2": {
+          "desc": "Od prieskumu trhu a tvorby obsahu až po optimalizáciu konverzií a automatizáciu, pokrývame každý aspekt vašej cesty rastu.\n",
+          "title": "Komplexná odbornosť\n"
+        },
+        "3": {
+          "desc": "Nielenže vám radíme, ale sa s vami staviame do partnerstva, aby sme realizovali a dosiahli merateľné výsledky.\n",
+          "title": "Váš úspech je náš úspech.\n"
+        }
+      },
+      "title": "Čím sa odlišujeme?\n",
+      "btnLabel": "Získajte bezplatnú konzultáciu\n",
+      "description": "Neveríme v univerzálne riešenia. V Marketifire je každá stratégia vytvorená na mieru tak, aby vyhovovala vašim jedinečným cieľom. S dátovo orientovaným prístupom, inovatívnym prevedením a záväzkom k merateľným výsledkom vám pomôžeme vyniknúť, rásť rýchlejšie a dosiahnuť dlhodobý úspech.\n"
+    },
+    "whoWeWorkWith": {
+      "desc": "Marketifire je určený pre jednotlivcov, profesionálov a podniky, ktoré hľadajú jasné, efektívne a udržateľné stratégie rastu. Či už len začínate, alebo sa snažíte o škálovanie, poskytujeme nástroje, odborné znalosti a poznatky, ktoré vám pomôžu uspieť v konkurenčnom prostredí.\n",
+      "cards": {
+        "0": {
+          "desc": "Spustite, rozvíjajte a s istotou si vybudujte svoju značku.\n",
+          "title": "Podnikatelia a startupy\n"
+        },
+        "1": {
+          "desc": "Postavte sa do pozície lídra vo svojom odbore a pritiahnete si správne publikum.\n",
+          "title": "Konzultanti a experti\n"
+        },
+        "2": {
+          "desc": "Priemerný nárast angažovanosti klientov online\n",
+          "title": "Nezávislí pracovníci a sólo podnikatelia\n"
+        },
+        "3": {
+          "desc": "Rast kvalifikovaných leadov pre startupy\n",
+          "title": "Osobné značky a tvorcovia\n"
+        }
+      },
+      "title": "S kým spolupracujeme\n",
+      "tagText": "Riešenia na mieru pre každého klienta.\n"
+    },
+    "marketfireApproach": {
+      "tag": "Úspech vďaka strategickej presnosti.\n",
+      "desc": "Úspech nie je náhoda – buduje sa strategickým plánovaním, neustálou optimalizáciou a inteligentnou realizáciou. Náš prístup sa zameriava na pochopenie vášho trhu, tvorbu stratégií šitých na mieru a presné škálovanie, aby sme zaistili trvalý rast a reálny dopad.\n",
+      "cards": {
+        "0": {
+          "desc": "Každá stratégia začína dôkladným prieskumom trhu a analýzou konkurencie.\n",
+          "title": "Pochopte svoj trh\n"
+        },
+        "1": {
+          "desc": "Vytvoríme jasný plán šitý na mieru, ktorý vychádza z vašich cieľov a cieľovej skupiny.\n",
+          "title": "Definujte svoju stratégiu\n"
+        },
+        "2": {
+          "desc": "Nepretržité testovanie, zdokonaľovanie a vykonávanie na zabezpečenie dlhodobého úspechu.\n",
+          "title": "Optimalizovať a škálovať\n"
+        }
+      },
+      "title": "Prístup Marketifire\n"
+    }
+  },
+  "table": {
+    "noData": "Žiadne údaje\n"
+  },
+  "footer": {
+    "legal": "Právne záležitosti a súlad\n",
+    "office": "Adresa kancelárie\n",
+    "ourExpertise": "Naša expertíza\n",
+    "quickNavigation": "Rýchla navigácia\n",
+    "registeredNumber": "Registračné číslo\n",
+    "supportResources": "Podpora a zdroje\n",
+    "allRightsReserved": "Všetky práva vyhradené.\n",
+    "registeredAddress": "Registrované sídlo\n"
+  },
+  "header": {
+    "cart": "Vozík\n",
+    "login": "Prihlásiť sa\n",
+    "logout": "Odhlásiť sa\n",
+    "routes": {
+      "help": "Pomoc a Často kladené otázky\n",
+      "home": "Domov\n",
+      "about": "O Marketifire\n",
+      "contacts": "Kontakty\n",
+      "insights": "Postrehy\n",
+      "whatWeDo": "Čo robíme\n",
+      "caseStudies": "Prípadové štúdie\n",
+      "cookiePolicy": "Zásady používania súborov cookie\n",
+      "refundPolicy": "Zásady vrátenia peňazí\n",
+      "privacyPolicy": "Zásady ochrany osobných údajov\n",
+      "pricingPackages": "Ceny a balíčky\n",
+      "tailoredSolutions": "Riešenia šité na mieru\n",
+      "termsAndConditions": "Podmienky používania\n"
+    }
+  },
+  "account": {
+    "orderId": "ID objednávky\n",
+    "download": "Stiahnuť\n",
+    "services": "Služby\n",
+    "orderDate": "Dátum objednávky\n",
+    "getInvoice": "Získať faktúru\n",
+    "orderStatus": "Stav objednávky\n",
+    "orderHistory": "História mojich objednávok\n",
+    "personalInfo": {
+      "edit": "Upraviť\n",
+      "save": "Uložiť\n",
+      "title": "Osobné informácie\n",
+      "errors": {
+        "email": "Prosím, uveďte svoju emailovú adresu.\n",
+        "phone": "Prosím, uveďte svoje telefónne číslo.\n",
+        "lastName": "Prosím, uveďte svoje priezvisko.\n",
+        "firstName": "Prosím, uveďte svoje meno.\n",
+        "invalidPhone": "Neplatný formát telefónneho čísla.\n"
+      },
+      "fields": {
+        "zip": {
+          "label": "ZIP ",
+          "placeholder": "Zadajte svoje ZIP"
+        },
+        "city": {
+          "label": "Mesto",
+          "placeholder": "Zadajte svoje mesto"
+        },
+        "email": {
+          "label": "E-mail",
+          "placeholder": "Zadajte svoj e-mail"
+        },
+        "phone": {
+          "label": "Telefón"
+        },
+        "address": {
+          "label": "Adresa",
+          "placeholder": "Zadajte svoju adresu"
+        },
+        "country": {
+          "label": "Krajina",
+          "placeholder": "Vyberte alebo zadajte svoju krajinu"
+        },
+        "lastName": {
+          "label": "Priezvisko",
+          "placeholder": "Zadajte priezvisko"
+        },
+        "firstName": {
+          "label": "Krstné meno",
+          "placeholder": "Zadajte meno"
+        }
+      },
+      "saving": "Úspora..."
+    },
+    "paymentMethod": "Spôsob platby",
+    "changePassword": {
+      "edit": "Upraviť",
+      "title": "Prístup k účtu",
+      "errors": {
+        "password": "Heslo musí mať aspoň 6 znakov",
+        "confirmPassword": "Retype Heslo musí mať aspoň 6 znakov",
+        "passwordsDoNotMatch": "Heslá sa nezhodujú"
+      },
+      "fields": {
+        "password": {
+          "label": "Nové heslo",
+          "placeholder": "Zadajte nové heslo"
+        },
+        "confirmPassword": {
+          "label": "Potvrdenie nového hesla",
+          "placeholder": "Potvrdenie nového hesla"
+        }
+      },
+      "editing": "Úprava..."
+    },
+    "accountSettings": "Nastavenia účtu"
+  },
+  "checkout": {
+    "info": "Po odoslaní objednávky dostanete e-mail s pokynmi na platbu vrátane našich bankových údajov a súhrnu vášho nákupu.",
+    "modal": {
+      "text": "Náš zástupca sa vám čoskoro ozve.",
+      "title": "Ďakujeme, že ste si vybrali Marketfire!",
+      "goToHomePage": "PREJSŤ NA DOMOVSKÚ STRÁNKU"
+    },
+    "total": "Celkom",
+    "errors": {
+      "zip": "Vyžaduje sa Zip",
+      "city": "Mesto je povinné",
+      "email": "Neplatná e-mailová adresa",
+      "phone": "Vyžaduje sa telefón",
+      "terms": "Musíte súhlasiť s podmienkami.",
+      "street": "Ulica je potrebná",
+      "country": "Vyžaduje sa krajina",
+      "lastName": "Vyžaduje sa priezvisko",
+      "firstName": "Vyžaduje sa krstné meno",
+      "invalidPhone": "Nesprávny formát telefónneho čísla",
+      "refundPolicy": "Musíte súhlasiť so zásadami vrátenia peňazí."
+    },
+    "fields": {
+      "zip": {
+        "label": "Poštové smerovacie číslo",
+        "placeholder": "Zadajte svoje poštové smerovacie číslo"
+      },
+      "city": {
+        "label": "Mesto",
+        "placeholder": "Zadajte svoje mesto"
+      },
+      "email": {
+        "label": "E-mail",
+        "placeholder": "Zadajte svoj e-mail"
+      },
+      "phone": {
+        "label": "Telefónne číslo",
+        "placeholder": "Zadajte svoje telefónne číslo"
+      },
+      "street": {
+        "label": "Adresný riadok 1",
+        "placeholder": "Zadajte svoju adresu"
+      },
+      "country": {
+        "label": "Krajina",
+        "placeholder": "Vyberte alebo zadajte svoju krajinu"
+      },
+      "message": {
+        "label": "Správa",
+        "placeholder": "Napíšte svoje názory..."
+      },
+      "lastName": {
+        "label": "Priezvisko",
+        "placeholder": "Zadajte priezvisko"
+      },
+      "agreement": {
+        "label": "Prečítal som si podmienky používania webovej stránky a súhlasím s nimi."
+      },
+      "firstName": {
+        "label": "Krstné meno",
+        "placeholder": "Zadajte meno"
+      },
+      "addressLine2": {
+        "label": "Adresný riadok 2",
+        "placeholder": "Zadajte svoju adresu"
+      },
+      "paymentMethod": {
+        "label": "Spôsob platby",
+        "placeholder": "Bankový prevod"
+      },
+      "isDetailsCorrect": {
+        "label": "Prečítal som si Zásady vrátenia peňazí a súhlasím s nimi."
+      }
+    },
+    "submit": "Odoslať",
+    "addInfo": "Ďalšie informácie",
+    "sending": "Odoslanie...",
+    "weProcess": "Vaše osobné údaje spracúvame na splnenie vašej objednávky, zlepšenie vášho zážitku z prehliadania a na ďalšie účely uvedené v našej",
+    "orderSummary": "Zhrnutie vašej objednávky",
+    "privacyPolicy": "Zásady ochrany osobných údajov",
+    "billingDetails": "Fakturačné údaje"
+  },
+  "contacts": {
+    "hero": {
+      "tag": "Sme tu, aby sme vám pomohli dosiahnuť vaše obchodné ciele",
+      "text": "V spoločnosti Marketfire veríme, že poskytujeme správne nástroje a stratégie pre rast podnikania. Či už máte otázku, potrebujete poradenstvo alebo ste pripravení začať projekt, sme tu, aby sme vám pomohli na každom kroku.",
+      "title": "Kontakty"
+    },
+    "contact": {
+      "getInTouch": "Kontaktujte nás",
+      "speakWithUs": "Hovorte s nami"
+    },
+    "socials": {
+      "tag": "Sledujte nás",
+      "text": "Zostaňte s nami v kontakte a získajte aktuálne informácie, tipy a postrehy:",
+      "title": "Sledujte nás na sociálnych sieťach"
+    },
+    "addresses": {
+      "whereWeWork": "Kde pracujeme",
+      "officialCorrespondence": "Úradná korešpondencia"
+    }
+  },
+  "dropzone": {
+    "chooseFile": "Vyberte si súbor",
+    "noFileSelected": "Nie je vybraný žiadny súbor",
+    "attachDocuments": "Priložte všetky relevantné dokumenty, návrhy alebo podklady (maximálna veľkosť: 10 MB)"
+  },
+  "insights": {
+    "hero": {
+      "tag": "Znalosti na podporu vášho rastu",
+      "title": "Postrehy",
+      "description": "Vitajte na stránke Marketifire Insights, kde zdieľame cenné články, tipy a stratégie, ktoré pomáhajú podnikateľom prosperovať. Získajte aktuálne informácie o najnovších marketingových trendoch, taktikách rastu podnikania a poznatkoch z odvetvia, ktoré vám pomôžu optimalizovať váš prístup a dosiahnuť dlhodobý úspech. Preskúmajte naše články nižšie a objavte osvedčené metódy a praktické rady."
+    },
+    "freeConsultation": {
+      "button": "Získajte bezplatnú konzultáciu ešte dnes",
+      "description": "Marketfire nie je len ďalšia marketingová poradenská spoločnosť - sme vaši partneri v raste. Ak ste pripravení pozdvihnúť svoju značku, rozšíriť svoje publikum a zvýšiť príjmy, začnime ešte dnes."
+    }
+  },
+  "policies": {
+    "cookiePolicy": "Zásady používania súborov cookie",
+    "refundPolicy": "Zásady vrátenia peňazí",
+    "privacyPolicy": "Zásady ochrany osobných údajov",
+    "termsAndConditions": "Podmienky a pravidlá"
+  },
+  "whatWeDo": {
+    "hero": {
+      "tag": "Stratégie pre úspech v reálnom svete",
+      "text": "V spoločnosti Marketifire poskytujeme komplexné marketingové a obchodné poradenské riešenia, ktoré vám pomôžu rásť, optimalizovať a uspieť vo vašom odvetví. Naše služby sú prispôsobené vašim jedinečným potrebám a zabezpečujú, že každá stratégia je vytvorená tak, aby prinášala skutočné výsledky bez ohľadu na fázu vášho podnikania.",
+      "text2": "Tu je bližší prehľad rozsiahlych služieb, ktoré ponúkame:",
+      "title": "Čo robíme - komplexné služby prispôsobené vášmu projektu"
+    },
+    "strategicGrowth": {
+      "title": "Strategický rast a konkurenčná výhoda",
+      "values": {
+        "0": {
+          "desc": "Pomáha jednotlivcom budovať a rozširovať ich osobné značky vo všetkých kanáloch.",
+          "title": "Osobná značka a omni-Channel rast"
+        },
+        "1": {
+          "desc": "Vytváranie stratégií na získavanie nových potenciálnych zákazníkov a udržiavanie trvalých vzťahov.",
+          "title": "Stratégie budovania vedenia a udržania publika"
+        },
+        "2": {
+          "desc": "Na mieru šité predajné taktiky, ktoré vám pomôžu rásť a rozširovať vaše podnikanie.",
+          "title": "Stratégie predaja pre podnikateľov"
+        },
+        "3": {
+          "desc": "Vytváranie stratégií, ktoré maximalizujú ziskovosť a rastový potenciál vašej firmy.",
+          "title": "Plány marketingu a monetizácie na mieru"
+        },
+        "4": {
+          "desc": "Plánovanie dlhodobých obchodných cieľov a potenciálneho odchodu.",
+          "title": "Oceňovanie podniku a stratégia odchodu"
+        },
+        "5": {
+          "desc": "Identifikácia príležitostí pre aliancie, ktoré vám pomôžu pri rozširovaní.",
+          "title": "Strategické partnerstvo a spolupráca"
+        },
+        "6": {
+          "desc": "Pomôže vám vyniknúť na preplnenom trhu s jedinečnými predajnými ponukami.",
+          "title": "Stratégia trhovej diferenciácie"
+        },
+        "7": {
+          "desc": "Vytváranie stratégií pre nepretržitú inováciu a trvalý rast.",
+          "title": "Dlhodobý rast a plány udržateľnosti"
+        }
+      },
+      "annotation": "Dosiahnutie udržateľného rastu si vyžaduje strategický prístup, ktorý vytvára dlhodobú hodnotu. Pomôžeme vám udržať si konkurencieschopnosť tým, že vám ponúkneme individuálne plány rastu, ktoré sa zameriavajú na škálovateľnosť, generovanie príjmov a umiestnenie na trhu.",
+      "subAnnotation": "Naše služby zahŕňajú:"
+    },
+    "freeConsultation": {
+      "text": {
+        "0": "V spoločnosti Marketfire sme odhodlaní poskytnúť vám nástroje, odborné znalosti a stratégie na rozvoj vášho podnikania a dosiahnutie merateľného úspechu.",
+        "1": "Ste pripravení začať? Objednajte si bezplatnú konzultáciu a vytvorme stratégiu na mieru, ktorá je ideálna pre vaše ciele. Spoločne môžeme uvoľniť potenciál vášho podniku a pripraviť pôdu pre dlhodobý úspech."
+      },
+      "btnLabel": "Naplánujte si bezplatné strategické sedenie ešte dnes"
+    },
+    "businessConsulting": {
+      "title": "Obchodné poradenstvo a plánovanie expanzie",
+      "values": {
+        "0": {
+          "desc": "Komplexné plány vstupu na nové trhy alebo uvedenia nových produktov na trh.",
+          "title": "Stratégie vstupu na trh a expanzie"
+        },
+        "1": {
+          "desc": "Budovanie udržateľného rastu prostredníctvom účinných taktík generovania potenciálnych zákazníkov a lojality.",
+          "title": "Plány získavania a udržania zákazníkov"
+        },
+        "2": {
+          "desc": "Zdokonalenie vášho obchodného modelu s cieľom zvýšiť ziskovosť a škálovateľnosť.",
+          "title": "Optimalizácia modelu príjmov"
+        },
+        "3": {
+          "desc": "Automatizácia rutinných úloh s cieľom zefektívniť prevádzku a znížiť náklady.",
+          "title": "Automatizácia podnikových procesov"
+        },
+        "4": {
+          "desc": "Pomôže vám definovať plán rastu a dlhodobého úspechu.",
+          "title": "Strategické plánovanie podnikania"
+        },
+        "5": {
+          "desc": "Efektívne plánovanie a riadenie obchodného rastu a výdavkov.",
+          "title": "Finančné prognózovanie a rozpočtovanie"
+        },
+        "6": {
+          "desc": "Štruktúrovanie tímu pre maximálnu produktivitu a rast.",
+          "title": "Organizačný dizajn a rozvoj"
+        },
+        "7": {
+          "desc": "zhromažďovanie informácií o trendoch v odvetví, stratégiách konkurentov a dynamike trhu.",
+          "title": "Konkurenčný prieskum trhu"
+        }
+      },
+      "annotation": "Či už chcete expandovať na nové trhy alebo zefektívniť svoje obchodné procesy, naše poradenské služby vám poskytnú odborné znalosti a stratégie, ktoré potrebujete na úspešné rozšírenie.",
+      "subAnnotation": "Naše služby zahŕňajú:"
+    },
+    "checkOutOurPricing": {
+      "tag": "Zjednotenie stratégie a realizácie",
+      "text": "Ste pripravení urobiť ďalší krok? Preskúmajte naše flexibilné ceny a balíky navrhnuté tak, aby vyhovovali vašim cieľom a rozpočtu. Či už potrebujete komplexnú marketingovú revíziu alebo cielenú stratégiu rastu, máme pre vás vhodný balík.",
+      "title": "Chcete si objednať službu? Pozrite si naše ceny a balíky",
+      "btnLabel": "Zobraziť ceny a balíky"
+    },
+    "contentAndAudience": {
+      "title": "Obsah a zapojenie publika",
+      "values": {
+        "0": {
+          "desc": "Rozširovanie vašej prítomnosti na sociálnych sieťach a vytváranie aktívnych, angažovaných komunít.",
+          "title": "Sociálne médiá a rast komunity"
+        },
+        "1": {
+          "desc": "Využívanie dôveryhodných vplyvných osôb a partnerov na rozšírenie vášho dosahu.",
+          "title": "Influencer & Affiliate marketing"
+        },
+        "2": {
+          "desc": "Tvorba obsahu, ktorý informuje, zapája a konvertuje vaše publikum.",
+          "title": "Tvorba vysoko účinného obsahu a rozprávanie príbehov"
+        },
+        "3": {
+          "desc": "Starostlivosť o vzťahy so zákazníkmi pomocou cieleného e-mailového marketingu a stratégií CRM.",
+          "title": "Optimalizácia e-mailov a CRM"
+        },
+        "4": {
+          "desc": "Umiestnenie vašej značky ako autority v odvetví prostredníctvom konzistentného, vysokokvalitného obsahu.",
+          "title": "Blogovanie a vedenie myšlienok"
+        },
+        "5": {
+          "desc": "Vytváranie pútavého video obsahu, ktorý vyvoláva odozvu a podporuje konverzie.",
+          "title": "Stratégia video obsahu"
+        },
+        "6": {
+          "desc": "Využívanie platforiem ako Facebook, Instagram a LinkedIn na generovanie cielených potenciálnych zákazníkov.",
+          "title": "Reklamné kampane v sociálnych médiách"
+        },
+        "7": {
+          "desc": "Prezentácia vášho úspechu prostredníctvom presvedčivých príbehov zákazníkov.",
+          "title": "Vytvorenie svedectva zákazníka a prípadovej štúdie"
+        }
+      },
+      "annotation": "Vytváranie zmysluplného obsahu, ktorý rezonuje s vaším publikom, je kľúčom k budovaniu vzťahov a zvyšovaniu konverzií. Pomôžeme vám vybudovať silnú prezentáciu značky a nadviazať kontakt s publikom prostredníctvom pôsobivého, vysokokvalitného obsahu.",
+      "subAnnotation": "Naše služby zahŕňajú:"
+    },
+    "perfomanceOptimization": {
+      "title": "Výkonnostný marketing a optimalizácia konverzií",
+      "values": {
+        "0": {
+          "desc": "Zvyšovanie organických pozícií vo vyhľadávaní s cieľom prilákať vysokokvalitnú návštevnosť.",
+          "title": "Rast SEO a viditeľnosti vo vyhľadávaní"
+        },
+        "1": {
+          "desc": "Vytváranie vysoko efektívnych reklamných kampaní, ktoré prinášajú rýchle výsledky.",
+          "title": "PPC a platená reklama"
+        },
+        "2": {
+          "desc": "Optimalizácia tokov používateľov s cieľom maximalizovať konverzie a predaj.",
+          "title": "Optimalizácia webovej stránky a lievika"
+        },
+        "3": {
+          "desc": "Implementácia stratégií, ktoré efektívne usmerňujú a konvertujú potenciálnych zákazníkov.",
+          "title": "Stratégie predaja založené na údajoch"
+        },
+        "4": {
+          "desc": "Navrhovanie vysokokonvertujúcich vstupných stránok prispôsobených vášmu publiku.",
+          "title": "Optimalizácia cieľovej stránky"
+        },
+        "5": {
+          "desc": "Opätovné zapojenie minulých návštevníkov s cieľom zvýšiť konverzie.",
+          "title": "Retargetingové a remarketingové kampane"
+        },
+        "6": {
+          "desc": "Získavanie vysokokvalitných potenciálnych zákazníkov prostredníctvom inteligentných stratégií cielenia.",
+          "title": "Taktiky generovania vedenia"
+        },
+        "7": {
+          "desc": "Neustále zlepšujte svoje kampane pomocou poznatkov o údajoch.",
+          "title": "Testovanie A/B a sledovanie výkonu"
+        }
+      },
+      "annotation": "Dosiahnuť úspech online znamená zabezpečiť, aby sa každé kliknutie a interakcia počítali. Zameriavame sa na dosiahnutie merateľných výsledkov prostredníctvom optimalizovaných kampaní, čím zvyšujeme návratnosť investícií a mieru konverzie v každej fáze cesty zákazníka.",
+      "subAnnotation": "Naše služby zahŕňajú:"
+    },
+    "marketingAndGrowthStrategies": {
+      "title": "Marketingové a rastové stratégie",
+      "values": {
+        "0": {
+          "desc": "Hlboký prehľad o vašom odvetví a konkurencii.",
+          "title": "Prieskum trhu a analýza konkurencie"
+        },
+        "1": {
+          "desc": "Tvorba vašej jedinečnej ponuky hodnoty pre maximálny účinok.",
+          "title": "Umiestnenie značky a komunikácia"
+        },
+        "2": {
+          "desc": "Viackanálové kampane, ktoré zaujmú a konvertujú.",
+          "title": "Digitálna a tradičná reklama"
+        },
+        "3": {
+          "desc": "Uvedenie nového produktu alebo služby na trh s komplexným plánom.",
+          "title": "Stratégia uvedenia produktu na trh"
+        },
+        "4": {
+          "desc": "Identifikácia kľúčových segmentov zákazníkov, na ktoré sa má zamerať prispôsobený marketing.",
+          "title": "Stratégia segmentácie zákazníkov"
+        },
+        "5": {
+          "desc": "Vytvorenie jedinečnej vizuálnej a verbálnej identity pre vašu firmu.",
+          "title": "Návrh identity značky"
+        },
+        "6": {
+          "desc": "Zameranie sa na regionálne a miestne trhy pre silnejšie zapojenie komunity.",
+          "title": "Prenikanie na miestny trh"
+        },
+        "7": {
+          "desc": "Identifikácia a vytváranie hodnotných partnerstiev s cieľom rozšíriť vašu značku.",
+          "title": "Rozvoj strategického partnerstva"
+        }
+      },
+      "annotation": "Navrhujeme prispôsobené stratégie, ktoré podporujú zviditeľnenie značky, získavanie zákazníkov a rozširovanie trhu. Náš prístup zaručuje, že každý náš krok je v súlade s vašimi konkrétnymi cieľmi, čo vám pomôže osloviť cieľovú skupinu a zvýšiť vašu prítomnosť.",
+      "subAnnotation": "Naše služby zahŕňajú:"
+    },
+    "automationAndDigitalTransform": {
+      "title": "Automatizácia a digitálna transformácia",
+      "values": {
+        "0": {
+          "desc": "Používanie nástrojov na báze umelej inteligencie na automatizáciu marketingových procesov a úsporu času.",
+          "title": "AI a automatizácia marketingu"
+        },
+        "1": {
+          "desc": "Navrhovanie ciest zákazníkov, ktoré vedú k dlhodobej lojalite a rastu.",
+          "title": "Optimalizácia CRM a zákazníckych ciest"
+        },
+        "2": {
+          "desc": "Implementácia automatizovaných systémov pre zákaznícku podporu a starostlivosť o zákazníkov.",
+          "title": "Tok Chatbot & Lead Nurturing"
+        },
+        "3": {
+          "desc": "Monitorovanie a analýza kľúčových ukazovateľov s cieľom zlepšiť a zdokonaliť stratégie.",
+          "title": "Analýza výkonu a podávanie správ"
+        },
+        "4": {
+          "desc": "Zefektívnenie predajného lievika na zvýšenie efektivity a miery uzavretia.",
+          "title": "Automatizácia predajných procesov"
+        },
+        "5": {
+          "desc": "Kombinácia zdrojov údajov s cieľom vytvoriť jednotný pohľad na cestu zákazníka.",
+          "title": "Integrácia údajov o zákazníkoch"
+        },
+        "6": {
+          "desc": "Automatizácia interných obchodných procesov s cieľom ušetriť čas a zvýšiť produktivitu.",
+          "title": "Automatizácia pracovných postupov"
+        },
+        "7": {
+          "desc": "Integrácia rôznych nástrojov a platforiem s cieľom vytvoriť ucelený pracovný postup pre vašu firmu.",
+          "title": "Vlastný vývoj API"
+        }
+      },
+      "annotation": "Získajte náskok pred konkurenciou vďaka špičkovým riešeniam automatizácie a digitálnej transformácie. Pomôžeme vám implementovať pokročilé nástroje a technológie na zefektívnenie prevádzky, zlepšenie zákazníckych ciest a bezproblémové škálovanie.",
+      "subAnnotation": "Naše služby zahŕňajú:"
+    }
+  },
+  "orderForm": {
+    "errors": {
+      "phone": "Vyžaduje sa telefón",
+      "lastName": "Vyžaduje sa priezvisko",
+      "firstName": "Vyžaduje sa krstné meno",
+      "invalidEmail": "Neplatná e-mailová adresa",
+      "invalidPhone": "Nesprávny formát telefónneho čísla"
+    },
+    "fields": {
+      "email": {
+        "label": "E-mail",
+        "placeholder": "Zadajte svoj e-mail"
+      },
+      "phone": {
+        "label": "Telefón"
+      },
+      "message": {
+        "label": "Správa",
+        "placeholder": "Napíšte svoje názory..."
+      },
+      "website": {
+        "label": "Vaša webová stránka (voliteľné)",
+        "placeholder": "Zadajte svoju webovú adresu URL"
+      },
+      "lastName": {
+        "label": "Priezvisko",
+        "placeholder": "Zadajte priezvisko"
+      },
+      "firstName": {
+        "label": "Krstné meno",
+        "placeholder": "Zadajte meno"
+      }
+    },
+    "submit": "Odoslať",
+    "sending": "Odoslanie..."
+  },
+  "helpAndFaq": {
+    "hero": {
+      "tag": "Odpovede na vaše otázky",
+      "text": "Chápeme, že jasnosť je kľúčom k správnym rozhodnutiam pre vašu firmu. Preto sme pre vás pripravili odpovede na najčastejšie kladené otázky, ktoré vám pomôžu lepšie pochopiť naše služby, procesy a to, ako vám môžeme pomôcť rásť. Ak nenájdete to, čo hľadáte, neváhajte sa obrátiť priamo na nás!",
+      "title": "Pomoc a často kladené otázky"
+    },
+    "needHelp": {
+      "text": "Ak máte ďalšie otázky alebo potrebujete pomoc s konkrétnym problémom, neváhajte sa na nás obrátiť. Sme tu, aby sme vám pomohli uspieť!",
+      "title": "Potrebujete ďalšiu pomoc?",
+      "contactUs": "Kontaktujte nás",
+      "scheduleFreeConsultation": "Naplánujte si bezplatnú konzultáciu"
+    },
+    "accountBilling": {
+      "0": {
+        "answer": "Hoci na rezerváciu konzultácie nie je potrebné, vytvorenie konta vám umožní sledovať služby, spravovať fakturačné údaje a sledovať aktualizácie projektu.",
+        "question": "Musím si vytvoriť konto v službe Marketifire?"
+      },
+      "1": {
+        "answer": "Platby prijímame bankovými prevodmi. Dostanete faktúru s podrobnými pokynmi k platbe.",
+        "question": "Ako môžem zaplatiť za služby?"
+      },
+      "2": {
+        "answer": "Sme odhodlaní poskytovať vysokokvalitné služby prispôsobené vašim potrebám. Hoci neposkytujeme vrátenie peňazí, ak nie ste spokojní s akoukoľvek časťou služby, kontaktujte nás. Budeme s vami spolupracovať na riešení akýchkoľvek problémov a zabezpečíme najlepší možný výsledok pre vašu firmu.",
+        "question": "Môžem dostať späť peniaze, ak nie som so službou spokojný?"
+      }
+    },
+    "customerSupport": {
+      "0": {
+        "answer": "Môžete nás kontaktovať e-mailom na adrese info@marketifire.com alebo vyplniť náš kontaktný formulár na webovej stránke. Na požiadanie ponúkame aj telefonické konzultácie.",
+        "question": "Ako vás môžem kontaktovať, ak potrebujem pomoc?"
+      },
+      "1": {
+        "answer": "Na všetky otázky sa snažíme odpovedať do 24 hodín počas pracovných dní. V prípade naliehavejších záležitostí nás neváhajte kontaktovať telefonicky.",
+        "question": "Ako dlho trvá, kým odpoviete na dopyt?"
+      },
+      "2": {
+        "answer": "Áno, bezplatnú konzultáciu si môžete dohodnúť priamo na našej webovej stránke alebo nás môžete kontaktovať e-mailom. Nájdeme čas, ktorý vám bude najlepšie vyhovovať.",
+        "question": "Môžem si dohodnúť konzultáciu alebo stretnutie?"
+      },
+      "3": {
+        "answer": "Áno, klientom ponúkame priebežnú podporu vrátane sledovania výkonnosti, optimalizácie a aktualizácie stratégie, aby sme zabezpečili trvalý úspech.",
+        "question": "Poskytujete priebežnú podporu aj po ukončení projektu?"
+      },
+      "4": {
+        "answer": "Ceníme si spätnú väzbu od našich klientov, aby sme mohli zlepšovať naše služby. Môžete zanechať hodnotenie na našej webovej stránke alebo nás priamo kontaktovať a podeliť sa s nami o svoje názory.",
+        "question": "Ako môžem poskytnúť spätnú väzbu na vami poskytnuté služby?"
+      }
+    },
+    "servicesPricing": {
+      "0": {
+        "answer": "Áno, ponúkame flexibilné balíky služieb, ktoré sa dajú prispôsobiť vašim špecifickým obchodným potrebám. Naše cenové možnosti môžete preskúmať na stránke Ceny a balíky.",
+        "question": "Ponúkate nejaké balíky služieb?"
+      },
+      "1": {
+        "answer": "Odporúčame naplánovať si bezplatnú konzultáciu, aby náš tím mohol pochopiť vaše obchodné ciele. Potom vám poradíme s výberom najvhodnejšieho balíka.",
+        "question": "Ako zistím, ktorý balík služieb je pre mňa vhodný?"
+      },
+      "2": {
+        "answer": "Naše ceny sú založené na zložitosti projektu, rozsahu služieb a časovom rámci. Ponúkame služby s pevnou sadzbou aj balíky s transparentnými cenami. Pre väčšie alebo špecializované projekty sú k dispozícii vlastné ceny.",
+        "question": "Ako si účtujete svoje služby?"
+      },
+      "3": {
+        "answer": "Áno, ponúkame flexibilné možnosti stanovenia cien a zľavy za dlhodobú spoluprácu alebo zmluvy s externým dodávateľom. Kontaktujte nás a prediskutujte s nami vaše konkrétne potreby.",
+        "question": "Poskytujete zľavy na dlhodobé projekty?"
+      },
+      "4": {
+        "answer": "Áno, ponúkame flexibilitu pri prispôsobovaní služieb na základe vašich meniacich sa obchodných potrieb. Kontaktujte nás priamo, aby sme prediskutovali úpravy vášho plánu.",
+        "question": "Môžem po zakúpení zmeniť vybrané služby?"
+      },
+      "5": {
+        "answer": "Akékoľvek dodatočné náklady mimo štandardnej ponuky služieb budú jasne oznámené pred začatím prác. Zabezpečujeme úplnú transparentnosť našej cenovej štruktúry.",
+        "question": "Existujú okrem uvedených služieb aj ďalšie náklady?"
+      }
+    },
+    "generalQuestions": {
+      "0": {
+        "answer": "Ponúkame komplexnú škálu obchodných a marketingových poradenských služieb vrátane marketingových stratégií, optimalizácie výkonnosti, obchodného poradenstva, tvorby obsahu, digitálnej transformácie a ďalších.",
+        "question": "Aké služby ponúka spoločnosť Marketifire?"
+      },
+      "1": {
+        "answer": "Naše služby sú určené pre podnikateľov a profesionálov, ktorí chcú rozšíriť svoju osobnú značku, zlepšiť marketingové úsilie a dosiahnuť dlhodobý úspech.",
+        "question": "Kto môže využívať služby spoločnosti Marketifire?"
+      },
+      "2": {
+        "answer": "Stačí sa obrátiť na náš kontaktný formulár alebo si objednať bezplatnú konzultáciu s naším tímom a prediskutovať s ním vaše obchodné ciele a výzvy. Vytvoríme vám individuálnu stratégiu, ktorá bude zodpovedať vašim potrebám.",
+        "question": "Ako môžem začať pracovať so službou Marketifire?"
+      },
+      "3": {
+        "answer": "Pracujeme s klientmi z rôznych odvetví vrátane elektronického obchodu, poradenstva, zdravia a wellness, osobného brandingu, digitálneho podnikania a ďalších. Naše stratégie sú prispôsobené vašim špecifickým potrebám.",
+        "question": "Na aké odvetvia sa špecializujete?"
+      },
+      "4": {
+        "answer": "Vôbec nie! Sme tu, aby sme vám pomohli objasniť vaše ciele. Či už presne viete, čo potrebujete, alebo potrebujete poradenstvo, náš tím je pripravený podporiť vás v akejkoľvek fáze.",
+        "question": "Musím mať jasnú predstavu o tom, čo chcem, skôr ako vás kontaktujem?"
+      },
+      "5": {
+        "answer": "Časový harmonogram výsledkov sa môže líšiť v závislosti od služby a rozsahu projektu. Podniky zvyčajne vidia viditeľné zlepšenia do 3-6 mesiacov, hoci niektoré služby môžu priniesť výsledky skôr.",
+        "question": "Za ako dlho sa dostavia výsledky?"
+      }
+    }
+  },
+  "orderModal": {
+    "close": "Zatvoriť",
+    "title": "Ďakujeme!",
+    "package": "Formulár žiadosti o balík",
+    "service": "Formulár žiadosti o službu",
+    "description": "Vaša žiadosť o náš balík služieb bola úspešne odoslaná. Náš tím preskúma poskytnuté informácie a čoskoro vás bude kontaktovať, aby sme s vami prediskutovali ďalšie kroky a spôsob, akým vám môžeme pomôcť."
+  },
+  "caseStudies": {
+    "hero": {
+      "tag": "Riešenia pre trvalý podnikateľský rast",
+      "text": "Spoločnosť Marketfire sa špecializuje na poskytovanie marketingových stratégií na mieru pre podnikateľov, ktorí chcú rozšíriť svoje osobné značky, zviditeľniť sa a dosiahnuť dlhodobý úspech. Tieto prípadové štúdie sú len ukážkou nášho vplyvu na podnikanie našich klientov.",
+      "title": "Prípadové štúdie - Overené výsledky pre podnikateľov"
+    },
+    "cases": {
+      "items": {
+        "0": {
+          "title": "Škálovanie online prezentácie módneho podnikateľa",
+          "client": {
+            "name": "Olivia Roberts ",
+            "profession": "Módny podnikateľ"
+          },
+          "results": {
+            "0": {
+              "text": "zvýšenie návštevnosti webových stránok",
+              "text2": "len za dva mesiace",
+              "heading": "40% "
+            },
+            "1": {
+              "text": "nárast online predaja",
+              "text2": "prostredníctvom optimalizovaných reklám",
+              "heading": "30% "
+            },
+            "2": {
+              "text": "nárast sledovanosti sociálnych médií",
+              "text2": "a angažovanosť",
+              "heading": "50% "
+            }
+          },
+          "solution": {
+            "0": {
+              "text": "posilniť jedinečnú ponuku hodnoty spoločnosti Olivia",
+              "title": "Umiestnenie značky a komunikácia"
+            },
+            "1": {
+              "text": "zlepšiť hodnotenie jej webovej stránky vo vyhľadávaní",
+              "title": "Rast SEO a viditeľnosti vo vyhľadávaní"
+            },
+            "2": {
+              "text": "zamerať sa na kupujúcich, ktorí sa zaujímajú o módu.",
+              "title": "PPC a platená reklama"
+            },
+            "3": {
+              "text": "vybudovať angažovanejšiu komunitu a zvýšiť prítomnosť svojej značky",
+              "title": "Stratégia sociálnych médií"
+            }
+          },
+          "challenge": "Olivia mala osobný štýl, ale zápasila s nízkou online angažovanosťou a obmedzeným predajom zo svojho online obchodu. Potrebovala pomoc so zviditeľnením a zvýšením predaja."
+        },
+        "1": {
+          "title": "Posilnenie osobnej značky trénera zdravia",
+          "client": {
+            "name": "David Collins ",
+            "profession": "Zdravotný tréner a odborník na wellness"
+          },
+          "results": {
+            "0": {
+              "text": "nárast počtu dopytov klientov",
+              "text2": "do troch mesiacov",
+              "heading": "60% "
+            },
+            "1": {
+              "text": "nárast angažovanosti v sociálnych médiách",
+              "text2": " ",
+              "heading": "55% "
+            },
+            "2": {
+              "text": "nárast počtu rezervácií na individuálne konzultácie",
+              "text2": " ",
+              "heading": "30% "
+            }
+          },
+          "solution": {
+            "0": {
+              "text": "definovať Dávidov odkaz a jeho jedinečnú ponuku",
+              "title": "Stratégia osobnej značky"
+            },
+            "1": {
+              "text": "zdieľať Davidove odborné znalosti prostredníctvom blogov a videí.",
+              "title": "Tvorba obsahu a rozprávanie príbehov"
+            },
+            "2": {
+              "text": "zviditeľniť sa na platformách ako Instagram a Facebook.",
+              "title": "Marketing sociálnych médií"
+            },
+            "3": {
+              "text": "prilákať potenciálnych klientov a zvýšiť počet rezervácií konzultácií.",
+              "title": "Stratégie generovania vedenia"
+            }
+          },
+          "challenge": "David chcel vybudovať online prezentáciu na prezentáciu svojich služieb zdravotného koučovania, ale chýbala mu ucelená stratégia a mal málo online zapojenia. Potreboval poradenstvo, aby rozšíril svoj dosah a prilákal viac klientov."
+        },
+        "2": {
+          "title": "Spustenie online kurzu pre digitálnych podnikateľov",
+          "client": {
+            "name": "Emily Turnerová",
+            "profession": "Digitálny podnikateľ a tvorca kurzov"
+          },
+          "results": {
+            "0": {
+              "text": "prihlasovanie na kurzy",
+              "text2": "v prvom mesiaci po uvedení na trh",
+              "heading": "150 "
+            },
+            "1": {
+              "text": "zvýšenie počtu otvorených e-mailov",
+              "text2": "prostredníctvom cielených kampaní",
+              "heading": "40% "
+            },
+            "2": {
+              "text": "návratnosť výdavkov na reklamu",
+              "text2": "prostredníctvom účinných kampaní PPC",
+              "heading": "10x "
+            }
+          },
+          "solution": {
+            "0": {
+              "text": "vytvoriť vzrušenie a očakávanie okolo spustenia kurzu.",
+              "title": "Stratégia uvedenia produktu na trh"
+            },
+            "1": {
+              "text": "vychovávať potenciálnych zákazníkov a premeniť ich na zákazníkov.",
+              "title": "E-mailový marketing a optimalizácia CRM"
+            },
+            "2": {
+              "text": "osloviť jej cieľovú skupinu a podporiť prihlasovanie do kurzov.",
+              "title": "Reklama v sociálnych médiách"
+            },
+            "3": {
+              "text": "budovanie sociálneho dôkazu a dôvery",
+              "title": "Skúsenosti zákazníkov a prípadové štúdie"
+            }
+          },
+          "challenge": "Emily vytvorila online kurz, ale snažila sa prilákať zákazníkov a zvýšiť predaj. Potrebovala stratégiu uvedenia na trh a marketingový plán, aby vzbudila záujem o svoj kurz."
+        },
+        "3": {
+          "title": "Zvyšovanie počtu online klientov osobného trénera",
+          "client": {
+            "name": "James Foster ",
+            "profession": "Osobný tréner a odborník na fitness"
+          },
+          "results": {
+            "0": {
+              "text": "nárast počtu online dopytov klientov",
+              "text2": " ",
+              "heading": "50% "
+            },
+            "1": {
+              "text": "zvýšenie angažovanosti v sociálnych médiách",
+              "text2": " ",
+              "heading": "35% "
+            },
+            "2": {
+              "text": "zvýšenie príjmov",
+              "text2": "z online služieb osobného tréningu",
+              "heading": "20% "
+            }
+          },
+          "solution": {
+            "0": {
+              "text": "osloviť nových klientov na platformách ako Instagram a YouTube",
+              "title": "Stratégia sociálnych médií"
+            },
+            "1": {
+              "text": "premeniť potenciálnych zákazníkov na platiacich klientov.",
+              "title": "Generovanie potenciálnych zákazníkov a retargeting"
+            },
+            "2": {
+              "text": "budovanie vzťahov a zvyšovanie retencie",
+              "title": "E-mailový marketing a zapojenie klientov"
+            },
+            "3": {
+              "text": "prezentovať Jamesove odborné znalosti v oblasti fitness",
+              "title": "Stratégia obsahu a výroba videa"
+            }
+          },
+          "challenge": "James podnikal v oblasti fitness offline, ale chcel rozšíriť svoju klientsku základňu prechodom na online školenia. Potreboval pomoc pri marketingu svojich služieb pre širšie publikum a pri generovaní potenciálnych zákazníkov."
+        },
+        "4": {
+          "title": "Budovanie autority finančného poradcu",
+          "client": {
+            "name": "Sarah Lee ",
+            "profession": "Finančný poradca"
+          },
+          "results": {
+            "0": {
+              "text": "zvýšenie počtu kvalifikovaných potenciálnych zákazníkov",
+              "text2": "v prvom štvrťroku",
+              "heading": "50% "
+            },
+            "1": {
+              "text": "zviditeľnenie online",
+              "text2": "prostredníctvom cielených kampaní PPC",
+              "heading": "Zdvojené"
+            },
+            "2": {
+              "text": "Pozícia lídra v oblasti myslenia",
+              "text2": "s hosťujúcimi článkami a prednáškami",
+              "heading": "Líder"
+            }
+          },
+          "solution": {
+            "0": {
+              "text": "objasniť jedinečnú ponuku hodnoty Sarah",
+              "title": "Umiestnenie značky a komunikácia"
+            },
+            "1": {
+              "text": "vrátane príspevkov na blogu a odborných článkov.",
+              "title": "Stratégia obsahu"
+            },
+            "2": {
+              "text": "prilákať záujemcov, ktorí potrebujú finančné poradenstvo.",
+              "title": "PPC reklama"
+            },
+            "3": {
+              "text": "postaviť Sarah ako dôveryhodného odborníka v tejto oblasti.",
+              "title": "Marketing sociálnych médií"
+            }
+          },
+          "challenge": "Sarah bola uznávanou konzultantkou, ale chýbala jej účinná online stratégia, ktorá by rozšírila jej dosah a presadila sa ako autorita v odvetví finančného poradenstva."
+        }
+      },
+      "client": "Klient",
+      "results": "Výsledky",
+      "solution": "Riešenie",
+      "caseStudy": "Prípadová štúdia",
+      "challenge": "Výzva"
+    },
+    "freeSession": {
+      "text": "V spoločnosti Marketfire sa špecializujeme na pomoc podnikateľom pri rozvoji ich osobných značiek, získavaní klientov a dosahovaní dlhodobého úspechu. Tieto prípadové štúdie sú len ukážkou nášho vplyvu na podnikanie našich klientov.",
+      "title": "Ste pripravení posunúť svoje podnikanie na vyššiu úroveň?",
+      "btnLabel": "Naplánujte si bezplatné strategické sedenie ešte dnes"
+    },
+    "testimonials": {
+      "tag": "Referencie a úspešné príbehy klientov",
+      "text": "Tu sa dozviete, ako sme pomohli podnikateľom rozšíriť ich podnikanie a dosiahnuť ich ciele.",
+      "items": {
+        "0": {
+          "role": "Fitness tréner",
+          "author": "Sophia James ",
+          "rating": "5 ",
+          "testimonial": "Marketifire mi pomohol zvýšiť počet klientov o viac ako 50 % len za tri mesiace! Ich tím rozumel mojej značke a ich stratégia priniesla skutočný rozdiel."
+        },
+        "1": {
+          "role": "Digitálny marketér",
+          "author": "Ryan Williams ",
+          "rating": "5 ",
+          "testimonial": "Po spolupráci s Marketifire som zaznamenal okamžité zvýšenie predaja. Ich marketingové stratégie sú špičkové a výsledky hovoria za všetko."
+        },
+        "2": {
+          "role": "Spisovateľ na voľnej nohe",
+          "author": "Mia Roberts ",
+          "rating": "4 ",
+          "testimonial": "Tím spoločnosti Marketifire mi pomohol získať viac informácií a lepšie riadiť vzťahy s klientmi. Hoci výsledky boli skvelé, uvítal by som častejšie aktualizácie."
+        },
+        "3": {
+          "role": "Podnikateľ v oblasti elektronického obchodu",
+          "author": "Lucas Thompson ",
+          "rating": "5 ",
+          "testimonial": "Marketingové a rastové stratégie spoločnosti Marketifire posunuli moje podnikanie na vyššiu úroveň. Teraz zaznamenávam konzistentný rast mesiac po mesiaci. Vrelo odporúčam!"
+        },
+        "4": {
+          "role": "Poradca pre zdravie",
+          "author": "Emma Davis ",
+          "rating": "5 ",
+          "testimonial": "S výsledkami nemôžem byť spokojnejší! Tím Marketifire mi poskytol stratégie šité na mieru, ktoré mi pomohli vybudovať div online prezentáciu a prilákať správnych klientov."
+        },
+        "5": {
+          "role": "Osobný tréner",
+          "author": "Noah Clark ",
+          "rating": "4 ",
+          "testimonial": "Skvelé služby a vynikajúce stratégie. Zlepšila sa retencia mojich klientov a celkovo vidím pozitívne výsledky. Trochu viac jasnosti v procese by to bolo dokonalé."
+        }
+      },
+      "title": "Čo o nás hovoria klienti",
+      "btnLabel": "Začnite optimalizovať svoju stratégiu ešte dnes"
+    }
+  },
+  "cookiePopup": {
+    "link": "Zásady používania súborov cookie",
+    "text": "Táto stránka používa súbory cookie na analýzu a personalizovaný obsah. Akceptovaním súhlasíte s používaním súborov cookie. Viac informácií si môžete prečítať v našej",
+    "title": "Nastavenia súborov cookie",
+    "accept": "Prijať",
+    "decline": "Pokles"
+  },
+  "requestForm": {
+    "back": "Späť",
+    "hero": {
+      "tag": "Budujme váš úspech spoločne",
+      "text": "Povedzte nám o svojich cieľoch a výzvach a my vám pripravíme individuálnu stratégiu, ktorá vám pomôže rásť. Vyplňte nasledujúci formulár a urobme ďalší krok k merateľnému úspechu.",
+      "title": "Začnite s Marketifire"
+    },
+    "errors": {
+      "email": "Uveďte platnú e-mailovú adresu",
+      "goals": "Uveďte svoje ciele a výzvy",
+      "phone": "Uveďte svoje telefónne",
+      "budget": "Uveďte svoj rozpočet",
+      "fullName": "Uveďte svoje celé meno",
+      "startDate": "Uveďte dátum začatia",
+      "phoneInvalid": "Nesprávny formát telefónneho čísla",
+      "contactMethod": "Uveďte svoj kontaktný spôsob",
+      "targetAudience": "Uveďte svoju cieľovú skupinu"
+    },
+    "submit": "Odoslať",
+    "nextStep": "Ďalší krok",
+    "thankYou": {
+      "text": "Náš zástupca sa vám čoskoro ozve.",
+      "title": "Ďakujeme, že ste si vybrali Marketifire!",
+      "btnLabel": "Prejsť na domovskú stránku"
+    },
+    "processing": "Spracovanie...",
+    "submitting": "Odoslanie...",
+    "businessData": {
+      "title": "Obchodné a marketingové údaje",
+      "fields": {
+        "goals": {
+          "label": "Vaše ciele a výzvy",
+          "placeholder": "Aké sú vaše kľúčové ciele a aktuálne boľavé miesta?"
+        },
+        "budget": {
+          "label": "Rozsah vášho rozpočtu. Vyberte si rozsah investícií:"
+        },
+        "services": {
+          "label": "Vyberte službu, o ktorú máte záujem"
+        },
+        "startDate": {
+          "label": "Kedy plánujete začať?"
+        },
+        "contactMethod": {
+          "label": "Uprednostňovaný spôsob kontaktu"
+        },
+        "pleaseSpecify": "Uveďte prosím",
+        "targetAudience": {
+          "label": "Kto je vaša cieľová skupina?",
+          "placeholder": "Aké sú vaše kľúčové ciele a aktuálne bolestivé miesta? Vek, pohlavie, lokalita, záujmy"
+        }
+      },
+      "budgets": "Pod",
+      "services": {
+        "0": "Marketingové a rastové stratégie",
+        "1": "Výkonnostný marketing a optimalizácia konverzií",
+        "2": "Obchodné poradenstvo a plánovanie expanzie",
+        "3": "Obsah a zapojenie publika",
+        "4": "Automatizácia a digitálna transformácia",
+        "5": "Strategický rast a konkurenčná výhoda",
+        "6": "Iné"
+      },
+      "startDate": {
+        "0": "Do 1 mesiaca",
+        "1": "1-3 mesiace",
+        "2": "3-6 mesiacov",
+        "3": "Flexibilná časová os"
+      },
+      "contactMethod": {
+        "0": "E-mail",
+        "1": "Telefón",
+        "2": "Videohovor"
+      }
+    },
+    "personalData": {
+      "title": "Osobné údaje",
+      "fields": {
+        "email": {
+          "label": "E-mailová adresa",
+          "placeholder": "Zadajte svoju e-mailovú adresu"
+        },
+        "phone": {
+          "label": "Telefónne číslo"
+        },
+        "website": {
+          "label": "Webová lokalita (voliteľné)",
+          "placeholder": "Zadajte svoju webovú lokalitu"
+        },
+        "fullName": {
+          "label": "Celé meno",
+          "placeholder": "Zadajte svoje celé meno"
+        },
+        "companyName": {
+          "label": "Názov spoločnosti (voliteľné)",
+          "placeholder": "Zadajte názov spoločnosti"
+        }
+      }
+    },
+    "submitYourRequest": "Odoslať žiadosť"
+  },
+  "commonRequest": {
+    "text": "Tešíme sa na vaše správy! Či už máte otázku, potrebujete odbornú radu alebo ste pripravení začať projekt, náš tím je tu, aby vám poskytol podporu a riešenia, ktoré potrebujete. Stačí vyplniť nasledujúci formulár s vašimi údajmi a my sa vám čo najskôr ozveme, aby sme s vami prediskutovali, ako vám môžeme pomôcť dosiahnuť vaše obchodné ciele.",
+    "title": "Kontaktujte spoločnosť Marketfire"
+  },
+  "downloadPrice": {
+    "title": "Stiahnite si celý cenník",
+    "download": "Stiahnite si cenník vo formáte PDF",
+    "description": "Všetky potrebné informácie o cenách sú už uvedené tu na stránke. Ak by ste chceli mať k dispozícii verziu vo formáte PDF, neváhajte si stiahnuť celý cenník. Všetko je jasne uvedené, aby ste sa mohli informovane rozhodnúť!"
+  },
+  "pricingPackages": {
+    "buy": "Kúpiť",
+    "from": "Z adresy",
+    "hero": {
+      "tag": "Vyberte si riešenie, ktoré najlepšie vyhovuje vašim cieľom",
+      "text": "Ponúkame riešenia na mieru pre podnikateľov v každej fáze rastu. Či už potrebujete jedno riešenie alebo balík kompletných služieb, máme pre vás ten správny plán, ktorý splní vaše potreby. Naša cenová štruktúra zaručuje flexibilitu a transparentnosť a poskytuje vám rôzne možnosti na základe vášho rozpočtu a cieľov.",
+      "title": "Ceny a balíky"
+    },
+    "hide": "Skryť",
+    "open": "Otvoriť",
+    "order": "Objednávka",
+    "inCart": "V košíku",
+    "addedToCart": "pridané do košíka",
+    "contentAudience": {
+      "0": {
+        "price": "400 ",
+        "title": "Sociálne médiá a rast komunity",
+        "description": "Rozširovanie vašej prítomnosti na sociálnych sieťach a vytváranie aktívnych, angažovaných komunít."
+      },
+      "1": {
+        "price": "500 ",
+        "title": "Influencer & Affiliate Marketing ",
+        "description": "Využívanie dôveryhodných vplyvných osôb a partnerov na rozšírenie vášho dosahu."
+      },
+      "2": {
+        "price": "450 ",
+        "title": "Optimalizácia e-mailov a CRM",
+        "description": "Starostlivosť o vzťahy so zákazníkmi pomocou cieleného e-mailového marketingu a stratégií CRM."
+      },
+      "3": {
+        "price": "600 ",
+        "title": "Tvorba vysoko účinného obsahu a rozprávanie príbehov",
+        "description": "Tvorba obsahu, ktorý informuje, zapája a konvertuje vaše publikum."
+      },
+      "4": {
+        "price": "500 ",
+        "title": "Stratégia video obsahu",
+        "description": "Vytváranie pútavého video obsahu, ktorý vyvoláva odozvu a podporuje konverzie."
+      },
+      "5": {
+        "price": "450 ",
+        "title": "Blogovanie a vedenie myšlienok",
+        "description": "Umiestnenie vašej značky ako autority v odvetví prostredníctvom konzistentného, vysokokvalitného obsahu."
+      },
+      "6": {
+        "price": "500 ",
+        "title": "Reklamné kampane v sociálnych médiách",
+        "description": "Využívanie platforiem ako Facebook, Instagram a LinkedIn na generovanie cielených potenciálnych zákazníkov."
+      },
+      "7": {
+        "price": "550 ",
+        "title": "Vytvorenie svedectva zákazníka a prípadovej štúdie",
+        "description": "Prezentácia vášho úspechu prostredníctvom presvedčivých príbehov zákazníkov."
+      },
+      "title": "Obsah a zapojenie publika"
+    },
+    "servicePackages": {
+      "title": "Naša komplexná ponuka služieb",
+      "orderNow": "Objednajte si teraz",
+      "packages": {
+        "0": {
+          "title": "Zapáľte svoju značku",
+          "includes": {
+            "0": {
+              "title": "Prieskum trhu a analýza konkurencie",
+              "description": "Poznajte svoje trhové prostredie a konkurenciu, aby ste sa mohli rozhodovať."
+            },
+            "1": {
+              "title": "Umiestnenie značky a komunikácia",
+              "description": "Vytvorte svoju jedinečnú ponuku hodnoty a zdokonaľte hlas svojej značky."
+            },
+            "2": {
+              "title": "Rast SEO a viditeľnosti vo vyhľadávaní",
+              "description": "Zlepšite umiestnenie a viditeľnosť svojej webovej stránky v organickom vyhľadávaní."
+            },
+            "3": {
+              "title": "Sociálne médiá a rast komunity",
+              "description": "Vytvorte si aktívne a angažované publikum na sociálnych platformách."
+            },
+            "4": {
+              "title": "Stratégia obsahu",
+              "description": "Vytvorte pútavý obsah, ktorý je v súlade s vašou značkou a publikom."
+            }
+          },
+          "description": "Tento balík je ideálny pre začínajúce podniky, samostatne zárobkovo činné osoby alebo tých, ktorí sú na trhu noví. Zameriava sa na budovanie viditeľnosti, zapojenie publika a položenie základov pre budúci úspech. Skvelý spôsob, ako naštartovať marketing pomocou cielených stratégií, ktoré rýchlo prinesú výsledky. Translated with https://laratranslate.com/translate?lng=en"
+        },
+        "1": {
+          "title": "Urýchlite rast",
+          "includes": {
+            "0": {
+              "title": "Balík „Ignite Your Brand“"
+            },
+            "1": {
+              "title": "Rast viditeľnosti vo vyhľadávaní a SEO",
+              "description": "Zlepšite svoje hodnotenie a prilákajte vysokokvalitnú organickú návštevnosť."
+            },
+            "2": {
+              "title": "PPC a platené reklamné kampane",
+              "description": "Implementujte cielené reklamy, ktoré zvyšujú návštevnosť a konverzie."
+            },
+            "3": {
+              "title": "Tvorba obsahu a rozprávanie príbehov",
+              "description": "Vytvorte presvedčivý obsah, ktorý sa spojí s vaším publikom na hlbšej úrovni."
+            },
+            "4": {
+              "title": "Plány získavania a udržania zákazníkov",
+              "description": "Vybudujte systémy na prilákanie a udržanie verných zákazníkov."
+            },
+            "5": {
+              "title": "Optimalizácia e-mailov a CRM",
+              "description": "Zlepšite vzťahy so zákazníkmi a stratégie e-mailového marketingu."
+            },
+            "6": {
+              "title": "Optimalizácia miery konverzie (CRO)",
+              "description": "Maximalizujte schopnosť svojej webovej stránky premeniť návštevníkov na platiacich zákazníkov."
+            }
+          },
+          "description": "Ideálne pre malé a stredné projekty, ktoré chcú rozšíriť svoj dosah, zvýšiť konverzie a vybudovať trvalé vzťahy s cieľovou skupinou. Tento balík sa zameriava na optimalizáciu a výkonnosť, čím zabezpečuje merateľný a udržateľný rast."
+        },
+        "2": {
+          "title": "Škálovanie a optimalizácia",
+          "includes": {
+            "0": {
+              "title": "Balík \"Urýchlenie rastu"
+            },
+            "1": {
+              "title": "PPC a platené reklamné kampane",
+              "description": "Implementujte cielené reklamy, ktoré zvyšujú návštevnosť a konverzie."
+            },
+            "2": {
+              "title": "Stratégie vstupu na trh a expanzie",
+              "description": "Preniknite na nové trhy s prispôsobenými plánmi expanzie."
+            },
+            "3": {
+              "title": "Stratégie budovania vedenia a udržania publika",
+              "description": "Vyvíjajte účinné systémy generovania a udržiavania potenciálnych zákazníkov."
+            },
+            "4": {
+              "title": "Optimalizácia CRM a zákazníckych ciest",
+              "description": "Zjednodušte skúsenosti zákazníkov od prvého kontaktu až po dlhodobú lojalitu."
+            },
+            "5": {
+              "title": "Automatizácia podnikových procesov",
+              "description": "Ušetrite čas a zdroje automatizáciou kľúčových obchodných funkcií."
+            },
+            "6": {
+              "title": "Analýza výkonu a podávanie správ",
+              "description": "Sledujte výsledky a priebežne optimalizujte stratégie."
+            },
+            "7": {
+              "title": "Optimalizácia modelu príjmov a cenovej stratégie",
+              "description": "Maximalizujte ziskovosť prostredníctvom stratégií tvorby cien a hodnotových ponúk."
+            },
+            "8": {
+              "title": "Optimalizácia predajného lievika",
+              "description": "Zdokonaľte svoj predajný proces s cieľom zvýšiť konverzie a celoživotnú hodnotu zákazníka."
+            }
+          },
+          "description": "Pre projekty pripravené na rozšírenie tento balík zahŕňa pokročilé stratégie rastu a optimalizácie, ktoré zabezpečia, že každá časť vášho podnikania bude pracovať na urýchlení vášho úspechu. Ideálny pre tých, ktorí potrebujú optimalizovať celý svoj ekosystém pre vyššie príjmy a hlbšie zapojenie."
+        },
+        "3": {
+          "title": "Konečný plán úspechu",
+          "includes": {
+            "0": {
+              "title": "Balík \"Škálovanie a optimalizácia"
+            },
+            "1": {
+              "title": "Úplná stratégia značky (positioning a komunikácia)",
+              "description": "Vytvorte výraznú a zapamätateľnú identitu značky."
+            },
+            "2": {
+              "title": "Stratégia uvádzania produktov na trh a prieskum trhu",
+              "description": "Plánujte a realizujte úspešné uvedenie produktov na trh, ktoré zaujmú váš trh."
+            },
+            "3": {
+              "title": "Rast SEO a viditeľnosti vo vyhľadávaní",
+              "description": "Zabezpečte si popredné pozície a zvýšte organickú návštevnosť."
+            },
+            "4": {
+              "title": "PPC a platené reklamné kampane",
+              "description": "Dosiahnite úspech cielenej reklamy pomocou odborne spravovaných platených kampaní."
+            },
+            "5": {
+              "title": "Stratégia obsahu a sociálnych médií",
+              "description": "Vytvorte konzistentnú stratégiu obsahu s vysokým účinkom na všetkých platformách."
+            },
+            "6": {
+              "title": "Rozšírenie podnikania a optimalizácia modelu príjmov",
+              "description": "Rozšírte svoje podnikanie prostredníctvom optimalizovaných tokov príjmov."
+            },
+            "7": {
+              "title": "AI a automatizácia marketingu",
+              "description": "Využívajte najmodernejšiu automatizáciu na zefektívnenie marketingu a operácií."
+            },
+            "8": {
+              "title": "Využívajte najmodernejšiu automatizáciu na zefektívnenie marketingu a operácií.",
+              "description": "Implementujte stratégie založené na údajoch pre neustály rast a optimalizáciu."
+            }
+          },
+          "description": "For brands aiming for maximum growth and long-term scalability, this all-encompassing package combines full-service consulting, advanced automation, and performance marketing to ensure continuous success. Ideal for projects that want to dominate their market and build a strong, sustainable brand."
+        }
+      },
+      "description": "Pre značky, ktoré sa snažia o maximálny rast a dlhodobú škálovateľnosť, je tento komplexný balík kombináciou kompletných poradenských služieb, pokročilej automatizácie a výkonnostného marketingu na zabezpečenie trvalého úspechu. Ideálny pre projekty, ktoré chcú ovládnuť svoj trh a vybudovať silnú, udržateľnú značku."
+    },
+    "strategicGrowth": {
+      "0": {
+        "price": "500 ",
+        "title": "Osobná značka a omni-Channel rast",
+        "description": "Pomáha jednotlivcom budovať a rozširovať ich osobné značky vo všetkých kanáloch."
+      },
+      "1": {
+        "price": "400 ",
+        "title": "Stratégie budovania vedenia a udržania publika",
+        "description": "Vytváranie stratégií na získavanie nových potenciálnych zákazníkov a udržiavanie trvalých vzťahov."
+      },
+      "2": {
+        "price": "450 ",
+        "title": "Stratégie predaja pre podnikateľov",
+        "description": "Na mieru šité predajné taktiky, ktoré vám pomôžu rozvíjať a rozširovať vaše podnikanie."
+      },
+      "3": {
+        "price": "600 ",
+        "title": "Plány marketingu a monetizácie na mieru",
+        "description": "Vytváranie stratégií, ktoré maximalizujú ziskovosť a rastový potenciál vašej firmy."
+      },
+      "4": {
+        "price": "600 ",
+        "title": "Oceňovanie podniku a stratégia odchodu",
+        "description": "Plánovanie dlhodobých obchodných cieľov a potenciálneho odchodu."
+      },
+      "5": {
+        "price": "500",
+        "title": "Strategické partnerstvo a spolupráca",
+        "description": "Identifikácia príležitostí pre aliancie, ktoré vám pomôžu pri rozširovaní."
+      },
+      "6": {
+        "price": "550",
+        "title": "Stratégia trhovej diferenciácie",
+        "description": "Pomôže vám vyniknúť na preplnenom trhu s jedinečnými predajnými ponukami."
+      },
+      "7": {
+        "price": "650",
+        "title": "Dlhodobý rast a plány udržateľnosti",
+        "description": "Vytváranie stratégií pre nepretržitú inováciu a trvalý rast."
+      },
+      "title": "Strategický rast a konkurenčná výhoda"
+    },
+    "businessConsulting": {
+      "0": {
+        "price": "600",
+        "title": "Stratégie vstupu na trh a expanzie",
+        "description": "Komplexné plány vstupu na nové trhy alebo uvedenia nových produktov na trh."
+      },
+      "1": {
+        "price": "500",
+        "title": "Plány získavania a udržania zákazníkov",
+        "description": "Budovanie udržateľného rastu prostredníctvom účinných taktík generovania potenciálnych zákazníkov a lojality."
+      },
+      "2": {
+        "price": "550",
+        "title": "Optimalizácia modelu príjmov",
+        "description": "Zdokonalenie vášho obchodného modelu s cieľom zvýšiť ziskovosť a škálovateľnosť."
+      },
+      "3": {
+        "price": "650",
+        "title": "Automatizácia podnikových procesov",
+        "description": "Zefektívnenie operácií s cieľom ušetriť čas a zvýšiť efektivitu."
+      },
+      "4": {
+        "price": "550",
+        "title": "Strategické plánovanie podnikania",
+        "description": "Pomôže vám definovať plán rastu a dlhodobého úspechu."
+      },
+      "5": {
+        "price": "500",
+        "title": "Finančné prognózovanie a rozpočtovanie",
+        "description": "Efektívne plánovanie a riadenie obchodného rastu a výdavkov."
+      },
+      "6": {
+        "price": "600",
+        "title": "Organizačný dizajn a rozvoj",
+        "description": "Štruktúrovanie tímu pre maximálnu produktivitu a rast."
+      },
+      "7": {
+        "price": "500",
+        "title": "Konkurenčný prieskum trhu",
+        "description": "zhromažďovanie informácií o trendoch v odvetví, stratégiách konkurentov a dynamike trhu."
+      },
+      "title": "Obchodné poradenstvo a plánovanie expanzie"
+    },
+    "marketingStrategies": {
+      "0": {
+        "price": "400",
+        "title": "Prieskum trhu a analýza konkurencie",
+        "description": "Hlboký prehľad o vašom odvetví a konkurencii."
+      },
+      "1": {
+        "price": "400",
+        "title": "Umiestnenie značky a komunikácia",
+        "description": "Tvorba vašej jedinečnej ponuky hodnoty pre maximálny účinok."
+      },
+      "2": {
+        "price": "400",
+        "title": "Digitálna a tradičná reklama",
+        "description": "Viackanálové kampane, ktoré zaujmú a konvertujú."
+      },
+      "3": {
+        "price": "600",
+        "title": "Stratégia uvedenia produktu na trh",
+        "description": "Komplexné plány pre úspešné zavedenie produktov."
+      },
+      "4": {
+        "price": "400",
+        "title": "Stratégia segmentácie zákazníkov",
+        "description": "Identifikácia kľúčových segmentov zákazníkov, na ktoré sa má zamerať prispôsobený marketing."
+      },
+      "5": {
+        "price": "400",
+        "title": "Návrh identity značky",
+        "description": "Vytvorenie jedinečnej vizuálnej a verbálnej identity pre vašu firmu."
+      },
+      "6": {
+        "price": "450",
+        "title": "Prenikanie na miestny trh",
+        "description": "Zameranie sa na regionálne a miestne trhy pre silnejšie zapojenie komunity."
+      },
+      "7": {
+        "price": "450",
+        "title": "Rozvoj strategického partnerstva",
+        "description": "Identifikácia a vytváranie hodnotných partnerstiev s cieľom rozšíriť vašu značku."
+      },
+      "title": "Marketingové a rastové stratégie"
+    },
+    "performanceMarketing": {
+      "0": {
+        "price": "400",
+        "title": "Rast SEO a viditeľnosti vo vyhľadávaní",
+        "description": "Zvyšovanie organických pozícií vo vyhľadávaní s cieľom prilákať vysokokvalitnú návštevnosť."
+      },
+      "1": {
+        "price": "450",
+        "title": "PPC a platená reklama",
+        "description": "Vytváranie vysoko efektívnych reklamných kampaní, ktoré prinášajú rýchle výsledky."
+      },
+      "2": {
+        "price": "450",
+        "title": "Optimalizácia webovej stránky a lievika",
+        "description": "Optimalizácia tokov používateľov s cieľom maximalizovať konverzie a predaj."
+      },
+      "3": {
+        "price": "500",
+        "title": "Stratégie predaja založené na údajoch",
+        "description": "Implementácia stratégií, ktoré efektívne usmerňujú a konvertujú potenciálnych zákazníkov."
+      },
+      "4": {
+        "price": "450",
+        "title": "Optimalizácia cieľovej stránky",
+        "description": "Navrhovanie vysokokonvertujúcich vstupných stránok prispôsobených vášmu publiku."
+      },
+      "5": {
+        "price": "500",
+        "title": "Retargetingové a remarketingové kampane",
+        "description": "Opätovné zapojenie minulých návštevníkov s cieľom zvýšiť konverzie."
+      },
+      "6": {
+        "price": "400",
+        "title": "Taktiky generovania vedenia",
+        "description": "Získavanie vysokokvalitných potenciálnych zákazníkov prostredníctvom inteligentných stratégií cielenia."
+      },
+      "7": {
+        "price": "550",
+        "title": "Testovanie A/B a sledovanie výkonu",
+        "description": "Neustále zlepšujte svoje kampane pomocou poznatkov o údajoch."
+      },
+      "title": "Výkonnostný marketing a optimalizácia konverzií"
+    },
+    "digitalTransformation": {
+      "0": {
+        "price": "500",
+        "title": "AI a automatizácia marketingu",
+        "description": "Používanie nástrojov na báze umelej inteligencie na automatizáciu marketingových procesov a úsporu času."
+      },
+      "1": {
+        "price": "450",
+        "title": "Optimalizácia CRM a zákazníckych ciest",
+        "description": "Navrhovanie ciest zákazníkov, ktoré vedú k dlhodobej lojalite a rastu."
+      },
+      "2": {
+        "price": "550",
+        "title": "Tok Chatbot & Lead Nurturing",
+        "description": "Implementácia automatizovaných systémov pre zákaznícku podporu a starostlivosť o zákazníkov."
+      },
+      "3": {
+        "price": "500",
+        "title": "Analýza výkonu a podávanie správ",
+        "description": "Monitorovanie a analýza kľúčových ukazovateľov s cieľom zlepšiť a zdokonaliť stratégie."
+      },
+      "4": {
+        "price": "550",
+        "title": "Automatizácia predajných procesov",
+        "description": "Zefektívnenie predajného lievika na zvýšenie efektivity a miery uzavretia."
+      },
+      "5": {
+        "price": "500",
+        "title": "Integrácia údajov o zákazníkoch",
+        "description": "Kombinácia zdrojov údajov na vytvorenie jednotného pohľadu na cestu zákazníka."
+      },
+      "6": {
+        "price": "600",
+        "title": "Automatizácia pracovných postupov",
+        "description": "Automatizácia interných obchodných procesov s cieľom ušetriť čas a zvýšiť produktivitu."
+      },
+      "7": {
+        "price": "700",
+        "title": "Vlastný vývoj API",
+        "description": "Integrácia rôznych nástrojov a platforiem s cieľom vytvoriť ucelený pracovný postup pre vašu firmu."
+      },
+      "title": "Automatizácia a digitálna transformácia"
+    }
+  },
+  "freeConsultation": {
+    "title": "Vytvorme spoločne niečo mocné"
+  },
+  "tailoredSolutions": {
+    "hero": {
+      "tag": "Budujme váš úspech spoločne",
+      "text": "V spoločnosti Marketfire veríme, že rast nie je len o marketingu, ale aj o vytváraní trvalého vplyvu. Pracujeme s podnikateľmi, profesionálmi a osobnými značkami, aby sme premenili nápady na stratégie, ktoré sa rozšíria, zaujmú a konvertujú.",
+      "text2": "My trendy nesledujeme - my ich vytvárame. Vďaka prístupu založenému na údajoch, inovatívnemu mysleniu a vášni pre výsledky vytvárame riešenia, ktoré podporujú úspech v každej fáze vašej cesty.",
+      "title": "Podnecovanie rastu, posilňovanie úspechu"
+    },
+    "solutions": {
+      "tag": "Odbornosť na mieru pre vaše odvetvie",
+      "text": "Poskytujeme odborné poradenstvo prispôsobené vašej oblasti a pomáhame vám optimalizovať viditeľnosť, získavanie zákazníkov a generovanie príjmov prostredníctvom cieleného poradenstva.",
+      "label": "Každá služba je prispôsobená vašim obchodným cieľom.",
+      "title": "Cielené poradenské riešenia",
+      "values": {
+        "0": {
+          "items": {
+            "0": "Pozicionovanie osobnej značky pre myšlienkové vodcovstvo",
+            "1": "Generovanie potenciálnych zákazníkov a získavanie klientov s vysokou hodnotou",
+            "2": "Stratégie budovania autority a marketing založený na dôvere",
+            "3": "Cenové modely a monetizácia služieb"
+          },
+          "title": "Koučovanie a poradenstvo"
+        },
+        "1": {
+          "items": {
+            "0": "Stratégie online obchodu optimalizované na konverziu",
+            "1": "Optimalizácia zákazníckej skúsenosti a predajného lievika",
+            "2": "Automatizované systémy predaja a remarketingu",
+            "3": "Rámce uvádzania produktov na trh prispôsobené pre špecializované trhy"
+          },
+          "title": "Elektronické obchodovanie a digitálne produkty"
+        },
+        "2": {
+          "items": {
+            "0": "Umiestnenie kurzov s vysokým vplyvom a štruktúrovanie učebných osnov",
+            "1": "Zapojenie do digitálneho vzdelávania a udržanie študentov",
+            "2": "Platené a organické marketingové stratégie pre tvorcov kurzov",
+            "3": "Škálovanie pomocou modelov členstva a certifikačných programov"
+          },
+          "title": "Vzdelávanie a online kurzy"
+        },
+        "3": {
+          "items": {
+            "0": "Výživový a wellness koučing",
+            "1": "Jóga a fitnes programy",
+            "2": "Celostné zdravotné koučovanie",
+            "3": "Výživa a wellness produkty"
+          },
+          "title": "Značky zdravia, wellness a životného štýlu"
+        },
+        "4": {
+          "items": {
+            "0": "Finančné plánovanie a investičné stratégie",
+            "1": "Dôchodkové plánovanie a správa majetku",
+            "2": "Daňové plánovanie a dodržiavanie predpisov",
+            "3": "Plánovanie majetku a stratégie dedičstva"
+          },
+          "title": "Finančné a investičné poradenstvo"
+        }
+      },
+      "btnLabel": "Začnite optimalizovať svoju stratégiu ešte dnes"
+    },
+    "consultation": {
+      "text": "Žiadne dve odvetvia nie sú rovnaké - a rovnaké nie sú ani naše riešenia. Let’s build a strategy for your unique business, market, and goals. <br /><br /> Get in touch today to discuss your industry-specific growth plan.",
+      "title": "Prispôsobíme stratégiu pre vaše odvetvie",
+      "btnLabel": "Získajte bezplatnú konzultáciu ešte dnes"
+    },
+    "successFramework": {
+      "cards": {
+        "0": {
+          "desc": "Pochopenie toho, kde sa nachádzate a kde potrebujete byť.",
+          "title": "Trhové umiestnenie založené na údajoch"
+        },
+        "1": {
+          "desc": "Identifikácia kľúčových modelov na zvýšenie angažovanosti.",
+          "title": "Analýza správania a trendov zákazníkov"
+        },
+        "2": {
+          "desc": "Maximalizácia hodnoty prostredníctvom prispôsobených prístupov k monetizácii.",
+          "title": "Stratégie optimalizácie príjmov"
+        },
+        "3": {
+          "desc": "Sprievodca krok za krokom k dominancii v odvetví.",
+          "title": "Plány rastu a expanzie"
+        }
+      },
+      "title": "Rámec úspechu zameraný na odvetvie",
+      "tagText": "Vytváranie plánov dlhodobého rastu",
+      "annotation": "Nevytvárame len stratégie, ale aj rámce, ktoré sú v súlade s hlavnými faktormi úspechu vo vašom odvetví. Či už chcete rozšíriť svoju klientsku základňu, zvýšiť angažovanosť alebo zdokonaliť svoj obchodný model, vytvárame vlastné plány, ktoré zabezpečia dlhodobú škálovateľnosť.",
+      "footerText": ""
+    }
+  }
+}

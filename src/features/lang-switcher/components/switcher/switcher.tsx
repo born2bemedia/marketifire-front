@@ -1,6 +1,7 @@
 'use client';
 
 import type { ReactNode } from 'react';
+import { useRouter } from 'next/navigation';
 import {
   DropdownMenuContent,
   DropdownMenuItem,
@@ -17,12 +18,12 @@ import st from './switcher.module.scss';
 export function Switcher({
   options,
   value,
-  onChange,
 }: {
   options: { label: ReactNode; value: string }[];
   value: ReactNode;
-  onChange: (value: string) => void;
 }) {
+  const router = useRouter();
+
   return (
     <Root>
       <DropdownMenuTrigger className={st.selectTrigger}>
@@ -35,7 +36,9 @@ export function Switcher({
             <DropdownMenuItem
               key={option.value}
               className={st.selectItem}
-              onClick={() => onChange(option.value)}
+              onClick={() => {
+                router.replace(`/${option.value}`);
+              }}
             >
               <Text>{option.label}</Text>
             </DropdownMenuItem>
