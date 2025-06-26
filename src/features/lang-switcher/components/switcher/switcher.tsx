@@ -1,7 +1,7 @@
 'use client';
 
-import type { ReactNode } from 'react';
-import { useRouter } from 'next/navigation';
+import { type ReactNode, useCallback } from 'react';
+import { usePathname, useRouter } from 'next/navigation';
 import {
   DropdownMenuContent,
   DropdownMenuItem,
@@ -23,6 +23,17 @@ export function Switcher({
   value: ReactNode;
 }) {
   const router = useRouter();
+  const pathname = usePathname();
+
+  const switchLanguage = useCallback(
+    (value: string) => {
+      const segments = pathname.split('/');
+      segments[1] = value;
+      const newPath = segments.join('/');
+      router.replace(newPath);
+    },
+    [pathname, router],
+  );
 
   return (
     <Root>
@@ -36,9 +47,7 @@ export function Switcher({
             <DropdownMenuItem
               key={option.value}
               className={st.selectItem}
-              onClick={() => {
-                router.replace(`/${option.value}`);
-              }}
+              onClick={() => switchLanguage(option.value)}
             >
               <Text>{option.label}</Text>
             </DropdownMenuItem>
