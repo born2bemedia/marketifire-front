@@ -15,8 +15,14 @@ export const metadata: Metadata = {
   },
 };
 
-export default async function CookiePolicy() {
+export default async function CookiePolicy({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
   const t = await getTranslations('policies');
 
-  return <Policy title={t('cookiePolicy')} id="4" />;
+  return (
+    <Policy title={t('cookiePolicy')} id="4" locale={(await params).locale} />
+  );
 }

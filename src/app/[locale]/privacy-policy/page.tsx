@@ -15,8 +15,14 @@ export const metadata: Metadata = {
   },
 };
 
-export default async function PrivacyPolicy() {
+export default async function PrivacyPolicy({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
   const t = await getTranslations('policies');
 
-  return <Policy title={t('privacyPolicy')} id="2" />;
+  return (
+    <Policy title={t('privacyPolicy')} id="2" locale={(await params).locale} />
+  );
 }
