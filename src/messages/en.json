@@ -1823,6 +1823,7 @@
     }
   },
   "policies": {
+    "lastRevised": "Last Revised",
     "cookiePolicy": "Cookie Policy",
     "privacyPolicy": "Privacy Policy",
     "termsAndConditions": "Terms & Conditions",

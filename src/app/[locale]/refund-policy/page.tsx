@@ -15,8 +15,14 @@ export const metadata: Metadata = {
   },
 };
 
-export default async function RefundPolicy() {
+export default async function RefundPolicy({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
   const t = await getTranslations('policies');
 
-  return <Policy title={t('refundPolicy')} id="3" />;
+  return (
+    <Policy title={t('refundPolicy')} id="3" locale={(await params).locale} />
+  );
 }

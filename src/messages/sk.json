@@ -531,6 +531,7 @@
     }
   },
   "policies": {
+    "lastRevised": "Posledná revízia",
     "cookiePolicy": "Zásady používania súborov cookie",
     "refundPolicy": "Zásady vrátenia peňazí",
     "privacyPolicy": "Zásady ochrany osobných údajov",

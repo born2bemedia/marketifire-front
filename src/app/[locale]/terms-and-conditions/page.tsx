@@ -17,8 +17,18 @@ export const metadata: Metadata = {
   },
 };
 
-export default async function TermsAndConditions() {
+export default async function TermsAndConditions({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
   const t = await getTranslations('policies');
 
-  return <Policy title={t('termsAndConditions')} id="1" />;
+  return (
+    <Policy
+      title={t('termsAndConditions')}
+      id="1"
+      locale={(await params).locale}
+    />
+  );
 }
