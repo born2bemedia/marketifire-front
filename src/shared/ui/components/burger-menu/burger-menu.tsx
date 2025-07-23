@@ -19,7 +19,6 @@ import { UserBadge } from '@/core/user/components';
 
 import { headerSt } from '@/shared/ui/components/header';
 import { ShortAddress } from '@/shared/ui/components/short-address';
-import { SocialNetworks } from '@/shared/ui/components/social-networks';
 import { BagIcon, CloseIcon, MenuIcon } from '@/shared/ui/icons/outline';
 import { Button } from '@/shared/ui/kit/button';
 import { Text } from '@/shared/ui/kit/text';
@@ -101,7 +100,7 @@ function Menu() {
                 ))}
               </ul>
               <footer className={st.footer}>
-                <SocialNetworks iconsSize={24} />
+                {/* <SocialNetworks iconsSize={24} /> */}
                 <ShortAddress />
               </footer>
             </section>

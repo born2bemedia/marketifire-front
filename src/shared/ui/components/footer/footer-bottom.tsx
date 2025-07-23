@@ -3,7 +3,6 @@
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
-import { SocialNetworks } from '@/shared/ui/components/social-networks';
 import { Text } from '@/shared/ui/kit/text';
 
 import st from './footer.module.scss';
@@ -26,7 +25,7 @@ export function FooterBottom() {
             <Text color="black60">info@marketifire.com</Text>
           </Link>
         </div>
-        <SocialNetworks />
+        {/* <SocialNetworks /> */}
       </section>
     </section>
   );

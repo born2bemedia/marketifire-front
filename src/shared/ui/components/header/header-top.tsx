@@ -11,7 +11,6 @@ import { useCartModalStore } from '@/features/cart/services/modal.store';
 import { LangSwitcher } from '@/features/lang-switcher/components';
 
 import { ShortAddress } from '@/shared/ui/components/short-address';
-import { SocialNetworks } from '@/shared/ui/components/social-networks';
 import { BagIcon } from '@/shared/ui/icons/outline';
 import { Button } from '@/shared/ui/kit/button';
 import { Text } from '@/shared/ui/kit/text';
@@ -39,7 +38,6 @@ export function HeaderTop() {
               height={28}
             />
           </Link>
-          <SocialNetworks />
           <ShortAddress />
         </div>
         <div className={st.btns}>
