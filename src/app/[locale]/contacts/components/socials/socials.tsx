@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
 import { ArrowRight, Asterisk } from '@/shared/ui/icons/fill';
-import { FacebookIcon, InstagramIcon, XIcon } from '@/shared/ui/icons/socials';
+import { FacebookIcon } from '@/shared/ui/icons/socials';
 import { Tag } from '@/shared/ui/kit/tag/tag';
 import { Text } from '@/shared/ui/kit/text';
 import { Title } from '@/shared/ui/kit/title';
@@ -27,14 +27,14 @@ export function Socials() {
       <section className={st.cards}>
         <article className={st.cardLayout}>
           <Title level={3}>Facebook</Title>
-          <Link href="https://www.facebook.com/">
+          <Link href="https://www.facebook.com/marketifirecom/">
             <button className={st.btn}>
               <FacebookIcon />
               <ArrowRight />
             </button>
           </Link>
         </article>
-        <article className={st.cardLayout}>
+        {/* <article className={st.cardLayout}>
           <Title level={3}>Instagram</Title>
           <Link href="https://www.instagram.com/">
             <button className={st.btn}>
@@ -51,7 +51,7 @@ export function Socials() {
               <ArrowRight />
             </button>
           </Link>
-        </article>
+        </article> */}
       </section>
     </section>
   );

@@ -15,6 +15,7 @@ import { BagIcon } from '@/shared/ui/icons/outline';
 import { Button } from '@/shared/ui/kit/button';
 import { Text } from '@/shared/ui/kit/text';
 
+import { SocialNetworks } from '../social-networks';
 import st from './header.module.scss';
 
 export function HeaderTop() {
@@ -38,6 +39,7 @@ export function HeaderTop() {
               height={28}
             />
           </Link>
+          <SocialNetworks />
           <ShortAddress />
         </div>
         <div className={st.btns}>
