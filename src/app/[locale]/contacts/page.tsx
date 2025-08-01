@@ -5,7 +5,7 @@ import {
   CommonRequestLayout,
 } from '@/features/request-form/components';
 
-import { Addresses, Contact, Hero } from './components';
+import { Addresses, Contact, Hero, Socials } from './components';
 import st from './page.module.scss';
 import { PulsingEllipse } from '@/app/[locale]/request-form/components';
 
@@ -28,7 +28,7 @@ export default function Contacts() {
       <Hero />
       <Contact />
       <Addresses />
-      {/* <Socials /> */}
+      <Socials />
       <CommonRequestLayout>
         <CommonRequestForm />
       </CommonRequestLayout>
