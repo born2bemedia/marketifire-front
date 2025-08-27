@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import ReCaptcha from 'react-google-recaptcha';
 import { useTranslations } from 'next-intl';
 
 import { Service } from '@/features/request-form/components/business-data-form';
@@ -21,6 +22,8 @@ import { type CommonRequestSchema, createCommonRequestSchema } from '../../lib';
 import st from './common-request-form.module.scss';
 
 export function CommonRequestForm() {
+  const [isCaptchaVerified, setIsCaptchaVerified] = useState(false);
+
   const tr = useTranslations('requestForm.businessData');
   const te = useTranslations('requestForm.errors');
   const t = useTranslations('requestForm');
@@ -62,6 +65,9 @@ export function CommonRequestForm() {
       console.error(err);
     }
   });
+
+  const onCaptchaChange = (value: string | null) =>
+    setIsCaptchaVerified(!!value);
 
   const services = [
     tr('services.0'),
@@ -331,9 +337,21 @@ export function CommonRequestForm() {
             />
           </section>
         </section>
-        <Button variant="black" type="submit" className={st.btn} uppercase>
-          {isSubmitting ? t('submitting') : t('submitYourRequest')}
-        </Button>
+        <div className={st.btnLayout}>
+          <ReCaptcha
+            sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY ?? ''}
+            onChange={onCaptchaChange}
+          />
+          <Button
+            variant="black"
+            type="submit"
+            className={st.btn}
+            uppercase
+            disabled={!isCaptchaVerified || isSubmitting}
+          >
+            {isSubmitting ? t('submitting') : t('submitYourRequest')}
+          </Button>
+        </div>
       </section>
       <ThankYouDialog open={dialogOpen} onOpenChange={setDialogOpen} />
     </form>
