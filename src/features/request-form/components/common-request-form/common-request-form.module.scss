@@ -87,6 +87,17 @@
   margin-bottom: 60px;
 }
 
+.btnLayout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (max-width: 1058px) {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
 @media (max-width: 1058px) {
   .row {
     flex-direction: column;
